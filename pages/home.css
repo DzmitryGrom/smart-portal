@@ -31,6 +31,7 @@
   src: url("fonts/ProximaNova-XBold.otf") format("opentype");
 }
 html {
+  background: url(home.png) top center no-repeat;
   height: 100%;
 }
 body {
@@ -42,6 +43,7 @@ body {
   min-height: 100%;
   padding: 0;
   margin: 0;
+  opacity: 0.2;
 }
 .header {
   background-color: #fff;
@@ -236,8 +238,34 @@ body {
 .category__item_action_add {
   font-family: "ProximaNovaBold";
   font-size: 16px;
+  position: relative;
+}
+.category__item_action_add:after {
+  content: "";
+  background-image: url(interface/icons/plus.svg);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -10.5px;
+  margin-left: -13px;
+  width: 21px;
+  height: 21px;
 }
 .category__item_active {
   font-family: "ProximaNovaBold";
   color: #61a3da;
+  position: relative;
+}
+.category__item_active:after {
+  content: "";
+  background-color: #61a3da;
+  border-radius: 500px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -4px;
+  margin-left: -6px;
+  width: 7px;
+  height: 7px;
 }
