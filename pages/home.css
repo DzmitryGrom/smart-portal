@@ -227,6 +227,7 @@ body {
 }
 .category__item {
   display: block;
+  color: #7e7e7e;
   font-family: "ProximaNovaLight";
   font-size: 15px;
   text-decoration: none;
