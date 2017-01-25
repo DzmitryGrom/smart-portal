@@ -89,6 +89,73 @@
           }]
         }
       ]
+    }, {
+      "block": "main",
+      "content": [
+        {
+          "block": "sidebar",
+          "content": [
+            {
+              "block": "category",
+              "content": [{
+                "elem": "item",
+                "text": "Разделы",
+                "mods": {
+                  "action": "add"
+                }
+              }, {
+                "elem": "item",
+                "text": "Дизайнеры",
+                "attrs": {
+                  "href": "/"
+                },
+                "tag": "a"
+              }, {
+                "elem": "item",
+                "text": "Менеджеры",
+                "attrs": {
+                  "href": "/"
+                },
+                "tag": "a"
+              }, {
+                "elem": "item",
+                "text": "Распространители",
+                "mods": {
+                  "active": true
+                },
+                "attrs": {
+                  "href": "/"
+                },
+                "tag": "a"
+              }, {
+                "elem": "item",
+                "text": "Техническая поддержка",
+                "attrs": {
+                  "href": "/"
+                },
+                "tag": "a"
+              }, {
+                "elem": "item",
+                "text": "Руководители",
+                "attrs": {
+                  "href": "/"
+                },
+                "tag": "a"
+              }, {
+                "elem": "item",
+                "text": "Отчеты с мероприятий",
+                "attrs": {
+                  "href": "/"
+                },
+                "tag": "a"
+              }]
+            }, {
+              "block": "search",
+              "content": []
+            }
+          ]
+        }
+      ]
     }
   ]
 }

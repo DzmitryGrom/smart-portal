@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 var ccm = require('./ccm/ccm');
 var ccmGulp = require('./ccm/ccm-gulp');
 
-gulp.watch('pages/*.json').on('change', function (event) {  
+gulp.watch('./pages/*.json').on('change', function (event) {  
   // event.type : added, changed, or deleted
   console.log(event.type + ' ' + event.path);
 
