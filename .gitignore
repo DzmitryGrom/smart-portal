@@ -1,0 +1,13 @@
+.DS_Store
+# npm modules
+node_modules/
+
+# ccm
+ccm/
+
+# pages
+pages/
+
+# block
+blocks/
+blocks.theme
