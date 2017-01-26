@@ -94,8 +94,7 @@
       "content": [
         {
           "block": "sidebar",
-          "content": [
-            {
+          "content": [{
               "block": "category",
               "attrs": {
               },
@@ -155,7 +154,6 @@
             }, {
               "block": "category",
               "attrs": {
-                
               },
               "content": [{
                 "elem": "item",
@@ -174,8 +172,8 @@
                 "elem": "item",
                 "html": "<input type='text' placeholder='Добавить участника ...' disabled>",
                 "mods": {
-                  "iconed": true,
-                  "icon": "group",
+                  "icon": true,
+                  "icon_group": true,
                   "drop": true,
                   "input": true
                 }
@@ -189,7 +187,7 @@
                   },
                   "tag": "span",
                   "content": [{
-                    "block": "closer",
+                    "block": "i-closer",
                     "tag": "i"
                   }]
                 }, {
@@ -200,7 +198,7 @@
                   },
                   "tag": "span",
                   "content": [{
-                    "block": "closer",
+                    "block": "i-closer",
                     "tag": "i"
                   }]
                 }, {
@@ -211,7 +209,7 @@
                   },
                   "tag": "span",
                   "content": [{
-                    "block": "closer",
+                    "block": "i-closer",
                     "tag": "i"
                   }]
                 }]
@@ -237,8 +235,79 @@
                 }]
               }]
             }, {
-              "block": "search",
-              "content": []
+              "block": "category",
+              "content": [{
+                "elem": "item",
+                "html": "<input type='search' placeholder='Искать'>",
+                "mods": {
+                  "submit": true,
+                  "submit_search": true,
+                  "input": true
+                },
+                "content": [{
+                    "block": "i-search",
+                    "tag": "i"
+                  }]
+              }, {
+                "block": "tag",
+                "content": [{
+                  "elem": "item",
+                  "text": "Хостинг",
+                  "mods": {
+                    "border": true
+                  },
+                  "tag": "span"
+                }, {
+                  "elem": "item",
+                  "text": "Дизайн",
+                  "mods": {
+                    "border": true
+                  },
+                  "tag": "span"
+                }, {
+                  "elem": "item",
+                  "text": "Бизнес",
+                  "mods": {
+                    "border": true
+                  },
+                  "tag": "span"
+                }, {
+                  "elem": "item",
+                  "text": "Хостинг",
+                  "mods": {
+                    "border": true
+                  },
+                  "tag": "span"
+                }, {
+                  "elem": "item",
+                  "text": "Дизайн",
+                  "mods": {
+                    "border": true
+                  },
+                  "tag": "span"
+                }, {
+                  "elem": "item",
+                  "text": "Бизнес",
+                  "mods": {
+                    "border": true
+                  },
+                  "tag": "span"
+                }]
+              }, {
+                "elem": "footer",
+                "content": [{
+                  "block": "button",
+                  "text": "Показать еще",
+                  "mods": {
+                    "link": true,
+                    "pin": "right"
+                  },
+                  "attrs": {
+                    "type": "button"
+                  },
+                  "tag": "button"
+                }]
+              }]
             }
           ]
         }
