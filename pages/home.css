@@ -308,6 +308,7 @@ body {
   line-height: inherit;
   width: 100%;
   box-sizing: border-box;
+  -webkit-appearance: none;
 }
 .category__item_input input::-webkit-input-placeholder {
   color: #b1b1b1;
