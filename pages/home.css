@@ -416,6 +416,9 @@ body {
   white-space: nowrap;
   -webkit-appearance: none;
 }
+.button:focus {
+  outline: none;
+}
 .button:disabled {
   cursor: default;
 }
