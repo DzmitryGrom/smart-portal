@@ -353,16 +353,18 @@ body {
   line-height: 24px;
 }
 .tag__item_closer .closer {
+  margin-left: 4px;
+}
+.closer {
   display: inline-block;
   position: relative;
-  margin-left: 4px;
   cursor: pointer;
   width: 13px;
   vertical-align: middle;
   height: 12px;
 }
-.tag__item_closer .closer:after,
-.tag__item_closer .closer:before {
+.closer:after,
+.closer:before {
   content: "";
   border-style: solid;
   border-color: #3e3e3e;
@@ -374,12 +376,12 @@ body {
   position: absolute;
   top: 2px;
 }
-.tag__item_closer .closer:after {
+.closer:after {
   left: 0;
   border-bottom-color: transparent;
   border-left-color: transparent;
 }
-.tag__item_closer .closer:before {
+.closer:before {
   right: 0;
   border-top-color: transparent;
   border-right-color: transparent;

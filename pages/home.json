@@ -183,25 +183,37 @@
                 "block": "tag",
                 "content": [{
                   "elem": "item",
-                  "html": "Менеджеры<i class='closer'></i>",
+                  "html": "Менеджеры",
                   "mods": {
                     "closer": true
                   },
-                  "tag": "span"
+                  "tag": "span",
+                  "content": [{
+                    "block": "closer",
+                    "tag": "i"
+                  }]
                 }, {
                   "elem": "item",
-                  "html": "Игорь Пал<i class='closer'></i>",
+                  "html": "Игорь Пал",
                   "mods": {
                     "closer": true
                   },
-                  "tag": "span"
+                  "tag": "span",
+                  "content": [{
+                    "block": "closer",
+                    "tag": "i"
+                  }]
                 }, {
                   "elem": "item",
-                  "html": "Стажеры<i class='closer'></i>",
+                  "html": "Стажеры",
                   "mods": {
                     "closer": true
                   },
-                  "tag": "span"
+                  "tag": "span",
+                  "content": [{
+                    "block": "closer",
+                    "tag": "i"
+                  }]
                 }]
               }, {
                 "elem": "footer",
