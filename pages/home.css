@@ -348,6 +348,7 @@ body {
   background-image: url(interface/icons/group.svg);
 }
 .tag__item {
+  cursor: default;
   font-family: "ProximaNovaReg";
 }
 .tag__item_closer {
@@ -430,6 +431,9 @@ body {
   border-right-color: transparent;
   border-top-color: transparent;
 }
+.category__item_submit_search .i-search {
+  cursor: pointer;
+}
 .i-search {
   display: inline-block;
   background-image: url(interface/icons/search.svg);
@@ -441,6 +445,7 @@ body {
 }
 .tag__item_border {
   color: #939393;
+  cursor: pointer;
   border-radius: 10px;
   border: 1px solid rgba(184, 184, 184, 0.44);
   box-sizing: border-box;
