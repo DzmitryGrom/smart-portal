@@ -97,10 +97,13 @@
           "content": [
             {
               "block": "category",
+              "attrs": {
+              },
               "content": [{
                 "elem": "item",
                 "text": "Разделы",
                 "mods": {
+                  "title": true,
                   "action": "add"
                 }
               }, {
@@ -148,6 +151,78 @@
                   "href": "/"
                 },
                 "tag": "a"
+              }]
+            }, {
+              "block": "category",
+              "attrs": {
+                
+              },
+              "content": [{
+                "elem": "item",
+                "text": "Добавить раздел",
+                "mods": {
+                  "title": true,
+                  "action": "close"
+                }
+              }, {
+                "elem": "item",
+                "html": "<input type='text' placeholder='Распространители'>",
+                "mods": {
+                  "input": true
+                }
+              }, {
+                "elem": "item",
+                "html": "<input type='text' placeholder='Добавить участника ...' disabled>",
+                "mods": {
+                  "iconed": true,
+                  "icon": "group",
+                  "drop": true,
+                  "input": true
+                }
+              }, {
+                "block": "tag",
+                "content": [{
+                  "elem": "item",
+                  "html": "Менеджеры<i class='closer'></i>",
+                  "mods": {
+                    "closer": true
+                  },
+                  "tag": "span"
+                }, {
+                  "elem": "item",
+                  "html": "Игорь Пал<i class='closer'></i>",
+                  "mods": {
+                    "closer": true
+                  },
+                  "tag": "span"
+                }, {
+                  "elem": "item",
+                  "html": "Стажеры<i class='closer'></i>",
+                  "mods": {
+                    "closer": true
+                  },
+                  "tag": "span"
+                }]
+              }, {
+                "elem": "footer",
+                "content": [{
+                  "block": "button",
+                  "text": "Удалить",
+                  "attrs": {
+                    "type": "button"
+                  },
+                  "tag": "button"
+                }, {
+                  "block": "button",
+                  "text": "Сохранить",
+                  "mods": {
+                    "success": true
+                  },
+                  "attrs": {
+                    "type": "button"
+                  },
+                  "tag": "button"
+                }]
               }]
             }, {
               "block": "search",
