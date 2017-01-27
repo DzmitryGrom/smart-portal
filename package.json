@@ -4,7 +4,8 @@
   "description": "smart portal",
   "main": "index.js",
   "scripts": {
-    "build": "gulp"
+    "dev": "gulp dev",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",

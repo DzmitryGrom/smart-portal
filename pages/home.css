@@ -38,8 +38,7 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   position: relative;
-  height: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   padding: 0;
   margin: 0;
 }
@@ -215,6 +214,9 @@ body {
   box-sizing: border-box;
   padding: 20px calc((100% - 1336px) / 2);
   width: 100%;
+}
+.main {
+  display: flex;
 }
 .sidebar {
   position: relative;
@@ -464,4 +466,95 @@ body {
 .button_link {
   color: #61a3da;
   border: none;
+}
+.content {
+  flex: 1 0 auto;
+  max-width: 782px;
+}
+.article {
+  background-color: #fff;
+}
+.article .caption {
+  margin-bottom: 20px;
+}
+.article .content {
+  padding: 24px;
+}
+.article .content__caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+.article .content__caption-text {
+  display: inline-block;
+  font-family: "ProximaNovaBold";
+  font-size: 21px;
+}
+.article .content__caption-action {
+  font-size: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+.article .content__text {
+  color: #616161;
+  font-family: "ProximaNovaReg";
+  font-size: 15px;
+  line-height: 23px;
+}
+.article .content__footer {
+  display: flex;
+}
+.article .content__footer .button_pin_right {
+  margin-left: auto;
+}
+.article .caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article .caption__action {
+  font-size: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+.article .caption__text {
+  display: inline-block;
+  font-family: "ProximaNovaBold";
+  font-size: 21px;
+}
+.article-cover {
+  background-size: cover;
+  background-position: center center;
+}
+.article-cover {
+  height: 192px;
+}
+.i-more {
+  display: inline-block;
+  border-radius: 500px;
+  background-color: rgba(61, 34, 49, 0.28);
+  font-size: 0;
+  vertical-align: middle;
+  line-height: 1;
+  width: 4px;
+  height: 4px;
+  margin: 0 9px;
+  white-space: nowrap;
+}
+.i-more:before {
+  left: -9px;
+}
+.i-more:after {
+  right: -5px;
+}
+.i-more:before,
+.i-more:after {
+  content: "";
+  display: inherit;
+  border-radius: inherit;
+  background-color: inherit;
+  position: relative;
+  width: 4px;
+  height: 4px;
 }

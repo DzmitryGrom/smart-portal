@@ -8,49 +8,51 @@ var gulp = require('gulp'),
 var ccm = require('./ccm/ccm');
 var ccmGulp = require('./ccm/ccm-gulp');
 
-gulp.watch('./pages/*.json').on('change', function (event) {  
-  // event.type : added, changed, or deleted
-  console.log(event.type + ' ' + event.path);
-
-  if (event.type !== 'deleted') {
-    // compile
-    ccm(undefined, event.path);
-  }
-});
-
-
-gulp.watch('./pages/*.less').on('change', function (event) {  
-  // event.type : added, changed, or deleted
-  console.log(event.type + ' ' + event.path);
-
-  if (event.type !== 'deleted') {
-    gulp.src(event.path)
-      .pipe(less())
-      .pipe(gulp.dest('./pages'));
-  }
-});
-
-
-gulp.watch('./blocks/**/*.less').on('change', function (event) {  
-  // event.type : added, changed, or deleted
-  console.log(event.type + ' ' + event.path);
-
-  if (event.type !== 'deleted') {
-    gulp.src('./pages/*.less')
-      .pipe(less())
-      .pipe(gulp.dest('./pages'));
-  }
-});
-
-gulp.task('compile', function () {
+gulp.task('build', function () {
   gulp.src('./pages/*.json')
-    .pipe(ccmGulp());
-});
- 
-gulp.task('templates', function() {
+  .pipe(ccmGulp());
+
   gulp.src('./pages/*.html')
-    .pipe(prettify({indent_char: ' ', indent_size: 2}))
-    .pipe(gulp.dest('./pages/'))
+  .pipe(prettify({indent_char: ' ', indent_size: 2}))
+  .pipe(gulp.dest('./pages/'));
 });
 
-gulp.task('default', ['compile', 'templates']);
+
+
+gulp.task('dev', ['build'], function () {
+
+  gulp.watch('./pages/*.json').on('change', function (event) {  
+    // event.type : added, changed, or deleted
+    console.log(event.type + ' ' + event.path);
+
+    if (event.type !== 'deleted') {
+      // compile
+      ccm(undefined, event.path);
+    }
+  });
+
+  gulp.watch('./pages/*.less').on('change', function (event) {  
+    // event.type : added, changed, or deleted
+    console.log(event.type + ' ' + event.path);
+
+    if (event.type !== 'deleted') {
+      gulp.src(event.path)
+        .pipe(less())
+        .pipe(gulp.dest('./pages'));
+    }
+  });
+
+  gulp.watch(['./blocks/**/*.less', './blocks.theme/**/*.less']).on('change', function (event) {
+    // event.type : added, changed, or deleted
+    console.log(event.type + ' ' + event.path);
+
+    if (event.type !== 'deleted') {
+      gulp.src('./pages/*.less')
+        .pipe(less())
+        .pipe(gulp.dest('./pages'));
+    }
+  });
+});
+
+
+gulp.task('default', ['build']);
