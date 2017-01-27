@@ -30,6 +30,9 @@
   font-family: ProximaNovaXBold;
   src: url("fonts/ProximaNova-XBold.otf") format("opentype");
 }
+[hidden] {
+  display: none !important;
+}
 html {
   height: 100%;
 }
@@ -477,7 +480,7 @@ body {
 .article .caption {
   margin-bottom: 20px;
 }
-.article .content {
+.article__content {
   padding: 24px;
 }
 .article .content__caption {
@@ -501,9 +504,22 @@ body {
   font-family: "ProximaNovaReg";
   font-size: 15px;
   line-height: 23px;
+  padding-bottom: 28px;
+}
+.article .content__text_collapsed {
+  overflow: hidden;
+  height: calc(23px * 3);
 }
 .article .content__footer {
   display: flex;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #ffffff 100%);
+  min-height: 28px;
+  margin-top: -28px;
+  position: relative;
+  z-index: 1;
+}
+.article .content__footer .button_hidden {
+  display: none;
 }
 .article .content__footer .button_pin_right {
   margin-left: auto;
