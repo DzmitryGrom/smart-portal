@@ -1,4 +1,12 @@
 @font-face {
+  font-family: AvenirNextCyrBold;
+  src: url("fonts/AvenirNextCyr-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: AvenirNextCyrReg;
+  src: url("fonts/AvenirNextCyr-Regular.otf") format("opentype");
+}
+@font-face {
   font-family: ProximaNovaBlack;
   src: url("fonts/ProximaNova-Black.otf") format("opentype");
 }
@@ -69,15 +77,17 @@ body {
   font-size: 14px;
   line-height: 1.03;
   padding: 0;
-  margin: 0;
+  margin: 0 0 0 10px;
   flex: 0 1 auto;
   width: 176px;
+  font-family: AvenirNextCyrReg;
 }
 .header__logo b {
   color: #4c4c4c;
+  font-family: AvenirNextCyrBold;
   display: inline-block;
   font-size: 16px;
-  padding: 4.5px 12px;
+  padding: 0 4px;
   margin: 0 11px 0 0;
 }
 .nav {
