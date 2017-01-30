@@ -91,6 +91,9 @@
       ]
     }, {
       "block": "main",
+      "mods": {
+        "justified": "between"
+      },
       "content": [
         {
           "block": "sidebar",
@@ -361,6 +364,7 @@
                         "block": "button",
                         "text": "Читать полностью",
                         "mods": {
+                          "hidden": true,
                           "link": true,
                           "pin": "right"
                         }
@@ -526,7 +530,7 @@
                         {
                           "block": "i-arrow",
                           "mods": {
-                            "to": "down"
+                            "to": "up"
                           }
                         }
                       ]
@@ -609,6 +613,37 @@
                   ]
                 }
               ]
+            }
+          ]
+        }, {
+          "block": "sidebar",
+          "content": [
+            {
+              "block": "text",
+              "text": "Тип:",
+              "tag": "span"
+            }, {
+              "block": "text",
+              "text": "Все",
+              "tag": "span"
+            }, {
+              "block": "i-arrow",
+              "tag": "i",
+              "mods": {
+                "to": "down"
+              }
+            }, {
+              "block": "i-arrow",
+              "tag": "i",
+              "mods": {
+                "to": "down"
+              }
+            }, {
+              "block": "i-arrow",
+              "tag": "i",
+              "mods": {
+                "to": "down"
+              }
             }
           ]
         }
