@@ -74,7 +74,7 @@ body {
 .header__logo {
   color: #393939;
   display: inline-block;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.03;
   padding: 0;
   margin: 0 0 0 10px;
@@ -86,7 +86,6 @@ body {
   color: #4c4c4c;
   font-family: AvenirNextCyrBold;
   display: inline-block;
-  font-size: 16px;
   padding: 0 4px;
   margin: 0 11px 0 0;
 }
