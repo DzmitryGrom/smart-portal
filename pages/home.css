@@ -587,6 +587,7 @@ body {
   background-position: center center;
 }
 .article-cover {
+  border-radius: 5px 5px 0 0;
   height: 192px;
 }
 .i-more {
