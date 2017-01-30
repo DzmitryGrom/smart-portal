@@ -12,6 +12,10 @@ gulp.task('build', function () {
   gulp.src('./pages/*.json')
   .pipe(ccmGulp());
 
+  gulp.src('./pages/*.less')
+  .pipe(less())
+  .pipe(gulp.dest('./pages'));
+
   gulp.src('./pages/*.html')
   .pipe(prettify({indent_char: ' ', indent_size: 2}))
   .pipe(gulp.dest('./pages/'));

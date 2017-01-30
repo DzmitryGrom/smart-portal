@@ -361,7 +361,6 @@
                         "block": "button",
                         "text": "Читать полностью",
                         "mods": {
-                          "hidden": true,
                           "link": true,
                           "pin": "right"
                         }
@@ -374,17 +373,94 @@
                     {
                       "block": "button",
                       "mods": {
-                        "round": true
+                        "round": true,
+                        "default": true
                       },
                       "content": [
                         {
-                          "block": "i-closer"
+                          "block": "i-arrow",
+                          "mods": {
+                            "to": "down"
+                          }
                         }
                       ]
                     }
                   ]
                 }, {
-                  "elem": "footer"
+                  "elem": "footer",
+                  "content": [
+                    {
+                      "block": "text",
+                      "html": "<strong>Разделы:</strong>Дизайн",
+                      "tag": "span"
+                    }, {
+                      "block": "tag",
+                      "content": [
+                        {
+                          "block": "i-tag",
+                          "tag": "i"
+                        }, {
+                          "elem": "item",
+                          "text": "Хостинг",
+                          "mods": {
+                            "border": true
+                          },
+                          "tag": "span"
+                        }, {
+                          "elem": "item",
+                          "text": "Дизайн",
+                          "mods": {
+                            "border": true
+                          },
+                          "tag": "span"
+                        }, {
+                          "elem": "item",
+                          "text": "Бизнес",
+                          "mods": {
+                            "border": true
+                          },
+                          "tag": "span"
+                        }
+                      ]
+                    }, {
+                      "block": "button",
+                      "text": "Еще 5 тегов",
+                      "mods": {
+                        "pseudo": true,
+                        "small": true
+                      }
+                    }, {
+                      "block": "text",
+                      "mods": {
+                        "pin": "right",
+                        "small": true
+                      },
+                      "content": [
+                        {
+                          "block": "i-group",
+                          "tag": "i"
+                        }, {
+                          "elem": "text",
+                          "text": 7,
+                          "tag": "span"
+                        }, {
+                          "block": "i-chat",
+                          "tag": "i"
+                        }, {
+                          "elem": "text",
+                          "text": 15,
+                          "tag": "span"
+                        }, {
+                          "block": "i-heart",
+                          "tag": "i"
+                        }, {
+                          "elem": "text",
+                          "text": 984,
+                          "tag": "span"
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             }, {
@@ -397,6 +473,9 @@
                   }
                 }, {
                   "block": "content",
+                  "attrs": {
+                    "class": "article__content"
+                  },
                   "content": [
                     {
                       "elem": "caption",
@@ -432,6 +511,100 @@
                           "pin": "right"
                         }
                       }]
+                    }
+                  ]
+                }, {
+                  "elem": "collapser",
+                  "content": [
+                    {
+                      "block": "button",
+                      "mods": {
+                        "round": true,
+                        "default": true
+                      },
+                      "content": [
+                        {
+                          "block": "i-arrow",
+                          "mods": {
+                            "to": "down"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }, {
+                  "elem": "footer",
+                  "content": [
+                    {
+                      "block": "text",
+                      "html": "<strong>Разделы:</strong>Дизайн",
+                      "tag": "span"
+                    }, {
+                      "block": "tag",
+                      "content": [
+                        {
+                          "block": "i-tag",
+                          "tag": "i"
+                        }, {
+                          "elem": "item",
+                          "text": "Хостинг",
+                          "mods": {
+                            "border": true
+                          },
+                          "tag": "span"
+                        }, {
+                          "elem": "item",
+                          "text": "Дизайн",
+                          "mods": {
+                            "border": true
+                          },
+                          "tag": "span"
+                        }, {
+                          "elem": "item",
+                          "text": "Бизнес",
+                          "mods": {
+                            "border": true
+                          },
+                          "tag": "span"
+                        }
+                      ]
+                    }, {
+                      "block": "button",
+                      "text": "Еще 5 тегов",
+                      "mods": {
+                        "pseudo": true,
+                        "small": true
+                      }
+                    }, {
+                      "block": "text",
+                      "mods": {
+                        "pin": "right",
+                        "small": true
+                      },
+                      "content": [
+                        {
+                          "block": "i-group",
+                          "tag": "i"
+                        }, {
+                          "elem": "text",
+                          "text": 7,
+                          "tag": "span"
+                        }, {
+                          "block": "i-chat",
+                          "tag": "i"
+                        }, {
+                          "elem": "text",
+                          "text": 15,
+                          "tag": "span"
+                        }, {
+                          "block": "i-heart",
+                          "tag": "i"
+                        }, {
+                          "elem": "text",
+                          "text": 984,
+                          "tag": "span"
+                        }
+                      ]
                     }
                   ]
                 }

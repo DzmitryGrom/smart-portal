@@ -241,6 +241,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.category .tag__item_border {
+  margin: 0 0 9px 0;
+}
 .category__item {
   display: block;
   color: #7e7e7e;
@@ -353,9 +356,13 @@ body {
 .category__item_icon_group:before {
   background-image: url(interface/icons/group.svg);
 }
+.tag .i-tag {
+  margin-right: 10px;
+}
 .tag__item {
   cursor: default;
   font-family: "ProximaNovaReg";
+  display: inline-block;
 }
 .tag__item_closer {
   color: #7f838a;
@@ -418,15 +425,35 @@ body {
   line-height: 28px;
   padding: 0 16px;
   margin: 0;
-  min-width: 100px;
   white-space: nowrap;
   -webkit-appearance: none;
+}
+.button_default {
+  background-color: #fff;
 }
 .button:focus {
   outline: none;
 }
 .button:disabled {
   cursor: default;
+}
+.button {
+  min-width: 100px;
+}
+.button_round .i-arrow_to_up {
+  top: 8px;
+  left: -4.5px;
+}
+.button_round .i-arrow_to_down {
+  top: 5px;
+  left: -4.5px;
+}
+.button_pseudo {
+  border-color: transparent;
+}
+.button_small {
+  font-size: 12px;
+  line-height: 20px;
 }
 .button_success {
   color: #43c9ae;
@@ -463,7 +490,6 @@ body {
   line-height: 20px;
   text-align: center;
   padding: 0 10px;
-  margin: 0 0 9px 0;
   min-width: 63px;
 }
 .button_link {
@@ -518,11 +544,14 @@ body {
   position: relative;
   z-index: 1;
 }
-.article .content__footer .button_hidden {
-  display: none;
-}
 .article .content__footer .button_pin_right {
   margin-left: auto;
+}
+.article {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+  margin-bottom: 14px;
 }
 .article .caption {
   display: flex;
@@ -538,6 +567,11 @@ body {
   display: inline-block;
   font-family: "ProximaNovaBold";
   font-size: 21px;
+}
+.article__collapser {
+  text-align: center;
+  margin-bottom: -17px;
+  margin-top: -17px;
 }
 .article-cover {
   background-size: cover;
@@ -573,4 +607,101 @@ body {
   position: relative;
   width: 4px;
   height: 4px;
+}
+.button_round {
+  font-size: 0;
+  width: 34px;
+  height: 34px;
+  min-width: auto;
+}
+.i-arrow {
+  display: inline-block;
+  border-right: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
+  box-sizing: border-box;
+  width: 9px;
+  height: 9px;
+  vertical-align: baseline;
+  transform-origin: center;
+  line-height: 1;
+  position: relative;
+  bottom: 2px;
+  transition: transform .3s;
+}
+.i-arrow_to_down {
+  transform: rotate(45deg);
+}
+.i-arrow_to_up {
+  transform: rotate(-135deg);
+}
+.article__footer {
+  border-top: 1px solid #f7f7f7;
+  display: flex;
+}
+.article__footer {
+  padding: 17px 24px;
+}
+.article__footer .text {
+  display: inline-block;
+  font-family: "ProximaNovaLight";
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 20px;
+}
+.article__footer .text_small {
+  font-size: 12px;
+}
+.article__footer .text_pin_right {
+  margin-left: auto;
+  margin-right: 0;
+}
+.article__footer .text__text {
+  vertical-align: middle;
+}
+.article__footer .text__text ~ i {
+  margin-left: 20px;
+}
+.article__footer .text strong {
+  font-family: "ProximaNovaReg";
+  margin-right: .3em;
+}
+.i-tag {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  vertical-align: middle;
+  background-image: url(interface/icons/tag.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.i-group {
+  display: inline-block;
+  width: 22px;
+  height: 19px;
+  vertical-align: middle;
+  background-image: url(interface/icons/group.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.i-chat {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background-image: url(interface/icons/chat.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.i-heart {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+  background-image: url(interface/icons/heart.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
