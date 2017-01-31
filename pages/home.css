@@ -699,7 +699,7 @@ body {
   width: 100%;
 }
 .article__footer {
-  padding: 17px 24px;
+  padding: 30px 24px 17px 24px;
 }
 .article__footer .text {
   display: inline-block;
