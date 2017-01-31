@@ -2,7 +2,10 @@
   "block": "page",
   "title": "home",
   "head": [
-    { "elem": "css", "url": "home.css"}
+    {
+      "elem": "css",
+      "url": "home.css"
+    }
   ],
   "content": [
     {
@@ -17,7 +20,6 @@
           "content": [
             {
               "elem": "link",
-
               "html": "База знаний",
               "mods": {
                 "newspaper": true,
@@ -103,8 +105,7 @@
           "content": [
             {
               "block": "category",
-              "attrs": {
-              },
+              "attrs": {},
               "content": [{
                 "elem": "item",
                 "text": "Разделы",
@@ -160,8 +161,7 @@
               }]
             }, {
               "block": "category",
-              "attrs": {
-              },
+              "attrs": {},
               "content": [{
                 "elem": "item",
                 "text": "Добавить раздел",
@@ -252,8 +252,8 @@
                   "input": true
                 },
                 "content": [{
-                    "block": "i-search",
-                    "tag": "i"
+                  "block": "i-search",
+                  "tag": "i"
                   }]
               }, {
                 "block": "tag",
@@ -342,11 +342,13 @@
                           "attrs": {
                             "class": "content__caption-text"
                           },
-                          "text": "200 шаблонов эффективных заголовков"
+                          "text": "200 шаблонов эффективных заголовков",
+                          "tag": "span"
                         }, {
                           "attrs": {
                             "class": "content__caption-action"
                           },
+                          "tag": "span",
                           "content": [
                             {
                               "block": "i-more",
@@ -500,11 +502,13 @@
                           "attrs": {
                             "class": "content__caption-text"
                           },
-                          "text": "За 25 тысяч километров я не потратил на заправку ..."
+                          "text": "За 25 тысяч километров я не потратил на заправку ...",
+                          "tag": "span"
                         }, {
                           "attrs": {
                             "class": "content__caption-action"
                           },
+                          "tag": "span",
                           "content": [
                             {
                               "block": "i-more",
@@ -522,11 +526,11 @@
                       },
                       "content": [
                         {
-                          "block": "text",
-                          "text": "vc.ru"
-                        }, {
                           "block": "i-link",
                           "tag": "i"
+                        }, {
+                          "block": "text",
+                          "text": "vc.ru"
                         }
                       ]
                     }, {
@@ -652,11 +656,13 @@
                           "attrs": {
                             "class": "content__caption-text"
                           },
-                          "text": "200 шаблонов эффективных заголовков"
+                          "text": "200 шаблонов эффективных заголовков",
+                          "tag": "span"
                         }, {
                           "attrs": {
                             "class": "content__caption-action"
                           },
+                          "tag": "span",
                           "content": [
                             {
                               "block": "i-more",

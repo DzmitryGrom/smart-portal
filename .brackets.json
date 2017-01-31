@@ -7,5 +7,8 @@
             "linting.usePreferredOnly": true
         }
     },
-    "linting.JSHint.collapsed": true
+    "linting.JSHint.collapsed": true,
+    "jshint.options" : {
+        "esnext": true
+    }
 }
