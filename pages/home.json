@@ -390,7 +390,8 @@
                           "block": "i-arrow",
                           "mods": {
                             "to": "down"
-                          }
+                          },
+                          "tag": "i"
                         }
                       ]
                     }
@@ -552,7 +553,8 @@
                           "block": "i-arrow",
                           "mods": {
                             "to": "down"
-                          }
+                          },
+                          "tag": "i"
                         }
                       ]
                     }
@@ -700,7 +702,8 @@
                           "block": "i-arrow",
                           "mods": {
                             "to": "up"
-                          }
+                          },
+                          "tag": "i"
                         }
                       ]
                     }
