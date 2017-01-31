@@ -86,6 +86,7 @@ body {
 .header__logo b {
   color: #4c4c4c;
   font-family: AvenirNextCyrBold;
+  font-weight: normal;
   display: inline-block;
   padding: 0 4px;
   margin: 0 11px 0 0;
