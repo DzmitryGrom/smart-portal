@@ -724,3 +724,22 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.content-filter__type {
+  color: #929292;
+  font-size: 14px;
+  font-family: "ProximaNovaLight";
+}
+.content-filter__type-value {
+  color: #2a2a2a;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "ProximaNovaLight";
+  min-width: 60px;
+  display: inline-block;
+}
+.content-filter__type-value .i-arrow {
+  float: right;
+  position: relative;
+  top: 2px;
+  left: 5px;
+}

@@ -619,31 +619,27 @@
           "block": "sidebar",
           "content": [
             {
-              "block": "text",
-              "text": "Тип:",
-              "tag": "span"
-            }, {
-              "block": "text",
-              "text": "Все",
-              "tag": "span"
-            }, {
-              "block": "i-arrow",
-              "tag": "i",
-              "mods": {
-                "to": "down"
-              }
-            }, {
-              "block": "i-arrow",
-              "tag": "i",
-              "mods": {
-                "to": "down"
-              }
-            }, {
-              "block": "i-arrow",
-              "tag": "i",
-              "mods": {
-                "to": "down"
-              }
+              "block": "content-filter",
+              "content": [
+                {
+                  "elem": "type",
+                  "text": "Тип:",
+                  "tag": "span"
+                }, {
+                  "elem": "type-value",
+                  "text": "Все",
+                  "tag": "span",
+                  "content": [
+                    {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      },
+                      "tag": "i"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
