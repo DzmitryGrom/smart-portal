@@ -145,6 +145,12 @@ body {
   color: #61a3da;
   border-bottom: 4px solid;
 }
+.header-side {
+  display: flex;
+  min-width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
 .header-side__help {
   display: inline-block;
   vertical-align: middle;

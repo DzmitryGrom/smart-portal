@@ -62,14 +62,17 @@
         }, {
           "block": "header-side",
           "content": [{
-            "elem": "help"
+            "elem": "help",
+            "tag": "span"
           }, {
-              "elem": "search"
+            "elem": "search",
+            "tag": "span"
           }, {
-              "elem": "notification",
-              "mods": {
-                "active": true
-              }
+            "elem": "notification",
+            "mods": {
+              "active": true
+            },
+            "tag": "span"
           }, {
             "block": "header-profile",
             "content": [
