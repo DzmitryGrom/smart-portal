@@ -765,6 +765,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.content-filter {
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+}
 .content-filter__type {
   color: #929292;
   font-size: 14px;
@@ -776,6 +781,7 @@ body {
   font-size: 14px;
   font-family: "ProximaNovaLight";
   min-width: 60px;
+  margin-left: 0.5em;
   display: inline-block;
 }
 .content-filter__type-value .i-arrow {
@@ -783,4 +789,30 @@ body {
   position: relative;
   top: 2px;
   left: 5px;
+}
+.content-filter__list {
+  margin-left: auto;
+}
+.i-list {
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  vertical-align: middle;
+  background-image: url(interface/icons/list.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.content-filter__squad {
+  margin-left: 22px;
+}
+.i-squad {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  background-image: url(interface/icons/squares.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }

@@ -801,6 +801,24 @@
                       "tag": "i"
                     }
                   ]
+                }, {
+                  "elem": "list",
+                  "tag": "span",
+                  "content": [
+                    {
+                      "block": "i-list",
+                      "tag": "i"
+                    }
+                  ]
+                }, {
+                  "elem": "squad",
+                  "tag": "span",
+                  "content": [
+                    {
+                      "block": "i-squad",
+                      "tag": "i"
+                    }
+                  ]
                 }
               ]
             }
