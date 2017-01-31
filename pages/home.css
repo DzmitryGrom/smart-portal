@@ -81,6 +81,7 @@ body {
   flex: 0 1 auto;
   width: 176px;
   font-family: AvenirNextCyrReg;
+  font-weight: normal;
 }
 .header__logo b {
   color: #4c4c4c;
@@ -558,6 +559,7 @@ body {
   display: inline-block;
   font-family: "ProximaNovaBold";
   font-size: 21px;
+  font-weight: normal;
 }
 .article .content__caption-action {
   font-size: 0;
