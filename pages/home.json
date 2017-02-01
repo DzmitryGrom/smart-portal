@@ -161,7 +161,6 @@
               }]
             }, {
               "block": "category",
-              "attrs": {},
               "content": [{
                 "elem": "item",
                 "text": "Добавить раздел",
@@ -183,7 +182,321 @@
                   "icon_group": true,
                   "drop": true,
                   "input": true
-                }
+                },
+                "content": [
+                  {
+                    "block": "tooltip",
+                    "mods": {
+                      "footer": true
+                    },
+                    "attrs": {
+                      "style": "height: 240px; width: 256px; left: -24px;"
+                    },
+                    "content": [
+                      {
+                        "elem": "arrow",
+                        "attrs": {
+                          "style": "left: 36px"
+                        }
+                      }, {
+                        "block": "content",
+                        "attrs": {
+                          "class": "tooltip__content"
+                        },
+                        "content": [
+                          {
+                            "block": "checkbox-group",
+                            "content": [
+                              {
+                                "elem": "title",
+                                "content": [
+                                  {
+                                    "block": "checkbox-label",
+                                    "content": [
+                                      {
+                                        "block": "checkbox"
+                                      }, {
+                                        "block": "checkbox-text",
+                                        "text": "Дизайнеры"
+                                      }
+                                    ]
+                                  }, {
+                                    "block": "i-arrow",
+                                    "mods": {
+                                      "to": "down"
+                                    }
+                                  }
+                                ]
+                              }, {
+                                "elem": "item",
+                                "content": [
+                                  {
+                                    "block": "checkbox-label",
+                                    "content": [
+                                      {
+                                        "block": "pic",
+                                        "attrs": {
+                                          "width": 20,
+                                          "height": 20,
+                                          "src": "http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg"
+                                        }
+                                      }, {
+                                        "block": "checkbox-text",
+                                        "text": "Алиса Волшебная"
+                                      }, {
+                                        "block": "checkbox"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }, {
+                                "elem": "item",
+                                "content": [
+                                  {
+                                    "block": "checkbox-label",
+                                    "content": [
+                                      {
+                                        "block": "pic",
+                                        "attrs": {
+                                          "width": 20,
+                                          "height": 20,
+                                          "src": "https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40"
+                                        }
+                                      }, {
+                                        "block": "checkbox-text",
+                                        "text": "Иван Горкин"
+                                      }, {
+                                        "block": "checkbox"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }, {
+                            "block": "checkbox-group",
+                            "content": [
+                              {
+                                "elem": "title",
+                                "content": [
+                                  {
+                                    "block": "checkbox-label",
+                                    "content": [
+                                      {
+                                        "block": "checkbox"
+                                      }, {
+                                        "block": "checkbox-text",
+                                        "text": "Руководители"
+                                      }
+                                    ]
+                                  }, {
+                                    "block": "i-arrow",
+                                    "mods": {
+                                      "to": "down"
+                                    }
+                                  }
+                                ]
+                              }, {
+                                "elem": "item",
+                                "content": [
+                                  {
+                                    "block": "checkbox-label",
+                                    "content": [
+                                      {
+                                        "block": "pic",
+                                        "attrs": {
+                                          "width": 20,
+                                          "height": 20,
+                                          "src": "http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg"
+                                        }
+                                      }, {
+                                        "block": "checkbox-text",
+                                        "text": "Алиса Волшебная"
+                                      }, {
+                                        "block": "checkbox"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }, {
+                                "elem": "item",
+                                "content": [
+                                  {
+                                    "block": "checkbox-label",
+                                    "content": [
+                                      {
+                                        "block": "pic",
+                                        "attrs": {
+                                          "width": 20,
+                                          "height": 20,
+                                          "src": "https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40"
+                                        }
+                                      }, {
+                                        "block": "checkbox-text",
+                                        "text": "Иван Горкин"
+                                      }, {
+                                        "block": "checkbox"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }, {
+                            "block": "checkbox-group",
+                            "content": [
+                              {
+                                "elem": "title",
+                                "content": [
+                                  {
+                                    "block": "checkbox-label",
+                                    "content": [
+                                      {
+                                        "block": "checkbox"
+                                      }, {
+                                        "block": "checkbox-text",
+                                        "text": "Менеджеры"
+                                      }
+                                    ]
+                                  }, {
+                                    "block": "i-arrow",
+                                    "mods": {
+                                      "to": "down"
+                                    }
+                                  }
+                                ]
+                              }, {
+                                "elem": "item",
+                                "content": [
+                                  {
+                                    "block": "checkbox-label",
+                                    "content": [
+                                      {
+                                        "block": "pic",
+                                        "attrs": {
+                                          "width": 20,
+                                          "height": 20,
+                                          "src": "http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg"
+                                        }
+                                      }, {
+                                        "block": "checkbox-text",
+                                        "text": "Алиса Волшебная"
+                                      }, {
+                                        "block": "checkbox"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }, {
+                                "elem": "item",
+                                "content": [
+                                  {
+                                    "block": "checkbox-label",
+                                    "content": [
+                                      {
+                                        "block": "pic",
+                                        "attrs": {
+                                          "width": 20,
+                                          "height": 20,
+                                          "src": "https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40"
+                                        }
+                                      }, {
+                                        "block": "checkbox-text",
+                                        "text": "Иван Горкин"
+                                      }, {
+                                        "block": "checkbox"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }, {
+                            "block": "checkbox-group",
+                            "mods": {
+                              "closed": true
+                            },
+                            "content": [
+                              {
+                                "elem": "title",
+                                "content": [
+                                  {
+                                    "block": "checkbox-label",
+                                    "content": [
+                                      {
+                                        "block": "checkbox"
+                                      }, {
+                                        "block": "checkbox-text",
+                                        "text": "Стажеры"
+                                      }
+                                    ]
+                                  }, {
+                                    "block": "i-arrow",
+                                    "mods": {
+                                      "to": "down"
+                                    }
+                                  }
+                                ]
+                              }, {
+                                "elem": "item",
+                                "content": [
+                                  {
+                                    "block": "checkbox-label",
+                                    "content": [
+                                      {
+                                        "block": "pic",
+                                        "attrs": {
+                                          "width": 20,
+                                          "height": 20,
+                                          "src": "http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg"
+                                        }
+                                      }, {
+                                        "block": "checkbox-text",
+                                        "text": "Алиса Волшебная"
+                                      }, {
+                                        "block": "checkbox"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }, {
+                                "elem": "item",
+                                "content": [
+                                  {
+                                    "block": "checkbox-label",
+                                    "content": [
+                                      {
+                                        "block": "pic",
+                                        "attrs": {
+                                          "width": 20,
+                                          "height": 20,
+                                          "src": "https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40"
+                                        }
+                                      }, {
+                                        "block": "checkbox-text",
+                                        "text": "Иван Горкин"
+                                      }, {
+                                        "block": "checkbox"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }, {
+                        "elem": "footer",
+                        "content": [
+                          {
+                            "block": "search",
+                            "html": "<input type='search' placeholder='Найти участника'>"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }, {
                 "block": "tag",
                 "content": [{
