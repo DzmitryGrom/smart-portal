@@ -74,14 +74,71 @@
             "mods": {
               "active": true
             },
-            "tag": "span"
+            "tag": "span",
+            "content": [
+              {
+                "block": "tooltip",
+                "attrs": {
+                  "style": "width: 240px; right: -10px"
+                },
+                "content": [
+                  {
+                    "elem": "arrow",
+                    "attrs": {
+                      "style": "right: 22px"
+                    }
+                  }, {
+                    "block": "content",
+                    "attrs": {
+                      "class": "tooltip__content tooltip__content_default"
+                    },
+                    "content": [
+                      {
+                        "block": "list",
+                        "content": [
+                          {
+                            "elem": "item",
+                            "mods": {
+                              "color": "warning"
+                            },
+                            "content": [
+                              {
+                                "block": "text",
+                                "text": "Updates Improved Parsing and Import Engine"
+                              }
+                            ]
+                          }, {
+                            "elem": "item",
+                            "mods": {
+                              "color": "default"
+                            },
+                            "content": [
+                              {
+                                "block": "text",
+                                "text": "Updates Improved Parsing and Import"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }, {
             "block": "header-profile",
             "content": [
               {
                 "elem": "avatar",
-                "html": "<img src='interface/avatar.jpg'>",
-                "tag": "span"
+                "content": [
+                  {
+                    "block": "pic",
+                    "attrs": {
+                      "src": "interface/avatar.jpg"
+                    }
+                  }
+                ]
               }, {
                 "elem": "name",
                 "text": "Игорь Иванов",
@@ -649,7 +706,6 @@
                   "content": [
                     {
                       "elem": "caption",
-                      "tag": "h1",
                       "content": [
                         {
                           "attrs": {
@@ -661,7 +717,6 @@
                           "attrs": {
                             "class": "content__caption-action"
                           },
-                          "tag": "span",
                           "content": [
                             {
                               "block": "i-more",
@@ -677,6 +732,79 @@
                                   "attrs": {
                                     "style": "right: 32px"
                                   }
+                                }, {
+                                  "block": "content",
+                                  "attrs": {
+                                    "class": "tooltip__content tooltip__content_default"
+                                  },
+                                  "content": [
+                                    {
+                                      "block": "list",
+                                      "content": [
+                                        {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Редактировать"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Закрепить запись"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Добавить в избранное"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Скопировать ссылку"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Удалить в корзину"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
                                 }
                               ]
                             }
@@ -806,7 +934,7 @@
                   "block": "sidebar",
                   "content": [
                     {
-                      "elem": "pic",
+                      "block": "pic",
                       "attrs": {
                         "src": "https://s-media-cache-ak0.pinimg.com/736x/f1/e2/cd/f1e2cddda3cea1d620c03d883ad05b02.jpg",
                         "width": "65"
@@ -823,7 +951,6 @@
                   "content": [
                     {
                       "elem": "caption",
-                      "tag": "h1",
                       "content": [
                         {
                           "attrs": {
@@ -835,7 +962,6 @@
                           "attrs": {
                             "class": "content__caption-action"
                           },
-                          "tag": "span",
                           "content": [
                             {
                               "block": "i-more",
@@ -978,7 +1104,6 @@
                   "content": [
                     {
                       "elem": "caption",
-                      "tag": "h1",
                       "content": [
                         {
                           "attrs": {
@@ -990,7 +1115,6 @@
                           "attrs": {
                             "class": "content__caption-action"
                           },
-                          "tag": "span",
                           "content": [
                             {
                               "block": "i-more",
