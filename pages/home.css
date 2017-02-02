@@ -189,7 +189,8 @@ body {
   position: absolute;
   width: 7px;
   height: 7px;
-  top: -1px;
+  top: 7px;
+  margin-left: -13px;
   left: 100%;
 }
 .header-side__notification > .tooltip {
@@ -275,6 +276,7 @@ body {
   font-size: 14px;
   padding-top: .4em;
   padding-bottom: .4em;
+  border: 1px solid transparent;
   margin-left: 20px;
   color: transparent;
 }
@@ -293,6 +295,9 @@ body {
 .list__item_color_info {
   color: #61a3da;
 }
+.list__item_dividered_top {
+  border-top-color: #f6f6f6;
+}
 .list__item > .text {
   color: #979797;
 }
@@ -304,6 +309,7 @@ body {
 .header-profile {
   display: inline-block;
   vertical-align: middle;
+  position: relative;
 }
 .header-profile__avatar {
   display: inline-block;

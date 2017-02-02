@@ -146,6 +146,59 @@
               }, {
                 "elem": "arrow",
                 "tag": "span"
+              }, {
+                "block": "tooltip",
+                "attrs": {
+                  "style": "width: 170px; right: -14px"
+                },
+                "content": [
+                  {
+                    "elem": "arrow",
+                    "attrs": {
+                      "style": "right: 10px"
+                    }
+                  }, {
+                    "block": "content",
+                    "attrs": {
+                      "class": "tooltip__content tooltip__content_default"
+                    },
+                    "content": [
+                      {
+                        "block": "list",
+                        "content": [
+                          {
+                            "elem": "item",
+                            "content": [
+                              {
+                                "block": "text",
+                                "text": "Профиль"
+                              }
+                            ]
+                          }, {
+                            "elem": "item",
+                            "content": [
+                              {
+                                "block": "text",
+                                "text": "Настройки"
+                              }
+                            ]
+                          }, {
+                            "elem": "item",
+                            "mods": {
+                              "dividered": "top"
+                            },
+                            "content": [
+                              {
+                                "block": "text",
+                                "text": "Выход"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           }]
@@ -722,7 +775,7 @@
                               "block": "i-more",
                               "tag": "i"
                             }, {
-                              "block": "tooltip", 
+                              "block": "tooltip",
                               "attrs": {
                                 "style": "width: 220px; right: -20px"
                               },
