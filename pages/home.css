@@ -963,6 +963,7 @@ body {
   display: flex;
   padding: 5px;
   justify-content: space-between;
+  align-items: center;
 }
 .content-filter__type {
   color: #929292;
@@ -975,7 +976,9 @@ body {
   font-size: 14px;
   font-family: "ProximaNovaLight";
   min-width: 60px;
+  padding: 0 10px;
   margin-left: 0.5em;
+  position: relative;
   display: inline-block;
 }
 .content-filter__type-value .i-arrow {
@@ -983,6 +986,13 @@ body {
   position: relative;
   top: 2px;
   left: 5px;
+}
+.content-filter__type-value > .tooltip {
+  margin-top: -4px;
+  display: none;
+}
+.content-filter__type-value:hover > .tooltip {
+  display: block;
 }
 .content-filter__list {
   cursor: pointer;

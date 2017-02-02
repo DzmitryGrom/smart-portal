@@ -1306,6 +1306,68 @@
                   "tag": "span",
                   "content": [
                     {
+                      "block": "tooltip",
+                      "attrs": {
+                        "style": "width: 130px; right: -9px"
+                      },
+                      "content": [
+                        {
+                          "elem": "arrow",
+                          "attrs": {
+                            "style": "right: 10px"
+                          }
+                  }, {
+                          "block": "content",
+                          "attrs": {
+                            "class": "tooltip__content tooltip__content_default"
+                          },
+                          "content": [
+                            {
+                              "block": "list",
+                              "content": [
+                                {
+                                  "elem": "item",
+                                  "mods": {
+                                    "color": "info"
+                                  },
+                                  "content": [
+                                    {
+                                      "block": "text",
+                                      "text": "Все"
+                              }
+                            ]
+                          }, {
+                                  "elem": "item",
+                                  "content": [
+                                    {
+                                      "block": "text",
+                                      "text": "Видео"
+                              }
+                            ]
+                          }, {
+                                  "elem": "item",
+                                  "content": [
+                                    {
+                                      "block": "text",
+                                      "text": "Ссылка"
+                              }
+                            ]
+                          }, {
+                                  "elem": "item",
+                                  "content": [
+                                    {
+                                      "block": "text",
+                                      "text": "Статья"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+                    {
                       "block": "i-arrow",
                       "mods": {
                         "to": "down"
