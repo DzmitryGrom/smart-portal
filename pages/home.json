@@ -384,6 +384,9 @@
                             ]
                           }, {
                             "block": "checkbox-group",
+                            "mods": {
+                              "closed": true
+                            },
                             "content": [
                               {
                                 "elem": "title",
