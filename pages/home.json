@@ -670,15 +670,14 @@
               "block": "category",
               "content": [{
                 "elem": "item",
-                "html": "<input type='search' placeholder='Искать'>",
                 "mods": {
                   "submit": true,
                   "submit_search": true,
                   "input": true
                 },
                 "content": [{
-                  "block": "i-search",
-                  "tag": "i"
+                  "block": "search",
+                  "html": "<input type='search' placeholder='Искать'>"
                   }]
               }, {
                 "block": "tag",
@@ -1310,7 +1309,7 @@
                   "content": [
                     {
                       "block": "text",
-                      "text": "Исполинский саблезубый",
+                      "text": "Все",
                       "tag": "span"
                     },
                     {

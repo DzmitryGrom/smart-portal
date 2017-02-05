@@ -447,7 +447,8 @@ body {
   margin-bottom: 11px;
   line-height: 30px;
 }
-.category__item_input > input {
+.category__item_input > input,
+.category__item_input .search > input {
   font-family: "ProximaNovaReg";
   font-size: 14px;
   padding: 0 11px;
@@ -459,13 +460,16 @@ body {
   box-sizing: border-box;
   -webkit-appearance: none;
 }
-.category__item_input > input::-webkit-input-placeholder {
+.category__item_input > input::-webkit-input-placeholder,
+.category__item_input .search > input::-webkit-input-placeholder {
   color: #b1b1b1;
 }
-.category__item_input > input::-webkit-search-cancel-button {
+.category__item_input > input::-webkit-search-cancel-button,
+.category__item_input .search > input::-webkit-search-cancel-button {
   display: none;
 }
-.category__item_input > input:focus {
+.category__item_input > input:focus,
+.category__item_input .search > input:focus {
   outline: none;
 }
 .category__item_input.category__item_drop {
@@ -498,7 +502,7 @@ body {
   background-image: url(interface/icons/group.svg);
 }
 .tooltip_footer .tooltip__content {
-  bottom: 40px;
+  bottom: 44px;
 }
 .checkbox-group {
   width: calc(100% - 14px);
@@ -598,6 +602,38 @@ body {
   bottom: 10px;
   left: 10px;
   right: 10px;
+}
+.tooltip__footer .search {
+  border: 1px solid #dedede;
+  border-radius: 4px;
+}
+.tooltip__footer .search input[type=search] {
+  font-family: "ProximaNovaReg";
+  font-size: 12px;
+  padding: 0 11px;
+  display: inline-block;
+  line-height: 28px;
+  margin-right: -27px;
+  padding-right: 30px;
+}
+.search input {
+  margin: 0;
+  border: none;
+  display: inline-block;
+  line-height: inherit;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+}
+.search input::-webkit-input-placeholder {
+  color: #b1b1b1;
+}
+.search input::-webkit-search-cancel-button {
+  display: none;
+}
+.search input:focus {
+  outline: none;
 }
 .i-search {
   display: inline-block;
@@ -707,7 +743,11 @@ body {
 .button_success {
   color: #43c9ae;
 }
-.category__item_submit input {
+.category__item_submit {
+  z-index: inherit;
+}
+.category__item_submit > input,
+.category__item_submit .search > input {
   margin-right: -27px;
   padding-right: 30px;
 }
@@ -1008,7 +1048,9 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  padding: 5px 0;
+  padding: 5px;
+  margin-bottom: -5px;
+  min-width: 5em;
 }
 .content-filter__type-value .i-arrow {
   float: right;
