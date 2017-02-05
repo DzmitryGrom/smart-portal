@@ -776,6 +776,10 @@ body {
   color: #61a3da;
   border: none;
 }
+.button_link_success {
+  border: none;
+  color: #43c9ae;
+}
 .article {
   background-color: #fff;
   display: flex;
@@ -788,6 +792,8 @@ body {
   padding: 24px;
   display: inline-block;
   box-sizing: border-box;
+  font-family: "ProximaNovaReg";
+  font-size: 14px;
   flex: 1 1 500px;
 }
 .article__link {

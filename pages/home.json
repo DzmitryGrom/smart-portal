@@ -986,6 +986,29 @@
               "block": "article",
               "content": [
                 {
+                  "block": "content",
+                  "attrs": {
+                    "class": "article__content"
+                  },
+                  "content": [{
+                      "block": "text",
+                      "html": "Статья удалена",
+                      "tag": "span"
+                    }, {
+                      "block": "button",
+                      "text": "Отменить удаление",
+                      "mods": {
+                        "link": "success",
+                        "pin": "right"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }, {
+              "block": "article",
+              "content": [
+                {
                   "block": "sidebar",
                   "content": [
                     {
