@@ -74,7 +74,6 @@
             "mods": {
               "active": true
             },
-            "tag": "span",
             "content": [
               {
                 "block": "tooltip",
@@ -950,7 +949,8 @@
                       "block": "text",
                       "mods": {
                         "pin": "right",
-                        "small": true
+                        "small": true,
+                        "nowrap": true
                       },
                       "content": [
                         {
@@ -1111,7 +1111,8 @@
                       "block": "text",
                       "mods": {
                         "pin": "right",
-                        "small": true
+                        "small": true,
+                        "nowrap": true
                       },
                       "content": [
                         {
@@ -1258,7 +1259,8 @@
                       "block": "text",
                       "mods": {
                         "pin": "right",
-                        "small": true
+                        "small": true,
+                        "nowrap": true
                       },
                       "content": [
                         {
@@ -1302,9 +1304,12 @@
                   "tag": "span"
                 }, {
                   "elem": "type-value",
-                  "text": "Все",
-                  "tag": "span",
                   "content": [
+                    {
+                      "block": "text",
+                      "text": "Исполинский саблезубый",
+                      "tag": "span"
+                    },
                     {
                       "block": "tooltip",
                       "attrs": {

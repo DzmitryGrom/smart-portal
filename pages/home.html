@@ -4,6 +4,7 @@
 <head>
   <title>home</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
   <link href='home.css' rel='stylesheet' type='text/css'>
 </head>
 
@@ -19,21 +20,21 @@
     <div class="header-side">
       <span class="header-side__help"></span>
       <span class="header-side__search"></span>
-      <span class="header-side__notification header-side__notification_active">
-<div class="tooltip" style="width: 240px; right: -10px">
-<i class="tooltip__arrow" style="right: 22px"></i>
-<div class="content tooltip__content tooltip__content_default">
-<ul class="list">
-<li class="list__item list__item_color_warning">
-<div class="text">Updates Improved Parsing and Import Engine</div>
-</li>
-<li class="list__item list__item_color_default">
-<div class="text">Updates Improved Parsing and Import</div>
-</li>
-</ul>
-</div>
-</div>
-</span>
+      <div class="header-side__notification header-side__notification_active">
+        <div class="tooltip" style="width: 240px; right: -10px">
+          <i class="tooltip__arrow" style="right: 22px"></i>
+          <div class="content tooltip__content tooltip__content_default">
+            <ul class="list">
+              <li class="list__item list__item_color_warning">
+                <div class="text">Updates Improved Parsing and Import Engine</div>
+              </li>
+              <li class="list__item list__item_color_default">
+                <div class="text">Updates Improved Parsing and Import</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="header-profile">
         <div class="header-profile__avatar">
           <img class="pic" src="interface/avatar.jpg" alt="">
@@ -257,7 +258,7 @@
             <span class="tag__item tag__item_border">Бизнес</span>
           </div>
           <button class="button button_pseudo button_small" type="button">Еще 5 тегов</button>
-          <div class="text text_pin_right text_small">
+          <div class="text text_pin_right text_small text_nowrap">
             <i class="i-group"></i>
             <span class="text__text">7</span>
             <i class="i-chat"></i>
@@ -298,7 +299,7 @@
             <span class="tag__item tag__item_border">Бизнес</span>
           </div>
           <button class="button button_pseudo button_small" type="button">Еще 5 тегов</button>
-          <div class="text text_pin_right text_small">
+          <div class="text text_pin_right text_small text_nowrap">
             <i class="i-group"></i>
             <span class="text__text">7</span>
             <i class="i-chat"></i>
@@ -339,7 +340,7 @@
             <span class="tag__item tag__item_border">Бизнес</span>
           </div>
           <button class="button button_pseudo button_small" type="button">Еще 5 тегов</button>
-          <div class="text text_pin_right text_small">
+          <div class="text text_pin_right text_small text_nowrap">
             <i class="i-group"></i>
             <span class="text__text">7</span>
             <i class="i-chat"></i>
@@ -353,28 +354,29 @@
     <div class="sidebar">
       <div class="content-filter">
         <span class="content-filter__type">Тип:</span>
-        <span class="content-filter__type-value">Все
-<div class="tooltip" style="width: 130px; right: -9px">
-<i class="tooltip__arrow" style="right: 10px"></i>
-<div class="content tooltip__content tooltip__content_default">
-<ul class="list">
-<li class="list__item list__item_color_info">
-<div class="text">Все</div>
-</li>
-<li class="list__item">
-<div class="text">Видео</div>
-</li>
-<li class="list__item">
-<div class="text">Ссылка</div>
-</li>
-<li class="list__item">
-<div class="text">Статья</div>
-</li>
-</ul>
-</div>
-</div>
-<i class="i-arrow i-arrow_to_down"></i>
-</span>
+        <div class="content-filter__type-value">
+          <span class="text">Исполинский саблезубый</span>
+          <div class="tooltip" style="width: 130px; right: -9px">
+            <i class="tooltip__arrow" style="right: 10px"></i>
+            <div class="content tooltip__content tooltip__content_default">
+              <ul class="list">
+                <li class="list__item list__item_color_info">
+                  <div class="text">Все</div>
+                </li>
+                <li class="list__item">
+                  <div class="text">Видео</div>
+                </li>
+                <li class="list__item">
+                  <div class="text">Ссылка</div>
+                </li>
+                <li class="list__item">
+                  <div class="text">Статья</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <i class="i-arrow i-arrow_to_down"></i>
+        </div>
         <span class="content-filter__list">
 <i class="i-list"></i>
 </span>

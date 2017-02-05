@@ -64,7 +64,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0 calc((100% - 1336px) / 2);
+  padding: 0 calc((100% - 1230px) / 2);
   min-height: 75px;
   width: 100%;
 }
@@ -197,7 +197,8 @@ body {
   margin-top: -10px;
   display: none;
 }
-.header-side__notification:hover > .tooltip {
+.header-side__notification:hover > .tooltip,
+.header-side__notification.hover > .tooltip {
   display: inherit;
 }
 .tooltip {
@@ -261,10 +262,6 @@ body {
   margin-left: 4px;
   top: -7px;
   transform: rotate(45deg);
-}
-.content {
-  flex: 1 0 auto;
-  max-width: 782px;
 }
 .list {
   padding: 0;
@@ -347,11 +344,17 @@ body {
 .main {
   background-color: #f6f9fb;
   box-sizing: border-box;
-  padding: 20px calc((100% - 1336px) / 2);
+  padding: 20px calc((100% - 1230px) / 2);
   width: 100%;
 }
 .main_justified_between {
   justify-content: space-between;
+}
+.main > .content {
+  margin: 0 20px;
+}
+.main > .sidebar {
+  width: 255px;
 }
 .main {
   display: flex;
@@ -362,7 +365,6 @@ body {
 .sidebar {
   position: relative;
   left: -2px;
-  max-width: 263px;
 }
 .category {
   background-color: #fff;
@@ -588,9 +590,6 @@ body {
   width: 16px;
   height: 17px;
 }
-.tag .i-tag {
-  margin-right: 10px;
-}
 .tag__item {
   cursor: default;
   font-family: "ProximaNovaReg";
@@ -731,6 +730,7 @@ body {
   padding: 24px;
   display: inline-block;
   box-sizing: border-box;
+  flex: 1 1 500px;
 }
 .article__link {
   display: block;
@@ -768,7 +768,8 @@ body {
   display: none;
   margin-top: -10px;
 }
-.article .content__caption-action:hover .tooltip {
+.article .content__caption-action:hover .tooltip,
+.article .content__caption-action.hover .tooltip {
   display: block;
 }
 .article .content__text {
@@ -880,6 +881,7 @@ body {
 .article__footer {
   border-top: 1px solid #f7f7f7;
   display: flex;
+  align-items: flex-start;
   width: 100%;
 }
 .article__footer {
@@ -898,6 +900,9 @@ body {
 .article__footer .text_pin_right {
   margin-left: auto;
   margin-right: 0;
+}
+.article__footer .text_nowrap {
+  white-space: nowrap;
 }
 .article__footer .text__text {
   vertical-align: middle;
@@ -976,22 +981,29 @@ body {
   font-size: 14px;
   font-family: "ProximaNovaLight";
   min-width: 60px;
-  padding: 0 10px;
-  margin-left: 0.5em;
+  padding: 0 5px;
+  margin-right: 10px;
   position: relative;
-  display: inline-block;
+  display: flex;
+}
+.content-filter__type-value > .text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding: 5px 0;
 }
 .content-filter__type-value .i-arrow {
   float: right;
   position: relative;
-  top: 2px;
-  left: 5px;
+  top: 7px;
+  left: 1px;
 }
 .content-filter__type-value > .tooltip {
   margin-top: -4px;
   display: none;
 }
-.content-filter__type-value:hover > .tooltip {
+.content-filter__type-value:hover > .tooltip,
+.content-filter__type-value.hover > .tooltip {
   display: block;
 }
 .content-filter__list {
@@ -1010,7 +1022,7 @@ body {
 }
 .content-filter__squad {
   cursor: pointer;
-  margin-left: 22px;
+  margin-left: 12px;
 }
 .i-squad {
   display: inline-block;
