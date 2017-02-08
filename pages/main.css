@@ -2585,14 +2585,14 @@ body {
   padding: 10px;
   overflow: visible;
 }
+.tooltip__content > .checkbox-label {
+  padding: 9px 5px 9px 0;
+}
 .tooltip .list__item_hovered {
   position: relative;
   width: calc(100% + 24px);
   padding-left: calc(2em + 12px);
   left: -12px;
-}
-.tooltip > .checkbox-label {
-  padding: 9px 5px 9px 0;
 }
 .tooltip__arrow {
   background-color: #fff;
@@ -2858,6 +2858,43 @@ body {
   padding-left: 40px;
   margin-left: -40px;
 }
+.checkbox-label {
+  font-size: 14px;
+  cursor: default;
+  user-select: none;
+  display: flex;
+  justify-content: space-between;
+}
+.checkbox-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.checkbox {
+  display: none;
+}
+.checkbox__indicator {
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.14285em;
+  height: 1.14285em;
+  position: relative;
+}
+.checkbox:checked + .checkbox__indicator:before {
+  content: "";
+  width: 7px;
+  height: 3px;
+  border: 1px solid transparent;
+  border-left-color: #3bc7ab;
+  border-bottom-color: #3bc7ab;
+  position: absolute;
+  transform: rotate(-45deg);
+  top: 50%;
+  left: 50%;
+  margin: -4px 0 0 -4px;
+}
 .category__item_action_add {
   position: relative;
 }
@@ -2922,43 +2959,6 @@ body {
 }
 .checkbox-group__title .checkbox-text {
   margin-left: 4px;
-}
-.checkbox-label {
-  font-size: 14px;
-  cursor: default;
-  user-select: none;
-  display: flex;
-  justify-content: space-between;
-}
-.checkbox {
-  display: none;
-}
-.checkbox__indicator {
-  border: 1px solid lightgray;
-  border-radius: 2px;
-  box-sizing: border-box;
-  display: inline-block;
-  vertical-align: middle;
-  width: 1.14285em;
-  height: 1.14285em;
-  position: relative;
-}
-.checkbox:checked + .checkbox__indicator:before {
-  content: "";
-  width: 7px;
-  height: 3px;
-  border: 1px solid transparent;
-  border-left-color: #3bc7ab;
-  border-bottom-color: #3bc7ab;
-  position: absolute;
-  transform: rotate(-45deg);
-  top: 50%;
-  left: 50%;
-  margin: -4px 0 0 -4px;
-}
-.checkbox-text {
-  display: inline-block;
-  vertical-align: middle;
 }
 .checkbox-group__item {
   display: flex;

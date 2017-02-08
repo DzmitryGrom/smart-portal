@@ -2799,14 +2799,14 @@ body {
   padding: 10px;
   overflow: visible;
 }
+.tooltip__content > .checkbox-label {
+  padding: 9px 5px 9px 0;
+}
 .tooltip .list__item_hovered {
   position: relative;
   width: calc(100% + 24px);
   padding-left: calc(2em + 12px);
   left: -12px;
-}
-.tooltip > .checkbox-label {
-  padding: 9px 5px 9px 0;
 }
 .checkbox-label {
   font-size: 14px;
