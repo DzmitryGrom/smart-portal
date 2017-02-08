@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>employeers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href='employeers.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="header__logo">Smart<b>Portal</b></h1>
+    <div class="nav">
+      <a class="nav__link nav__link_newspaper" href="/">База знаний</a>
+      <a class="nav__link nav__link_people nav__link_active" href="/">Команда</a>
+      <a class="nav__link nav__link_education" href="/">Обучение</a>
+      <a class="nav__link nav__link_code" href="/">Скрипты</a>
+    </div>
+    <div class="header-side">
+      <span class="header-side__help"></span>
+      <span class="header-side__search"></span>
+      <div class="header-side__notification header-side__notification_active"></div>
+      <div class="header-profile">
+        <div class="header-profile__avatar">
+          <img class="pic" src="interface/avatar.jpg" alt="">
+        </div>
+        <span class="header-profile__name">Игорь Иванов</span>
+        <span class="header-profile__arrow"></span>
+      </div>
+    </div>
+  </div>
+  <div class="main main_justified_between">
+    <div class="sidebar">
+      <div class="category">
+        <div class="category__item category__item_title">Поиск по сотрудникам</div>
+        <div class="category__item category__item_submit category__item_submit_search category__item_input">
+          <div class="search">
+            <input type='search' placeholder='Искать'>
+            <i class="i-search"></i>
+          </div>
+        </div>
+        <div class="category__item-label">Отдел</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+        <div class="category__item-label">Статус сотрудника</div>
+        <div class="category__item category__item_drop category__item_input category__item_icon">
+          <i class="fa fa-coffee"></i>
+          <input class="input" type="text" placeholder="Type here" value="Гуру" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+        <div class="category__item-label">Должность</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Хорошая" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+        <div class="category__item-label">Пол</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Любой" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="text"></div>
+    </div>
+    <div class="sidebar">
+      <div class="content-filter">
+        <span class="content-filter__list">
+<i class="i-list"></i>
+</span>
+        <span class="content-filter__squad">
+<i class="i-squad"></i>
+</span>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

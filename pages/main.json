@@ -1,10 +1,10 @@
 {
   "block": "page",
-  "title": "home",
+  "title": "main",
   "head": [
     {
       "elem": "css",
-      "url": "home.css"
+      "url": "main.css"
     }
   ],
   "content": [
@@ -148,6 +148,7 @@
               }, {
                 "block": "tooltip",
                 "attrs": {
+                  "hidden": true,
                   "style": "width: 170px; right: -14px"
                 },
                 "content": [
@@ -310,6 +311,7 @@
                       "footer": true
                     },
                     "attrs": {
+                      "hidden": true,
                       "style": "height: 240px; width: 256px; left: -24px;"
                     },
                     "content": [
@@ -687,8 +689,7 @@
                   "input": true
                 },
                 "content": [{
-                  "block": "search",
-                  "html": "<input type='search' placeholder='Искать'>"
+                  "block": "search"
                   }]
               }, {
                 "block": "tag",
@@ -993,7 +994,8 @@
                   ]
                 }
               ]
-            }, {
+            },
+            {
               "block": "article",
               "content": [
                 {
@@ -1016,7 +1018,8 @@
                   ]
                 }
               ]
-            }, {
+            },
+            {
               "block": "article",
               "content": [
                 {
@@ -1094,154 +1097,6 @@
                           "block": "i-arrow",
                           "mods": {
                             "to": "down"
-                          },
-                          "tag": "i"
-                        }
-                      ]
-                    }
-                  ]
-                }, {
-                  "elem": "footer",
-                  "content": [
-                    {
-                      "block": "text",
-                      "html": "<strong>Разделы:</strong>Дизайн",
-                      "tag": "span"
-                    }, {
-                      "block": "tag",
-                      "content": [
-                        {
-                          "block": "i-tag",
-                          "tag": "i"
-                        }, {
-                          "elem": "item",
-                          "text": "Хостинг",
-                          "mods": {
-                            "border": true
-                          },
-                          "tag": "span"
-                        }, {
-                          "elem": "item",
-                          "text": "Дизайн",
-                          "mods": {
-                            "border": true
-                          },
-                          "tag": "span"
-                        }, {
-                          "elem": "item",
-                          "text": "Бизнес",
-                          "mods": {
-                            "border": true
-                          },
-                          "tag": "span"
-                        }
-                      ]
-                    }, {
-                      "block": "button",
-                      "text": "Еще 5 тегов",
-                      "mods": {
-                        "pseudo": true,
-                        "small": true
-                      }
-                    }, {
-                      "block": "text",
-                      "mods": {
-                        "pin": "right",
-                        "small": true,
-                        "nowrap": true
-                      },
-                      "content": [
-                        {
-                          "block": "i-group",
-                          "tag": "i"
-                        }, {
-                          "elem": "text",
-                          "text": 7,
-                          "tag": "span"
-                        }, {
-                          "block": "i-chat",
-                          "tag": "i"
-                        }, {
-                          "elem": "text",
-                          "text": 15,
-                          "tag": "span"
-                        }, {
-                          "block": "i-heart",
-                          "tag": "i"
-                        }, {
-                          "elem": "text",
-                          "text": 984,
-                          "tag": "span"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }, {
-              "block": "article",
-              "content": [
-                {
-                  "block": "article-cover",
-                  "attrs": {
-                    "style": "background-image: url('http://www.dolomitisuperski.com/website/var/tmp/image-thumbnails/660000/667626/thumb__demi_gallery_detail_landscape/mountains_7824779.jpeg')"
-                  }
-                }, {
-                  "block": "content",
-                  "attrs": {
-                    "class": "article__content"
-                  },
-                  "content": [
-                    {
-                      "elem": "caption",
-                      "content": [
-                        {
-                          "attrs": {
-                            "class": "content__caption-text"
-                          },
-                          "text": "200 шаблонов эффективных заголовков",
-                          "tag": "span"
-                        }, {
-                          "attrs": {
-                            "class": "content__caption-action"
-                          },
-                          "content": [
-                            {
-                              "block": "i-more",
-                              "tag": "i"
-                            }
-                          ]
-                        }
-                      ]
-                    }, {
-                      "elem": "text",
-                      "html": "Более того, как-то вскоре после вступления в должность еду с водителем. Он ко мне поворачивается и говорит: «Герман Сергеевич, а вы штрафы когда будете оплачивать?» Я: «Какие штрафы?» У меня же представление о государстве было достаточно же представление о государ Более того, как-то вскоре после вступления в должность еду с водителем. Он ко мне поворачивается и говорит: «Герман Сергеевич, а вы штрафы когда будете оплачивать?» Я: «Какие штрафы?» У меня же представление о государстве было достаточно же представление о государ  Более того, как-то вскоре после вступления в должность еду с водителем. Он ко мне поворачивается и говорит: «Герман Сергеевич, а вы штрафы когда будете оплачивать?» Я: «Какие штрафы?» У меня же представление о государстве было достаточно же представление о государ  Более того, как-то вскоре после вступления в должность еду с водителем. Он ко мне поворачивается и говорит: «Герман Сергеевич, а вы штрафы когда будете оплачивать?» Я: «Какие штрафы?»"
-                    }, {
-                      "elem": "footer",
-                      "content": [{
-                        "block": "button",
-                        "text": "Читать полностью",
-                        "mods": {
-                          "link": true,
-                          "pin": "right"
-                        }
-                      }]
-                    }
-                  ]
-                }, {
-                  "elem": "collapser",
-                  "content": [
-                    {
-                      "block": "button",
-                      "mods": {
-                        "round": true,
-                        "default": true
-                      },
-                      "content": [
-                        {
-                          "block": "i-arrow",
-                          "mods": {
-                            "to": "up"
                           },
                           "tag": "i"
                         }

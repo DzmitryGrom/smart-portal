@@ -1,0 +1,272 @@
+{
+  "block": "page",
+  "title": "employeers",
+  "head": [
+    {
+      "elem": "css",
+      "url": "employeers.css"
+    }
+  ],
+  "content": [
+    {
+      "block": "header",
+      "content": [
+        {
+          "elem": "logo",
+          "html": "Smart<b>Portal</b>",
+          "tag": "h1"
+        }, {
+          "block": "nav",
+          "content": [
+            {
+              "elem": "link",
+              "html": "База знаний",
+              "mods": {
+                "newspaper": true
+              },
+              "attrs": {
+                "href": "/"
+              },
+              "tag": "a"
+            }, {
+              "elem": "link",
+              "text": "Команда",
+              "mods": {
+                "people": true,
+                "active": true
+              },
+              "attrs": {
+                "href": "/"
+              },
+              "tag": "a"
+            }, {
+              "elem": "link",
+              "text": "Обучение",
+              "mods": {
+                "education": true
+              },
+              "attrs": {
+                "href": "/"
+              },
+              "tag": "a"
+            }, {
+              "elem": "link",
+              "text": "Скрипты",
+              "mods": {
+                "code": true
+              },
+              "attrs": {
+                "href": "/"
+              },
+              "tag": "a"
+            }
+          ]
+        }, {
+          "block": "header-side",
+          "content": [{
+            "elem": "help",
+            "tag": "span"
+          }, {
+            "elem": "search",
+            "tag": "span"
+          }, {
+            "elem": "notification",
+            "mods": {
+              "active": true
+            }
+          }, {
+            "block": "header-profile",
+            "content": [
+              {
+                "elem": "avatar",
+                "content": [
+                  {
+                    "block": "pic",
+                    "attrs": {
+                      "src": "interface/avatar.jpg"
+                    }
+                  }
+                ]
+              }, {
+                "elem": "name",
+                "text": "Игорь Иванов",
+                "tag": "span"
+              }, {
+                "elem": "arrow",
+                "tag": "span"
+              }
+            ]
+          }]
+        }
+      ]
+    }, {
+      "block": "main",
+      "mods": {
+        "justified": "between"
+      },
+      "content": [
+        {
+          "block": "sidebar",
+          "content": [
+            {
+              "block": "category",
+              "attrs": {},
+              "content": [
+                {
+                  "elem": "item",
+                  "text": "Поиск по сотрудникам",
+                  "mods": {
+                    "title": true
+                  }
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "submit": true,
+                    "submit_search": true,
+                    "input": true
+                  },
+                  "content": [{
+                    "block": "search"
+                  }]
+                }, {
+                  "elem": "item-label",
+                  "text": "Отдел"
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Дизайнеры",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+              }, {
+                  "elem": "item-label",
+                  "text": "Статус сотрудника"
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-coffee"
+                      }
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Гуру",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+              }, {
+                  "elem": "item-label",
+                  "text": "Должность"
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Хорошая",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+              }, {
+                  "elem": "item-label",
+                  "text": "Пол"
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Любой",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+              }]
+            }
+          ]
+        }, {
+          "block": "content",
+          "content": [
+            {
+              "block": "text"
+            }
+          ]
+        }, {
+          "block": "sidebar",
+          "content": [
+            {
+              "block": "content-filter",
+              "content": [
+                {
+                  "elem": "list",
+                  "tag": "span",
+                  "content": [
+                    {
+                      "block": "i-list",
+                      "tag": "i"
+                    }
+                  ]
+                }, {
+                  "elem": "squad",
+                  "tag": "span",
+                  "content": [
+                    {
+                      "block": "i-squad",
+                      "tag": "i"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
