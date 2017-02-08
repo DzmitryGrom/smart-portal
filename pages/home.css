@@ -2591,7 +2591,7 @@ body {
   padding-left: calc(2em + 12px);
   left: -12px;
 }
-.tooltip .checkbox-label {
+.tooltip > .checkbox-label {
   padding: 9px 5px 9px 0;
 }
 .tooltip__arrow {
