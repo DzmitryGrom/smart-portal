@@ -213,6 +213,127 @@
         {
           "block": "sidebar",
           "content": [
+{
+              "block": "category",
+              "attrs": {},
+              "content": [
+                {
+                  "elem": "item",
+                  "text": "Поиск по сотрудникам",
+                  "mods": {
+                    "title": true
+                  }
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "submit": true,
+                    "submit_search": true,
+                    "input": true
+                  },
+                  "content": [{
+                    "block": "search"
+                  }]
+                }, {
+                  "elem": "item-label",
+                  "text": "Отдел"
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Дизайнеры",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+              }, {
+                  "elem": "item-label",
+                  "text": "Статус сотрудника"
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-coffee"
+                      }
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Гуру",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+              }, {
+                  "elem": "item-label",
+                  "text": "Должность"
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Хорошая",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+              }, {
+                  "elem": "item-label",
+                  "text": "Пол"
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Любой",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+              }]
+            },
             {
               "block": "category",
               "attrs": {},
