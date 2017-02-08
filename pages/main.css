@@ -2591,6 +2591,9 @@ body {
   padding-left: calc(2em + 12px);
   left: -12px;
 }
+.tooltip .checkbox-label {
+  padding: 9px 5px 9px 0;
+}
 .tooltip__arrow {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -2924,6 +2927,8 @@ body {
   font-size: 14px;
   cursor: default;
   user-select: none;
+  display: flex;
+  justify-content: space-between;
 }
 .checkbox {
   display: none;

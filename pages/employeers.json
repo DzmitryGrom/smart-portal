@@ -165,7 +165,7 @@
                     {
                       "block": "fa",
                       "attrs": {
-                        "class": "fa-coffee"
+                        "class": "fa-hand-spock-o"
                       }
                     },
                     {
@@ -179,6 +179,82 @@
                       "mods": {
                         "to": "down"
                       }
+                    }, {
+                      "block": "tooltip",
+                      "attrs": {
+                        "style": "width: 100%;"
+                      },
+                      "content": [
+                        {
+                          "block": "content",
+                          "attrs": {
+                            "class": "tooltip__content tooltip__content_default"
+                          },
+                          "content": [
+                            {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-circle-o'></i>Без статуса"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-gamepad'></i>Новичок"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-mortar-board'></i>Специалист"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-star'></i>Профи"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-flask'></i>Эксперт"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-hand-spock-o'></i>Гуру"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
               }, {
@@ -254,7 +330,8 @@
                       }
                     }
                   ]
-                }, {
+                },
+                {
                   "elem": "squad",
                   "tag": "span",
                   "content": [
