@@ -2761,28 +2761,10 @@ body {
 .content-filter__list {
   cursor: pointer;
   margin-left: auto;
-}
-.i-list {
-  display: inline-block;
-  width: 20px;
-  height: 15px;
-  vertical-align: middle;
-  background-image: url(interface/icons/list.svg);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  font-size: 21px;
 }
 .content-filter__squad {
   cursor: pointer;
   margin-left: 12px;
-}
-.i-squad {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
-  background-image: url(interface/icons/squares.svg);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  font-size: 21px;
 }

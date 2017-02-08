@@ -248,8 +248,10 @@
                   "tag": "span",
                   "content": [
                     {
-                      "block": "i-list",
-                      "tag": "i"
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-bars"
+                      }
                     }
                   ]
                 }, {
@@ -257,8 +259,10 @@
                   "tag": "span",
                   "content": [
                     {
-                      "block": "i-squad",
-                      "tag": "i"
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-th"
+                      }
                     }
                   ]
                 }
