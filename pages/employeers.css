@@ -2854,15 +2854,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 50px;
 }
 .datagrid__body > .row:hover {
-  transition: transform .3s;
-  transform: scale(1.01);
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.datagrid__body > .row > .row__cell {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .datagrid__body > .row > .row__cell > .text {
   color: #768894;
   font-family: ProximaNovaReg;
   font-size: 14px;
+}
+.datagrid__body > .row > .row__cell > .action {
+  position: relative;
+  padding: 0 12px;
+  font-size: 20px;
+}
+.datagrid__body > .row > .row__cell > .action .tooltip {
+  display: none;
+}
+.datagrid__body > .row > .row__cell > .action:hover .tooltip,
+.datagrid__body > .row > .row__cell > .action.hover .tooltip {
+  display: block;
 }
 .user-profile {
   position: relative;
@@ -2947,6 +2968,66 @@ body {
 }
 .link[href^=tel] {
   color: #768894;
+}
+.tooltip__arrow {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  height: 12px;
+  width: 12px;
+  position: absolute;
+  margin-left: 4px;
+  top: -7px;
+  transform: rotate(45deg);
+}
+.list {
+  padding: 0;
+  margin: 0;
+}
+.list__item {
+  font-family: ProximaNovaLight;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding-top: .4em;
+  padding-bottom: .4em;
+  border: 1px solid transparent;
+  margin-left: 20px;
+  color: transparent;
+}
+.list__item_hovered {
+  cursor: pointer;
+}
+.list__item_hovered:hover {
+  background-color: #f9f9f9;
+}
+.list__item_color_default {
+  color: #b5b5b5;
+}
+.list__item_color_warning {
+  color: #da5c3e;
+}
+.list__item_color_info {
+  color: #61a3da;
+}
+.list__item_dividered_top {
+  border-top-color: #f6f6f6;
+}
+.list__item > .text {
+  color: #979797;
+}
+.list__item_iconed {
+  margin-left: 0;
+  padding-left: 2em;
+  list-style: none;
+}
+.list__item_iconed .fa {
+  font-size: 16px;
+  position: absolute;
+  color: black;
+  left: 0;
+  width: 40px;
+  text-align: center;
+  height: 100%;
+  line-height: 100%;
 }
 .content-filter {
   display: flex;

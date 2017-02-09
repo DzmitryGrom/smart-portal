@@ -2644,6 +2644,16 @@ body {
   padding-left: 2em;
   list-style: none;
 }
+.list__item_iconed .fa {
+  font-size: 16px;
+  position: absolute;
+  color: black;
+  left: 0;
+  width: 40px;
+  text-align: center;
+  height: 100%;
+  line-height: 100%;
+}
 .header-profile {
   display: inline-block;
   vertical-align: middle;

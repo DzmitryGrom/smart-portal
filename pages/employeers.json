@@ -426,11 +426,92 @@
                               "block": "action",
                               "content": [
                                 {
-                                  "block": "tooltip",
+                                  "block": "fa",
                                   "attrs": {
-                                    "hidden": true
+                                    "class": "fa-ellipsis-h"
                                   }
+                                },
+                                {
+                              "block": "tooltip",
+                              "attrs": {
+                                "style": "width: 220px; right: -20px; top: 97%"
+                              },
+                              "content": [
+                                {
+                                  "elem": "arrow",
+                                  "attrs": {
+                                    "style": "right: 32px"
+                                  }
+                                }, {
+                                  "block": "content",
+                                  "attrs": {
+                                    "class": "tooltip__content tooltip__content_default"
+                                  },
+                                  "content": [
+                                    {
+                                      "block": "list",
+                                      "content": [
+                                        {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-pencil"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Редактировать"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-lock"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Поменять пароль"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-trash"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Уволить"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
                                 }
+                              ]
+                            }
                               ]
                             }
                           ]
@@ -541,11 +622,92 @@
                               "block": "action",
                               "content": [
                                 {
-                                  "block": "tooltip",
+                                  "block": "fa",
                                   "attrs": {
-                                    "hidden": true
+                                    "class": "fa-ellipsis-h"
                                   }
+                                },
+                                {
+                              "block": "tooltip",
+                              "attrs": {
+                                "style": "width: 220px; right: -20px; top: 97%"
+                              },
+                              "content": [
+                                {
+                                  "elem": "arrow",
+                                  "attrs": {
+                                    "style": "right: 32px"
+                                  }
+                                }, {
+                                  "block": "content",
+                                  "attrs": {
+                                    "class": "tooltip__content tooltip__content_default"
+                                  },
+                                  "content": [
+                                    {
+                                      "block": "list",
+                                      "content": [
+                                        {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-pencil"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Редактировать"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-lock"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Поменять пароль"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-trash"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Уволить"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
                                 }
+                              ]
+                            }
                               ]
                             }
                           ]
