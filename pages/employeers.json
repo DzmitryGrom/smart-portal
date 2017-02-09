@@ -310,7 +310,251 @@
           "block": "content",
           "content": [
             {
-              "block": "text"
+              "block": "datagrid",
+              "content": [
+                {
+                  "elem": "header"
+                },
+                {
+                  "elem": "body",
+                  "content": [
+                    {
+                      "block": "row",
+                      "content": [
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "horizontal": "small"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "pic",
+                                          "attrs": {
+                                            "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
+                                            "height": 50,
+                                            "width": 50
+                                          }
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "text",
+                              "text": "Design"
+                            }
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "link",
+                              "attrs": {
+                                "href": "mailto:mark.adams@smart.com"
+                              },
+                              "text": "mark.adams@smart.com"
+                            }
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "link",
+                              "attrs": {
+                                "href": "tel:+33088445566"
+                              },
+                              "text": "+33 088 44 55 66"
+                            }
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "action",
+                              "content": [
+                                {
+                                  "block": "tooltip",
+                                  "attrs": {
+                                    "hidden": true
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "block": "row",
+                      "content": [
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "horizontal": "small"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "text",
+                                          "text": "MA"
+                                        }
+                                      ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "Дизайнер"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "text",
+                              "text": "Design"
+                            }
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "link",
+                              "attrs": {
+                                "href": "mailto:mark.adams@smart.com"
+                              },
+                              "text": "mark.adams@smart.com"
+                            }
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "link",
+                              "attrs": {
+                                "href": "tel:+33088445566"
+                              },
+                              "text": "+33 088 44 55 66"
+                            }
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "action",
+                              "content": [
+                                {
+                                  "block": "tooltip",
+                                  "attrs": {
+                                    "hidden": true
+                                  }
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }, {

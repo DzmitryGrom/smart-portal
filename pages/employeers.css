@@ -2587,6 +2587,7 @@ body {
 }
 .main > .content {
   margin: 0 20px;
+  width: 100%;
 }
 .main > .sidebar {
   width: 255px;
@@ -2750,7 +2751,7 @@ body {
 }
 .category__item_icon > input {
   padding-left: 40px;
-  margin-left: -40px;
+  margin-left: -39px;
 }
 .tooltip {
   cursor: default;
@@ -2844,6 +2845,108 @@ body {
   top: 50%;
   left: 50%;
   margin: -4px 0 0 -4px;
+}
+.datagrid__body > .row {
+  margin-bottom: -1px;
+  padding: 15px;
+  border: 1px solid #ecf2f5;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.datagrid__body > .row:hover {
+  transition: transform .3s;
+  transform: scale(1.01);
+}
+.datagrid__body > .row > .row__cell > .text {
+  color: #768894;
+  font-family: ProximaNovaReg;
+  font-size: 14px;
+}
+.user-profile {
+  position: relative;
+}
+.user-profile .bio__name {
+  color: #000000;
+  font-family: ProximaNovaReg;
+  font-size: 15px;
+  font-weight: normal;
+}
+.user-profile .bio__position {
+  color: #768894;
+  font-family: ProximaNovaLight;
+  font-size: 12px;
+  font-weight: normal;
+}
+.user-profile_horizontal_small {
+  display: flex;
+  align-items: center;
+}
+.user-profile_horizontal_small .avatar,
+.user-profile_horizontal_small .bio {
+  display: inline-block;
+}
+.user-profile_horizontal_small .avatar {
+  margin-right: 20px;
+}
+.avatar {
+  position: relative;
+}
+.avatar__cover {
+  border-radius: 500px;
+  background-color: #d8f1ec;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.avatar__cover img {
+  border-radius: 500px;
+}
+.avatar__cover .text {
+  color: #98c5bc;
+  font-family: ProximaNovaBold;
+  font-size: 15px;
+  line-height: 50px;
+}
+.avatar__online {
+  color: #7fd5c2;
+  position: absolute;
+  font-size: 12px;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  bottom: 75%;
+  left: 75%;
+}
+.avatar__status {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background-color: #f992a7;
+  border-radius: 5em;
+  padding: 2px;
+  color: #fff;
+  position: absolute;
+  font-size: 10px;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  top: 70%;
+  left: 70%;
+}
+.avatar__status .fa {
+  flex: 1 1 auto;
+}
+.link {
+  font-family: ProximanovaReg;
+  font-size: 14px;
+  font-weight: normal;
+  color: #4fabf8;
+  text-decoration: none;
+}
+.link[href^=tel] {
+  color: #768894;
 }
 .content-filter {
   display: flex;

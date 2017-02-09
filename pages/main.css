@@ -2693,6 +2693,7 @@ body {
 }
 .main > .content {
   margin: 0 20px;
+  width: 100%;
 }
 .main > .sidebar {
   width: 255px;
@@ -2856,7 +2857,7 @@ body {
 }
 .category__item_icon > input {
   padding-left: 40px;
-  margin-left: -40px;
+  margin-left: -39px;
 }
 .checkbox-label {
   font-size: 14px;
@@ -3356,6 +3357,16 @@ body {
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+.link {
+  font-family: ProximanovaReg;
+  font-size: 14px;
+  font-weight: normal;
+  color: #4fabf8;
+  text-decoration: none;
+}
+.link[href^=tel] {
+  color: #768894;
 }
 .i-link {
   display: inline-block;
