@@ -1378,6 +1378,1007 @@
                   ]
                 }
               ]
+            },
+
+            {
+              "block": "tag",
+              "content": [
+                {
+                  "elem": "item",
+                  "text": "Статус: Гуру",
+                  "mods": {
+                    "border": true
+                  },
+                  "content": [
+                    {
+                      "block": "i-closer"
+                    }
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "text": "Отдел: Design",
+                  "mods": {
+                    "border": true
+                  },
+                  "content": [
+                    {
+                      "block": "i-closer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "block": "datagrid",
+              "content": [
+                {
+                  "elem": "header",
+                  "content": [
+                    {
+                      "block": "row",
+                      "content": [
+                        {
+                          "elem": "cell",
+                          "tag": "th",
+                          "text": "ФИО"
+                        },
+                        {
+                          "elem": "cell",
+                          "tag": "th",
+                          "text": "Отдел"
+                        },
+                        {
+                          "elem": "cell",
+                          "tag": "th",
+                          "text": "EMAIL"
+                        },
+                        {
+                          "elem": "cell",
+                          "tag": "th",
+                          "text": "Телефон"
+                        },
+                        {
+                          "elem": "cell",
+                          "tag": "th"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "elem": "body",
+                  "content": [
+                    {
+                      "block": "row",
+                      "content": [
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "horizontal": "small"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "mods": {
+                                        "small": true
+                                      },
+                                      "content": [
+                                        {
+                                          "block": "pic",
+                                          "attrs": {
+                                            "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
+                                            "height": 50,
+                                            "width": 50
+                                          }
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "text",
+                              "text": "Design"
+                            }
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "link",
+                              "attrs": {
+                                "href": "mailto:mark.adams@smart.com"
+                              },
+                              "text": "mark.adams@smart.com"
+                            }
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "link",
+                              "attrs": {
+                                "href": "tel:+33088445566"
+                              },
+                              "text": "+33 088 44 55 66"
+                            }
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "action",
+                              "content": [
+                                {
+                                  "block": "fa",
+                                  "attrs": {
+                                    "class": "fa-ellipsis-h"
+                                  }
+                                },
+                                {
+                              "block": "tooltip",
+                              "attrs": {
+                                "style": "width: 220px; right: -20px; top: 97%"
+                              },
+                              "content": [
+                                {
+                                  "elem": "arrow",
+                                  "attrs": {
+                                    "style": "right: 32px"
+                                  }
+                                }, {
+                                  "block": "content",
+                                  "attrs": {
+                                    "class": "tooltip__content tooltip__content_default"
+                                  },
+                                  "content": [
+                                    {
+                                      "block": "list",
+                                      "content": [
+                                        {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-pencil"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Редактировать"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-lock"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Поменять пароль"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-trash"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Уволить"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "block": "row",
+                      "content": [
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "horizontal": "small"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "mods": {
+                                        "small": true
+                                      },
+                                      "content": [
+                                        {
+                                          "block": "text",
+                                          "text": "MA",
+                                          "mods": {
+                                            "small": true
+                                          }
+                                        }
+                                      ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "Дизайнер"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "text",
+                              "text": "Design"
+                            }
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "link",
+                              "attrs": {
+                                "href": "mailto:mark.adams@smart.com"
+                              },
+                              "text": "mark.adams@smart.com"
+                            }
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "link",
+                              "attrs": {
+                                "href": "tel:+33088445566"
+                              },
+                              "text": "+33 088 44 55 66"
+                            }
+                          ]
+                        },
+                        {
+                          "elem": "cell",
+                          "content": [
+                            {
+                              "block": "action",
+                              "content": [
+                                {
+                                  "block": "fa",
+                                  "attrs": {
+                                    "class": "fa-ellipsis-h"
+                                  }
+                                },
+                                {
+                              "block": "tooltip",
+                              "attrs": {
+                                "style": "width: 220px; right: -20px; top: 97%"
+                              },
+                              "content": [
+                                {
+                                  "elem": "arrow",
+                                  "attrs": {
+                                    "style": "right: 32px"
+                                  }
+                                }, {
+                                  "block": "content",
+                                  "attrs": {
+                                    "class": "tooltip__content tooltip__content_default"
+                                  },
+                                  "content": [
+                                    {
+                                      "block": "list",
+                                      "content": [
+                                        {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-pencil"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Редактировать"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-lock"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Поменять пароль"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-trash"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Уволить"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "block": "tag",
+              "content": [
+                {
+                  "elem": "item",
+                  "text": "Статус: Гуру",
+                  "mods": {
+                    "border": true
+                  },
+                  "content": [
+                    {
+                      "block": "i-closer"
+                    }
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "text": "Отдел: Design",
+                  "mods": {
+                    "border": true
+                  },
+                  "content": [
+                    {
+                      "block": "i-closer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "block": "cards",
+              "content": [
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "pic",
+                                          "attrs": {
+                                            "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
+                                            "height": 100,
+                                            "width": 100
+                                          }
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "text",
+                                          "text": "ДР"
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "pic",
+                                          "attrs": {
+                                            "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
+                                            "height": 100,
+                                            "width": 100
+                                          }
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+{
+                              "block": "action",
+                              "content": [
+                                {
+                                  "block": "fa",
+                                  "attrs": {
+                                    "class": "fa-ellipsis-h"
+                                  }
+                                },
+                                {
+                              "block": "tooltip",
+                              "attrs": {
+                                "style": "width: calc(100% + 40px); top: 97%; left: -20px;"
+                              },
+                              "content": [
+                                {
+                                  "elem": "arrow",
+                                  "attrs": {
+                                    "style": "right: calc(50% - 7px);"
+                                  }
+                                }, {
+                                  "block": "content",
+                                  "attrs": {
+                                    "class": "tooltip__content tooltip__content_default"
+                                  },
+                                  "content": [
+                                    {
+                                      "block": "list",
+                                      "content": [
+                                        {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-pencil"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Редактировать"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-lock"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Поменять пароль"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-trash"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Уволить"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                              ]
+                            }
+
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "text",
+                                          "text": "ДР"
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "pic",
+                                          "attrs": {
+                                            "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
+                                            "height": 100,
+                                            "width": 100
+                                          }
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "text",
+                                          "text": "ДР"
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                  ]
+                }
+              ]
             }
           ]
         }, {

@@ -3396,6 +3396,198 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+.datagrid {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+}
+.datagrid__header > .row {
+  border: 1px solid #ecf2f5;
+}
+.datagrid__header > .row > .row__cell {
+  background-color: #fff;
+  color: #afbcc2;
+  text-align: left;
+  font-family: ProximaNovaLight;
+  font-size: 12px;
+  padding: 15px;
+  font-weight: normal;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  height: 60px;
+}
+.datagrid__body > .row {
+  margin-bottom: -1px;
+  padding: 15px;
+  border: 1px solid #ecf2f5;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+}
+.datagrid__body > .row:hover {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.datagrid__body > .row > .row__cell {
+  height: 100%;
+  padding: 15px;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+.datagrid__body > .row > .row__cell > .text {
+  color: #768894;
+  font-family: ProximaNovaReg;
+  font-size: 14px;
+}
+.datagrid__body > .row > .row__cell > .action {
+  position: relative;
+  padding: 0 12px;
+  font-size: 20px;
+}
+.datagrid__body > .row > .row__cell > .action .tooltip {
+  display: none;
+}
+.datagrid__body > .row > .row__cell > .action:hover .tooltip,
+.datagrid__body > .row > .row__cell > .action.hover .tooltip {
+  display: block;
+}
+.user-profile {
+  position: relative;
+}
+.user-profile .bio__name {
+  color: #000000;
+  font-family: ProximaNovaReg;
+  font-size: 15px;
+  font-weight: normal;
+}
+.user-profile .bio__position {
+  color: #768894;
+  font-family: ProximaNovaLight;
+  font-size: 12px;
+  font-weight: normal;
+}
+.user-profile .bio__department {
+  color: #768894;
+  font-family: ProximaNovaReg;
+  font-size: 14px;
+  font-weight: normal;
+}
+.user-profile_horizontal_small {
+  display: flex;
+  align-items: center;
+}
+.user-profile_horizontal_small .avatar,
+.user-profile_horizontal_small .bio {
+  display: inline-block;
+}
+.user-profile_horizontal_small .avatar {
+  margin-right: 20px;
+}
+.avatar {
+  display: inline-block;
+  position: relative;
+}
+.avatar__cover {
+  border-radius: 500px;
+  background-color: #d8f1ec;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.avatar__cover img {
+  border-radius: 500px;
+}
+.avatar__cover .text {
+  color: #98c5bc;
+  font-family: ProximaNovaBold;
+  font-size: 20px;
+  line-height: 100px;
+}
+.avatar__cover .text_small {
+  font-size: 15px;
+  line-height: 50px;
+}
+.avatar__cover_small {
+  width: 50px;
+  height: 50px;
+}
+.avatar__online {
+  color: #7fd5c2;
+  position: absolute;
+  font-size: 12px;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  bottom: 83%;
+  left: 83%;
+  margin: -0.5em 0 0 -0.5em;
+}
+.avatar__status {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  background-color: #f992a7;
+  border-radius: 5em;
+  padding: 2px;
+  color: #fff;
+  position: absolute;
+  font-size: 10px;
+  width: 12px;
+  height: 12px;
+  text-align: center;
+  top: 100%;
+  left: 50%;
+  margin: -6px 0 0 -6px;
+}
+.avatar__status .fa {
+  flex: 1 1 auto;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards__item {
+  display: inline-block;
+  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+  border-radius: 5px;
+  background-color: #fff;
+  flex: 0 0 24%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 1.333%;
+  margin-bottom: 1.333%;
+}
+.cards__item:nth-child(4n+4) {
+  margin-right: 0;
+}
+.cards__item > .action {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.cards__item > .action > .tooltip {
+  text-align: left;
+  display: none;
+}
+.cards__item > .action:hover > .tooltip,
+.cards__item > .action .hover > .tooltip {
+  display: block;
+}
+.user-profile_vertical_normal {
+  text-align: center;
+}
+.user-profile_vertical_normal .bio__department {
+  margin: 20px 0 20px 6px;
+}
+.user-profile_vertical_normal .avatar {
+  width: 100px;
+  margin-bottom: 25px;
+}
 .content-filter {
   display: flex;
   padding: 5px;
