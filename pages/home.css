@@ -2848,6 +2848,10 @@ body {
   padding-left: 40px;
   margin-left: -39px;
 }
+.input,
+input {
+  background-color: transparent;
+}
 .tooltip_footer .tooltip__content {
   bottom: 44px;
 }
