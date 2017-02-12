@@ -395,6 +395,9 @@
                                   "content": [
                                     {
                                       "elem": "cover",
+                                      "mods": {
+                                        "small": true
+                                      },
                                       "content": [
                                         {
                                           "block": "pic",
@@ -595,10 +598,16 @@
                                   "content": [
                                     {
                                       "elem": "cover",
+                                      "mods": {
+                                        "small": true
+                                      },
                                       "content": [
                                         {
                                           "block": "text",
-                                          "text": "MA"
+                                          "text": "MA",
+                                          "mods": {
+                                            "small": true
+                                          }
                                         }
                                       ]
                                 },
@@ -774,6 +783,436 @@
                         }
                       ]
                     }
+                  ]
+                }
+              ]
+            },
+            {
+              "block": "tag",
+              "content": [
+                {
+                  "elem": "item",
+                  "text": "Статус: Гуру",
+                  "mods": {
+                    "border": true
+                  },
+                  "content": [
+                    {
+                      "block": "i-closer"
+                    }
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "text": "Отдел: Design",
+                  "mods": {
+                    "border": true
+                  },
+                  "content": [
+                    {
+                      "block": "i-closer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "block": "cards",
+              "content": [
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "pic",
+                                          "attrs": {
+                                            "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
+                                            "height": 100,
+                                            "width": 100
+                                          }
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "text",
+                                          "text": "ДР"
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "pic",
+                                          "attrs": {
+                                            "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
+                                            "height": 100,
+                                            "width": 100
+                                          }
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "text",
+                                          "text": "ДР"
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "pic",
+                                          "attrs": {
+                                            "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
+                                            "height": 100,
+                                            "width": 100
+                                          }
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "text",
+                                          "text": "ДР"
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
                   ]
                 }
               ]

@@ -2904,6 +2904,7 @@ body {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
+  margin-bottom: 20px;
 }
 .datagrid__header > .row {
   border: 1px solid #ecf2f5;
@@ -2974,6 +2975,12 @@ body {
   font-size: 12px;
   font-weight: normal;
 }
+.user-profile .bio__department {
+  color: #768894;
+  font-family: ProximaNovaReg;
+  font-size: 14px;
+  font-weight: normal;
+}
 .user-profile_horizontal_small {
   display: flex;
   align-items: center;
@@ -2986,13 +2993,14 @@ body {
   margin-right: 20px;
 }
 .avatar {
+  display: inline-block;
   position: relative;
 }
 .avatar__cover {
   border-radius: 500px;
   background-color: #d8f1ec;
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   text-align: center;
 }
 .avatar__cover img {
@@ -3001,8 +3009,16 @@ body {
 .avatar__cover .text {
   color: #98c5bc;
   font-family: ProximaNovaBold;
+  font-size: 20px;
+  line-height: 100px;
+}
+.avatar__cover .text_small {
   font-size: 15px;
   line-height: 50px;
+}
+.avatar__cover_small {
+  width: 50px;
+  height: 50px;
 }
 .avatar__online {
   color: #7fd5c2;
@@ -3011,8 +3027,9 @@ body {
   width: 1em;
   height: 1em;
   text-align: center;
-  bottom: 75%;
-  left: 75%;
+  bottom: 83%;
+  left: 83%;
+  margin: -0.5em 0 0 -0.5em;
 }
 .avatar__status {
   display: flex;
@@ -3027,8 +3044,9 @@ body {
   width: 12px;
   height: 12px;
   text-align: center;
-  top: 70%;
-  left: 70%;
+  top: 100%;
+  left: 50%;
+  margin: -6px 0 0 -6px;
 }
 .avatar__status .fa {
   flex: 1 1 auto;
@@ -3102,6 +3120,34 @@ body {
   text-align: center;
   height: 100%;
   line-height: 100%;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cards__item {
+  display: inline-block;
+  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+  border-radius: 5px;
+  background-color: #fff;
+  flex: 0 0 24%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-right: 1.333%;
+  margin-bottom: 1.333%;
+}
+.cards__item:nth-child(4n+4) {
+  margin-right: 0;
+}
+.user-profile_vertical_normal {
+  text-align: center;
+}
+.user-profile_vertical_normal .bio__department {
+  margin: 20px 0 0 6px;
+}
+.user-profile_vertical_normal .avatar {
+  width: 100px;
+  margin-bottom: 25px;
 }
 .content-filter {
   display: flex;
