@@ -2387,6 +2387,7 @@ body {
   box-sizing: border-box;
   position: relative;
   min-height: 100vh;
+  min-width: 1230px;
   padding: 0;
   margin: 0;
 }
@@ -2603,6 +2604,9 @@ body {
   margin-left: 4px;
   top: -7px;
   transform: rotate(45deg);
+}
+.content > .tag {
+  margin-bottom: 20px;
 }
 .list {
   padding: 0;
@@ -2864,6 +2868,7 @@ body {
   text-align: center;
   position: relative;
   z-index: 2;
+  margin-right: -1px;
 }
 .category__item_icon > input {
   padding-left: 40px;
@@ -3012,6 +3017,7 @@ body {
 }
 .tag__item {
   cursor: default;
+  font-size: 14px;
   font-family: "ProximaNovaReg";
   display: inline-block;
 }

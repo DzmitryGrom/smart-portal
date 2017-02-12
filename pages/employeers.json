@@ -310,10 +310,70 @@
           "block": "content",
           "content": [
             {
+              "block": "tag",
+              "content": [
+                {
+                  "elem": "item",
+                  "text": "Статус: Гуру",
+                  "mods": {
+                    "border": true
+                  },
+                  "content": [
+                    {
+                      "block": "i-closer"
+                    }
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "text": "Отдел: Design",
+                  "mods": {
+                    "border": true
+                  },
+                  "content": [
+                    {
+                      "block": "i-closer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "block": "datagrid",
               "content": [
                 {
-                  "elem": "header"
+                  "elem": "header",
+                  "content": [
+                    {
+                      "block": "row",
+                      "content": [
+                        {
+                          "elem": "cell",
+                          "tag": "th",
+                          "text": "ФИО"
+                        },
+                        {
+                          "elem": "cell",
+                          "tag": "th",
+                          "text": "Отдел"
+                        },
+                        {
+                          "elem": "cell",
+                          "tag": "th",
+                          "text": "EMAIL"
+                        },
+                        {
+                          "elem": "cell",
+                          "tag": "th",
+                          "text": "Телефон"
+                        },
+                        {
+                          "elem": "cell",
+                          "tag": "th"
+                        }
+                      ]
+                    }
+                  ]
                 },
                 {
                   "elem": "body",
