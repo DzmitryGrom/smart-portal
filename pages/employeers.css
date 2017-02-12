@@ -2721,6 +2721,10 @@ body {
   font-family: ProximaNovaLight;
   text-transform: uppercase;
 }
+.input,
+input {
+  background-color: transparent;
+}
 .i-arrow {
   display: inline-block;
   border-right: 1px solid #3a3a3a;
