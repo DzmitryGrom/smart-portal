@@ -2780,6 +2780,8 @@ body {
   border-radius: 5px;
   height: 8px;
   top: 0;
+  left: 0;
+  right: 0;
   position: absolute;
   z-index: 1;
 }
@@ -3139,11 +3141,24 @@ body {
 .cards__item:nth-child(4n+4) {
   margin-right: 0;
 }
+.cards__item > .action {
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.cards__item > .action > .tooltip {
+  text-align: left;
+  display: none;
+}
+.cards__item > .action:hover > .tooltip,
+.cards__item > .action .hover > .tooltip {
+  display: block;
+}
 .user-profile_vertical_normal {
   text-align: center;
 }
 .user-profile_vertical_normal .bio__department {
-  margin: 20px 0 0 6px;
+  margin: 20px 0 20px 6px;
 }
 .user-profile_vertical_normal .avatar {
   width: 100px;
