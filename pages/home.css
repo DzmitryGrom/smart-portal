@@ -2715,6 +2715,10 @@ body {
   width: 255px;
   max-width: 255px;
 }
+.main > .sidebar_big {
+  width: 320px;
+  max-width: 320px;
+}
 .main {
   display: flex;
 }

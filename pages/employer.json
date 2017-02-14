@@ -1,0 +1,366 @@
+{
+  "block": "page",
+  "title": "employer",
+  "head": [
+    {
+      "elem": "css",
+      "url": "employer.css"
+    }
+  ],
+  "content": [
+    {
+      "block": "header",
+      "content": [
+        {
+          "elem": "logo",
+          "html": "Smart<b>Portal</b>",
+          "tag": "h1"
+        }, {
+          "block": "nav",
+          "content": [
+            {
+              "elem": "link",
+              "html": "База знаний",
+              "mods": {
+                "newspaper": true
+              },
+              "attrs": {
+                "href": "home.html"
+              },
+              "tag": "a"
+            }, {
+              "elem": "link",
+              "text": "Команда",
+              "mods": {
+                "people": true,
+                "active": true
+              },
+              "attrs": {
+                "href": "employeers.html"
+              },
+              "tag": "a"
+            }, {
+              "elem": "link",
+              "text": "Обучение",
+              "mods": {
+                "education": true
+              },
+              "attrs": {
+                "href": "/"
+              },
+              "tag": "a"
+            }, {
+              "elem": "link",
+              "text": "Скрипты",
+              "mods": {
+                "code": true
+              },
+              "attrs": {
+                "href": "/"
+              },
+              "tag": "a"
+            }
+          ]
+        },
+        {
+          "block": "header-side",
+          "content": [{
+            "elem": "help",
+            "tag": "span"
+          }, {
+            "elem": "search",
+            "tag": "span"
+          }, {
+            "elem": "notification",
+            "mods": {
+              "active": true
+            }
+          }, {
+            "block": "header-profile",
+            "content": [
+              {
+                "elem": "avatar",
+                "content": [
+                  {
+                    "block": "pic",
+                    "attrs": {
+                      "src": "interface/avatar.jpg"
+                    }
+                  }
+                ]
+              }, {
+                "elem": "name",
+                "text": "Игорь Иванов",
+                "tag": "span"
+              }, {
+                "elem": "arrow",
+                "tag": "span"
+              }
+            ]
+          }]
+        }
+      ]
+    }, {
+      "block": "main",
+      "mods": {
+        "justified": "between"
+      },
+      "content": [
+        {
+          "block": "sidebar",
+          "mods": {
+            "big": true
+          },
+          "content": [
+            {
+              "block": "user-profile",
+              "mods": {
+                "vertical": "big"
+              },
+              "content": [
+                {
+                  "block": "avatar",
+                  "content": [
+                    {
+                      "elem": "cover",
+                      "mods": {
+                        "big": true
+                      },
+                      "content": [
+                        {
+                          "block": "pic",
+                          "attrs": {
+                            "src": "http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg",
+                            "height": 160,
+                            "width": 160
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "elem": "online",
+                      "mods": {
+                        "big": true
+                      },
+                      "content": [
+                        {
+                          "block": "text",
+                          "text": "online"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "block": "bio",
+                  "content": [
+                    {
+                      "elem": "name",
+                      "text": "Марк Адамс"
+                    }, {
+                      "elem": "position",
+                      "text": "UI Designer"
+                    }
+                  ]
+                },
+                {
+                  "block": "datagrid",
+                  "content": [
+                    {
+                      "elem": "body",
+                      "content": [
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Отдел"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "text",
+                                  "text": "Design",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "email"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "link",
+                                  "attrs": {
+                                    "href": "mailto:madam@smart.com"
+                                  },
+                                  "text": "madam@smart.com"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "телефон"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "link",
+                                  "mods": {
+                                    "tel": true
+                                  },
+                                  "attrs": {
+                                    "href": "tel:+33088445566"
+                                  },
+                                  "text": "+33 088 44 55 66"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Права доступа"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "text",
+                                  "text": "Пользователь",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Статус"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "fa",
+                                  "attrs": {
+                                    "class": "fa-hand-spock-o"
+                                  }
+                                },
+                                {
+                                  "block": "text",
+                                  "text": "Гуру",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "block": "social",
+                  "content": [
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-vk"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-instagram"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-facebook"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }, {
+          "block": "content",
+          "content": [
+          ]
+        }, {
+          "block": "sidebar",
+          "content": [
+            {
+              "block": "content-filter",
+              "content": [
+                {
+                  "elem": "list",
+                  "tag": "span",
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-bars"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "squad",
+                  "tag": "span",
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-th"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
