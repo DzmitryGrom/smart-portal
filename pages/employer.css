@@ -2629,6 +2629,43 @@ body {
   font-size: 14px;
   font-weight: normal;
 }
+.user-profile_vertical_big {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+.user-profile_vertical_big .avatar {
+  margin-bottom: 25px;
+}
+.user-profile_vertical_big .bio {
+  text-align: center;
+}
+.user-profile_vertical_big .social {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  width: calc(100% + 60px);
+  margin: 0 -30px -30px -30px;
+  display: flex;
+  justify-content: space-between;
+}
+.user-profile_vertical_big .social .link {
+  color: #d8e2e9;
+  text-align: center;
+  font-size: 21px;
+  flex: 1 1 auto;
+  padding: 19px 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+.user-profile_vertical_big .social .link:first-child {
+  border-left: none;
+}
+.user-profile_vertical_big .datagrid {
+  margin: 25px 0;
+}
 .user-profile_vertical_big .datagrid__body .row {
   border: none;
 }
