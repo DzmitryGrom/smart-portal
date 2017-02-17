@@ -2591,7 +2591,11 @@ body {
 .tooltip__content > .checkbox-label {
   padding: 9px 5px 9px 0;
 }
-.tooltip .list__item_hovered {
+.tooltip .list .list__item_hovered {
+  margin-left: 0;
+  padding-left: 12px;
+}
+.tooltip .list .list__item_hovered.list__item_iconed {
   position: relative;
   width: calc(100% + 24px);
   padding-left: calc(2em + 12px);

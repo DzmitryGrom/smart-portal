@@ -466,7 +466,8 @@
                 },
                 "tag": "a"
               }]
-            }, {
+            },
+            {
               "block": "category",
               "content": [{
                 "elem": "item",
@@ -876,7 +877,8 @@
                   "tag": "button"
                 }]
               }]
-            }, {
+            },
+            {
               "block": "category",
               "content": [{
                 "elem": "item",

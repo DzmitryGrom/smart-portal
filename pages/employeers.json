@@ -151,10 +151,12 @@
                       }
                     }
                   ]
-              }, {
+              },
+                {
                   "elem": "item-label",
                   "text": "Статус сотрудника"
-                }, {
+                }, 
+                {
                   "elem": "item",
                   "mods": {
                     "drop": true,

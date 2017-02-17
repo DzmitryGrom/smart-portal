@@ -100,7 +100,8 @@
           }]
         }
       ]
-    }, {
+    },
+    {
       "block": "main",
       "mods": {
         "justified": "between"
@@ -325,39 +326,1091 @@
         }, {
           "block": "content",
           "content": [
-          ]
-        }, {
-          "block": "sidebar",
-          "content": [
             {
-              "block": "content-filter",
+              "block": "category",
+              "mods": {
+                "columns": "two-with-labels"
+              },
               "content": [
                 {
-                  "elem": "list",
-                  "tag": "span",
+                  "elem": "item-label",
+                  "text": "Имя"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
                   "content": [
                     {
-                      "block": "fa",
+                      "block": "input",
                       "attrs": {
-                        "class": "fa-bars"
+                        "value": "Ирина",
+                        "placeholder": "Имя"
                       }
                     }
                   ]
                 },
                 {
-                  "elem": "squad",
-                  "tag": "span",
+                  "elem": "item-label",
+                  "text": "Фамилия"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Петренко",
+                        "placeholder": "Фамилия"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Отчество"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Сергеевна",
+                        "placeholder": "Отчество"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Пол"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Женский",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    },
+                    {
+                      "block": "tooltip",
+                      "attrs": {
+                        "style": "width: 100%"
+                      },
+                      "content": [
+                        {
+                          "block": "content",
+                          "attrs": {
+                            "class": "tooltip__content tooltip__content_default"
+                          },
+                          "content": [
+                            {
+                                      "block": "list",
+                                      "content": [
+                                        {
+                                          "elem": "item",
+                                          "mods": {
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Мужской"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Женский"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Отдел"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Дизайнеры",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    },
+                    {
+                      "block": "tooltip",
+                      "attrs": {
+                        "style": "width: 100%"
+                      },
+                      "content": [
+                        {
+                          "block": "content",
+                          "attrs": {
+                            "class": "tooltip__content tooltip__content_default"
+                          },
+                          "content": [
+                            {
+                                      "block": "list",
+                                      "content": [
+                                        {
+                                          "elem": "item",
+                                          "mods": {
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Дизайнеры"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Какие то еще чуваки"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }, 
+                {
+                  "elem": "item-label",
+                  "text": "Должность"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Хорошая",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Email"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "type": "email",
+                        "value": "my@mail.ru",
+                        "placeholder": "Email"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Телефон"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "+__ ( ___ ) __ __ ___"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Дата рождения"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "attrs": {
+                    "type": "date"
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "mm/dd/yyyy"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "VKONTAKTE"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
                   "content": [
                     {
                       "block": "fa",
+                      "attrs": {"class": "fa-vk"}
+                    },
+                    {
+                      "block": "input",
                       "attrs": {
-                        "class": "fa-th"
+                        "placeholder": "https://"
                       }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "instagram"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-instagram"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "facebook"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-facebook"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                    {
+                      "block": "button",
+                      "mods": {
+                        "success": true
+                      },
+                      "text": "Сохранить"
+                    },
+                    {
+                      "block": "button",
+                      "text": "Сбросить"
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item"
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Новый пароль"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "type": "password",
+                        "placeholder": "Новый пароль"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "type": "password",
+                        "placeholder": "Повторить пароль"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                    {
+                      "block": "button",
+                      "mods": {
+                        "success": true
+                      },
+                      "text": "Обновить пароль"
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "block": "sidebar",
+          "content": [
+          ]
+        }
+      ]
+    },
+    {
+      "block": "main",
+      "mods": {
+        "justified": "between"
+      },
+      "content": [
+        {
+          "block": "sidebar",
+          "mods": {
+            "big": true
+          },
+          "content": [
+            {
+              "block": "user-profile",
+              "mods": {
+                "vertical": "big"
+              },
+              "content": [
+                {
+                  "block": "avatar",
+                  "content": [
+                    {
+                      "elem": "cover",
+                      "mods": {
+                        "big": true
+                      },
+                      "content": [
+                        {
+                          "block": "pic",
+                          "attrs": {
+                            "src": "http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg",
+                            "height": 160,
+                            "width": 160
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "elem": "online",
+                      "mods": {
+                        "big": true
+                      },
+                      "content": [
+                        {
+                          "block": "text",
+                          "text": "online"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "block": "bio",
+                  "content": [
+                    {
+                      "elem": "name",
+                      "text": "Марк Адамс"
+                    }, {
+                      "elem": "position",
+                      "text": "UI Designer"
+                    }
+                  ]
+                },
+                {
+                  "block": "datagrid",
+                  "content": [
+                    {
+                      "elem": "body",
+                      "content": [
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Отдел"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "text",
+                                  "text": "Design",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "email"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "link",
+                                  "attrs": {
+                                    "href": "mailto:madam@smart.com"
+                                  },
+                                  "text": "madam@smart.com"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "телефон"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "link",
+                                  "mods": {
+                                    "tel": true
+                                  },
+                                  "attrs": {
+                                    "href": "tel:+33088445566"
+                                  },
+                                  "text": "+33 088 44 55 66"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Права доступа"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "text",
+                                  "text": "Пользователь",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Статус"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "fa",
+                                  "attrs": {
+                                    "class": "fa-hand-spock-o"
+                                  }
+                                },
+                                {
+                                  "block": "text",
+                                  "text": "Гуру",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "block": "social",
+                  "content": [
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-vk"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-instagram"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-facebook"
+                          }
+                        }
+                      ]
                     }
                   ]
                 }
               ]
             }
+          ]
+        }, {
+          "block": "content",
+          "content": [
+            {
+              "block": "category",
+              "mods": {
+                "columns": "two-with-labels"
+              },
+              "content": [
+{
+                  "elem": "item-label",
+                  "text": "Статус сотрудника"
+                }, 
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-hand-spock-o"
+                      }
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Гуру",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }, {
+                      "block": "tooltip",
+                      "attrs": {
+                        "style": "width: 100%;"
+                      },
+                      "content": [
+                        {
+                          "block": "content",
+                          "attrs": {
+                            "class": "tooltip__content tooltip__content_default"
+                          },
+                          "content": [
+                            {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-circle-o'></i>Без статуса"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-gamepad'></i>Новичок"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-mortar-board'></i>Специалист"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-star'></i>Профи"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-flask'></i>Эксперт"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-hand-spock-o'></i>Гуру"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item"
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Имя"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Ирина",
+                        "placeholder": "Имя"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Фамилия"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Петренко",
+                        "placeholder": "Фамилия"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Отчество"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Сергеевна",
+                        "placeholder": "Отчество"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Пол"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Женский",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Отдел"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Дизайнеры",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+                }, 
+                {
+                  "elem": "item-label",
+                  "text": "Должность"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Хорошая",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Email"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "type": "email",
+                        "value": "my@mail.ru",
+                        "placeholder": "Email"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Телефон"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "+__ ( ___ ) __ __ ___"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Дата рождения"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "attrs": {
+                    "type": "date"
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "mm/dd/yyyy"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "VKONTAKTE"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-vk"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "instagram"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-instagram"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "facebook"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-facebook"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                    {
+                      "block": "button",
+                      "mods": {
+                        "success": true
+                      },
+                      "text": "Сохранить"
+                    },
+                    {
+                      "block": "button",
+                      "text": "Сбросить"
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "block": "sidebar",
+          "content": [
           ]
         }
       ]
