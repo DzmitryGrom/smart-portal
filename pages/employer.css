@@ -2957,17 +2957,24 @@ body {
   display: flex;
   align-items: flex-start;
   padding: 20px 30px;
+  position: relative;
 }
 .notes-list__item + .notes-list__item {
   border-top: 1px solid #ecf2f5;
 }
 .notes-list__item .content {
+  margin: 0 20px;
+}
+.notes-list__item .content .title {
+  color: #2f3f4c;
+  font-family: ProximaNovaReg;
+  font-size: 15px;
+  margin-bottom: 1em;
+}
+.notes-list__item .content .text {
   font-family: ProximaNovaLight;
   font-size: 13px;
   color: #77828c;
-  margin: 0 20px;
-}
-.notes-list__item .content .text {
   padding: 0;
   margin: 0;
 }
@@ -2977,11 +2984,49 @@ body {
   margin-top: 16px;
   color: #b0bfc9;
 }
+.notes-list__item:first-child .decor {
+  top: 20px;
+}
+.notes-list__item:first-child .decor:before {
+  top: 0px;
+}
+.notes-list__item:first-child .decor:after {
+  top: 5px;
+}
+.notes-list__item .decor {
+  width: 1px;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  background-color: #dceeea;
+}
+.notes-list__item .decor:after {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: -3px;
+  width: 7px;
+  height: 7px;
+  background-color: #7fd5c2;
+  border-radius: 500px;
+}
+.notes-list__item .decor:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 1px solid #7fd5c2;
+  border-radius: 500px;
+  position: absolute;
+  top: 20px;
+  left: -8px;
+}
 .notes-list__item .actions {
   flex: 1 0 26px;
 }
 .notes-list__item .actions .link {
   display: block;
+  border-radius: 2px;
   color: #e8eaec;
   border: 1px solid #e8eaec;
   width: 24px;
@@ -2995,6 +3040,9 @@ body {
 }
 .notes-list__item .actions .link .fa {
   line-height: 24px;
+}
+.notes-list_noborder .notes-list__item + .notes-list__item {
+  border-top: none;
 }
 .notes-add {
   border-radius: 0 0 5px 5px;

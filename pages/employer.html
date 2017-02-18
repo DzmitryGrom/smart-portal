@@ -107,9 +107,9 @@
     <div class="content">
       <div class="taber">
         <label class="taber__tab" for="notes">Заметки</label>
-        <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="notes" checked="true">
+        <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="notes">
         <div class="content">
-          <div class="notes-list" style="height: 500px">
+          <div class="notes-list" style="max-height: 500px">
             <div class="notes-list__item">
               <div class="avatar">
                 <div class="avatar__cover avatar__cover_small">
@@ -233,9 +233,46 @@
           </div>
         </div>
         <label class="taber__tab" for="responsibilities">Обязанности</label>
-        <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="responsibilities">
+        <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="responsibilities" checked="true">
         <div class="content">
-          <div class="content__undefined">responsibilities</div>
+          <div class="notes-list notes-list_noborder" style="max-height: 500px">
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">Руководитель</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+              <div class="actions">
+                <a class="link" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">Art Director</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+              <div class="actions">
+                <a class="link" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="notes-add">
+            <input class="input" type="text" placeholder="Написать заметку">
+            <button class="button button_link" type="button">
+              <i class="fa fa-paper-plane-o"></i>
+            </button>
+          </div>
         </div>
         <label class="taber__tab taber__tab_active" for="preferences">Настройки профиля</label>
         <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="preferences">

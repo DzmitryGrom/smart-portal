@@ -397,7 +397,6 @@
                                 {
                                     "elem": "toggler",
                                     "attrs": {
-                                        "checked": true,
                                         "id": "notes"
                                     }
                                 },
@@ -407,7 +406,7 @@
                                         {
                                             "block": "notes-list",
                                             "attrs": {
-                                              "style": "height: 500px"
+                                                "style": "max-height: 500px"
                                             },
                                             "content": [
                                                 {
@@ -815,29 +814,29 @@
                                             ]
                                         },
                                         {
-                                          "block": "notes-add",
-                                          "content": [
-                                            {
-                                              "block": "input",
-                                              "attrs": {
-                                                "placeholder": "Написать заметку"
-                                              }
-                                            },
-                                            {
-                                              "block": "button",
-                                              "mods": {
-                                                "link": true
-                                              },
-                                              "content": [
+                                            "block": "notes-add",
+                                            "content": [
                                                 {
-                                                  "block": "fa",
-                                                  "attrs": {
-                                                    "class": "fa-paper-plane-o"
-                                                  }
+                                                    "block": "input",
+                                                    "attrs": {
+                                                        "placeholder": "Написать заметку"
+                                                    }
+                                                },
+                                                {
+                                                    "block": "button",
+                                                    "mods": {
+                                                        "link": true
+                                                    },
+                                                    "content": [
+                                                        {
+                                                            "block": "fa",
+                                                            "attrs": {
+                                                                "class": "fa-paper-plane-o"
+                                                            }
+                                                        }
+                                                    ]
                                                 }
-                                              ]
-                                            }
-                                          ]
+                                            ]
                                         }
                                     ]
                                 },
@@ -851,6 +850,7 @@
                                 {
                                     "elem": "toggler",
                                     "attrs": {
+                                        "checked": true,
                                         "id": "responsibilities"
                                     }
                                 },
@@ -858,7 +858,138 @@
                                     "block": "content",
                                     "content": [
                                         {
-                                            "text": "responsibilities"
+                                            "block": "notes-list",
+                                            "mods": {
+                                              "noborder": true
+                                            },
+                                            "attrs": {
+                                                "style": "max-height: 500px"
+                                            },
+                                            "content": [
+                                                {
+                                                    "elem": "item",
+                                                    "content": [
+                                                        {
+                                                          "block": "decor"
+                                                        },
+                                                        {
+                                                            "block": "content",
+                                                            "content": [
+                                                                {
+                                                                  "block": "title",
+                                                                  "text": "Руководитель"
+                                                                },
+                                                                {
+                                                                    "block": "text",
+                                                                    "text": "Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал",
+                                                                    "tag": "p"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "block": "actions",
+                                                            "content": [
+                                                                {
+                                                                    "block": "link",
+                                                                    "content": [
+                                                                        {
+                                                                            "block": "fa",
+                                                                            "attrs": {
+                                                                                "class": "fa-pencil"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "block": "link",
+                                                                    "content": [
+                                                                        {
+                                                                            "block": "fa",
+                                                                            "attrs": {
+                                                                                "class": "fa-trash-o"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "elem": "item",
+                                                    "content": [
+                                                        {
+                                                          "block": "decor"
+                                                        },
+                                                        {
+                                                            "block": "content",
+                                                            "content": [
+                                                                {
+                                                                  "block": "title",
+                                                                  "text": "Art Director"
+                                                                },
+                                                                {
+                                                                    "block": "text",
+                                                                    "text": "Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал",
+                                                                    "tag": "p"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "block": "actions",
+                                                            "content": [
+                                                                {
+                                                                    "block": "link",
+                                                                    "content": [
+                                                                        {
+                                                                            "block": "fa",
+                                                                            "attrs": {
+                                                                                "class": "fa-pencil"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "block": "link",
+                                                                    "content": [
+                                                                        {
+                                                                            "block": "fa",
+                                                                            "attrs": {
+                                                                                "class": "fa-trash-o"
+                                                                            }
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "block": "notes-add",
+                                            "content": [
+                                                {
+                                                    "block": "input",
+                                                    "attrs": {
+                                                        "placeholder": "Написать заметку"
+                                                    }
+                                                },
+                                                {
+                                                    "block": "button",
+                                                    "mods": {
+                                                        "link": true
+                                                    },
+                                                    "content": [
+                                                        {
+                                                            "block": "fa",
+                                                            "attrs": {
+                                                                "class": "fa-paper-plane-o"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
