@@ -61,20 +61,254 @@
     </div>
   </div>
   <div class="main main_justified_between">
-    <div class="sidebar">
-      <div class="category">
-        <div class="category__item category__item_title">Поиск по сотрудникам</div>
-        <div class="category__item category__item_submit category__item_submit_search category__item_input">
-          <div class="search">
-            <input type='search' placeholder='Искать'>
-            <i class="i-search"></i>
+    <div class="breadcrumbs">
+      <a class="link" href="#">Команда</a>
+      <a class="link" href="#">Отдел: Design</a>
+      <a class="link" href="#">Дарья Петренко</a>
+    </div>
+    <div class="sidebar sidebar_big">
+      <div class="user-profile user-profile_vertical_big">
+        <div class="avatar">
+          <div class="avatar__cover avatar__cover_big">
+            <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="160" width="160">
+          </div>
+          <div class="avatar__online avatar__online_big">
+            <div class="text">online</div>
+          </div>
+          <div class="avatar__edit avatar__edit_big">
+            <i class="fa fa-pencil"></i>
+          </div>
+          <div class="avatar__delete avatar__delete_big">
+            <i class="fa fa-trash-o"></i>
+          </div>
+        </div>
+        <div class="bio">
+          <div class="bio__name">Марк Адамс</div>
+          <div class="bio__position">UI Designer</div>
+        </div>
+        <table class="datagrid">
+          <tbody class="datagrid__body">
+            <tr class="row">
+              <td class="row__cell">Отдел</td>
+              <td class="row__cell">
+                <span class="text">Design</span>
+              </td>
+            </tr>
+            <tr class="row">
+              <td class="row__cell">email</td>
+              <td class="row__cell">
+                <a class="link" href="mailto:madam@smart.com">madam@smart.com</a>
+              </td>
+            </tr>
+            <tr class="row">
+              <td class="row__cell">телефон</td>
+              <td class="row__cell">
+                <a class="link link_tel" href="tel:+33088445566">+33 088 44 55 66</a>
+              </td>
+            </tr>
+            <tr class="row">
+              <td class="row__cell">Права доступа</td>
+              <td class="row__cell">
+                <span class="text">Пользователь</span>
+              </td>
+            </tr>
+            <tr class="row">
+              <td class="row__cell">Статус</td>
+              <td class="row__cell">
+                <i class="fa fa-hand-spock-o"></i>
+                <span class="text">Гуру</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="social">
+          <a class="link" href="#">
+            <i class="fa fa-vk"></i>
+          </a>
+          <a class="link" href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a class="link" href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="category category_columns_two-with-labels">
+        <div class="category__item-label">Имя</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="text" placeholder="Имя" value="Ирина">
+        </div>
+        <div class="category__item-label">Фамилия</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="text" placeholder="Фамилия" value="Петренко">
+        </div>
+        <div class="category__item-label">Отчество</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="text" placeholder="Отчество" value="Сергеевна">
+        </div>
+        <div class="category__item-label">Пол</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Женский" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+          <div class="tooltip" style="width: 100%">
+            <div class="content tooltip__content tooltip__content_default">
+              <ul class="list">
+                <li class="list__item list__item_hovered">
+                  <div class="text">Мужской</div>
+                </li>
+                <li class="list__item list__item_hovered">
+                  <div class="text">Женский</div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="category__item-label">Отдел</div>
         <div class="category__item category__item_drop category__item_input">
           <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly="true">
           <div class="i-arrow i-arrow_to_down"></div>
+          <div class="tooltip" style="width: 100%">
+            <div class="content tooltip__content tooltip__content_default">
+              <ul class="list">
+                <li class="list__item list__item_hovered">
+                  <div class="text">Дизайнеры</div>
+                </li>
+                <li class="list__item list__item_hovered">
+                  <div class="text">Какие то еще чуваки</div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <div class="category__item-label">Должность</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Хорошая" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+        <div class="category__item-label">Email</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="email" placeholder="Email" value="my@mail.ru">
+        </div>
+        <div class="category__item-label">Телефон</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="text" placeholder="+__ ( ___ ) __ __ ___">
+        </div>
+        <div class="category__item-label">Дата рождения</div>
+        <div class="category__item category__item_input" type="date">
+          <input class="input" type="text" placeholder="mm/dd/yyyy">
+        </div>
+        <div class="category__item-label">VKONTAKTE</div>
+        <div class="category__item category__item_input category__item_icon">
+          <i class="fa fa-vk"></i>
+          <input class="input" type="text" placeholder="https://">
+        </div>
+        <div class="category__item-label">instagram</div>
+        <div class="category__item category__item_input category__item_icon">
+          <i class="fa fa-instagram"></i>
+          <input class="input" type="text" placeholder="https://">
+        </div>
+        <div class="category__item-label">facebook</div>
+        <div class="category__item category__item_input category__item_icon">
+          <i class="fa fa-facebook"></i>
+          <input class="input" type="text" placeholder="https://">
+        </div>
+        <div class="category__item-label"></div>
+        <div class="category__item">
+          <button class="button button_success" type="button">Сохранить</button>
+          <button class="button" type="button">Сбросить</button>
+        </div>
+        <div class="category__item-label"></div>
+        <div class="category__item"></div>
+        <div class="category__item-label">Новый пароль</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="password" placeholder="Новый пароль">
+        </div>
+        <div class="category__item-label"></div>
+        <div class="category__item category__item_input">
+          <input class="input" type="password" placeholder="Повторить пароль">
+        </div>
+        <div class="category__item-label"></div>
+        <div class="category__item">
+          <button class="button button_success" type="button">Обновить пароль</button>
+        </div>
+        <div class="category__item-label"></div>
+        <div class="category__item"></div>
+      </div>
+    </div>
+    <div class="sidebar">
+    </div>
+  </div>
+  <div class="main main_justified_between">
+    <div class="sidebar sidebar_big">
+      <div class="user-profile user-profile_vertical_big">
+        <div class="avatar">
+          <div class="avatar__cover avatar__cover_big">
+            <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="160" width="160">
+          </div>
+          <div class="avatar__online avatar__online_big">
+            <div class="text">online</div>
+          </div>
+        </div>
+        <div class="bio">
+          <div class="bio__name">Устина Забавная</div>
+          <div class="bio__position">UI Designer</div>
+        </div>
+        <button class="button button_success button_big" type="button">
+          <i class="fa fa-envelope-o"></i>
+          <span class="button__text">Отправить сообщение</span>
+        </button>
+        <table class="datagrid">
+          <tbody class="datagrid__body">
+            <tr class="row">
+              <td class="row__cell">Отдел</td>
+              <td class="row__cell">
+                <span class="text">Design</span>
+              </td>
+            </tr>
+            <tr class="row">
+              <td class="row__cell">email</td>
+              <td class="row__cell">
+                <a class="link" href="mailto:madam@smart.com">madam@smart.com</a>
+              </td>
+            </tr>
+            <tr class="row">
+              <td class="row__cell">телефон</td>
+              <td class="row__cell">
+                <a class="link link_tel" href="tel:+33088445566">+33 088 44 55 66</a>
+              </td>
+            </tr>
+            <tr class="row">
+              <td class="row__cell">Права доступа</td>
+              <td class="row__cell">
+                <span class="text">Пользователь</span>
+              </td>
+            </tr>
+            <tr class="row">
+              <td class="row__cell">Статус</td>
+              <td class="row__cell">
+                <i class="fa fa-hand-spock-o"></i>
+                <span class="text">Гуру</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="social">
+          <a class="link" href="#">
+            <i class="fa fa-vk"></i>
+          </a>
+          <a class="link" href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a class="link" href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="category category_columns_two-with-labels">
         <div class="category__item-label">Статус сотрудника</div>
         <div class="category__item category__item_drop category__item_input category__item_icon">
           <i class="fa fa-hand-spock-o"></i>
@@ -115,17 +349,267 @@
             </div>
           </div>
         </div>
+        <div class="category__item-label"></div>
+        <div class="category__item"></div>
+        <div class="category__item-label">Имя</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="text" placeholder="Имя" value="Ирина">
+        </div>
+        <div class="category__item-label">Фамилия</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="text" placeholder="Фамилия" value="Петренко">
+        </div>
+        <div class="category__item-label">Отчество</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="text" placeholder="Отчество" value="Сергеевна">
+        </div>
+        <div class="category__item-label">Пол</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Женский" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+        <div class="category__item-label">Отдел</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
         <div class="category__item-label">Должность</div>
         <div class="category__item category__item_drop category__item_input">
           <input class="input" type="text" placeholder="Type here" value="Хорошая" readonly="true">
           <div class="i-arrow i-arrow_to_down"></div>
         </div>
-        <div class="category__item-label">Пол</div>
-        <div class="category__item category__item_drop category__item_input">
-          <input class="input" type="text" placeholder="Type here" value="Любой" readonly="true">
-          <div class="i-arrow i-arrow_to_down"></div>
+        <div class="category__item-label">Email</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="email" placeholder="Email" value="my@mail.ru">
+        </div>
+        <div class="category__item-label">Телефон</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="text" placeholder="+__ ( ___ ) __ __ ___">
+        </div>
+        <div class="category__item-label">Дата рождения</div>
+        <div class="category__item category__item_input" type="date">
+          <input class="input" type="text" placeholder="mm/dd/yyyy">
+        </div>
+        <div class="category__item-label">VKONTAKTE</div>
+        <div class="category__item category__item_input category__item_icon">
+          <i class="fa fa-vk"></i>
+          <input class="input" type="text" placeholder="https://">
+        </div>
+        <div class="category__item-label">instagram</div>
+        <div class="category__item category__item_input category__item_icon">
+          <i class="fa fa-instagram"></i>
+          <input class="input" type="text" placeholder="https://">
+        </div>
+        <div class="category__item-label">facebook</div>
+        <div class="category__item category__item_input category__item_icon">
+          <i class="fa fa-facebook"></i>
+          <input class="input" type="text" placeholder="https://">
+        </div>
+        <div class="category__item-label"></div>
+        <div class="category__item">
+          <button class="button button_success" type="button">Сохранить</button>
+          <button class="button" type="button">Сбросить</button>
+        </div>
+        <div class="category__item-label"></div>
+        <div class="category__item"></div>
+      </div>
+    </div>
+    <div class="sidebar">
+    </div>
+  </div>
+  <div class="main main_justified_between">
+    <div class="sidebar sidebar_big">
+      <div class="user-profile user-profile_vertical_big">
+        <div class="action">
+          <i class="fa fa fa-ellipsis-h"></i>
+          <div class="tooltip" style="top: 95%; width: 220px; right: -20px">
+            <i class="tooltip__arrow" style="right: 17px"></i>
+            <div class="content tooltip__content tooltip__content_default">
+              <ul class="list">
+                <li class="list__item list__item_iconed list__item_hovered">
+                  <i class="fa fa-trash-o"></i>
+                  <div class="text">Уволить</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="avatar">
+          <div class="avatar__cover avatar__cover_big">
+            <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="160" width="160">
+          </div>
+          <div class="avatar__online avatar__online_big">
+            <div class="text">online</div>
+          </div>
+        </div>
+        <div class="bio">
+          <div class="bio__name">Лилия Смелая</div>
+          <div class="bio__position">UI Designer</div>
+        </div>
+        <button class="button button_success button_big" type="button">
+          <i class="fa fa-envelope-o"></i>
+          <span class="button__text">Отправить сообщение</span>
+        </button>
+        <table class="datagrid">
+          <tbody class="datagrid__body">
+            <tr class="row">
+              <td class="row__cell">Отдел</td>
+              <td class="row__cell">
+                <span class="text">Design</span>
+              </td>
+            </tr>
+            <tr class="row">
+              <td class="row__cell">email</td>
+              <td class="row__cell">
+                <a class="link" href="mailto:madam@smart.com">madam@smart.com</a>
+              </td>
+            </tr>
+            <tr class="row">
+              <td class="row__cell">телефон</td>
+              <td class="row__cell">
+                <a class="link link_tel" href="tel:+33088445566">+33 088 44 55 66</a>
+              </td>
+            </tr>
+            <tr class="row">
+              <td class="row__cell">Права доступа</td>
+              <td class="row__cell">
+                <span class="text">Пользователь</span>
+              </td>
+            </tr>
+            <tr class="row">
+              <td class="row__cell">Статус</td>
+              <td class="row__cell">
+                <i class="fa fa-hand-spock-o"></i>
+                <span class="text">Гуру</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="social">
+          <a class="link" href="#">
+            <i class="fa fa-vk"></i>
+          </a>
+          <a class="link" href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a class="link" href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
         </div>
       </div>
+    </div>
+    <div class="content">
+      <div class="category category_columns_two-with-labels">
+        <div class="category__item-label">Статус сотрудника</div>
+        <div class="category__item category__item_drop category__item_input category__item_icon">
+          <i class="fa fa-hand-spock-o"></i>
+          <input class="input" type="text" placeholder="Type here" value="Гуру" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+          <div class="tooltip" style="width: 100%;">
+            <div class="content tooltip__content tooltip__content_default">
+              <label class="checkbox-label">
+                <span class="checkbox-text"><i class='fa fa-circle-o'></i>Без статуса</span>
+                <input class="checkbox" type="checkbox">
+                <i class="checkbox__indicator"></i>
+              </label>
+              <label class="checkbox-label">
+                <span class="checkbox-text"><i class='fa fa-gamepad'></i>Новичок</span>
+                <input class="checkbox" type="checkbox">
+                <i class="checkbox__indicator"></i>
+              </label>
+              <label class="checkbox-label">
+                <span class="checkbox-text"><i class='fa fa-mortar-board'></i>Специалист</span>
+                <input class="checkbox" type="checkbox">
+                <i class="checkbox__indicator"></i>
+              </label>
+              <label class="checkbox-label">
+                <span class="checkbox-text"><i class='fa fa-star'></i>Профи</span>
+                <input class="checkbox" type="checkbox">
+                <i class="checkbox__indicator"></i>
+              </label>
+              <label class="checkbox-label">
+                <span class="checkbox-text"><i class='fa fa-flask'></i>Эксперт</span>
+                <input class="checkbox" type="checkbox">
+                <i class="checkbox__indicator"></i>
+              </label>
+              <label class="checkbox-label">
+                <span class="checkbox-text"><i class='fa fa-hand-spock-o'></i>Гуру</span>
+                <input class="checkbox" type="checkbox">
+                <i class="checkbox__indicator"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="category__item-label"></div>
+        <div class="category__item"></div>
+        <div class="category__item-label">Имя</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="text" placeholder="Имя" value="Ирина">
+        </div>
+        <div class="category__item-label">Фамилия</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="text" placeholder="Фамилия" value="Петренко">
+        </div>
+        <div class="category__item-label">Отчество</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="text" placeholder="Отчество" value="Сергеевна">
+        </div>
+        <div class="category__item-label">Пол</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Женский" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+        <div class="category__item-label">Отдел</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+        <div class="category__item-label">Должность</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Хорошая" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+        <div class="category__item-label">Email</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="email" placeholder="Email" value="my@mail.ru">
+        </div>
+        <div class="category__item-label">Телефон</div>
+        <div class="category__item category__item_input">
+          <input class="input" type="text" placeholder="+__ ( ___ ) __ __ ___">
+        </div>
+        <div class="category__item-label">Дата рождения</div>
+        <div class="category__item category__item_input" type="date">
+          <input class="input" type="text" placeholder="mm/dd/yyyy">
+        </div>
+        <div class="category__item-label">VKONTAKTE</div>
+        <div class="category__item category__item_input category__item_icon">
+          <i class="fa fa-vk"></i>
+          <input class="input" type="text" placeholder="https://">
+        </div>
+        <div class="category__item-label">instagram</div>
+        <div class="category__item category__item_input category__item_icon">
+          <i class="fa fa-instagram"></i>
+          <input class="input" type="text" placeholder="https://">
+        </div>
+        <div class="category__item-label">facebook</div>
+        <div class="category__item category__item_input category__item_icon">
+          <i class="fa fa-facebook"></i>
+          <input class="input" type="text" placeholder="https://">
+        </div>
+        <div class="category__item-label"></div>
+        <div class="category__item">
+          <button class="button button_success" type="button">Сохранить</button>
+          <button class="button" type="button">Сбросить</button>
+        </div>
+        <div class="category__item-label"></div>
+        <div class="category__item"></div>
+      </div>
+    </div>
+    <div class="sidebar">
+    </div>
+  </div>
+  <div class="main main_justified_between">
+    <div class="sidebar">
       <div class="category">
         <div class="category__item category__item_title category__item_action_add">Разделы</div>
         <a class="category__item" href="/">Дизайнеры</a>
@@ -143,7 +627,7 @@
         <div class="category__item category__item_icon category__item_drop category__item_input">
           <i class="fa fa-user-plus"></i>
           <input class="input" type="text" placeholder="Добавить участника" readonly="true">
-          <div class="tooltip tooltip_footer" hidden="true" style="height: 240px; width: 256px; left: -24px;">
+          <div class="tooltip tooltip_footer" style="height: 240px; width: 256px; left: -24px;">
             <i class="tooltip__arrow" style="left: 36px"></i>
             <div class="content tooltip__content">
               <div class="checkbox-group">
@@ -398,6 +882,151 @@
           </div>
         </div>
       </div>
+      <div class="article">
+        <div class="article-cover" style="background-image: url('http://www.dolomitisuperski.com/website/var/tmp/image-thumbnails/660000/667626/thumb__demi_gallery_detail_landscape/mountains_7824779.jpeg')"></div>
+        <div class="content article__content">
+          <div class="content__caption">
+            <span class="content__caption-text">200 шаблонов эффективных заголовков</span>
+            <div class="content__caption-action">
+              <i class="i-more"></i>
+            </div>
+          </div>
+          <div class="content__text">Более того, как-то вскоре после вступления в должность еду с водителем. Он ко мне поворачивается и говорит: «Герман Сергеевич, а вы штрафы когда будете оплачивать?» Я: «Какие штрафы?» У меня же представление о государстве было достаточно же
+            представление о государ Более того, как-то вскоре после вступления в должность еду с водителем. Он ко мне поворачивается и говорит: «Герман Сергеевич, а вы штрафы когда будете оплачивать?» Я: «Какие штрафы?» У меня же представление о государстве
+            было достаточно же представление о государ Более того, как-то вскоре после вступления в должность еду с водителем. Он ко мне поворачивается и говорит: «Герман Сергеевич, а вы штрафы когда будете оплачивать?» Я: «Какие штрафы?» У меня же представление
+            о государстве было достаточно же представление о государ Более того, как-то вскоре после вступления в должность еду с водителем. Он ко мне поворачивается и говорит: «Герман Сергеевич, а вы штрафы когда будете оплачивать?» Я: «Какие штрафы?»</div>
+          <div class="content__footer">
+            <button class="button button_link button_pin_right" type="button">Читать полностью</button>
+          </div>
+        </div>
+        <div class="article__collapser">
+          <button class="button button_round button_default" type="button">
+            <i class="i-arrow i-arrow_to_up"></i>
+          </button>
+        </div>
+        <div class="article__footer">
+          <span class="text"><strong>Разделы:</strong>Дизайн</span>
+          <div class="tag">
+            <i class="i-tag"></i>
+            <span class="tag__item tag__item_border">Хостинг</span>
+            <span class="tag__item tag__item_border">Дизайн</span>
+            <span class="tag__item tag__item_border">Бизнес</span>
+          </div>
+          <button class="button button_pseudo button_small" type="button">Еще 5 тегов</button>
+          <div class="text text_pin_right text_small text_nowrap">
+            <i class="i-group"></i>
+            <span class="text__text">7</span>
+            <i class="i-chat"></i>
+            <span class="text__text">15</span>
+            <i class="i-heart"></i>
+            <span class="text__text">984</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="content-filter">
+        <span class="content-filter__type">Тип:</span>
+        <div class="content-filter__type-value">
+          <span class="text">Все</span>
+          <div class="tooltip" style="width: 130px; right: -9px">
+            <i class="tooltip__arrow" style="right: 10px"></i>
+            <div class="content tooltip__content tooltip__content_default">
+              <ul class="list">
+                <li class="list__item list__item_color_info">
+                  <div class="text">Все</div>
+                </li>
+                <li class="list__item">
+                  <div class="text">Видео</div>
+                </li>
+                <li class="list__item">
+                  <div class="text">Ссылка</div>
+                </li>
+                <li class="list__item">
+                  <div class="text">Статья</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <i class="i-arrow i-arrow_to_down"></i>
+        </div>
+        <span class="content-filter__list">
+<i class="fa fa-bars"></i>
+</span>
+        <span class="content-filter__squad">
+<i class="fa fa-th"></i>
+</span>
+      </div>
+    </div>
+  </div>
+  <div class="main main_justified_between">
+    <div class="sidebar">
+      <div class="category">
+        <div class="category__item category__item_title">Поиск по сотрудникам</div>
+        <div class="category__item category__item_submit category__item_submit_search category__item_input">
+          <div class="search">
+            <input type='search' placeholder='Искать'>
+            <i class="i-search"></i>
+          </div>
+        </div>
+        <div class="category__item-label">Отдел</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+        <div class="category__item-label">Статус сотрудника</div>
+        <div class="category__item category__item_drop category__item_input category__item_icon">
+          <i class="fa fa-hand-spock-o"></i>
+          <input class="input" type="text" placeholder="Type here" value="Гуру" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+          <div class="tooltip" style="width: 100%;">
+            <div class="content tooltip__content tooltip__content_default">
+              <label class="checkbox-label">
+                <span class="checkbox-text"><i class='fa fa-circle-o'></i>Без статуса</span>
+                <input class="checkbox" type="checkbox">
+                <i class="checkbox__indicator"></i>
+              </label>
+              <label class="checkbox-label">
+                <span class="checkbox-text"><i class='fa fa-gamepad'></i>Новичок</span>
+                <input class="checkbox" type="checkbox">
+                <i class="checkbox__indicator"></i>
+              </label>
+              <label class="checkbox-label">
+                <span class="checkbox-text"><i class='fa fa-mortar-board'></i>Специалист</span>
+                <input class="checkbox" type="checkbox">
+                <i class="checkbox__indicator"></i>
+              </label>
+              <label class="checkbox-label">
+                <span class="checkbox-text"><i class='fa fa-star'></i>Профи</span>
+                <input class="checkbox" type="checkbox">
+                <i class="checkbox__indicator"></i>
+              </label>
+              <label class="checkbox-label">
+                <span class="checkbox-text"><i class='fa fa-flask'></i>Эксперт</span>
+                <input class="checkbox" type="checkbox">
+                <i class="checkbox__indicator"></i>
+              </label>
+              <label class="checkbox-label">
+                <span class="checkbox-text"><i class='fa fa-hand-spock-o'></i>Гуру</span>
+                <input class="checkbox" type="checkbox">
+                <i class="checkbox__indicator"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="category__item-label">Должность</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Хорошая" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+        <div class="category__item-label">Пол</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Любой" readonly="true">
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+      </div>
+    </div>
+    <div class="content">
       <div class="tag">
         <div class="tag__item tag__item_border">Статус: Гуру
           <div class="i-closer"></div>
@@ -682,30 +1311,6 @@
     </div>
     <div class="sidebar">
       <div class="content-filter">
-        <span class="content-filter__type">Тип:</span>
-        <div class="content-filter__type-value">
-          <span class="text">Все</span>
-          <div class="tooltip" style="width: 130px; right: -9px">
-            <i class="tooltip__arrow" style="right: 10px"></i>
-            <div class="content tooltip__content tooltip__content_default">
-              <ul class="list">
-                <li class="list__item list__item_color_info">
-                  <div class="text">Все</div>
-                </li>
-                <li class="list__item">
-                  <div class="text">Видео</div>
-                </li>
-                <li class="list__item">
-                  <div class="text">Ссылка</div>
-                </li>
-                <li class="list__item">
-                  <div class="text">Статья</div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <i class="i-arrow i-arrow_to_down"></i>
-        </div>
         <span class="content-filter__list">
 <i class="fa fa-bars"></i>
 </span>

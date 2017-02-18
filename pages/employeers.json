@@ -99,7 +99,8 @@
           }]
         }
       ]
-    }, {
+    },
+    {
       "block": "main",
       "mods": {
         "justified": "between"

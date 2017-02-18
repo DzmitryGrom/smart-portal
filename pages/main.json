@@ -204,39 +204,415 @@
           }]
         }
       ]
-    }, {
+    },
+
+    {
       "block": "main",
       "mods": {
         "justified": "between"
       },
       "content": [
         {
+          "block": "breadcrumbs",
+          "content": [
+            {
+              "block": "link",
+              "text": "Команда"
+            },
+            {
+              "block": "link",
+              "text": "Отдел: Design"
+            },
+            {
+              "block": "link",
+              "text": "Дарья Петренко"
+            }
+          ]
+        },
+        {
           "block": "sidebar",
+          "mods": {
+            "big": true
+          },
+          "content": [
+            {
+              "block": "user-profile",
+              "mods": {
+                "vertical": "big"
+              },
+              "content": [
+                {
+                  "block": "avatar",
+                  "content": [
+                    {
+                      "elem": "cover",
+                      "mods": {
+                        "big": true
+                      },
+                      "content": [
+                        {
+                          "block": "pic",
+                          "attrs": {
+                            "src": "http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg",
+                            "height": 160,
+                            "width": 160
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "elem": "online",
+                      "mods": {
+                        "big": true
+                      },
+                      "content": [
+                        {
+                          "block": "text",
+                          "text": "online"
+                        }
+                      ]
+                    },
+                    {
+                      "elem": "edit",
+                      "mods": {
+                        "big": true
+                      },
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-pencil"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "elem": "delete",
+                      "mods": {
+                        "big": true
+                      },
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-trash-o"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "block": "bio",
+                  "content": [
+                    {
+                      "elem": "name",
+                      "text": "Марк Адамс"
+                    }, {
+                      "elem": "position",
+                      "text": "UI Designer"
+                    }
+                  ]
+                },
+                {
+                  "block": "datagrid",
+                  "content": [
+                    {
+                      "elem": "body",
+                      "content": [
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Отдел"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "text",
+                                  "text": "Design",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "email"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "link",
+                                  "attrs": {
+                                    "href": "mailto:madam@smart.com"
+                                  },
+                                  "text": "madam@smart.com"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "телефон"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "link",
+                                  "mods": {
+                                    "tel": true
+                                  },
+                                  "attrs": {
+                                    "href": "tel:+33088445566"
+                                  },
+                                  "text": "+33 088 44 55 66"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Права доступа"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "text",
+                                  "text": "Пользователь",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Статус"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "fa",
+                                  "attrs": {
+                                    "class": "fa-hand-spock-o"
+                                  }
+                                },
+                                {
+                                  "block": "text",
+                                  "text": "Гуру",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "block": "social",
+                  "content": [
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-vk"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-instagram"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-facebook"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }, {
+          "block": "content",
           "content": [
             {
               "block": "category",
-              "attrs": {},
+              "mods": {
+                "columns": "two-with-labels"
+              },
               "content": [
                 {
-                  "elem": "item",
-                  "text": "Поиск по сотрудникам",
-                  "mods": {
-                    "title": true
-                  }
-                }, {
+                  "elem": "item-label",
+                  "text": "Имя"
+                },
+                {
                   "elem": "item",
                   "mods": {
-                    "submit": true,
-                    "submit_search": true,
                     "input": true
                   },
-                  "content": [{
-                    "block": "search"
-                  }]
-                }, {
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Ирина",
+                        "placeholder": "Имя"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Фамилия"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Петренко",
+                        "placeholder": "Фамилия"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Отчество"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Сергеевна",
+                        "placeholder": "Отчество"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Пол"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Женский",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    },
+                    {
+                      "block": "tooltip",
+                      "attrs": {
+                        "style": "width: 100%"
+                      },
+                      "content": [
+                        {
+                          "block": "content",
+                          "attrs": {
+                            "class": "tooltip__content tooltip__content_default"
+                          },
+                          "content": [
+                            {
+                                      "block": "list",
+                                      "content": [
+                                        {
+                                          "elem": "item",
+                                          "mods": {
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Мужской"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Женский"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
                   "elem": "item-label",
                   "text": "Отдел"
-                }, {
+                },
+                {
                   "elem": "item",
                   "mods": {
                     "drop": true,
@@ -254,12 +630,556 @@
                       "mods": {
                         "to": "down"
                       }
+                    },
+                    {
+                      "block": "tooltip",
+                      "attrs": {
+                        "style": "width: 100%"
+                      },
+                      "content": [
+                        {
+                          "block": "content",
+                          "attrs": {
+                            "class": "tooltip__content tooltip__content_default"
+                          },
+                          "content": [
+                            {
+                                      "block": "list",
+                                      "content": [
+                                        {
+                                          "elem": "item",
+                                          "mods": {
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Дизайнеры"
+                                            }
+                                          ]
+                                        }, {
+                                          "elem": "item",
+                                          "mods": {
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "text",
+                                              "text": "Какие то еще чуваки"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                          ]
+                        }
+                      ]
                     }
                   ]
-              }, {
+                }, 
+                {
+                  "elem": "item-label",
+                  "text": "Должность"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Хорошая",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Email"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "type": "email",
+                        "value": "my@mail.ru",
+                        "placeholder": "Email"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Телефон"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "+__ ( ___ ) __ __ ___"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Дата рождения"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "attrs": {
+                    "type": "date"
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "mm/dd/yyyy"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "VKONTAKTE"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-vk"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "instagram"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-instagram"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "facebook"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-facebook"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                    {
+                      "block": "button",
+                      "mods": {
+                        "success": true
+                      },
+                      "text": "Сохранить"
+                    },
+                    {
+                      "block": "button",
+                      "text": "Сбросить"
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item"
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Новый пароль"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "type": "password",
+                        "placeholder": "Новый пароль"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "type": "password",
+                        "placeholder": "Повторить пароль"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                    {
+                      "block": "button",
+                      "mods": {
+                        "success": true
+                      },
+                      "text": "Обновить пароль"
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "block": "sidebar",
+          "content": [
+          ]
+        }
+      ]
+    },
+    {
+      "block": "main",
+      "mods": {
+        "justified": "between"
+      },
+      "content": [
+        {
+          "block": "sidebar",
+          "mods": {
+            "big": true
+          },
+          "content": [
+            {
+              "block": "user-profile",
+              "mods": {
+                "vertical": "big"
+              },
+              "content": [
+                {
+                  "block": "avatar",
+                  "content": [
+                    {
+                      "elem": "cover",
+                      "mods": {
+                        "big": true
+                      },
+                      "content": [
+                        {
+                          "block": "pic",
+                          "attrs": {
+                            "src": "http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg",
+                            "height": 160,
+                            "width": 160
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "elem": "online",
+                      "mods": {
+                        "big": true
+                      },
+                      "content": [
+                        {
+                          "block": "text",
+                          "text": "online"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "block": "bio",
+                  "content": [
+                    {
+                      "elem": "name",
+                      "text": "Устина Забавная"
+                    }, {
+                      "elem": "position",
+                      "text": "UI Designer"
+                    }
+                  ]
+                },
+                {
+                  "block": "button",
+                  "mods": {
+                    "success": true,
+                    "big": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-envelope-o"
+                      }
+                    },
+                    {
+                      "elem": "text",
+                      "tag": "span",
+                      "text": "Отправить сообщение"
+                    }
+                  ]
+                },
+                {
+                  "block": "datagrid",
+                  "content": [
+                    {
+                      "elem": "body",
+                      "content": [
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Отдел"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "text",
+                                  "text": "Design",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "email"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "link",
+                                  "attrs": {
+                                    "href": "mailto:madam@smart.com"
+                                  },
+                                  "text": "madam@smart.com"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "телефон"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "link",
+                                  "mods": {
+                                    "tel": true
+                                  },
+                                  "attrs": {
+                                    "href": "tel:+33088445566"
+                                  },
+                                  "text": "+33 088 44 55 66"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Права доступа"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "text",
+                                  "text": "Пользователь",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Статус"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "fa",
+                                  "attrs": {
+                                    "class": "fa-hand-spock-o"
+                                  }
+                                },
+                                {
+                                  "block": "text",
+                                  "text": "Гуру",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "block": "social",
+                  "content": [
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-vk"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-instagram"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-facebook"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }, {
+          "block": "content",
+          "content": [
+            {
+              "block": "category",
+              "mods": {
+                "columns": "two-with-labels"
+              },
+              "content": [
+{
                   "elem": "item-label",
                   "text": "Статус сотрудника"
-                }, {
+                }, 
+                {
                   "elem": "item",
                   "mods": {
                     "drop": true,
@@ -362,10 +1282,125 @@
                       ]
                     }
                   ]
-              }, {
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item"
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Имя"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Ирина",
+                        "placeholder": "Имя"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Фамилия"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Петренко",
+                        "placeholder": "Фамилия"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Отчество"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Сергеевна",
+                        "placeholder": "Отчество"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Пол"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Женский",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Отдел"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Дизайнеры",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+                }, 
+                {
                   "elem": "item-label",
                   "text": "Должность"
-                }, {
+                },
+                {
                   "elem": "item",
                   "mods": {
                     "drop": true,
@@ -385,10 +1420,654 @@
                       }
                     }
                   ]
-              }, {
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Email"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "type": "email",
+                        "value": "my@mail.ru",
+                        "placeholder": "Email"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Телефон"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "+__ ( ___ ) __ __ ___"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Дата рождения"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "attrs": {
+                    "type": "date"
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "mm/dd/yyyy"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "VKONTAKTE"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-vk"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "instagram"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-instagram"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "facebook"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-facebook"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                    {
+                      "block": "button",
+                      "mods": {
+                        "success": true
+                      },
+                      "text": "Сохранить"
+                    },
+                    {
+                      "block": "button",
+                      "text": "Сбросить"
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "block": "sidebar",
+          "content": [
+          ]
+        }
+      ]
+    },
+    {
+      "block": "main",
+      "mods": {
+        "justified": "between"
+      },
+      "content": [
+        {
+          "block": "sidebar",
+          "mods": {
+            "big": true
+          },
+          "content": [
+            {
+              "block": "user-profile",
+              "mods": {
+                "vertical": "big"
+              },
+              "content": [
+                {
+                  "block": "action",
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa fa-ellipsis-h"
+                      }
+                    },
+                    {
+                              "block": "tooltip",
+                              "attrs": {
+                                "style": "top: 95%; width: 220px; right: -20px"
+                              },
+                              "content": [
+                                {
+                                  "elem": "arrow",
+                                  "attrs": {
+                                    "style": "right: 17px"
+                                  }
+                                }, {
+                                  "block": "content",
+                                  "attrs": {
+                                    "class": "tooltip__content tooltip__content_default"
+                                  },
+                                  "content": [
+                                    {
+                                      "block": "list",
+                                      "content": [
+                                        {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-trash-o"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Уволить"
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                  ]
+                },
+                {
+                  "block": "avatar",
+                  "content": [
+                    {
+                      "elem": "cover",
+                      "mods": {
+                        "big": true
+                      },
+                      "content": [
+                        {
+                          "block": "pic",
+                          "attrs": {
+                            "src": "http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg",
+                            "height": 160,
+                            "width": 160
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "elem": "online",
+                      "mods": {
+                        "big": true
+                      },
+                      "content": [
+                        {
+                          "block": "text",
+                          "text": "online"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "block": "bio",
+                  "content": [
+                    {
+                      "elem": "name",
+                      "text": "Лилия Смелая"
+                    }, {
+                      "elem": "position",
+                      "text": "UI Designer"
+                    }
+                  ]
+                },
+                {
+                  "block": "button",
+                  "mods": {
+                    "success": true,
+                    "big": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-envelope-o"
+                      }
+                    },
+                    {
+                      "elem": "text",
+                      "tag": "span",
+                      "text": "Отправить сообщение"
+                    }
+                  ]
+                },
+                {
+                  "block": "datagrid",
+                  "content": [
+                    {
+                      "elem": "body",
+                      "content": [
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Отдел"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "text",
+                                  "text": "Design",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "email"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "link",
+                                  "attrs": {
+                                    "href": "mailto:madam@smart.com"
+                                  },
+                                  "text": "madam@smart.com"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "телефон"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "link",
+                                  "mods": {
+                                    "tel": true
+                                  },
+                                  "attrs": {
+                                    "href": "tel:+33088445566"
+                                  },
+                                  "text": "+33 088 44 55 66"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Права доступа"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "text",
+                                  "text": "Пользователь",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "block": "row",
+                          "content": [
+                            {
+                              "elem": "cell",
+                              "text": "Статус"
+                            },
+                            {
+                              "elem": "cell",
+                              "content": [
+                                {
+                                  "block": "fa",
+                                  "attrs": {
+                                    "class": "fa-hand-spock-o"
+                                  }
+                                },
+                                {
+                                  "block": "text",
+                                  "text": "Гуру",
+                                  "tag": "span"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "block": "social",
+                  "content": [
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-vk"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-instagram"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "block": "link",
+                      "content": [
+                        {
+                          "block": "fa",
+                          "attrs": {
+                            "class": "fa-facebook"
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }, {
+          "block": "content",
+          "content": [
+            {
+              "block": "category",
+              "mods": {
+                "columns": "two-with-labels"
+              },
+              "content": [
+{
+                  "elem": "item-label",
+                  "text": "Статус сотрудника"
+                }, 
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-hand-spock-o"
+                      }
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Гуру",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }, {
+                      "block": "tooltip",
+                      "attrs": {
+                        "style": "width: 100%;"
+                      },
+                      "content": [
+                        {
+                          "block": "content",
+                          "attrs": {
+                            "class": "tooltip__content tooltip__content_default"
+                          },
+                          "content": [
+                            {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-circle-o'></i>Без статуса"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-gamepad'></i>Новичок"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-mortar-board'></i>Специалист"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-star'></i>Профи"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-flask'></i>Эксперт"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-hand-spock-o'></i>Гуру"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item"
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Имя"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Ирина",
+                        "placeholder": "Имя"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Фамилия"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Петренко",
+                        "placeholder": "Фамилия"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Отчество"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Сергеевна",
+                        "placeholder": "Отчество"
+                      }
+                    }
+                  ]
+                },
+                {
                   "elem": "item-label",
                   "text": "Пол"
-                }, {
+                },
+                {
                   "elem": "item",
                   "mods": {
                     "drop": true,
@@ -398,7 +2077,7 @@
                     {
                       "block": "input",
                       "attrs": {
-                        "value": "Любой",
+                        "value": "Женский",
                         "readonly": true
                       }
                     }, {
@@ -408,8 +2087,231 @@
                       }
                     }
                   ]
-              }]
-            },
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Отдел"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Дизайнеры",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+                }, 
+                {
+                  "elem": "item-label",
+                  "text": "Должность"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Хорошая",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Email"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "type": "email",
+                        "value": "my@mail.ru",
+                        "placeholder": "Email"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Телефон"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "+__ ( ___ ) __ __ ___"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "Дата рождения"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true
+                  },
+                  "attrs": {
+                    "type": "date"
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "mm/dd/yyyy"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "VKONTAKTE"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-vk"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "instagram"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-instagram"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label",
+                  "text": "facebook"
+                },
+                {
+                  "elem": "item",
+                  "mods": {
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {"class": "fa-facebook"}
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "placeholder": "https://"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                    {
+                      "block": "button",
+                      "mods": {
+                        "success": true
+                      },
+                      "text": "Сохранить"
+                    },
+                    {
+                      "block": "button",
+                      "text": "Сбросить"
+                    }
+                  ]
+                },
+                {
+                  "elem": "item-label"
+                },
+                {
+                  "elem": "item"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "block": "sidebar",
+          "content": [
+          ]
+        }
+      ]
+    }
+,
+    {
+      "block": "main",
+      "mods": {
+        "justified": "between"
+      },
+      "content": [
+        {
+          "block": "sidebar",
+          "content": [
             {
               "block": "category",
               "attrs": {},
@@ -466,8 +2368,7 @@
                 },
                 "tag": "a"
               }]
-            },
-            {
+            }, {
               "block": "category",
               "content": [{
                 "elem": "item",
@@ -491,10 +2392,10 @@
                 },
                 "content": [
                   {
-                    "block": "fa",
-                    "attrs": {
-                      "class": "fa-user-plus"
-                    }
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-user-plus"
+                      }
                   },
                   {
                     "block": "input",
@@ -509,7 +2410,6 @@
                       "footer": true
                     },
                     "attrs": {
-                      "hidden": true,
                       "style": "height: 240px; width: 256px; left: -24px;"
                     },
                     "content": [
@@ -877,8 +2777,7 @@
                   "tag": "button"
                 }]
               }]
-            },
-            {
+            }, {
               "block": "category",
               "content": [{
                 "elem": "item",
@@ -888,7 +2787,8 @@
                   "input": true
                 },
                 "content": [{
-                  "block": "search"
+                  "block": "search",
+                  "html": "<input type='search' placeholder='Искать'>"
                   }]
               }, {
                 "block": "tag",
@@ -986,8 +2886,7 @@
                             {
                               "block": "i-more",
                               "tag": "i"
-                            },
-                            {
+                            }, {
                               "block": "tooltip",
                               "attrs": {
                                 "style": "width: 220px; right: -20px"
@@ -1194,8 +3093,7 @@
                   ]
                 }
               ]
-            },
-            {
+            }, {
               "block": "article",
               "content": [
                 {
@@ -1218,8 +3116,7 @@
                   ]
                 }
               ]
-            },
-            {
+            }, {
               "block": "article",
               "content": [
                 {
@@ -1381,8 +3278,487 @@
                   ]
                 }
               ]
-            },
-
+            }, {
+              "block": "article",
+              "content": [
+                {
+                  "block": "article-cover",
+                  "attrs": {
+                    "style": "background-image: url('http://www.dolomitisuperski.com/website/var/tmp/image-thumbnails/660000/667626/thumb__demi_gallery_detail_landscape/mountains_7824779.jpeg')"
+                  }
+                }, {
+                  "block": "content",
+                  "attrs": {
+                    "class": "article__content"
+                  },
+                  "content": [
+                    {
+                      "elem": "caption",
+                      "content": [
+                        {
+                          "attrs": {
+                            "class": "content__caption-text"
+                          },
+                          "text": "200 шаблонов эффективных заголовков",
+                          "tag": "span"
+                        }, {
+                          "attrs": {
+                            "class": "content__caption-action"
+                          },
+                          "content": [
+                            {
+                              "block": "i-more",
+                              "tag": "i"
+                            }
+                          ]
+                        }
+                      ]
+                    }, {
+                      "elem": "text",
+                      "html": "Более того, как-то вскоре после вступления в должность еду с водителем. Он ко мне поворачивается и говорит: «Герман Сергеевич, а вы штрафы когда будете оплачивать?» Я: «Какие штрафы?» У меня же представление о государстве было достаточно же представление о государ Более того, как-то вскоре после вступления в должность еду с водителем. Он ко мне поворачивается и говорит: «Герман Сергеевич, а вы штрафы когда будете оплачивать?» Я: «Какие штрафы?» У меня же представление о государстве было достаточно же представление о государ  Более того, как-то вскоре после вступления в должность еду с водителем. Он ко мне поворачивается и говорит: «Герман Сергеевич, а вы штрафы когда будете оплачивать?» Я: «Какие штрафы?» У меня же представление о государстве было достаточно же представление о государ  Более того, как-то вскоре после вступления в должность еду с водителем. Он ко мне поворачивается и говорит: «Герман Сергеевич, а вы штрафы когда будете оплачивать?» Я: «Какие штрафы?»"
+                    }, {
+                      "elem": "footer",
+                      "content": [{
+                        "block": "button",
+                        "text": "Читать полностью",
+                        "mods": {
+                          "link": true,
+                          "pin": "right"
+                        }
+                      }]
+                    }
+                  ]
+                }, {
+                  "elem": "collapser",
+                  "content": [
+                    {
+                      "block": "button",
+                      "mods": {
+                        "round": true,
+                        "default": true
+                      },
+                      "content": [
+                        {
+                          "block": "i-arrow",
+                          "mods": {
+                            "to": "up"
+                          },
+                          "tag": "i"
+                        }
+                      ]
+                    }
+                  ]
+                }, {
+                  "elem": "footer",
+                  "content": [
+                    {
+                      "block": "text",
+                      "html": "<strong>Разделы:</strong>Дизайн",
+                      "tag": "span"
+                    }, {
+                      "block": "tag",
+                      "content": [
+                        {
+                          "block": "i-tag",
+                          "tag": "i"
+                        }, {
+                          "elem": "item",
+                          "text": "Хостинг",
+                          "mods": {
+                            "border": true
+                          },
+                          "tag": "span"
+                        }, {
+                          "elem": "item",
+                          "text": "Дизайн",
+                          "mods": {
+                            "border": true
+                          },
+                          "tag": "span"
+                        }, {
+                          "elem": "item",
+                          "text": "Бизнес",
+                          "mods": {
+                            "border": true
+                          },
+                          "tag": "span"
+                        }
+                      ]
+                    }, {
+                      "block": "button",
+                      "text": "Еще 5 тегов",
+                      "mods": {
+                        "pseudo": true,
+                        "small": true
+                      }
+                    }, {
+                      "block": "text",
+                      "mods": {
+                        "pin": "right",
+                        "small": true,
+                        "nowrap": true
+                      },
+                      "content": [
+                        {
+                          "block": "i-group",
+                          "tag": "i"
+                        }, {
+                          "elem": "text",
+                          "text": 7,
+                          "tag": "span"
+                        }, {
+                          "block": "i-chat",
+                          "tag": "i"
+                        }, {
+                          "elem": "text",
+                          "text": 15,
+                          "tag": "span"
+                        }, {
+                          "block": "i-heart",
+                          "tag": "i"
+                        }, {
+                          "elem": "text",
+                          "text": 984,
+                          "tag": "span"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }, {
+          "block": "sidebar",
+          "content": [
+            {
+              "block": "content-filter",
+              "content": [
+                {
+                  "elem": "type",
+                  "text": "Тип:",
+                  "tag": "span"
+                }, {
+                  "elem": "type-value",
+                  "content": [
+                    {
+                      "block": "text",
+                      "text": "Все",
+                      "tag": "span"
+                    },
+                    {
+                      "block": "tooltip",
+                      "attrs": {
+                        "style": "width: 130px; right: -9px"
+                      },
+                      "content": [
+                        {
+                          "elem": "arrow",
+                          "attrs": {
+                            "style": "right: 10px"
+                          }
+                  }, {
+                          "block": "content",
+                          "attrs": {
+                            "class": "tooltip__content tooltip__content_default"
+                          },
+                          "content": [
+                            {
+                              "block": "list",
+                              "content": [
+                                {
+                                  "elem": "item",
+                                  "mods": {
+                                    "color": "info"
+                                  },
+                                  "content": [
+                                    {
+                                      "block": "text",
+                                      "text": "Все"
+                              }
+                            ]
+                          }, {
+                                  "elem": "item",
+                                  "content": [
+                                    {
+                                      "block": "text",
+                                      "text": "Видео"
+                              }
+                            ]
+                          }, {
+                                  "elem": "item",
+                                  "content": [
+                                    {
+                                      "block": "text",
+                                      "text": "Ссылка"
+                              }
+                            ]
+                          }, {
+                                  "elem": "item",
+                                  "content": [
+                                    {
+                                      "block": "text",
+                                      "text": "Статья"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+                    {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      },
+                      "tag": "i"
+                    }
+                  ]
+                }, {
+                  "elem": "list",
+                  "tag": "span",
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-bars"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "elem": "squad",
+                  "tag": "span",
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-th"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+,
+    {
+      "block": "main",
+      "mods": {
+        "justified": "between"
+      },
+      "content": [
+        {
+          "block": "sidebar",
+          "content": [
+            {
+              "block": "category",
+              "attrs": {},
+              "content": [
+                {
+                  "elem": "item",
+                  "text": "Поиск по сотрудникам",
+                  "mods": {
+                    "title": true
+                  }
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "submit": true,
+                    "submit_search": true,
+                    "input": true
+                  },
+                  "content": [{
+                    "block": "search"
+                  }]
+                }, {
+                  "elem": "item-label",
+                  "text": "Отдел"
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Дизайнеры",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+              },
+                {
+                  "elem": "item-label",
+                  "text": "Статус сотрудника"
+                }, 
+                {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true,
+                    "icon": true
+                  },
+                  "content": [
+                    {
+                      "block": "fa",
+                      "attrs": {
+                        "class": "fa-hand-spock-o"
+                      }
+                    },
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Гуру",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }, {
+                      "block": "tooltip",
+                      "attrs": {
+                        "style": "width: 100%;"
+                      },
+                      "content": [
+                        {
+                          "block": "content",
+                          "attrs": {
+                            "class": "tooltip__content tooltip__content_default"
+                          },
+                          "content": [
+                            {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-circle-o'></i>Без статуса"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-gamepad'></i>Новичок"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-mortar-board'></i>Специалист"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-star'></i>Профи"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-flask'></i>Эксперт"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }, {
+                              "block": "checkbox-label",
+                              "content": [
+                                {
+                                  "block": "checkbox-text",
+                                  "html": "<i class='fa fa-hand-spock-o'></i>Гуру"
+                                }, {
+                                  "block": "checkbox"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+              }, {
+                  "elem": "item-label",
+                  "text": "Должность"
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Хорошая",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+              }, {
+                  "elem": "item-label",
+                  "text": "Пол"
+                }, {
+                  "elem": "item",
+                  "mods": {
+                    "drop": true,
+                    "input": true
+                  },
+                  "content": [
+                    {
+                      "block": "input",
+                      "attrs": {
+                        "value": "Любой",
+                        "readonly": true
+                      }
+                    }, {
+                      "block": "i-arrow",
+                      "mods": {
+                        "to": "down"
+                      }
+                    }
+                  ]
+              }]
+            }
+          ]
+        }, {
+          "block": "content",
+          "content": [
             {
               "block": "tag",
               "content": [
@@ -1569,77 +3945,77 @@
                                   }
                                 },
                                 {
-                                  "block": "tooltip",
+                              "block": "tooltip",
+                              "attrs": {
+                                "style": "width: 220px; right: -20px; top: 97%"
+                              },
+                              "content": [
+                                {
+                                  "elem": "arrow",
                                   "attrs": {
-                                    "style": "width: 220px; right: -20px; top: 97%"
+                                    "style": "right: 32px"
+                                  }
+                                }, {
+                                  "block": "content",
+                                  "attrs": {
+                                    "class": "tooltip__content tooltip__content_default"
                                   },
                                   "content": [
                                     {
-                                      "elem": "arrow",
-                                      "attrs": {
-                                        "style": "right: 32px"
-                                      }
-                                }, {
-                                      "block": "content",
-                                      "attrs": {
-                                        "class": "tooltip__content tooltip__content_default"
-                                      },
+                                      "block": "list",
                                       "content": [
                                         {
-                                          "block": "list",
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
                                           "content": [
                                             {
-                                              "elem": "item",
-                                              "mods": {
-                                                "iconed": true,
-                                                "hovered": true
-                                              },
-                                              "content": [
-                                                {
-                                                  "block": "fa",
-                                                  "attrs": {
-                                                    "class": "fa-pencil"
-                                                  }
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-pencil"
+                                              }
                                             },
-                                                {
-                                                  "block": "text",
-                                                  "text": "Редактировать"
+                                            {
+                                              "block": "text",
+                                              "text": "Редактировать"
                                             }
                                           ]
                                         }, {
-                                              "elem": "item",
-                                              "mods": {
-                                                "iconed": true,
-                                                "hovered": true
-                                              },
-                                              "content": [
-                                                {
-                                                  "block": "fa",
-                                                  "attrs": {
-                                                    "class": "fa-lock"
-                                                  }
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-lock"
+                                              }
                                             },
-                                                {
-                                                  "block": "text",
-                                                  "text": "Поменять пароль"
+                                            {
+                                              "block": "text",
+                                              "text": "Поменять пароль"
                                             }
                                           ]
                                         }, {
-                                              "elem": "item",
-                                              "mods": {
-                                                "iconed": true,
-                                                "hovered": true
-                                              },
-                                              "content": [
-                                                {
-                                                  "block": "fa",
-                                                  "attrs": {
-                                                    "class": "fa-trash"
-                                                  }
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-trash"
+                                              }
                                             },
-                                                {
-                                                  "block": "text",
-                                                  "text": "Уволить"
+                                            {
+                                              "block": "text",
+                                              "text": "Уволить"
                                             }
                                           ]
                                         }
@@ -1771,77 +4147,77 @@
                                   }
                                 },
                                 {
-                                  "block": "tooltip",
+                              "block": "tooltip",
+                              "attrs": {
+                                "style": "width: 220px; right: -20px; top: 97%"
+                              },
+                              "content": [
+                                {
+                                  "elem": "arrow",
                                   "attrs": {
-                                    "style": "width: 220px; right: -20px; top: 97%"
+                                    "style": "right: 32px"
+                                  }
+                                }, {
+                                  "block": "content",
+                                  "attrs": {
+                                    "class": "tooltip__content tooltip__content_default"
                                   },
                                   "content": [
                                     {
-                                      "elem": "arrow",
-                                      "attrs": {
-                                        "style": "right: 32px"
-                                      }
-                                }, {
-                                      "block": "content",
-                                      "attrs": {
-                                        "class": "tooltip__content tooltip__content_default"
-                                      },
+                                      "block": "list",
                                       "content": [
                                         {
-                                          "block": "list",
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
                                           "content": [
                                             {
-                                              "elem": "item",
-                                              "mods": {
-                                                "iconed": true,
-                                                "hovered": true
-                                              },
-                                              "content": [
-                                                {
-                                                  "block": "fa",
-                                                  "attrs": {
-                                                    "class": "fa-pencil"
-                                                  }
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-pencil"
+                                              }
                                             },
-                                                {
-                                                  "block": "text",
-                                                  "text": "Редактировать"
+                                            {
+                                              "block": "text",
+                                              "text": "Редактировать"
                                             }
                                           ]
                                         }, {
-                                              "elem": "item",
-                                              "mods": {
-                                                "iconed": true,
-                                                "hovered": true
-                                              },
-                                              "content": [
-                                                {
-                                                  "block": "fa",
-                                                  "attrs": {
-                                                    "class": "fa-lock"
-                                                  }
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-lock"
+                                              }
                                             },
-                                                {
-                                                  "block": "text",
-                                                  "text": "Поменять пароль"
+                                            {
+                                              "block": "text",
+                                              "text": "Поменять пароль"
                                             }
                                           ]
                                         }, {
-                                              "elem": "item",
-                                              "mods": {
-                                                "iconed": true,
-                                                "hovered": true
-                                              },
-                                              "content": [
-                                                {
-                                                  "block": "fa",
-                                                  "attrs": {
-                                                    "class": "fa-trash"
-                                                  }
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-trash"
+                                              }
                                             },
-                                                {
-                                                  "block": "text",
-                                                  "text": "Уволить"
+                                            {
+                                              "block": "text",
+                                              "text": "Уволить"
                                             }
                                           ]
                                         }
@@ -1896,282 +4272,281 @@
                 {
                   "elem": "item",
                   "content": [
-                    {
-                      "block": "user-profile",
-                      "mods": {
-                        "vertical": "normal"
-                      },
-                      "content": [
-                        {
-                          "block": "avatar",
-                          "content": [
                             {
-                              "elem": "cover",
-                              "content": [
-                                {
-                                  "block": "pic",
-                                  "attrs": {
-                                    "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
-                                    "height": 100,
-                                    "width": 100
-                                  }
-                                    }
-                                  ]
-                                },
-                            {
-                              "elem": "online",
-                              "content": [
-                                {
-                                  "block": "fa",
-                                  "attrs": {
-                                    "class": "fa-circle"
-                                  }
-                                    }
-                                  ]
-                                }, {
-                              "elem": "status",
-                              "content": [
-                                {
-                                  "block": "fa",
-                                  "attrs": {
-                                    "class": "fa-hand-spock-o"
-                                  }
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                        {
-                          "block": "bio",
-                          "content": [
-                            {
-                              "elem": "name",
-                              "text": "Марк Адамс"
-                                    }, {
-                              "elem": "position",
-                              "text": "UI Designer"
-                                    }, {
-                              "elem": "department",
-                              "text": "Design"
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-
-                  ]
-                },
-                {
-                  "elem": "item",
-                  "content": [
-                    {
-                      "block": "user-profile",
-                      "mods": {
-                        "vertical": "normal"
-                      },
-                      "content": [
-                        {
-                          "block": "avatar",
-                          "content": [
-                            {
-                              "elem": "cover",
-                              "content": [
-                                {
-                                  "block": "text",
-                                  "text": "ДР"
-                                    }
-                                  ]
-                                },
-                            {
-                              "elem": "online",
-                              "content": [
-                                {
-                                  "block": "fa",
-                                  "attrs": {
-                                    "class": "fa-circle"
-                                  }
-                                    }
-                                  ]
-                                }, {
-                              "elem": "status",
-                              "content": [
-                                {
-                                  "block": "fa",
-                                  "attrs": {
-                                    "class": "fa-hand-spock-o"
-                                  }
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                        {
-                          "block": "bio",
-                          "content": [
-                            {
-                              "elem": "name",
-                              "text": "Марк Адамс"
-                                    }, {
-                              "elem": "position",
-                              "text": "UI Designer"
-                                    }, {
-                              "elem": "department",
-                              "text": "Design"
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-
-                  ]
-                },
-                {
-                  "elem": "item",
-                  "content": [
-                    {
-                      "block": "user-profile",
-                      "mods": {
-                        "vertical": "normal"
-                      },
-                      "content": [
-                        {
-                          "block": "avatar",
-                          "content": [
-                            {
-                              "elem": "cover",
-                              "content": [
-                                {
-                                  "block": "pic",
-                                  "attrs": {
-                                    "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
-                                    "height": 100,
-                                    "width": 100
-                                  }
-                                      }
-                                  ]
-                                },
-                            {
-                              "elem": "online",
-                              "content": [
-                                {
-                                  "block": "fa",
-                                  "attrs": {
-                                    "class": "fa-circle"
-                                  }
-                                    }
-                                  ]
-                                },
-                            {
-                              "elem": "status",
-                              "content": [
-                                {
-                                  "block": "fa",
-                                  "attrs": {
-                                    "class": "fa-hand-spock-o"
-                                  }
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                        {
-                          "block": "bio",
-                          "content": [
-                            {
-                              "elem": "name",
-                              "text": "Марк Адамс"
-                                    }, {
-                              "elem": "position",
-                              "text": "UI Designer"
-                                    }, {
-                              "elem": "department",
-                              "text": "Design"
-                                    }
-                                  ]
-                                }
-                              ]
-                            },
-                    {
-                      "block": "action",
-                      "content": [
-                        {
-                          "block": "fa",
-                          "attrs": {
-                            "class": "fa-ellipsis-h"
-                          }
-                                },
-                        {
-                          "block": "tooltip",
-                          "attrs": {
-                            "style": "width: calc(100% + 40px); top: 97%; left: -20px;"
-                          },
-                          "content": [
-                            {
-                              "elem": "arrow",
-                              "attrs": {
-                                "style": "right: calc(50% - 7px);"
-                              }
-                                }, {
-                              "block": "content",
-                              "attrs": {
-                                "class": "tooltip__content tooltip__content_default"
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
                               },
                               "content": [
                                 {
-                                  "block": "list",
+                                  "block": "avatar",
                                   "content": [
                                     {
-                                      "elem": "item",
-                                      "mods": {
-                                        "iconed": true,
-                                        "hovered": true
-                                      },
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "pic",
+                                          "attrs": {
+                                            "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
+                                            "height": 100,
+                                            "width": 100
+                                          }
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
                                       "content": [
                                         {
                                           "block": "fa",
                                           "attrs": {
-                                            "class": "fa-pencil"
+                                            "class": "fa-circle"
                                           }
-                                            },
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
                                         {
                                           "block": "text",
-                                          "text": "Редактировать"
+                                          "text": "ДР"
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+
+                  ]
+                },
+                {
+                  "elem": "item",
+                  "content": [
+                            {
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
+                              "content": [
+                                {
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "pic",
+                                          "attrs": {
+                                            "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
+                                            "height": 100,
+                                            "width": 100
+                                          }
+                                    }
+                                  ]
+                                },
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
+                                    }
+                                  ]
+                                }, {
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
+                                    }, {
+                                      "elem": "position",
+                                      "text": "UI Designer"
+                                    }, {
+                                      "elem": "department",
+                                      "text": "Design"
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+{
+                              "block": "action",
+                              "content": [
+                                {
+                                  "block": "fa",
+                                  "attrs": {
+                                    "class": "fa-ellipsis-h"
+                                  }
+                                },
+                                {
+                              "block": "tooltip",
+                              "attrs": {
+                                "style": "width: calc(100% + 40px); top: 97%; left: -20px;"
+                              },
+                              "content": [
+                                {
+                                  "elem": "arrow",
+                                  "attrs": {
+                                    "style": "right: calc(50% - 7px);"
+                                  }
+                                }, {
+                                  "block": "content",
+                                  "attrs": {
+                                    "class": "tooltip__content tooltip__content_default"
+                                  },
+                                  "content": [
+                                    {
+                                      "block": "list",
+                                      "content": [
+                                        {
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-pencil"
+                                              }
+                                            },
+                                            {
+                                              "block": "text",
+                                              "text": "Редактировать"
                                             }
                                           ]
                                         }, {
-                                      "elem": "item",
-                                      "mods": {
-                                        "iconed": true,
-                                        "hovered": true
-                                      },
-                                      "content": [
-                                        {
-                                          "block": "fa",
-                                          "attrs": {
-                                            "class": "fa-lock"
-                                          }
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-lock"
+                                              }
                                             },
-                                        {
-                                          "block": "text",
-                                          "text": "Поменять пароль"
+                                            {
+                                              "block": "text",
+                                              "text": "Поменять пароль"
                                             }
                                           ]
                                         }, {
-                                      "elem": "item",
-                                      "mods": {
-                                        "iconed": true,
-                                        "hovered": true
-                                      },
-                                      "content": [
-                                        {
-                                          "block": "fa",
-                                          "attrs": {
-                                            "class": "fa-trash"
-                                          }
+                                          "elem": "item",
+                                          "mods": {
+                                            "iconed": true,
+                                            "hovered": true
+                                          },
+                                          "content": [
+                                            {
+                                              "block": "fa",
+                                              "attrs": {
+                                                "class": "fa-trash"
+                                              }
                                             },
-                                        {
-                                          "block": "text",
-                                          "text": "Уволить"
+                                            {
+                                              "block": "text",
+                                              "text": "Уволить"
                                             }
                                           ]
                                         }
@@ -2189,59 +4564,59 @@
                 {
                   "elem": "item",
                   "content": [
-                    {
-                      "block": "user-profile",
-                      "mods": {
-                        "vertical": "normal"
-                      },
-                      "content": [
-                        {
-                          "block": "avatar",
-                          "content": [
                             {
-                              "elem": "cover",
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
                               "content": [
                                 {
-                                  "block": "text",
-                                  "text": "ДР"
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "text",
+                                          "text": "ДР"
                                     }
                                   ]
                                 },
-                            {
-                              "elem": "online",
-                              "content": [
-                                {
-                                  "block": "fa",
-                                  "attrs": {
-                                    "class": "fa-circle"
-                                  }
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
                                     }
                                   ]
                                 }, {
-                              "elem": "status",
-                              "content": [
-                                {
-                                  "block": "fa",
-                                  "attrs": {
-                                    "class": "fa-hand-spock-o"
-                                  }
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
                                     }
                                   ]
                                 }
                               ]
                             },
-                        {
-                          "block": "bio",
-                          "content": [
-                            {
-                              "elem": "name",
-                              "text": "Марк Адамс"
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
                                     }, {
-                              "elem": "position",
-                              "text": "UI Designer"
+                                      "elem": "position",
+                                      "text": "UI Designer"
                                     }, {
-                              "elem": "department",
-                              "text": "Design"
+                                      "elem": "department",
+                                      "text": "Design"
                                     }
                                   ]
                                 }
@@ -2253,63 +4628,63 @@
                 {
                   "elem": "item",
                   "content": [
-                    {
-                      "block": "user-profile",
-                      "mods": {
-                        "vertical": "normal"
-                      },
-                      "content": [
-                        {
-                          "block": "avatar",
-                          "content": [
                             {
-                              "elem": "cover",
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
                               "content": [
                                 {
-                                  "block": "pic",
-                                  "attrs": {
-                                    "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
-                                    "height": 100,
-                                    "width": 100
-                                  }
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "pic",
+                                          "attrs": {
+                                            "src": "http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg",
+                                            "height": 100,
+                                            "width": 100
+                                          }
                                     }
                                   ]
                                 },
-                            {
-                              "elem": "online",
-                              "content": [
-                                {
-                                  "block": "fa",
-                                  "attrs": {
-                                    "class": "fa-circle"
-                                  }
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
                                     }
                                   ]
                                 }, {
-                              "elem": "status",
-                              "content": [
-                                {
-                                  "block": "fa",
-                                  "attrs": {
-                                    "class": "fa-hand-spock-o"
-                                  }
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
                                     }
                                   ]
                                 }
                               ]
                             },
-                        {
-                          "block": "bio",
-                          "content": [
-                            {
-                              "elem": "name",
-                              "text": "Марк Адамс"
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
                                     }, {
-                              "elem": "position",
-                              "text": "UI Designer"
+                                      "elem": "position",
+                                      "text": "UI Designer"
                                     }, {
-                              "elem": "department",
-                              "text": "Design"
+                                      "elem": "department",
+                                      "text": "Design"
                                     }
                                   ]
                                 }
@@ -2321,59 +4696,59 @@
                 {
                   "elem": "item",
                   "content": [
-                    {
-                      "block": "user-profile",
-                      "mods": {
-                        "vertical": "normal"
-                      },
-                      "content": [
-                        {
-                          "block": "avatar",
-                          "content": [
                             {
-                              "elem": "cover",
+                              "block": "user-profile",
+                              "mods": {
+                                "vertical": "normal"
+                              },
                               "content": [
                                 {
-                                  "block": "text",
-                                  "text": "ДР"
+                                  "block": "avatar",
+                                  "content": [
+                                    {
+                                      "elem": "cover",
+                                      "content": [
+                                        {
+                                          "block": "text",
+                                          "text": "ДР"
                                     }
                                   ]
                                 },
-                            {
-                              "elem": "online",
-                              "content": [
-                                {
-                                  "block": "fa",
-                                  "attrs": {
-                                    "class": "fa-circle"
-                                  }
+                                    {
+                                      "elem": "online",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-circle"
+                                          }
                                     }
                                   ]
                                 }, {
-                              "elem": "status",
-                              "content": [
-                                {
-                                  "block": "fa",
-                                  "attrs": {
-                                    "class": "fa-hand-spock-o"
-                                  }
+                                      "elem": "status",
+                                      "content": [
+                                        {
+                                          "block": "fa",
+                                          "attrs": {
+                                            "class": "fa-hand-spock-o"
+                                          }
                                     }
                                   ]
                                 }
                               ]
                             },
-                        {
-                          "block": "bio",
-                          "content": [
-                            {
-                              "elem": "name",
-                              "text": "Марк Адамс"
+                                {
+                                  "block": "bio",
+                                  "content": [
+                                    {
+                                      "elem": "name",
+                                      "text": "Марк Адамс"
                                     }, {
-                              "elem": "position",
-                              "text": "UI Designer"
+                                      "elem": "position",
+                                      "text": "UI Designer"
                                     }, {
-                              "elem": "department",
-                              "text": "Design"
+                                      "elem": "department",
+                                      "text": "Design"
                                     }
                                   ]
                                 }
@@ -2392,88 +4767,6 @@
               "block": "content-filter",
               "content": [
                 {
-                  "elem": "type",
-                  "text": "Тип:",
-                  "tag": "span"
-                }, {
-                  "elem": "type-value",
-                  "content": [
-                    {
-                      "block": "text",
-                      "text": "Все",
-                      "tag": "span"
-                    },
-                    {
-                      "block": "tooltip",
-                      "attrs": {
-                        "style": "width: 130px; right: -9px"
-                      },
-                      "content": [
-                        {
-                          "elem": "arrow",
-                          "attrs": {
-                            "style": "right: 10px"
-                          }
-                  }, {
-                          "block": "content",
-                          "attrs": {
-                            "class": "tooltip__content tooltip__content_default"
-                          },
-                          "content": [
-                            {
-                              "block": "list",
-                              "content": [
-                                {
-                                  "elem": "item",
-                                  "mods": {
-                                    "color": "info"
-                                  },
-                                  "content": [
-                                    {
-                                      "block": "text",
-                                      "text": "Все"
-                              }
-                            ]
-                          }, {
-                                  "elem": "item",
-                                  "content": [
-                                    {
-                                      "block": "text",
-                                      "text": "Видео"
-                              }
-                            ]
-                          }, {
-                                  "elem": "item",
-                                  "content": [
-                                    {
-                                      "block": "text",
-                                      "text": "Ссылка"
-                              }
-                            ]
-                          }, {
-                                  "elem": "item",
-                                  "content": [
-                                    {
-                                      "block": "text",
-                                      "text": "Статья"
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ]
-              },
-                    {
-                      "block": "i-arrow",
-                      "mods": {
-                        "to": "down"
-                      },
-                      "tag": "i"
-                    }
-                  ]
-                }, {
                   "elem": "list",
                   "tag": "span",
                   "content": [
