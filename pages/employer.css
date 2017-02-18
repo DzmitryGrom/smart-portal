@@ -2887,6 +2887,112 @@ body {
 .content > .tag {
   margin-bottom: 20px;
 }
+.taber {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.taber__tab {
+  order: 1;
+}
+.taber > .content {
+  display: none;
+  order: 2;
+  flex: 1 0 100%;
+  position: relative;
+}
+.taber__toggler:checked + .content {
+  display: block;
+}
+.taber__tab {
+  cursor: pointer;
+  font-family: ProximaNovaReg;
+  border-radius: 5px 5px 0 0;
+  padding: 26px 20px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 12px;
+  margin-bottom: -3px;
+  position: relative;
+}
+.taber__tab_active {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+}
+.taber__tab_active:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  height: 16px;
+  left: 0;
+  background-color: #fff;
+  width: calc(100% + 20px);
+  margin-top: 0px;
+  margin-left: -10px;
+  z-index: 1000;
+}
+.taber__tab_active:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100%;
+  height: 16px;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  margin-top: -16px;
+  z-index: 1000;
+}
+.notes-list {
+  overflow-y: auto;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+}
+.notes-list__item {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 30px;
+}
+.notes-list__item .content {
+  font-family: ProximaNovaLight;
+  font-size: 13px;
+  color: #77828c;
+  margin: 0 20px;
+}
+.notes-list__item .content .text {
+  padding: 0;
+  margin: 0;
+}
+.notes-list__item .date {
+  font-family: ProximaNovaLight;
+  font-size: 13px;
+  margin-top: 16px;
+  color: #b0bfc9;
+}
+.notes-list__item .actions {
+  flex: 1 0 26px;
+}
+.notes-list__item .actions .link {
+  display: block;
+  color: #e8eaec;
+  border: 1px solid #e8eaec;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.notes-list__item .actions .link:hover {
+  color: #7fd5c2;
+  border-color: #7fd5c2;
+}
+.notes-list__item .actions .link .fa {
+  line-height: 24px;
+}
 .category {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
