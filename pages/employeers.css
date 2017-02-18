@@ -2733,6 +2733,10 @@ body {
 input {
   background-color: transparent;
 }
+.input:focus,
+input:focus {
+  outline: none;
+}
 .i-arrow {
   display: inline-block;
   border-right: 1px solid #3a3a3a;

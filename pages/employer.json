@@ -813,6 +813,31 @@
                                                     ]
                                                 }
                                             ]
+                                        },
+                                        {
+                                          "block": "notes-add",
+                                          "content": [
+                                            {
+                                              "block": "input",
+                                              "attrs": {
+                                                "placeholder": "Написать заметку"
+                                              }
+                                            },
+                                            {
+                                              "block": "button",
+                                              "mods": {
+                                                "link": true
+                                              },
+                                              "content": [
+                                                {
+                                                  "block": "fa",
+                                                  "attrs": {
+                                                    "class": "fa-paper-plane-o"
+                                                  }
+                                                }
+                                              ]
+                                            }
+                                          ]
                                         }
                                     ]
                                 },

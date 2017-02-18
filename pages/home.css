@@ -2864,6 +2864,10 @@ body {
 input {
   background-color: transparent;
 }
+.input:focus,
+input:focus {
+  outline: none;
+}
 .tooltip_footer .tooltip__content {
   bottom: 44px;
 }
