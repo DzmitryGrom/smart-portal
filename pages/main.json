@@ -986,7 +986,8 @@
                             {
                               "block": "i-more",
                               "tag": "i"
-                            }, {
+                            },
+                            {
                               "block": "tooltip",
                               "attrs": {
                                 "style": "width: 220px; right: -20px"

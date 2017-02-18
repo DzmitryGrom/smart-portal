@@ -2549,7 +2549,7 @@ body {
   position: absolute;
   top: calc(100% + 10px);
   min-width: 64px;
-  min-height: 64px;
+  min-height: 32px;
   line-height: 1;
   z-index: 2;
 }
@@ -2725,9 +2725,13 @@ body {
 }
 .main {
   display: flex;
+  flex-wrap: wrap;
 }
 .main > .sidebar {
-  flex: 1 0 auto;
+  flex: 1 0 255px;
+}
+.main > .content {
+  flex: 1 0 300px;
 }
 .sidebar {
   position: relative;
@@ -3101,6 +3105,13 @@ input {
 }
 .button_default {
   background-color: #fff;
+}
+.button_big {
+  line-height: 36px;
+  padding: 0 20px;
+}
+.button_big .fa {
+  margin: 0 .5em;
 }
 .button:focus {
   outline: none;
@@ -3532,6 +3543,7 @@ input {
 .avatar__cover_big {
   width: 160px;
   height: 160px;
+  margin: 0 10px;
 }
 .avatar__online {
   color: #7fd5c2;
