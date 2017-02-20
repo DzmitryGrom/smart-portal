@@ -3165,7 +3165,8 @@ input:focus {
   justify-content: space-around;
 }
 .category .tag__item_border {
-  margin: 0 0 9px 0;
+  flex: 1 0 30px;
+  margin-bottom: 9px;
 }
 .category_columns_two-with-labels {
   display: flex;

@@ -2628,7 +2628,8 @@ body {
   justify-content: space-around;
 }
 .category .tag__item_border {
-  margin: 0 0 9px 0;
+  flex: 1 0 30px;
+  margin-bottom: 9px;
 }
 .category__item {
   display: block;
@@ -2878,6 +2879,7 @@ input:focus {
   font-size: 14px;
   font-family: "ProximaNovaReg";
   display: inline-block;
+  white-space: nowrap;
 }
 .tag__item_border {
   color: #939393;
@@ -2889,8 +2891,8 @@ input:focus {
   font-size: 12px;
   line-height: 20px;
   text-align: center;
+  margin: 0 10px;
   padding: 0 10px;
-  min-width: 63px;
 }
 .i-closer {
   display: inline-block;
