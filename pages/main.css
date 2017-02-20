@@ -2551,7 +2551,7 @@ body {
   min-width: 64px;
   min-height: 32px;
   line-height: 1;
-  z-index: 2;
+  z-index: 3;
 }
 .tooltip_size_full {
   width: 100%;
@@ -3618,6 +3618,9 @@ input:focus {
   font-size: 15px;
   line-height: 23px;
   padding-bottom: 28px;
+}
+.article .content__text img {
+  max-width: 450px;
 }
 .article .content__text_collapsed {
   overflow: hidden;
