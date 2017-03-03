@@ -3149,7 +3149,7 @@ input:focus {
   font-size: 12px;
   line-height: 20px;
   text-align: center;
-  margin: 0 10px;
+  margin: 0 5px 5px 5px;
   padding: 0 10px;
 }
 .button_link {

@@ -1,0 +1,22 @@
+.taber{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  &__tab{
+    order: 1;
+  }
+
+  > .content{
+    display: none;
+    order: 2;
+    flex: 1 0 100%;
+    position: relative;
+  }
+
+  &__toggler{
+    &:checked + .content{
+      display: block;
+    }
+  }
+}

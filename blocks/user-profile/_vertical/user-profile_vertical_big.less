@@ -1,0 +1,79 @@
+.user-profile_vertical_big{
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+  display: flex;
+  padding: 30px;
+  flex-direction: column;
+  align-items: center;
+
+  .avatar{
+    margin-bottom: 25px;
+  }
+
+  .bio{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .action{
+    position: absolute;
+    right: 28px;
+    top: 28px;
+    &:hover{
+      .tooltip{
+        display: block;
+      }
+    }
+    .tooltip{
+      display: none;
+    }
+
+    .fa{
+      font-size: 17px;
+    }
+  }
+
+  .social{
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    width: ~'calc(100% + 60px)';
+    margin: 0 -30px -30px -30px;
+    display: flex;
+    justify-content: space-between;
+    .link{
+      color: #d8e2e9;
+      text-align: center;
+      font-size: 21px;
+      flex: 1 1 auto;
+      padding: 19px 0;
+      border-left: 1px solid rgba(0, 0, 0, 0.06);
+      &:first-child{
+        border-left: none;
+      }
+    }
+  }
+  .datagrid{
+    margin: 25px 0;
+    &__body{
+      .row{
+        border: none;
+        &__cell{
+          padding: 10px;
+          &:first-child{
+            color: #afbcc2;
+            font-family: ProximaNovaLight;
+            font-size: 12px;
+            text-transform: uppercase;
+          }
+          &:last-child{
+            font-size: 13px;
+          }
+        }
+        &:nth-child(3n + 3){
+          border-bottom: 1px solid #ecf2f5;
+        }
+      }
+    }
+  } 
+}

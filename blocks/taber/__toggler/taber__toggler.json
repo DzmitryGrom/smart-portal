@@ -1,0 +1,9 @@
+{
+  "attrs": {
+    "hidden": true,
+    "name": "tabtoggler",
+    "type": "radio",
+    "id": "NEED ID!"
+  },
+  "tag": "input"
+}

@@ -1,0 +1,32 @@
+.i-closer{
+  display: inline-block;
+  position: relative;
+  width: 13px;
+  vertical-align: middle;
+  height: 12px;
+
+
+  &:after,
+  &:before{
+    content: "";
+    border-style: solid;
+    border-color: #3e3e3e;
+    border-width: 1px;
+    display: block;
+    width: 4px;
+    height: 4px;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 2px;
+  }
+  &:after{
+    left: 0;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  &:before{
+    right: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+  }
+}

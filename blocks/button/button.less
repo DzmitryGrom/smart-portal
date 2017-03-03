@@ -1,0 +1,39 @@
+.button{
+  cursor: pointer;
+  color: #a0a0a0;
+  background-color: transparent;
+  display: inline-block;
+
+  font-size: 14px;
+  border: 1px solid;
+  border-radius: 500px;
+  box-sizing: border-box;
+  font-family: "ProximaNovaReg";
+  line-height: 28px;
+
+  padding: 0 16px;
+  margin: 0;
+
+  white-space: nowrap;
+  -webkit-appearance: none;
+
+  &_default{
+    background-color: #fff;
+  }
+
+  &_big{
+    line-height: 36px;
+    padding: 0 20px;
+    .fa{
+      margin: 0 .5em;
+    }
+  }
+  
+  &:focus{
+    outline: none;
+  }
+
+  &:disabled{
+    cursor: default;
+  }
+}

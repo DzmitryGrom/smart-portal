@@ -1,0 +1,31 @@
+.i-more{
+  display: inline-block;
+  border-radius: 500px;
+  background-color: rgba(61, 34, 49, 0.28);
+  font-size: 0;
+  vertical-align: middle;
+  line-height: 1;
+
+  width: 4px;
+  height: 4px;
+  margin: 0 9px;
+  white-space: nowrap;
+
+  &:before{
+    left: -9px;
+  }
+  &:after{
+    right: -5px;
+  }
+
+  &:before,
+  &:after{
+    content: "";
+    display: inherit;
+    border-radius: inherit;
+    background-color: inherit;
+    position: relative;
+    width: 4px;
+    height: 4px;
+  }
+}

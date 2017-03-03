@@ -2,10 +2,3 @@
 # npm
 node_modules/
 npm-debug.log
-
-# ccm
-ccm/
-
-# block
-blocks/
-blocks.theme

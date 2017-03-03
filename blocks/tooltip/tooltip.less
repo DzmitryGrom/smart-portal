@@ -1,0 +1,65 @@
+.tooltip {
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+  box-sizing: border-box;
+  position: absolute;
+  top: ~'calc(100% + 10px)';
+  min-width: 64px;
+  min-height: 32px;
+  line-height: 1;
+  z-index: 3;
+  &_size_full {
+    width: 100%;
+    left: 0;
+  }
+  &:after {
+    content: "";
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 8px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  &__content {
+    overflow-y: auto;
+    font-size: initial;
+    box-sizing: border-box;
+    line-height: normal;
+    cursor: default;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+    z-index: 2;
+    &_default {
+      position: static;
+      padding: 10px;
+      overflow: visible;
+    }
+
+    > .checkbox-label{
+      padding: 9px 5px 9px 0;
+    }
+  }
+  .list {
+    .list__item_hovered{
+      margin-left: 0;
+      padding-left: 12px;
+    }
+    .list__item_hovered.list__item_iconed {
+          position: relative;
+          width: ~'calc(100% + 24px)';
+          padding-left: ~'calc(2em + 12px)';
+          left: -12px;
+    }
+  }
+}

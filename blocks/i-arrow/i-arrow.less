@@ -1,0 +1,23 @@
+.i-arrow{
+  display: inline-block;
+  border-right: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
+  box-sizing: border-box;
+  width: 9px;
+  height: 9px;
+  vertical-align: baseline;
+  transform-origin: center;
+  line-height: 1;
+  position: relative;
+  bottom: 2px;
+  transition: transform .3s;
+
+  &_to{
+    &_down{
+      transform: rotate(45deg);
+    }
+    &_up{
+      transform: rotate(-135deg);
+    }
+  }
+}

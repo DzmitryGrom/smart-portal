@@ -1,0 +1,7 @@
+{
+  "attrs": {
+    "type": "text",
+    "placeholder": "Type here"
+  },
+  "tag": "input"
+}

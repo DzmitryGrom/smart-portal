@@ -1,0 +1,34 @@
+.content-filter__type-value {
+  color: #2a2a2a;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "ProximaNovaLight";
+  min-width: 60px;
+  padding: 0 5px;
+  margin-right: 10px;
+  position: relative;
+  display: flex;
+  > .text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 5px;
+    min-width: 5em;
+  }
+  .i-arrow {
+    float: right;
+    position: relative;
+    top: 7px;
+    left: 1px;
+  }
+  > .tooltip {
+    margin-top: -4px;
+    display: none;
+  }
+  &:hover,
+  &.hover {
+    > .tooltip {
+      display: block;
+    }
+  }
+}

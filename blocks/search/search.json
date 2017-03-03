@@ -1,0 +1,7 @@
+{
+  "html": "<input type='search' placeholder='Искать'>",
+  "content": [{
+    "block": "i-search",
+    "tag": "i"
+  }]
+}

@@ -1,0 +1,97 @@
+.article {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  .caption {
+    margin-bottom: 20px;
+  }
+  &__content {
+    padding: 24px;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: "ProximaNovaReg";
+    font-size: 14px;
+    flex: 1 1 500px;
+  }
+  &__link {
+    display: block;
+    cursor: pointer;
+    color: #616161;
+    font-size: 15px;
+    font-family: ProximaNovaReg;
+    text-decoration: none;
+    position: relative;
+    top: -5px;
+    .text {
+      display: inline-block;
+      margin-left: 20px;
+    }
+  }
+  .content {
+    &__caption {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 10px 0;
+      &-text {
+        display: inline-block;
+        font-family: "ProximaNovaBold";
+        font-size: 21px;
+        font-weight: normal;
+      }
+      &-action {
+        font-size: 0;
+        cursor: pointer;
+        padding: 20px 10px;
+        position: relative;
+        .tooltip {
+          display: none;
+          margin-top: -10px;
+        }
+        &:hover,
+        &.hover {
+          .tooltip {
+            display: block;
+          }
+        }
+      }
+    }
+    &__text {
+      color: #616161;
+      font-family: "ProximaNovaReg";
+      font-size: 15px;
+      line-height: 23px;
+      padding-bottom: 28px; // height of footer
+      img {
+        max-width: 450px;
+      }
+      &_collapsed {
+        overflow: hidden;
+        height: ~'calc(23px * 3)'; // 24px line height, 3 lines
+      }
+    }
+    &__footer {
+      display: flex;
+      background-image: url(interface/article-gradient.png);
+      background-repeat: repeat-x;
+      background-size: auto 100%;
+      min-height: 28px;
+      margin-top: -28px;
+      position: relative;
+      z-index: 1;
+      .button_hidden {
+        display: none;
+      }
+      .button_pin_right {
+        margin-left: auto;
+      }
+    }
+  }
+  .sidebar {
+    display: inline-block;
+    padding: 24px 0 0 24px;
+    img {
+      border-radius: 5px;
+    }
+  }
+}

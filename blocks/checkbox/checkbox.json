@@ -1,0 +1,12 @@
+{
+  "attrs": {
+    "type": "checkbox"
+  },
+  "content": [
+    {
+      "elem": "indicator",
+      "tag": "i"
+    }
+  ],
+  "tag": "input"
+}
