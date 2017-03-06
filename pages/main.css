@@ -2591,20 +2591,6 @@ body {
   -webkit-overflow-scrolling: touch;
   z-index: 2;
 }
-.tooltip__content .search {
-  border: 1px solid #dedede;
-  border-radius: 4px;
-  margin-bottom: 15px;
-}
-.tooltip__content .search input[type=search] {
-  font-family: "ProximaNovaReg";
-  font-size: 12px;
-  padding: 0 11px;
-  display: inline-block;
-  line-height: 28px;
-  margin-right: -27px;
-  padding-right: 30px;
-}
 .tooltip__content_default {
   position: static;
   padding: 10px;
@@ -3360,6 +3346,7 @@ input:focus {
 .category__item_title {
   font-family: "ProximaNovaBold";
   font-size: 16px;
+  color: #121212;
 }
 .category__item_border-top {
   border-top: 1px solid #dedede;
@@ -3388,16 +3375,6 @@ input:focus {
 }
 .category__item_action_close {
   position: relative;
-}
-.category__item_action_close:after {
-  content: "";
-  background-image: url(interface/icons/cancel.svg);
-  position: absolute;
-  top: 50%;
-  right: 0;
-  margin-top: -10.5px;
-  width: 21px;
-  height: 21px;
 }
 .tooltip_footer .tooltip__content {
   bottom: 44px;
@@ -3461,12 +3438,15 @@ input:focus {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .tooltip__header .link {
   line-height: 42px;
   color: #979797;
   display: inline-block;
-  padding: 0 6px;
 }
 .tooltip__header .link_active {
   color: #69d4bf;
@@ -3491,6 +3471,20 @@ input:focus {
 .search input:focus {
   outline: none;
 }
+.search_bordered {
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.search_bordered input[type=search] {
+  font-family: "ProximaNovaReg";
+  font-size: 12px;
+  padding: 0 11px;
+  display: inline-block;
+  line-height: 28px;
+  margin-right: -27px;
+  padding-right: 30px;
+}
 .i-search {
   display: inline-block;
   background-image: url(interface/icons/search.svg);
@@ -3499,6 +3493,9 @@ input:focus {
   vertical-align: middle;
   width: 16px;
   height: 17px;
+}
+.tag_border {
+  border: 1px solid #dedede;
 }
 .tag__item {
   cursor: default;
@@ -3516,6 +3513,23 @@ input:focus {
 .tag__item_closer .i-closer {
   cursor: pointer;
   margin-left: 4px;
+  width: 15px;
+  height: 15px;
+  background-color: #f4f4f4;
+  border-radius: 100%;
+}
+.tag__item_closer .i-closer:after,
+.tag__item_closer .i-closer:before {
+  content: "";
+  top: 4px;
+}
+.tag__item_closer .i-closer:before {
+  content: "";
+  right: 1px;
+}
+.tag__item_closer .i-closer:after {
+  content: "";
+  left: 1px;
 }
 .i-closer {
   display: inline-block;
@@ -3804,14 +3818,6 @@ input:focus {
   background-position: center;
   background-repeat: no-repeat;
 }
-.icon-plus {
-  margin-top: -10px;
-}
-.icon-plus:before {
-  content: "\e900";
-  font-size: 20px;
-  color: #92ebb6;
-}
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -3825,6 +3831,29 @@ input:focus {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.icon_sitebar {
+  top: 50%;
+}
+.icon-pencil:before {
+  content: "\e902";
+}
+.icon-cancel:before {
+  content: "\e900";
+}
+.icon-plus:before {
+  content: "\e901";
+}
+.icon_sitebar.icon-plus,
+.icon_sitebar.icon-cancel {
+  font-size: 20px;
+  color: #4ad782;
+  margin-top: -10px;
+}
+.icon_sitebar.icon-pencil {
+  font-size: 12px;
+  margin-top: -7px;
+  color: #c0c0c0;
 }
 .i-group {
   display: inline-block;

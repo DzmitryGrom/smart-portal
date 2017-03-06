@@ -7,5 +7,21 @@
   .i-closer{
     cursor: pointer;
     margin-left: 4px;
+    width: 15px;
+    height: 15px;
+    background-color: #f4f4f4;
+    border-radius: 100%;
+  }
+  .i-closer:after, .i-closer:before {
+    content: "";
+    top: 4px;
+  }
+  .i-closer:before {
+    content: "";
+    right: 1px;
+  }
+  .i-closer:after {
+    content: "";
+    left: 1px;
   }
 }
