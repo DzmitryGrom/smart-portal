@@ -63,13 +63,20 @@
   <div class="main main_justified_between">
     <div class="sidebar">
       <div class="category">
-        <div class="category__item category__item_title category__item_action_add">Разделы</div>
+        <a class="category__item" href="#">Всё доступное мне</a>
+        <a class="category__item" href="#">Моё избранное</a>
+      </div>
+      <div class="category">
+        <div class="category__item category__item_title category__item_action_add category__item_icon">Разделы
+          <span class="i-icon icon-plus"></span>
+        </div>
         <a class="category__item" href="/">Дизайнеры</a>
         <a class="category__item" href="/">Менеджеры</a>
         <a class="category__item category__item_active" href="/">Распространители</a>
         <a class="category__item" href="/">Техническая поддержка</a>
         <a class="category__item" href="/">Руководители</a>
         <a class="category__item" href="/">Отчеты с мероприятий</a>
+        <a class="category__item category__item_border-top" href="/">Без раздела</a>
       </div>
       <div class="category">
         <div class="category__item category__item_title category__item_action_close">Добавить раздел</div>
@@ -79,123 +86,222 @@
         <div class="category__item category__item_icon category__item_drop category__item_input">
           <i class="fa fa-user-plus"></i>
           <input class="input" type="text" placeholder="Добавить участника" readonly="true">
-          <div class="tooltip tooltip_footer" style="height: 240px; width: 256px; left: -24px;">
+          <div class="tooltip tooltip_footer" style="height: 350px; width: 270px; left: -24px;">
             <i class="tooltip__arrow" style="left: 36px"></i>
-            <div class="content tooltip__content">
-              <div class="checkbox-group">
-                <div class="checkbox-group__title">
-                  <label class="checkbox-label">
-                    <input class="checkbox" type="checkbox">
-                    <i class="checkbox__indicator"></i>
-                    <span class="checkbox-text">Дизайнеры</span>
-                  </label>
-                  <div class="i-arrow i-arrow_to_down"></div>
-                </div>
-                <div class="checkbox-group__item">
-                  <label class="checkbox-label">
-                    <img class="pic" src="http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg" alt="" width="20" height="20"><span class="checkbox-text">Алиса Волшебная</span>
-                    <input class="checkbox" type="checkbox">
-                    <i class="checkbox__indicator"></i>
-                  </label>
-                </div>
-                <div class="checkbox-group__item">
-                  <label class="checkbox-label">
-                    <img class="pic" src="https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40" alt="" width="20" height="20"><span class="checkbox-text">Иван Горкин</span>
-                    <input class="checkbox" type="checkbox">
-                    <i class="checkbox__indicator"></i>
-                  </label>
-                </div>
-              </div>
-              <div class="checkbox-group checkbox-group_closed">
-                <div class="checkbox-group__title">
-                  <label class="checkbox-label">
-                    <input class="checkbox" type="checkbox">
-                    <i class="checkbox__indicator"></i>
-                    <span class="checkbox-text">Руководители</span>
-                  </label>
-                  <div class="i-arrow i-arrow_to_down"></div>
-                </div>
-                <div class="checkbox-group__item">
-                  <label class="checkbox-label">
-                    <img class="pic" src="http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg" alt="" width="20" height="20"><span class="checkbox-text">Алиса Волшебная</span>
-                    <input class="checkbox" type="checkbox">
-                    <i class="checkbox__indicator"></i>
-                  </label>
-                </div>
-                <div class="checkbox-group__item">
-                  <label class="checkbox-label">
-                    <img class="pic" src="https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40" alt="" width="20" height="20"><span class="checkbox-text">Иван Горкин</span>
-                    <input class="checkbox" type="checkbox">
-                    <i class="checkbox__indicator"></i>
-                  </label>
-                </div>
-              </div>
-              <div class="checkbox-group">
-                <div class="checkbox-group__title">
-                  <label class="checkbox-label">
-                    <input class="checkbox" type="checkbox">
-                    <i class="checkbox__indicator"></i>
-                    <span class="checkbox-text">Менеджеры</span>
-                  </label>
-                  <div class="i-arrow i-arrow_to_down"></div>
-                </div>
-                <div class="checkbox-group__item">
-                  <label class="checkbox-label">
-                    <img class="pic" src="http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg" alt="" width="20" height="20"><span class="checkbox-text">Алиса Волшебная</span>
-                    <input class="checkbox" type="checkbox">
-                    <i class="checkbox__indicator"></i>
-                  </label>
-                </div>
-                <div class="checkbox-group__item">
-                  <label class="checkbox-label">
-                    <img class="pic" src="https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40" alt="" width="20" height="20"><span class="checkbox-text">Иван Горкин</span>
-                    <input class="checkbox" type="checkbox">
-                    <i class="checkbox__indicator"></i>
-                  </label>
-                </div>
-              </div>
-              <div class="checkbox-group checkbox-group_closed">
-                <div class="checkbox-group__title">
-                  <label class="checkbox-label">
-                    <input class="checkbox" type="checkbox">
-                    <i class="checkbox__indicator"></i>
-                    <span class="checkbox-text">Стажеры</span>
-                  </label>
-                  <div class="i-arrow i-arrow_to_down"></div>
-                </div>
-                <div class="checkbox-group__item">
-                  <label class="checkbox-label">
-                    <img class="pic" src="http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg" alt="" width="20" height="20"><span class="checkbox-text">Алиса Волшебная</span>
-                    <input class="checkbox" type="checkbox">
-                    <i class="checkbox__indicator"></i>
-                  </label>
-                </div>
-                <div class="checkbox-group__item">
-                  <label class="checkbox-label">
-                    <img class="pic" src="https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40" alt="" width="20" height="20"><span class="checkbox-text">Иван Горкин</span>
-                    <input class="checkbox" type="checkbox">
-                    <i class="checkbox__indicator"></i>
-                  </label>
-                </div>
-              </div>
+            <div class="tooltip__header">
+              <a href="#" class="link link_active">Список</a>
+              <a href="#" class="link">Видна всем</a>
+              <a href="#" class="link">Только мне</a>
             </div>
-            <div class="tooltip__footer">
-              <div class="search">
+            <div class="content tooltip__content tooltip__content_default">
+              <div class="search search_bordered">
                 <input type='search' placeholder='Найти участника'>
                 <i class="i-search"></i>
               </div>
+              <div class="scroll" style="height: 180px;">
+                <div class="checkbox-group">
+                  <div class="checkbox-group__title">
+                    <label class="checkbox-label">
+                      <input class="checkbox" type="checkbox">
+                      <i class="checkbox__indicator"></i>
+                      <span class="checkbox-text">Дизайнеры</span>
+                    </label>
+                    <div class="i-arrow i-arrow_to_down"></div>
+                  </div>
+                  <div class="checkbox-group__item">
+                    <label class="checkbox-label">
+                      <img class="pic" src="http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg" alt="" width="20" height="20"><span class="checkbox-text">Алиса Волшебная</span>
+                      <input class="checkbox" type="checkbox">
+                      <i class="checkbox__indicator"></i>
+                    </label>
+                  </div>
+                  <div class="checkbox-group__item">
+                    <label class="checkbox-label">
+                      <img class="pic" src="https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40" alt="" width="20" height="20"><span class="checkbox-text">Иван Горкин</span>
+                      <input class="checkbox" type="checkbox">
+                      <i class="checkbox__indicator"></i>
+                    </label>
+                  </div>
+                </div>
+                <div class="checkbox-group checkbox-group_closed">
+                  <div class="checkbox-group__title">
+                    <label class="checkbox-label">
+                      <input class="checkbox" type="checkbox">
+                      <i class="checkbox__indicator"></i>
+                      <span class="checkbox-text">Руководители</span>
+                    </label>
+                    <div class="i-arrow i-arrow_to_down"></div>
+                  </div>
+                  <div class="checkbox-group__item">
+                    <label class="checkbox-label">
+                      <img class="pic" src="http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg" alt="" width="20" height="20"><span class="checkbox-text">Алиса Волшебная</span>
+                      <input class="checkbox" type="checkbox">
+                      <i class="checkbox__indicator"></i>
+                    </label>
+                  </div>
+                  <div class="checkbox-group__item">
+                    <label class="checkbox-label">
+                      <img class="pic" src="https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40" alt="" width="20" height="20"><span class="checkbox-text">Иван Горкин</span>
+                      <input class="checkbox" type="checkbox">
+                      <i class="checkbox__indicator"></i>
+                    </label>
+                  </div>
+                </div>
+                <div class="checkbox-group">
+                  <div class="checkbox-group__title">
+                    <label class="checkbox-label">
+                      <input class="checkbox" type="checkbox">
+                      <i class="checkbox__indicator"></i>
+                      <span class="checkbox-text">Менеджеры</span>
+                    </label>
+                    <div class="i-arrow i-arrow_to_down"></div>
+                  </div>
+                  <div class="checkbox-group__item">
+                    <label class="checkbox-label">
+                      <img class="pic" src="http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg" alt="" width="20" height="20"><span class="checkbox-text">Алиса Волшебная</span>
+                      <input class="checkbox" type="checkbox">
+                      <i class="checkbox__indicator"></i>
+                    </label>
+                  </div>
+                  <div class="checkbox-group__item">
+                    <label class="checkbox-label">
+                      <img class="pic" src="https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40" alt="" width="20" height="20"><span class="checkbox-text">Иван Горкин</span>
+                      <input class="checkbox" type="checkbox">
+                      <i class="checkbox__indicator"></i>
+                    </label>
+                  </div>
+                </div>
+                <div class="checkbox-group checkbox-group_closed">
+                  <div class="checkbox-group__title">
+                    <label class="checkbox-label">
+                      <input class="checkbox" type="checkbox">
+                      <i class="checkbox__indicator"></i>
+                      <span class="checkbox-text">Стажеры</span>
+                    </label>
+                    <div class="i-arrow i-arrow_to_down"></div>
+                  </div>
+                  <div class="checkbox-group__item">
+                    <label class="checkbox-label">
+                      <img class="pic" src="http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg" alt="" width="20" height="20"><span class="checkbox-text">Алиса Волшебная</span>
+                      <input class="checkbox" type="checkbox">
+                      <i class="checkbox__indicator"></i>
+                    </label>
+                  </div>
+                  <div class="checkbox-group__item">
+                    <label class="checkbox-label">
+                      <img class="pic" src="https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40" alt="" width="20" height="20"><span class="checkbox-text">Иван Горкин</span>
+                      <input class="checkbox" type="checkbox">
+                      <i class="checkbox__indicator"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tooltip__footer ">
+              <button class="button button_success" type="button">Сохранить</button>
+              <button class="button" type="button">Отменить</button>
             </div>
           </div>
         </div>
         <div class="tag">
           <span class="tag__item tag__item_closer">Менеджеры
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <i class="i-closer"></i>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </span>
           <span class="tag__item tag__item_closer">Игорь Пал
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <i class="i-closer"></i>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </span>
           <span class="tag__item tag__item_closer">Стажеры
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <i class="i-closer"></i>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </span>
         </div>
         <div class="category__footer">
@@ -403,10 +509,70 @@
           <i class="i-arrow i-arrow_to_down"></i>
         </div>
         <span class="content-filter__list">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <i class="fa fa-bars"></i>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </span>
         <span class="content-filter__squad">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <i class="fa fa-th"></i>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </span>
       </div>
     </div>
