@@ -3486,6 +3486,12 @@ input:focus {
   margin-right: -27px;
   padding-right: 30px;
 }
+.search_bordered .icon-search {
+  right: 5px;
+}
+.search_icon {
+  position: relative;
+}
 .i-search {
   display: inline-block;
   background-image: url(interface/icons/search.svg);
@@ -3833,8 +3839,8 @@ input:focus {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon_sitebar {
-  top: 50%;
+.icon-search:before {
+  content: "\e903";
 }
 .icon-pencil:before {
   content: "\e902";
@@ -3845,6 +3851,14 @@ input:focus {
 .icon-plus:before {
   content: "\e901";
 }
+/*icon-search*/
+.icon-search_black {
+  color: #000000;
+}
+.icon-search_gray {
+  color: #aeaeae;
+}
+/*icon_sitebar*/
 .icon_sitebar.icon-plus,
 .icon_sitebar.icon-cancel {
   font-size: 20px;
@@ -3855,6 +3869,10 @@ input:focus {
   font-size: 12px;
   margin-top: -7px;
   color: #c0c0c0;
+}
+.icon_sitebar.icon-search {
+  font-size: 16px;
+  margin-top: -8px;
 }
 .i-group {
   display: inline-block;
