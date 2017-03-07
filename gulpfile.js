@@ -10,12 +10,6 @@ gulp.task('build', function () {
     .pipe(less())
     .pipe(gulp.dest('./pages'));
 
-  gulp.src('./pages/*.html')
-    .pipe(prettify({
-      indent_char: ' ',
-      indent_size: 2
-    }))
-    .pipe(gulp.dest('./pages/'));
 });
 
 
