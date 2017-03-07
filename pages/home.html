@@ -1,18 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="app">
 
 <head>
   <title>home</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link href='main.css' rel='stylesheet' type='text/css'>
+
+  <script src="../tmp/angular/angular.min.js"></script>
+  <script src="../tmp/ng-dialog/js/ngDialog.min.js"></script>
+  <script src="../tmp/app.js"></script>
+
+  <link href='../tmp/ng-dialog/css/ngDialog.css' rel='stylesheet' type='text/css'>
+  <link href='../tmp/ng-dialog/css/ngDialog-theme-default.css' rel='stylesheet' type='text/css'>
+
 </head>
 
-<body>
+<body ng-controller="TestController">
   <div class="header">
     <h1 class="header__logo">Smart<b>Portal</b></h1>
     <div class="nav">
-      <a class="nav__link nav__link_newspaper nav__link_active" href="home.html">
+      <a class="nav__link nav__link_newspaper nav__link_active" ng-click="open()">
         <span class="icon-newspaper icon_nav"></span>
         База знаний
       </a>
