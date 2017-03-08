@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+
+<head>
+  <title>link</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href='main.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body ng-controller="TestController">
+  <div class="header">
+    <h1 class="header__logo">Smart<b>Portal</b></h1>
+    <div class="nav">
+      <a class="nav__link nav__link_newspaper nav__link_active" ng-click="open()">
+        <span class="icon-newspaper icon_nav"></span>
+        <span class="text">База знаний</span>
+      </a>
+      <a class="nav__link nav__link_people" href="employeers.html">
+        <span class="icon-people icon_nav"></span>
+        <span class="text">Команда</span>
+      </a>
+      <a class="nav__link nav__link_education" href="/">
+        <span class="icon-education icon_nav"></span>
+        <span class="text">Обучение</span>
+      </a>
+      <a class="nav__link nav__link_code" href="/">
+        <span class="icon-code icon_nav"></span>
+        <span class="text">Скрипты</span>
+      </a>
+    </div>
+    <div class="header-side">
+      <span class="header-side__help icon-question icon_header"></span>
+      <span class="header-side__search icon-search icon_header"></span>
+      <div class="header-side__notification header-side__notification_active ">
+        <span class="icon-notification icon_header"></span>
+        <div class="tooltip" style="width: 240px; right: -10px">
+          <i class="tooltip__arrow" style="right: 12px"></i>
+          <div class="content tooltip__content tooltip__content_default">
+            <ul class="list">
+              <li class="list__item list__item_color_warning">
+                <div class="text">Updates Improved Parsing and Import Engine</div>
+              </li>
+              <li class="list__item list__item_color_default">
+                <div class="text">Updates Improved Parsing and Import</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-profile">
+        <div class="header-profile__avatar">
+          <img class="pic" src="interface/avatar.jpg" alt="">
+        </div>
+        <span class="header-profile__name">Игорь Иванов</span>
+        <span class="header-profile__arrow"></span>
+        <div class="tooltip" style="width: 170px; right: -14px">
+          <i class="tooltip__arrow" style="right: 10px"></i>
+          <div class="content tooltip__content tooltip__content_default">
+            <ul class="list">
+              <li class="list__item">
+                <div class="text">Профиль</div>
+              </li>
+              <li class="list__item">
+                <div class="text">Настройки</div>
+              </li>
+              <li class="list__item list__item_dividered_top">
+                <div class="text">Выход</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="content">
+      <div class="article article_modal">
+        <div class="article__content">
+          <div class="category__item category__item_full-width category__item_input category__item_icon">
+            <i class="fa fa-link icon_blue" aria-hidden="true"></i>
+            <input class="input" type="text" placeholder="http://www.annexus.su/">
+          </div>
+          <div class="article__header">
+            <div class="avatar avatar_link">
+              <div class="avatar__cover avatar__cover_square avatar__cover_small">
+                <img class="pic" src="interface/ava.jpg" alt="" height="65" width="50">
+              </div>
+            </div>
+            <textarea class="input textarea">За 25 тысяч километров я не потратил заправку признаков хорошего интерфейса</textarea>
+          </div>
+          <div class="article__editor" style="height: 450px;">
+            
+          </div>
+          <div class="category__item category__item_full-width category__item_input category__item_icon">
+            <div class="tag">
+              <i class="i-tag"></i>
+              <span class="tag__item tag__item_border">Хостинг</span>
+              <span class="tag__item tag__item_border">Дизайн</span>
+              <span class="tag__item tag__item_border">Бизнес</span>
+            </div>
+          </div>
+          <div class="category__item category__item_tag category__item_input  category__item_icon">
+            <span class="icon-group icon_blue"></span>
+            <div class="tag">
+              <span class="tag__item tag__item_closer">
+                <span class="tag__text">Менеджеры</span>
+                <i class="i-closer"></i>
+              </span>
+              <span class="tag__item tag__item_closer">
+                <span class="tag__text">Игорь Павлов</span>
+              <i class="i-closer"></i>
+              </span>
+              <span class="tag__item tag__item_closer">
+                <span class="tag__text">Стажеры</span>
+              <i class="i-closer"></i>
+              </span>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+</body>
+</html>
