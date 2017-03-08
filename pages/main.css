@@ -2441,18 +2441,9 @@ body {
   margin-bottom: 0;
 }
 .actions__item_add {
-  width: 50px;
-  height: 50px;
-  border-radius: 100%;
-  background-color: #3bc7ab;
-  color: #fff;
   font-size: 36px;
   line-height: 50px;
   font-family: "ProximaNovaBold";
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
 }
 .actions__item .text {
   text-transform: uppercase;
@@ -2859,6 +2850,11 @@ body {
 }
 .avatar_link {
   margin-right: 20px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.avatar_link:hover .avatar__shadow {
+  transform: translateY(0%);
 }
 .avatar__cover {
   border-radius: 500px;
@@ -2896,6 +2892,36 @@ body {
 }
 .avatar__cover_square img {
   border-radius: 3px;
+}
+.avatar__shadow {
+  transform: translateY(100%);
+  transition: .3s;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-decoration: none;
+}
+.avatar__shadow .avatar__opacity {
+  background-color: black;
+  opacity: 0.5;
+  height: 100%;
+  display: block;
+}
+.avatar__shadow .circle {
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  left: 50%;
+  margin-left: -15px;
+  z-index: 2;
+}
+.avatar__shadow .fa {
+  font-size: 15px;
+  line-height: 30px;
 }
 .avatar__online {
   color: #7fd5c2;
@@ -3019,6 +3045,25 @@ body {
 .datagrid__body .row__cell > .action:hover .tooltip,
 .datagrid__body .row__cell > .action.hover .tooltip {
   display: block;
+}
+.circle {
+  border-radius: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+}
+.circle_xs {
+  width: 30px;
+  height: 30px;
+}
+.circle_xl {
+  width: 50px;
+  height: 50px;
+}
+.circle_green {
+  background-color: #3bc7ab;
 }
 .category {
   background-color: #fff;
