@@ -1,0 +1,22 @@
+.category_hover{
+  padding: 20px 0;
+  .category__item {
+    padding: 0 26px;
+    &:hover {
+      background-color: #f5f5f7;
+    }
+  }
+  .category__item:last-child {
+    padding: 0 26px;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  .category__item_icon .i-icon {
+    right: 26px;
+  }
+  .category__item_active:after {
+    content: "";
+    margin-left: -36px;
+  }
+}

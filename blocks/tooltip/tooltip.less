@@ -27,6 +27,31 @@
     position: absolute;
     z-index: 1;
   }
+  &_top{
+    bottom: 100%;
+  }
+  &_error{
+    background-color: #f35e5e;
+    color: #fff;
+    font-size: 12px;
+    font-family: "ProximaNovaLight";
+    padding: 11px;
+    width: 100%;
+    top: inherit;
+    margin-bottom: 12px;
+    left: -1px;
+    display: none;
+    &:after {
+      content: "";
+      background-color: #f35e5e;
+      height: 10px;
+      top: 100%;
+      margin-top: -10px;
+    }
+    .fa {
+      margin-right: 5px;
+    }
+  }
   &__content {
     overflow-y: auto;
     font-size: initial;

@@ -84,32 +84,32 @@
         <a class="category__item" href="#">Всё доступное мне</a>
         <a class="category__item" href="#">Моё избранное</a>
       </div>
-      <div class="category">
+      <div class="category category_hover">
         <div class="category__item category__item_title category__item_action_add category__item_icon">
           <span class="text">Разделы</span>
           <span class="i-icon  icon_sidebar icon-plus icon_green"></span>
         </div>
         <a class="category__item category__item_icon" href="/">
           <span class="text">Дизайнеры</span>
-          <span class="i-icon  icon_sidebar icon-pencil"></span>
+          <span class="i-icon icon_sidebar icon-pencil"></span>
         </a>
         <a class="category__item category__item_icon" href="/">
           <span class="text">Менеджеры</span>
-          <span class="i-icon  icon_sidebar icon-pencil"></span>
+          <span class="i-icon icon_sidebar icon-pencil"></span>
         </a>
-        <a class="category__item category__item_active  category__item_icon" href="/">
+        <a class="category__item  category__item_active category__item_icon" href="/">
           <span class="text">Распространители</span>
-          <span class="i-icon  icon_sidebar icon-pencil"></span>
+          <span class="i-icon icon_sidebar icon-pencil"></span>
         </a>
         <a class="category__item  category__item_icon" href="/">
           <span class="text">Техническая поддержка</span>
-          <span class="i-icon  icon_sidebar icon-pencil"></span>
+          <span class="i-icon icon_sidebar icon-pencil"></span>
         </a>
-        <a class="category__item  category__item_icon" href="/">
+        <a class="category__item category__item_icon" href="/">
           <span class="text">Руководители</span>
           <span class="i-icon  icon_sidebar icon-pencil"></span>
         </a>
-        <a class="category__item  category__item_icon" href="/">
+        <a class="category__item category__item_icon" href="/">
           <span class="text">Отчеты с мероприятий</span>
           <span class="i-icon  icon_sidebar icon-pencil"></span>
         </a>
@@ -120,15 +120,21 @@
           <span class="text">Добавить раздел</span>
           <span class="i-icon icon_sidebar icon-cancel icon_green"></span>
         </div>
-        <div class="category__item category__item_input">
+        <div class="category__item category__item_input 
+         has-error">
+          <div class="tooltip tooltip_error tooltip_top">
+            <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+            Недопустимые символы
+            <i class="tooltip__arrow tooltip__arrow_red tooltip__arrow_bottom" style="left: 5px"></i>
+          </div>
           <input type='text' placeholder='Имя раздела'>
         </div>
         <div class="category__item category__item_icon category__item_drop category__item_input">
           <span class="icon-group icon_sidebar icon_blue"></span>
           <input class="input" type="text" placeholder="Настройка доступа" readonly>
         </div>
-        <div class="category__footer">
-          <button class="button button_success" type="button">Сохранить</button>
+        <div class="category__footer category__footer_justify-center">
+          <button class="button" type="button">Сохранить</button>
         </div>
       </div>
       <div class="category">
@@ -140,8 +146,7 @@
           <input type='text' placeholder='Распространители'>
         </div>
         <div class="category__item category__item_icon category__item_drop">
-          <div class="tooltip tooltip_footer" style="height: 350px; width: 270px; left: -24px;display: none">
-            <i class="tooltip__arrow" style="left: 36px"></i>
+          <div class="tooltip tooltip_footer" style="height: 350px; width: 270px; left: -24px;display: ">
             <div class="tooltip__header">
               <a href="#" class="link link_active">Список</a>
               <a href="#" class="link">Видна всем</a>
@@ -150,7 +155,7 @@
             <div class="content tooltip__content tooltip__content_default">
               <div class="search search_bordered search_icon">
                 <input type='search' placeholder='Найти участника'>
-                <span class="icon-search icon_gray icon_sidebar i-icon"></span>
+                <span class="icon-search icon_gray  i-icon"></span>
               </div>
               <div class="scroll" style="height: 180px;">
                 <div class="checkbox-group">
@@ -255,6 +260,7 @@
               <button class="button button_success" type="button">Сохранить</button>
               <button class="button" type="button">Отменить</button>
             </div>
+            <i class="tooltip__arrow" style="left: 36px"></i>
           </div>
         </div>
         <div class="category__item category__item_tag category__item_input  category__item_icon">
@@ -280,10 +286,22 @@
         </div>
       </div>
       <div class="category">
+        <div class="category__item-label category__item-label_not-margin">Тип</div>
+        <div class="category__item category__item_drop category__item_input">
+          <input class="input" type="text" placeholder="Type here" value="Все" readonly>
+          <div class="i-arrow i-arrow_to_down"></div>
+        </div>
+      </div>
+      <div class="category ">
         <div class="category__item category__item_submit category__item_submit_search category__item_input category__item_icon">
           <div class="search">
             <input type='search' placeholder='Искать'>
             <span class="icon-search icon-search_gray icon_sidebar i-icon"></span>
+          </div>
+          <div class="results">
+            <span>
+              Ничего не найденно
+            </span>
           </div>
         </div>
         <div class="tag">
@@ -300,11 +318,20 @@
       </div>
     </div>
     <div class="content">
+      <div class="tag">
+        <div class="tag__item tag__item_border">Раздел: Распространители
+          <div class="i-closer"></div>
+        </div>
+      </div>
       <div class="article">
         <div class="article-cover" style="background-image: url('http://www.dolomitisuperski.com/website/var/tmp/image-thumbnails/660000/667626/thumb__demi_gallery_detail_landscape/mountains_7824779.jpeg')"></div>
         <div class="content article__content">
           <div class="content__caption">
-            <span class="content__caption-text">200 шаблонов эффективных заголовков</span>
+            <div class="content__caption-text">
+             <span class="text">200 шаблонов эффективных заголовков</span>
+              <span class="i-icon icon-pin icon_blue"></span>
+              <i class="fa fa-star"></i>
+            </div>
             <div class="content__caption-action">
               <i class="i-more"></i>
               <div class="tooltip" style="width: 220px; right: -20px">
@@ -312,19 +339,34 @@
                 <div class="content tooltip__content tooltip__content_default">
                   <ul class="list">
                     <li class="list__item list__item_iconed list__item_hovered">
-                      <div class="text">Редактировать</div>
+                      <div class="text">
+                        <span class="fa i-icon icon_content icon-pencil"></span>
+                        <span class="text">Редактировать</span>
+                      </div>
                     </li>
                     <li class="list__item list__item_iconed list__item_hovered">
-                      <div class="text">Закрепить запись</div>
+                      <div class="text">
+                        <i class="icon_content  fa fa-lock" aria-hidden="true"></i>
+                        <span class="text">Закрепить запись</span>  
+                      </div>
                     </li>
                     <li class="list__item list__item_iconed list__item_hovered">
-                      <div class="text">Добавить в избранное</div>
+                      <div class="text">
+                        <i class="icon_content icon_gray fa fa-star"></i>
+                        <span class="text">Добавить в избранное</span>  
+                      </div>
                     </li>
                     <li class="list__item list__item_iconed list__item_hovered">
-                      <div class="text">Скопировать ссылку</div>
+                      <div class="text">
+                        <i class="icon_content  fa fa-link" aria-hidden="true"></i>
+                        <span class="text">Скопировать ссылку</span>
+                      </div>
                     </li>
                     <li class="list__item list__item_iconed list__item_hovered">
-                      <div class="text">Удалить в корзину</div>
+                      <div class="text">
+                        <i class="icon_content fa fa-trash-o" aria-hidden="true"></i>
+                        <span class="text">Удалить в корзину</span>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -353,12 +395,129 @@
             <span class="tag__item tag__item_border">Бизнес</span>
           </div>
           <button class="button button_pseudo button_small" type="button">Еще 5 тегов</button>
-          <div class="text text_pin_right text_small text_nowrap">
-            <i class="i-group"></i>
+          <div style="position:relative;" class="text text_pin_right text_small text_nowrap">
+              <div class="tooltip tooltip_top" style="margin-top: -400px; height: 350px; width: 270px; left: -200px;display: ">
+                <i class="tooltip__arrow tooltip__arrow_bottom" style="right: 35px"></i>
+                <div class="tooltip__header">
+                  <a href="#" class="link link_active">Список</a>
+                  <a href="#" class="link">Видна всем</a>
+                  <a href="#" class="link">Только мне</a>
+                </div>
+                <div class="content tooltip__content tooltip__content_default">
+                    <div class="search search_bordered search_icon">
+                      <input type='search' placeholder='Найти участника'>
+                      <span class="icon-search icon_gray i-icon"></span>
+                    </div>
+                    <div class="scroll" style="height: 180px;">
+                    <div class="checkbox-group">
+                      <div class="checkbox-group__title">
+                        <label class="checkbox-label">
+                          <input class="checkbox" type="checkbox">
+                          <i class="checkbox__indicator"></i>
+                          <span class="checkbox-text">Дизайнеры</span>
+                        </label>
+                        <div class="i-arrow i-arrow_to_down"></div>
+                      </div>
+                      <div class="checkbox-group__item">
+                        <label class="checkbox-label">
+                          <img class="pic" src="http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg" alt="" width="20" height="20"><span class="checkbox-text">Алиса Волшебная</span>
+                          <input class="checkbox" type="checkbox">
+                          <i class="checkbox__indicator"></i>
+                        </label>
+                      </div>
+                      <div class="checkbox-group__item">
+                        <label class="checkbox-label">
+                          <img class="pic" src="https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40" alt="" width="20" height="20"><span class="checkbox-text">Иван Горкин</span>
+                          <input class="checkbox" type="checkbox">
+                          <i class="checkbox__indicator"></i>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="checkbox-group checkbox-group_closed">
+                      <div class="checkbox-group__title">
+                        <label class="checkbox-label">
+                          <input class="checkbox" type="checkbox">
+                          <i class="checkbox__indicator"></i>
+                          <span class="checkbox-text">Руководители</span>
+                        </label>
+                        <div class="i-arrow i-arrow_to_down"></div>
+                      </div>
+                      <div class="checkbox-group__item">
+                        <label class="checkbox-label">
+                          <img class="pic" src="http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg" alt="" width="20" height="20"><span class="checkbox-text">Алиса Волшебная</span>
+                          <input class="checkbox" type="checkbox">
+                          <i class="checkbox__indicator"></i>
+                        </label>
+                      </div>
+                      <div class="checkbox-group__item">
+                        <label class="checkbox-label">
+                          <img class="pic" src="https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40" alt="" width="20" height="20"><span class="checkbox-text">Иван Горкин</span>
+                          <input class="checkbox" type="checkbox">
+                          <i class="checkbox__indicator"></i>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="checkbox-group">
+                      <div class="checkbox-group__title">
+                        <label class="checkbox-label">
+                          <input class="checkbox" type="checkbox">
+                          <i class="checkbox__indicator"></i>
+                          <span class="checkbox-text">Менеджеры</span>
+                        </label>
+                        <div class="i-arrow i-arrow_to_down"></div>
+                      </div>
+                      <div class="checkbox-group__item">
+                        <label class="checkbox-label">
+                          <img class="pic" src="http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg" alt="" width="20" height="20"><span class="checkbox-text">Алиса Волшебная</span>
+                          <input class="checkbox" type="checkbox">
+                          <i class="checkbox__indicator"></i>
+                        </label>
+                      </div>
+                      <div class="checkbox-group__item">
+                        <label class="checkbox-label">
+                          <img class="pic" src="https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40" alt="" width="20" height="20"><span class="checkbox-text">Иван Горкин</span>
+                          <input class="checkbox" type="checkbox">
+                          <i class="checkbox__indicator"></i>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="checkbox-group checkbox-group_closed">
+                      <div class="checkbox-group__title">
+                        <label class="checkbox-label">
+                          <input class="checkbox" type="checkbox">
+                          <i class="checkbox__indicator"></i>
+                          <span class="checkbox-text">Стажеры</span>
+                        </label>
+                        <div class="i-arrow i-arrow_to_down"></div>
+                      </div>
+                      <div class="checkbox-group__item">
+                        <label class="checkbox-label">
+                          <img class="pic" src="http://www.koolinar.ru/all_image/users/179/179477/u179477_thumb.jpg" alt="" width="20" height="20"><span class="checkbox-text">Алиса Волшебная</span>
+                          <input class="checkbox" type="checkbox">
+                          <i class="checkbox__indicator"></i>
+                        </label>
+                      </div>
+                      <div class="checkbox-group__item">
+                        <label class="checkbox-label">
+                          <img class="pic" src="https://lh4.googleusercontent.com/-NEnMTiuKBsk/AAAAAAAAAAI/AAAAAAAACnI/S0onZNhCCmo/photo.jpg?sz=50&sz=40" alt="" width="20" height="20"><span class="checkbox-text">Иван Горкин</span>
+                          <input class="checkbox" type="checkbox">
+                          <i class="checkbox__indicator"></i>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tooltip__footer ">
+                  <button class="button button_success" type="button">Сохранить</button>
+                  <button class="button" type="button">Отменить</button>
+                </div>
+            
+            </div>
+            <span class="i-icon icon_article icon-group"></span>
             <span class="text__text">7</span>
-            <i class="i-chat"></i>
+            <span class="i-icon icon_article icon-chat"></span>
             <span class="text__text">15</span>
-            <i class="i-heart"></i>
+            <span class="i-icon icon_article icon-heart_full"></span>
             <span class="text__text">984</span>
           </div>
         </div>
@@ -366,7 +525,7 @@
       <div class="article">
         <div class="content article__content">
           <span class="text">Статья удалена</span>
-          <button class="button button_link_success button_pin_right" type="button">Отменить удаление</button>
+          <button class="button button_link_success button_pin_right text_uppercase" type="button">Отменить удаление</button>
         </div>
       </div>
       <div class="article">
@@ -398,14 +557,21 @@
             <span class="tag__item tag__item_border">Хостинг</span>
             <span class="tag__item tag__item_border">Дизайн</span>
             <span class="tag__item tag__item_border">Бизнес</span>
+            <span class="tag__item tag__item_border">Бизнес</span>
+            <span class="tag__item tag__item_border">Бизнес</span>
+            <span class="tag__item tag__item_border">Бизнес</span>
+            <span class="tag__item tag__item_border">Хостинг</span>
+            <span class="tag__item tag__item_border">Дизайн</span>
+            <span class="tag__item tag__item_border">Бизнес</span>
+            <span class="tag__item">+Добавить тэг</span>
           </div>
           <button class="button button_pseudo button_small" type="button">Еще 5 тегов</button>
           <div class="text text_pin_right text_small text_nowrap">
-            <i class="i-group"></i>
+            <span class="i-icon icon_article icon-group"></span>
             <span class="text__text">7</span>
-            <i class="i-chat"></i>
+            <span class="i-icon icon_article icon-chat"></span>
             <span class="text__text">15</span>
-            <i class="i-heart"></i>
+            <span class="i-icon  icon_article icon-heart_full"></span>
             <span class="text__text">984</span>
           </div>
         </div>
@@ -442,11 +608,11 @@
           </div>
           <button class="button button_pseudo button_small" type="button">Еще 5 тегов</button>
           <div class="text text_pin_right text_small text_nowrap">
-            <i class="i-group"></i>
+            <span class="i-icon icon_article icon-group"></span>
             <span class="text__text">7</span>
-            <i class="i-chat"></i>
+            <span class="i-icon icon_article icon-chat"></span>
             <span class="text__text">15</span>
-            <i class="i-heart"></i>
+            <span class="i-icon icon_article icon-heart_full"></span>
             <span class="text__text">984</span>
           </div>
         </div>
