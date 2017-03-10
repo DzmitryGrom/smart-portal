@@ -2441,9 +2441,17 @@ body {
   margin-bottom: 0;
 }
 .actions__item_add {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.actions__item_add span.text {
   font-size: 36px;
-  line-height: 50px;
   font-family: "ProximaNovaBold";
+  color: #fff;
 }
 .actions__item .text {
   text-transform: uppercase;
@@ -2495,6 +2503,7 @@ body {
   white-space: nowrap;
   border-bottom: 2px solid transparent;
   position: relative;
+  border-bottom: 4px solid transparent;
 }
 .nav__link_active {
   color: #61a3da;
@@ -2503,7 +2512,7 @@ body {
 .header-side {
   display: flex;
   min-width: 300px;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 .header-side__notification {
@@ -2520,8 +2529,7 @@ body {
   width: 7px;
   height: 7px;
   top: 0;
-  margin-left: -3px;
-  left: 100%;
+  left: 20px;
 }
 .header-side__notification > .tooltip {
   margin-top: -2px;
@@ -2692,6 +2700,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   position: relative;
+  cursor: pointer;
 }
 .header-profile__avatar {
   display: inline-block;
@@ -2700,6 +2709,7 @@ body {
   height: 28px;
   border-radius: 500px;
   overflow: hidden;
+  margin-left: 5px;
 }
 .header-profile__avatar img {
   width: 100%;
@@ -2711,6 +2721,9 @@ body {
   vertical-align: middle;
   line-height: 1;
   white-space: nowrap;
+  max-width: 125px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .header-profile__arrow {
   display: inline-block;
@@ -2941,6 +2954,7 @@ body {
   opacity: 0.5;
   height: 100%;
   display: block;
+  border-radius: 5px;
 }
 .avatar__shadow .circle {
   position: absolute;
@@ -3511,7 +3525,8 @@ textarea {
   width: 7px;
   height: 7px;
 }
-.category__item_active:hover .icon-pencil {
+.category__item_active:hover:after {
+  content: "";
   display: none;
 }
 .category__item_action_close {
@@ -3922,6 +3937,31 @@ textarea {
 .article_modal .article__content {
   padding-bottom: 0;
 }
+.article.article_transparent {
+  padding-top: 170px;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+.article.article_transparent .icon {
+  font-size: 170px;
+  flex: 1 1 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.article.article_transparent .icon-favorites {
+  width: 170px;
+  height: 170px;
+  background-size: 170px 170px;
+}
+.article.article_transparent .text {
+  font-size: 21px;
+  font-family: "ProximaNovaReg";
+  color: #afafaf;
+  line-height: 21px;
+  flex: 1 1 100%;
+  text-align: center;
+}
 .article__editor {
   margin: 24px 0;
   border: 1px solid #dedede;
@@ -3998,6 +4038,18 @@ textarea {
   width: 34px;
   height: 34px;
   min-width: auto;
+}
+.button_not-border {
+  border: none;
+}
+.button_add-more {
+  background-color: #fff;
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  width: 195px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 .article__footer {
   border-top: 1px solid #f7f7f7;
@@ -4079,50 +4131,86 @@ textarea {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-code:before {
+.icon-education:before {
   content: "\e900";
 }
-.icon-education:before {
+.icon-favorites .path1:before {
   content: "\e901";
+  color: #000000;
+}
+.icon-favorites .path2:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: #000000;
+}
+.icon-favorites .path3:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: #000000;
+}
+.icon-favorites .path4:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: #e9a93f;
+}
+.icon-favorites .path5:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: #000000;
+}
+.icon-favorites .path6:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: #000000;
+}
+.icon-favorites {
+  background: url(interface/icons/svg/favorites.svg) no-repeat;
+  background-position: center center;
 }
 .icon-group:before {
-  content: "\e902";
-}
-.icon-heart:before {
-  content: "\e903";
-}
-.icon-heart_full:before {
-  content: "\e904";
-}
-.icon-newspaper:before {
-  content: "\e905";
-}
-.icon-notification:before {
-  content: "\e906";
-}
-.icon-pencil:before {
-  content: "\e907";
-}
-.icon-people:before {
   content: "\e908";
 }
-.icon-pin:before {
+.icon-heart:before {
   content: "\e909";
 }
-.icon-plus:before {
+.icon-heart-full:before {
   content: "\e90a";
 }
-.icon-question:before {
+.icon-newspaper:before {
   content: "\e90b";
 }
-.icon-search:before {
+.icon-notification:before {
   content: "\e90c";
 }
-.icon-cancel:before {
+.icon-page:before {
   content: "\e90d";
 }
-.icon-chat:before {
+.icon-pencil:before {
   content: "\e90e";
+}
+.icon-people:before {
+  content: "\e90f";
+}
+.icon-pin:before {
+  content: "\e910";
+}
+.icon-plus:before {
+  content: "\e911";
+}
+.icon-question:before {
+  content: "\e912";
+}
+.icon-search:before {
+  content: "\e913";
+}
+.icon-cancel:before {
+  content: "\e914";
+}
+.icon-chat:before {
+  content: "\e915";
+}
+.icon-code:before {
+  content: "\e916";
 }
 /*icon_color*/
 .icon_black {
@@ -4150,6 +4238,7 @@ textarea {
 /*icon_header*/
 .icon_header {
   font-size: 22px;
+  margin-right: 30px;
 }
 /*icon_sidebar*/
 .icon_sidebar.icon-plus,
@@ -4507,50 +4596,72 @@ body.ngdialog-open {
   -webkit-animation: ngdialog-flyout 0.5s;
   animation: ngdialog-flyout 0.5s;
 }
-.ngdialog.ngdialog-theme-default .ngdialog-content {
-  background: #f0f0f0;
+.ngdialog.ngdialog-theme-default .ngdialog-content,
+.ngdialog.ngdialog_full-width .ngdialog-content {
   color: #444;
   font-family: 'Helvetica', sans-serif;
   font-size: 1.1em;
   line-height: 1.5em;
   margin: 0 auto;
   max-width: 100%;
-  position: fixed;
   z-index: 20;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
-.ngdialog.ngdialog-theme-default .ng-dialog__wrapper,
-.ngdialog.ngdialog-theme-default .ng-dialog__content {
-  height: 100%;
-  min-height: 100%;
+/*ngdialog.ngdialog_normal*/
+.ngdialog.ngdialog_normal .ngdialog-content {
+  width: 430px;
+  position: relative;
+  text-align: center;
+  padding: 30px 0;
+  border-radius: 3px;
 }
-.ngdialog.ngdialog-theme-default .ng-dialog__header {
-  background-color: #fff;
+.ngdialog.ngdialog_normal .ngdialog-content .title {
+  font-size: 16px;
+  font-family: "ProximaNovaBold";
+  margin-bottom: 25px;
+  color: #121212;
 }
-.ngdialog.ngdialog-theme-default .ng-dialog__content {
+.ngdialog.ngdialog_normal .ngdialog-content .description {
+  font-size: 15px;
+  font-family: "ProximaNovaBold";
+  color: #7e7e7e;
+}
+.ngdialog.ngdialog_normal .ngdialog-content .category__item_input {
+  width: 250px;
+  margin: 0 auto;
+}
+.ngdialog.ngdialog_normal .ngdialog-content .ngdialog-close {
+  display: inline-block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+/*ngdialog_full-width*/
+.ngdialog_full-width .ng-dialog__content {
   position: relative;
 }
-.ngdialog.ngdialog-theme-default .ng-dialog__content .scroll {
+.ngdialog_full-width .ng-dialog__wrapper {
+  background: #f0f0f0;
+}
+.ngdialog_full-width .ng-dialog__header {
+  background-color: #fff;
+}
+.ngdialog_full-width .scroll {
   position: absolute;
   top: 0;
   bottom: 75px;
   left: 0;
   right: 0;
+  padding-top: 24px;
 }
-.ngdialog.ngdialog-theme-default .ngdialog-close {
+.ngdialog_full-width .ngdialog-close {
   border-radius: 5px;
   cursor: pointer;
   position: absolute;
-  z-index: 2;
+  z-index: 20;
   right: 65px;
   top: 20px;
 }
-.ngdialog.ngdialog-theme-default .ngdialog-close:before {
+.ngdialog_full-width .ngdialog-close:before {
   background: transparent;
   border-radius: 3px;
   color: #82dbc9;
@@ -4564,6 +4675,22 @@ body.ngdialog-open {
   text-align: center;
   top: 3px;
   width: 30px;
+  z-index: 1;
+}
+.ngdialog_full-width,
+.ngdialog.ngdialog_full-width .ngdialog-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.ngdialog_full-width .ng-dialog__wrapper,
+.ngdialog_full-width .ng-dialog__content {
+  height: 100%;
+  min-height: 100%;
 }
 .ngdialog.ngdialog-theme-default .ngdialog-close:hover:before,
 .ngdialog.ngdialog-theme-default .ngdialog-close:active:before {
