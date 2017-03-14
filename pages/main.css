@@ -2419,7 +2419,7 @@ body {
 .actions {
   position: fixed;
   right: 50px;
-  bottom: 165px;
+  bottom: 145px;
   z-index: 5;
   text-align: center;
 }
@@ -2428,7 +2428,7 @@ body {
     bottom: 50px;
   }
 }
-.actions.open .link {
+.actions_open .actions__item.link {
   display: block;
 }
 .actions__item {
@@ -2494,7 +2494,7 @@ body {
 .nav__link {
   display: block;
   color: #000;
-  padding: 21px 0 21px 3em;
+  padding: 21px 10px 21px 3em;
   font-size: 11px;
   font-family: "ProximaNovaBold";
   font-weight: normal;
@@ -3084,6 +3084,9 @@ body {
   padding: 0 12px;
   font-size: 20px;
 }
+.datagrid__body .row__cell > .action .fa {
+  color: #bbc5cc;
+}
 .datagrid__body .row__cell > .action .tooltip {
   display: none;
 }
@@ -3432,6 +3435,9 @@ textarea {
 .button_big .fa {
   margin: 0 .5em;
 }
+.button_pseudo {
+  padding: 0 5px;
+}
 .button:focus {
   outline: none;
 }
@@ -3531,6 +3537,13 @@ textarea {
 }
 .category__item_action_close {
   position: relative;
+}
+.category__item_with-error {
+  border: 1px solid #f9aeae;
+  position: relative;
+}
+.category__item_with-error .tooltip_error {
+  display: block;
 }
 .tooltip_footer .tooltip__content {
   bottom: 44px;
@@ -3659,6 +3672,9 @@ textarea {
   vertical-align: middle;
   width: 16px;
   height: 17px;
+}
+.tag .i-tag {
+  margin: 0 5px 0 0;
 }
 .tag_border {
   border: 1px solid #dedede;
@@ -3841,11 +3857,14 @@ textarea {
   display: inline-block;
   vertical-align: middle;
 }
-.article .content__caption-text .i-icon {
+.article .content__caption-text .icon-star {
   font-size: 35px;
 }
-.article .content__caption-text .fa {
-  color: #e9a93f;
+.article .content__caption-text .icon-pin {
+  font-size: 50px;
+}
+.article .content__caption-text .i-icon {
+  margin-left: -10px;
 }
 .article .content__caption-action {
   font-size: 0;
@@ -3942,17 +3961,25 @@ textarea {
   background-color: transparent;
   border: none;
   box-shadow: none;
+  position: relative;
 }
 .article.article_transparent .icon {
-  font-size: 170px;
-  flex: 1 1 100%;
-  text-align: center;
-  margin-bottom: 50px;
+  margin: 0 auto 25px;
 }
-.article.article_transparent .icon-favorites {
-  width: 170px;
-  height: 170px;
-  background-size: 170px 170px;
+.article.article_transparent .icon-favorites,
+.article.article_transparent .icon-page {
+  width: 230px;
+  height: 230px;
+  background-size: 230px 230px;
+}
+.article.article_transparent .icon-arrow {
+  width: 250px;
+  height: 160px;
+  background-size: 100%;
+  position: absolute;
+  bottom: -180px;
+  margin-right: -210px;
+  right: 50%;
 }
 .article.article_transparent .text {
   font-size: 21px;
@@ -4060,9 +4087,6 @@ textarea {
 .article__footer .tag__item_border {
   margin: 0 0 5px;
 }
-.article__footer .i-tag {
-  margin-right: 5px;
-}
 .article__footer .text_pin_right .icon_article {
   font-size: 20px;
   display: inline-block;
@@ -4131,88 +4155,70 @@ textarea {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.icon-education:before {
-  content: "\e900";
-}
-.icon-favorites .path1:before {
-  content: "\e901";
-  color: #000000;
-}
-.icon-favorites .path2:before {
-  content: "\e902";
-  margin-left: -1em;
-  color: #000000;
-}
-.icon-favorites .path3:before {
-  content: "\e903";
-  margin-left: -1em;
-  color: #000000;
-}
-.icon-favorites .path4:before {
-  content: "\e904";
-  margin-left: -1em;
-  color: #e9a93f;
-}
-.icon-favorites .path5:before {
-  content: "\e905";
-  margin-left: -1em;
-  color: #000000;
-}
-.icon-favorites .path6:before {
-  content: "\e906";
-  margin-left: -1em;
-  color: #000000;
-}
 .icon-favorites {
-  background: url(interface/icons/svg/favorites.svg) no-repeat;
+  background: url(interface/icons/favorites.svg) no-repeat;
   background-position: center center;
 }
-.icon-group:before {
-  content: "\e908";
+.icon-page {
+  background: url(interface/icons/not-content.svg) no-repeat;
+  background-position: center center;
 }
-.icon-heart:before {
-  content: "\e909";
-}
-.icon-heart-full:before {
-  content: "\e90a";
-}
-.icon-newspaper:before {
-  content: "\e90b";
+.icon-arrow {
+  background: url(interface/icons/arrow.svg) no-repeat;
+  background-position: center center;
 }
 .icon-notification:before {
-  content: "\e90c";
-}
-.icon-page:before {
-  content: "\e90d";
+  content: "\e900";
 }
 .icon-pencil:before {
-  content: "\e90e";
+  content: "\e902";
 }
 .icon-people:before {
-  content: "\e90f";
+  content: "\e903";
 }
 .icon-pin:before {
-  content: "\e910";
+  content: "\e904";
 }
 .icon-plus:before {
-  content: "\e911";
+  content: "\e905";
 }
 .icon-question:before {
-  content: "\e912";
+  content: "\e906";
 }
 .icon-search:before {
-  content: "\e913";
+  content: "\e907";
+}
+.icon-star:before {
+  content: "\e908";
 }
 .icon-cancel:before {
-  content: "\e914";
+  content: "\e909";
 }
 .icon-chat:before {
-  content: "\e915";
+  content: "\e90a";
 }
 .icon-code:before {
-  content: "\e916";
+  content: "\e90b";
+}
+.icon-education:before {
+  content: "\e90c";
+}
+.icon-group:before {
+  content: "\e90d";
+}
+.icon-heart:before {
+  content: "\e90e";
+}
+.icon-heart-full:before {
+  content: "\e90f";
+}
+.icon-newspaper:before {
+  content: "\e910";
 }
 /*icon_color*/
+.icon_orange {
+  color: #e9a93f;
+}
 .icon_black {
   color: #000000;
 }
@@ -4227,13 +4233,17 @@ textarea {
 }
 /*icon_nav*/
 .icon_nav {
-  font-size: 15px;
+  font-size: 25px;
   display: inline-block;
   position: absolute;
   left: 0px;
   top: 50%;
-  margin-top: -8px;
+  margin-top: -13px;
   width: 3em;
+}
+.icon_nav.icon-newspaper {
+  font-size: 20px;
+  margin-top: -11px;
 }
 /*icon_header*/
 .icon_header {
@@ -4394,6 +4404,10 @@ textarea {
 .avatar__status .fa {
   flex: 1 1 auto;
 }
+.avatar__status_right {
+  left: 75%;
+  margin: -15px 0 0 -6px;
+}
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -4422,6 +4436,9 @@ textarea {
   margin: 0 auto;
   text-align: center;
   position: relative;
+}
+.cards__item > .action .fa {
+  color: #bbc5cc;
 }
 .cards__item > .action > .tooltip {
   text-align: left;
@@ -4765,13 +4782,6 @@ body.ngdialog-open {
 .ngdialog.ngdialog-theme-default .ngdialog-button.ngdialog-button-secondary {
   background: #e0e0e0;
   color: #777;
-}
-.has-error {
-  border: 1px solid #f9aeae;
-  position: relative;
-}
-.has-error .tooltip_error {
-  display: block;
 }
 .text_uppercase {
   text-transform: uppercase;

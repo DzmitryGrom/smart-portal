@@ -121,7 +121,7 @@
           <span class="i-icon icon_sidebar icon-cancel icon_green"></span>
         </div>
         <div class="category__item category__item_input 
-         has-error">
+          category__item_with-error">
           <div class="tooltip tooltip_error tooltip_top">
             <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
             Недопустимые символы
@@ -330,7 +330,7 @@
             <div class="content__caption-text">
              <span class="text">200 шаблонов эффективных заголовков</span>
               <span class="i-icon icon-pin icon_blue"></span>
-              <i class="fa fa-star"></i>
+              <span class="i-icon icon icon-star icon_orange"></span>
             </div>
             <div class="content__caption-action">
               <i class="i-more"></i>
@@ -385,17 +385,18 @@
             <i class="i-arrow i-arrow_to_down"></i>
           </button>
         </div>
-        <div class="article__footer">
+        <div class="article__footer article__footer_relative">
           <span class="text"><strong>Разделы:</strong>Дизайн</span>
           <div class="tag">
             <i class="i-tag"></i>
             <span class="tag__item tag__item_border">Хостинг</span>
             <span class="tag__item tag__item_border">Дизайн</span>
             <span class="tag__item tag__item_border">Бизнес</span>
+            <button class="tag__item button button_pseudo button_small" type="button">Еще 5 тегов</button>
           </div>
-          <button class="button button_pseudo button_small" type="button">Еще 5 тегов</button>
+          
           <div style="position:relative;" class="text text_pin_right text_small text_nowrap">
-              <div class="tooltip tooltip_top" style="margin-top: -400px; height: 350px; width: 270px; left: -200px;display: ">
+              <div class="tooltip tooltip_top" style="margin-top: -400px; height: 350px; width: 270px; left: -200px;display:none; ">
                 <i class="tooltip__arrow tooltip__arrow_bottom" style="right: 35px"></i>
                 <div class="tooltip__header">
                   <a href="#" class="link link_active">Список</a>
@@ -549,9 +550,9 @@
             <i class="i-arrow i-arrow_to_down"></i>
           </button>
         </div>
-        <div class="article__footer">
-          <span class="text"><strong>Разделы:</strong>Дизайн</span>
+        <div class="article__footer article__footer_relative">
           <div class="tag">
+            <span class="text"><strong>Разделы:</strong>Дизайн</span>
             <i class="i-tag"></i>
             <span class="tag__item tag__item_border">Хостинг</span>
             <span class="tag__item tag__item_border">Дизайн</span>
@@ -562,9 +563,9 @@
             <span class="tag__item tag__item_border">Хостинг</span>
             <span class="tag__item tag__item_border">Дизайн</span>
             <span class="tag__item tag__item_border">Бизнес</span>
-            <span class="tag__item">+Добавить тэг</span>
+            <button class="tag__item button button_pseudo button_small" type="button">+Добавить тэг</button>
           </div>
-          <button class="button button_pseudo button_small" type="button">Еще 5 тегов</button>
+          
           <div class="text text_pin_right text_small text_nowrap">
             <span class="i-icon icon_article icon-group"></span>
             <span class="text__text">7</span>
@@ -596,15 +597,15 @@
             <i class="i-arrow i-arrow_to_up"></i>
           </button>
         </div>
-        <div class="article__footer">
-          <span class="text"><strong>Разделы:</strong>Дизайн</span>
+        <div class="article__footer article__footer_relative">
           <div class="tag">
+            <span class="text"><strong>Разделы:</strong>Дизайн</span>
             <i class="i-tag"></i>
             <span class="tag__item tag__item_border">Хостинг</span>
             <span class="tag__item tag__item_border">Дизайн</span>
             <span class="tag__item tag__item_border">Бизнес</span>
+            <button class="tag__item button button_pseudo button_small" type="button">Еще 5 тегов</button>
           </div>
-          <button class="button button_pseudo button_small" type="button">Еще 5 тегов</button>
           <div class="text text_pin_right text_small text_nowrap">
             <span class="i-icon icon_article icon-group"></span>
             <span class="text__text">7</span>
@@ -635,15 +636,15 @@
             <i class="i-arrow i-arrow_to_up"></i>
           </button>
         </div>
-        <div class="article__footer">
-          <span class="text"><strong>Разделы:</strong>Дизайн</span>
+        <div class="article__footer article__footer_relative">
           <div class="tag">
+            <span class="text"><strong>Разделы:</strong>Дизайн</span>
             <i class="i-tag"></i>
             <span class="tag__item tag__item_border">Хостинг</span>
             <span class="tag__item tag__item_border">Дизайн</span>
             <span class="tag__item tag__item_border">Бизнес</span>
+            <button class="tag__item button button_pseudo button_small" type="button">Еще 5 тегов</button>
           </div>
-          <button class="button button_pseudo button_small" type="button">Еще 5 тегов</button>
           <div class="text text_pin_right text_small text_nowrap">
             <span class="i-icon icon_article icon-group"></span>
             <span class="text__text">7</span>
@@ -654,10 +655,11 @@
           </div>
         </div>
       </div>
-      <button  style="display:none;" class="button button_add-more">...</button>
+      <button class="button button_add-more">...</button>
       <div class="article article_transparent">
         <span class="icon_blue icon icon-page"></span>
         <p class="text">Здесь пока ничего нет. Добавь статью или ссылку</p>
+        <span class="icon_blue icon icon-arrow"></span>
       </div>
       <div class="article article_transparent">
         <span class="icon icon-favorites"></span>
@@ -698,7 +700,7 @@
         </span>
       </div>
     </div>
-    <div class="actions open">
+    <div class="actions actions_open">
       <a class="actions__item link" href="#">
         <span class="icon-actions">
           <i class="fa fa-clipboard" aria-hidden="true"></i>
