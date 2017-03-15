@@ -46,3 +46,21 @@
     }
   }
 }
+.datagrid_not-border {
+  .datagrid__body {
+    .row {
+      &:hover {
+        box-shadow: none;
+      }
+      &__cell {
+        text-align: center;
+        &:first-child {
+          text-align: left;
+        }
+        &:first-child .bio__name {
+          color: #768894;
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@
   box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
   position: relative;
   z-index: 1;
-  padding: 10px 30px;
+  padding: 10px 30px 10px 40px;
   top: -5px;
   display: flex;
 
@@ -28,7 +28,7 @@
     border: 1px solid lightgray;
     border-radius: 3px;
     padding: 0 10px;
-    margin: 10px;
+    margin: 2px 10px 2px 35px;
   }
   .button{
     flex: 0 0 26px;
@@ -37,5 +37,16 @@
     font-size: 18px;
     text-align: center;
     min-width: 26px;
+  }
+  &_two-input {
+    padding: 10px 30px 10px 18px;
+    input{
+      &:nth-child(2) {
+        flex: 0 0 30px;
+      }
+      &:nth-child(3) {
+        margin-left: 10px;
+      }
+    }
   }
 }

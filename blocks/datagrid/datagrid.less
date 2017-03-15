@@ -3,4 +3,16 @@
   border-collapse: collapse;
   border-spacing: 0;
   margin-bottom: 20px;
+  &_not-border {
+    order: 8;
+    border-collapse: separate;
+    .row__cell {
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
 }

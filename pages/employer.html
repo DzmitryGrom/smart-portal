@@ -38,18 +38,23 @@
     </div>
     <div class="sidebar sidebar_big">
       <div class="user-profile user-profile_vertical_big">
-        <div class="avatar">
+        <div class="avatar  ">
           <div class="avatar__cover avatar__cover_big">
-            <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="160" width="160">
+            <div class="avatar__link">
+              <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="160" width="160">
+              <div class="avatar__shadow">
+                <span class="avatar__opacity"></span>
+                <a href="#" class="avatar__edit avatar__edit_big  circle  circle_green ">
+                  <i class="fa fa-arrow-up" aria-hidden="true"></i>
+                </a>
+                <div class="avatar__delete avatar__delete_big">
+                  <i class="fa fa-trash-o"></i>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="avatar__online avatar__online_big">
             <div class="text">online</div>
-          </div>
-          <div class="avatar__edit avatar__edit_big">
-            <i class="fa fa-pencil"></i>
-          </div>
-          <div class="avatar__delete avatar__delete_big">
-            <i class="fa fa-trash-o"></i>
           </div>
         </div>
         <div class="bio">
@@ -107,9 +112,9 @@
     <div class="content">
       <div class="taber">
         <label class="taber__tab" for="notes">Заметки</label>
-        <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="notes">
+        <input class="taber__toggler" hidden="true" name="tabtoggle" type="radio" id="notes">
         <div class="content">
-          <div class="notes-list" style="max-height: 500px">
+          <div class="notes-list" style="max-height: 443px">
             <div class="notes-list__item">
               <div class="avatar">
                 <div class="avatar__cover avatar__cover_small">
@@ -120,11 +125,11 @@
                 <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
                 <div class="date">Сегодня в 9:04</div>
               </div>
-              <div class="actions">
-                <a class="link" href="#">
+              <div class="settings">
+                <a class="link settings__item" href="#">
                   <i class="fa fa-pencil"></i>
                 </a>
-                <a class="link" href="#">
+                <a class="link settings__item" href="#">
                   <i class="fa fa-trash-o"></i>
                 </a>
               </div>
@@ -139,11 +144,11 @@
                 <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
                 <div class="date">Сегодня в 9:04</div>
               </div>
-              <div class="actions">
-                <a class="link" href="#">
+              <div class="settings">
+                <a class="link settings__item" href="#">
                   <i class="fa fa-pencil"></i>
                 </a>
-                <a class="link" href="#">
+                <a class="link settings__item" href="#">
                   <i class="fa fa-trash-o"></i>
                 </a>
               </div>
@@ -158,11 +163,11 @@
                 <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
                 <div class="date">Сегодня в 9:04</div>
               </div>
-              <div class="actions">
-                <a class="link" href="#">
+              <div class="settings">
+                <a class="link settings__item" href="#">
                   <i class="fa fa-pencil"></i>
                 </a>
-                <a class="link" href="#">
+                <a class="link settings__item" href="#">
                   <i class="fa fa-trash-o"></i>
                 </a>
               </div>
@@ -177,11 +182,11 @@
                 <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
                 <div class="date">Сегодня в 9:04</div>
               </div>
-              <div class="actions">
-                <a class="link" href="#">
+              <div class="settings">
+                <a class="link settings__item" href="#">
                   <i class="fa fa-pencil"></i>
                 </a>
-                <a class="link" href="#">
+                <a class="link settings__item" href="#">
                   <i class="fa fa-trash-o"></i>
                 </a>
               </div>
@@ -196,11 +201,11 @@
                 <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
                 <div class="date">Сегодня в 9:04</div>
               </div>
-              <div class="actions">
-                <a class="link" href="#">
+              <div class="settings">
+                <a class="link settings__item" href="#">
                   <i class="fa fa-pencil"></i>
                 </a>
-                <a class="link" href="#">
+                <a class="link settings__item" href="#">
                   <i class="fa fa-trash-o"></i>
                 </a>
               </div>
@@ -214,18 +219,13 @@
               <div class="content">
                 <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
                 <div class="date">Сегодня в 9:04</div>
-              </div>
-              <div class="actions">
-                <a class="link" href="#">
-                  <i class="fa fa-pencil"></i>
-                </a>
-                <a class="link" href="#">
-                  <i class="fa fa-trash-o"></i>
-                </a>
               </div>
             </div>
           </div>
           <div class="notes-add">
+            <button class="button button_link" type="button">
+              <span class="icon-leaf icon_blue"></span>
+            </button>
             <input class="input" type="text" placeholder="Написать заметку">
             <button class="button button_link" type="button">
               <i class="fa fa-paper-plane-o"></i>
@@ -233,7 +233,7 @@
           </div>
         </div>
         <label class="taber__tab" for="responsibilities">Обязанности</label>
-        <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="responsibilities" checked="true">
+        <input class="taber__toggler" hidden="true" name="tabtoggle" type="radio" id="responsibilities" checked="true">
         <div class="content">
           <div class="notes-list notes-list_noborder" style="max-height: 500px">
             <div class="notes-list__item">
@@ -242,14 +242,6 @@
                 <div class="title">Руководитель</div>
                 <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
               </div>
-              <div class="actions">
-                <a class="link" href="#">
-                  <i class="fa fa-pencil"></i>
-                </a>
-                <a class="link" href="#">
-                  <i class="fa fa-trash-o"></i>
-                </a>
-              </div>
             </div>
             <div class="notes-list__item">
               <div class="decor"></div>
@@ -257,25 +249,32 @@
                 <div class="title">Art Director</div>
                 <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
               </div>
-              <div class="actions">
-                <a class="link" href="#">
-                  <i class="fa fa-pencil"></i>
-                </a>
-                <a class="link" href="#">
-                  <i class="fa fa-trash-o"></i>
-                </a>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">UI Designer</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">UX Designer</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">Руководитель</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
               </div>
             </div>
           </div>
-          <div class="notes-add">
-            <input class="input" type="text" placeholder="Написать заметку">
-            <button class="button button_link" type="button">
-              <i class="fa fa-paper-plane-o"></i>
-            </button>
-          </div>
         </div>
         <label class="taber__tab taber__tab_active" for="preferences">Настройки профиля</label>
-        <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="preferences">
+        <input class="taber__toggler" hidden="true" name="tabtoggle" type="radio" id="preferences">
         <div class="content">
           <div class="category category_columns_two-with-labels">
             <div class="category__item-label">Имя</div>
@@ -359,7 +358,6 @@
             <div class="category__item-label"></div>
             <div class="category__item">
               <button class="button button_success" type="button">Сохранить</button>
-              <button class="button" type="button">Сбросить</button>
             </div>
             <div class="category__item-label"></div>
             <div class="category__item"></div>
@@ -452,110 +450,55 @@
       </div>
     </div>
     <div class="content">
-      <div class="category category_columns_two-with-labels">
-        <div class="category__item-label">Статус сотрудника</div>
-        <div class="category__item category__item_drop category__item_input category__item_icon">
-          <i class="fa fa-hand-spock-o"></i>
-          <input class="input" type="text" placeholder="Type here" value="Гуру" readonly>
-          <div class="i-arrow i-arrow_to_down"></div>
-          <div class="tooltip" style="width: 100%;">
-            <div class="content tooltip__content tooltip__content_default">
-              <label class="checkbox-label">
-                <span class="checkbox-text"><i class='fa fa-circle-o'></i>Без статуса</span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text"><i class='fa fa-gamepad'></i>Новичок</span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text"><i class='fa fa-mortar-board'></i>Специалист</span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text"><i class='fa fa-star'></i>Профи</span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text"><i class='fa fa-flask'></i>Эксперт</span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text"><i class='fa fa-hand-spock-o'></i>Гуру</span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
+      <div class="taber">
+        <label class="taber__tab taber__tab_active" for="responsibilitiesperson">Обязанности</label>
+        <input class="taber__toggler" hidden="true" name="tabtogglers" type="radio" id="responsibilitiesperson" checked="true">
+        <div class="content">
+          <div class="notes-list notes-list_noborder" style="max-height: 540px">
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">Руководитель</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">Руководитель</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">Art Director</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">UI Designer</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">UX Designer</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">Руководитель</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="category__item-label"></div>
-        <div class="category__item"></div>
-        <div class="category__item-label">Имя</div>
-        <div class="category__item category__item_input">
-          <input class="input" type="text" placeholder="Имя" value="Ирина">
-        </div>
-        <div class="category__item-label">Фамилия</div>
-        <div class="category__item category__item_input">
-          <input class="input" type="text" placeholder="Фамилия" value="Петренко">
-        </div>
-        <div class="category__item-label">Отчество</div>
-        <div class="category__item category__item_input">
-          <input class="input" type="text" placeholder="Отчество" value="Сергеевна">
-        </div>
-        <div class="category__item-label">Пол</div>
-        <div class="category__item category__item_drop category__item_input">
-          <input class="input" type="text" placeholder="Type here" value="Женский" readonly>
-          <div class="i-arrow i-arrow_to_down"></div>
-        </div>
-        <div class="category__item-label">Отдел</div>
-        <div class="category__item category__item_drop category__item_input">
-          <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly>
-          <div class="i-arrow i-arrow_to_down"></div>
-        </div>
-        <div class="category__item-label">Должность</div>
-        <div class="category__item category__item_drop category__item_input">
-          <input class="input" type="text" placeholder="Type here" value="Хорошая" readonly>
-          <div class="i-arrow i-arrow_to_down"></div>
-        </div>
-        <div class="category__item-label">Email</div>
-        <div class="category__item category__item_input">
-          <input class="input" type="email" placeholder="Email" value="my@mail.ru">
-        </div>
-        <div class="category__item-label">Телефон</div>
-        <div class="category__item category__item_input">
-          <input class="input" type="text" placeholder="+__ ( ___ ) __ __ ___">
-        </div>
-        <div class="category__item-label">Дата рождения</div>
-        <div class="category__item category__item_input" type="date">
-          <input class="input" type="text" placeholder="mm/dd/yyyy">
-        </div>
-        <div class="category__item-label">VKONTAKTE</div>
-        <div class="category__item category__item_input category__item_icon">
-          <i class="fa fa-vk"></i>
-          <input class="input" type="text" placeholder="https://">
-        </div>
-        <div class="category__item-label">instagram</div>
-        <div class="category__item category__item_input category__item_icon">
-          <i class="fa fa-instagram"></i>
-          <input class="input" type="text" placeholder="https://">
-        </div>
-        <div class="category__item-label">facebook</div>
-        <div class="category__item category__item_input category__item_icon">
-          <i class="fa fa-facebook"></i>
-          <input class="input" type="text" placeholder="https://">
-        </div>
-        <div class="category__item-label"></div>
-        <div class="category__item">
-          <button class="button button_success" type="button">Сохранить</button>
-          <button class="button" type="button">Сбросить</button>
-        </div>
-        <div class="category__item-label"></div>
-        <div class="category__item"></div>
       </div>
     </div>
     <div class="sidebar">
@@ -643,110 +586,574 @@
       </div>
     </div>
     <div class="content">
-      <div class="category category_columns_two-with-labels">
-        <div class="category__item-label">Статус сотрудника</div>
-        <div class="category__item category__item_drop category__item_input category__item_icon">
-          <i class="fa fa-hand-spock-o"></i>
-          <input class="input" type="text" placeholder="Type here" value="Гуру" readonly>
-          <div class="i-arrow i-arrow_to_down"></div>
-          <div class="tooltip" style="width: 100%;">
-            <div class="content tooltip__content tooltip__content_default">
-              <label class="checkbox-label">
-                <span class="checkbox-text"><i class='fa fa-circle-o'></i>Без статуса</span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text"><i class='fa fa-gamepad'></i>Новичок</span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text"><i class='fa fa-mortar-board'></i>Специалист</span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text"><i class='fa fa-star'></i>Профи</span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text"><i class='fa fa-flask'></i>Эксперт</span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text"><i class='fa fa-hand-spock-o'></i>Гуру</span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
+      <div class="taber">
+        <label class="taber__tab" for="access">Права доступа</label>
+        <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="access">
+        <div class="content">
+          <div class="category category_columns_two-with-labels">
+            <div class="category__item-label">Отдел</div>
+            <div class="category__item category__item_drop category__item_input">
+              <input class="input" type="text" value="Designer" readonly>
+              <div class="i-arrow i-arrow_to_down"></div>
             </div>
+            <div class="category__item-label">Должность</div>
+            <div class="category__item category__item_drop category__item_input">
+              <input class="input" type="text" value="UI Designer" readonly>
+              <div class="i-arrow i-arrow_to_down"></div>
+            </div>
+            <div class="category__item-label">Права доступа</div>
+            <div class="category__item category__item_drop category__item_input">
+              <input class="input" type="text" value="Пользователь" readonly>
+              <div class="i-arrow i-arrow_to_down"></div>
+            </div>
+            <div class="category__item-label">Статус</div>
+            <div class="category__item category__item_drop category__item_input">
+              <input class="input" type="text" value="Работающий" readonly>
+              <div class="i-arrow i-arrow_to_down"></div>
+            </div>
+            <table class=" datagrid datagrid_not-border">
+              <thead class="datagrid__header">
+                <tr class="row">
+                  <th class="row__cell">Права пользователя</th>
+                  <th class="row__cell">База знаний</th>
+                  <th class="row__cell">Команда</th>
+                  <th class="row__cell">Обучение</th>
+                  <th class="row__cell">Скрипты</th>
+                </tr>
+              </thead>
+              <tbody class="datagrid__body">
+                <tr class="row">
+                  <td class="row__cell">
+                    <div class="user-profile user-profile_horizontal_small">
+                      <div class="bio">
+                        <div class="bio__name">Без доступа</div>
+                        <div class="bio__position">Доступ к созданию, редактированию и удалению запрещен</div>
+                      </div>
+                    </div>
+                  </td>
+                  
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" name="access" type="radio">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" type="radio" name="access">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" type="radio" name="access">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" type="radio" name="access">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                </tr>
+                <tr class="row">
+                  <td class="row__cell">
+                    <div class="user-profile user-profile_horizontal_small">
+                      <div class="bio">
+                        <div class="bio__name">Пользователь</div>
+                        <div class="bio__position">Просмотр и комментирование доступных  материалов</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" name="user" type="radio">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" type="radio" name="user">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" type="radio" name="user">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" type="radio" name="user">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                </tr>
+                <tr class="row">
+                  <td class="row__cell">
+                    <div class="user-profile user-profile_horizontal_small">
+                      <div class="bio">
+                        <div class="bio__name">Автор</div>
+                        <div class="bio__position">Создание, редактирование и удаление  собственных материалов</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" name="author" type="radio">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" type="radio" name="author">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" type="radio" name="author">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" type="radio" name="author">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                </tr>
+                <tr class="row">
+                  <td class="row__cell">
+                    <div class="user-profile user-profile_horizontal_small">
+                      <div class="bio">
+                        <div class="bio__name">Модератор</div>
+                        <div class="bio__position">Редактирование и удалиние своего и  чужого материала</div>
+                      </div>
+                    </div>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" name="moderator" type="radio">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" type="radio" name="moderator">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" type="radio" name="moderator">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                  <td class="row__cell">
+                    <label class="radio-button-label">
+                      <input class="radio-button" type="radio" name="moderator">
+                      <i class="radio-button__indicator"></i>
+                    </label>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="category__item-label"></div>
+            <div class="category__item">
+              <button class="button button_success" type="button">Сохранить</button>
+            </div>
+            <div class="category__item-label"></div>
+            <div class="category__item"></div>
           </div>
         </div>
-        <div class="category__item-label"></div>
-        <div class="category__item"></div>
-        <div class="category__item-label">Имя</div>
-        <div class="category__item category__item_input">
-          <input class="input" type="text" placeholder="Имя" value="Ирина">
+        <label class="taber__tab" for="memo">Заметки</label>
+        <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="memo" checked="true">
+        <div class="content">
+          <div class="notes-list" style="max-height: 480px">
+            <div class="notes-list__item">
+              <div class="avatar">
+                <div class="avatar__cover avatar__cover_small">
+                  <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="50" width="50">
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+                <div class="date">Сегодня в 9:04</div>
+              </div>
+              <div class="settings">
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="avatar">
+                <div class="avatar__cover avatar__cover_small">
+                  <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="50" width="50">
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+                <div class="date">Сегодня в 9:04</div>
+              </div>
+              <div class="settings">
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="avatar">
+                <div class="avatar__cover avatar__cover_small">
+                  <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="50" width="50">
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+                <div class="date">Сегодня в 9:04</div>
+              </div>
+              <div class="settings">
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="avatar">
+                <div class="avatar__cover avatar__cover_small">
+                  <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="50" width="50">
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+                <div class="date">Сегодня в 9:04</div>
+              </div>
+              <div class="settings">
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="avatar">
+                <div class="avatar__cover avatar__cover_small">
+                  <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="50" width="50">
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+                <div class="date">Сегодня в 9:04</div>
+              </div>
+              <div class="settings">
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="avatar">
+                <div class="avatar__cover avatar__cover_small">
+                  <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="50" width="50">
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+                <div class="date">Сегодня в 9:04</div>
+              </div>
+              <div class="settings">
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="avatar">
+                <div class="avatar__cover avatar__cover_small">
+                  <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="50" width="50">
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+                <div class="date">Сегодня в 9:04</div>
+              </div>
+              <div class="settings">
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="avatar">
+                <div class="avatar__cover avatar__cover_small">
+                  <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="50" width="50">
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+                <div class="date">Сегодня в 9:04</div>
+              </div>
+              <div class="settings">
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="avatar">
+                <div class="avatar__cover avatar__cover_small">
+                  <img class="pic" src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" alt="" height="50" width="50">
+                </div>
+              </div>
+              <div class="content">
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+                <div class="date">Сегодня в 9:04</div>
+              </div>
+            </div>
+          </div>
+          <div class="notes-add">
+            <button class="button button_link" type="button">
+              <span class="icon-leaf icon_blue"></span>
+            </button>
+            <input class="input" type="text" placeholder="Написать заметку">
+            <button class="button button_link" type="button">
+              <i class="fa fa-paper-plane-o"></i>
+            </button>
+          </div>
         </div>
-        <div class="category__item-label">Фамилия</div>
-        <div class="category__item category__item_input">
-          <input class="input" type="text" placeholder="Фамилия" value="Петренко">
+        <label class="taber__tab taber__tab_active" for="duties">Обязанности</label>
+        <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="duties">
+        <div class="content">
+          <div class="notes-list notes-list_noborder" style="max-height: 480px">
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">Руководитель</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+              <div class="settings">
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">Руководитель</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+              <div class="settings">
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">Art Director</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+              <div class="settings">
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">UI Designer</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+              <div class="settings">
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-pencil"></i>
+                </a>
+                <a class="link settings__item" href="#">
+                  <i class="fa fa-trash-o"></i>
+                </a>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">UX Designer</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+            </div>
+            <div class="notes-list__item">
+              <div class="decor"></div>
+              <div class="content">
+                <div class="title">Руководитель</div>
+                <p class="text">Немного бестолкового текста в заметке которую я сегодня первую написал. Немного бестолкового текста в заметке которую я сегодня первую написал</p>
+              </div>
+            </div>
+          </div>
+          <div class="notes-add notes-add_two-input">
+            <button class="button button_link" type="button">
+              <span class=" icon-plus icon_blue"></span>
+            </button>
+             <input class="input" type="text" placeholder="Обязаность"> 
+             <input class="input" type="text" placeholder="Описание">
+            <button class="button button_link" type="button">
+              <i class="fa fa-paper-plane-o"></i>
+            </button>
+          </div>
         </div>
-        <div class="category__item-label">Отчество</div>
-        <div class="category__item category__item_input">
-          <input class="input" type="text" placeholder="Отчество" value="Сергеевна">
+        <label class="taber__tab" for="settings">Настройки профиля</label>
+        <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="settings">
+        <div class="content">
+          <div class="category category_columns_two-with-labels">
+            <div class="category__item-label">Статус сотрудника</div>
+            <div class="category__item category__item_drop category__item_input category__item_icon">
+              <span class="icon_taber icon_pink icon-crown"></span>
+              <input class="input" type="text" placeholder="Type here" value="Гуру" readonly="">
+              <div class="i-arrow i-arrow_to_down"></div>
+            </div>
+            <div class="category__item-label"></div>
+            <div class="category__item">
+              <div class="tooltip tooltip_relative">
+                <span class="text">Статус “Гуру” может означать только одно -  Вы лучший в своем деле!</span>
+                <i class="tooltip__arrow tooltip__arrow_left" style="left: -8px"></i>
+              </div>
+            </div>
+            <div class="category__item-label">Имя</div>
+            <div class="category__item category__item_input">
+              <input class="input" type="text" placeholder="Имя" value="Ирина">
+            </div>
+            <div class="category__item-label">Фамилия</div>
+            <div class="category__item category__item_input">
+              <input class="input" type="text" placeholder="Фамилия" value="Петренко">
+            </div>
+            <div class="category__item-label">Отчество</div>
+            <div class="category__item category__item_input">
+              <input class="input" type="text" placeholder="Отчество" value="Сергеевна">
+            </div>
+            <div class="category__item-label">Пол</div>
+            <div class="category__item category__item_drop category__item_input">
+              <input class="input" type="text" placeholder="Type here" value="Женский" readonly>
+              <div class="i-arrow i-arrow_to_down"></div>
+              <div class="tooltip" style="width: 100%">
+                <div class="content tooltip__content tooltip__content_default">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered">
+                      <div class="text">Мужской</div>
+                    </li>
+                    <li class="list__item list__item_hovered">
+                      <div class="text">Женский</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="category__item-label">Отдел</div>
+            <div class="category__item category__item_drop category__item_input">
+              <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly>
+              <div class="i-arrow i-arrow_to_down"></div>
+              <div class="tooltip" style="width: 100%">
+                <div class="content tooltip__content tooltip__content_default">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered">
+                      <div class="text">Дизайнеры</div>
+                    </li>
+                    <li class="list__item list__item_hovered">
+                      <div class="text">Какие то еще чуваки</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="category__item-label">Должность</div>
+            <div class="category__item category__item_drop category__item_input">
+              <input class="input" type="text" placeholder="Type here" value="Хорошая" readonly>
+              <div class="i-arrow i-arrow_to_down"></div>
+            </div>
+            <div class="category__item-label">Email</div>
+            <div class="category__item category__item_input">
+              <input class="input" type="email" placeholder="Email" value="my@mail.ru">
+            </div>
+            <div class="category__item-label">Телефон</div>
+            <div class="category__item category__item_input">
+              <input class="input" type="text" placeholder="+__ ( ___ ) __ __ ___">
+            </div>
+            <div class="category__item-label">Дата рождения</div>
+            <div class="category__item category__item_input" type="date">
+              <input class="input" type="text" placeholder="mm/dd/yyyy">
+            </div>
+            <div class="category__item-label">VKONTAKTE</div>
+            <div class="category__item category__item_input category__item_icon">
+              <i class="fa fa-vk"></i>
+              <input class="input" type="text" placeholder="https://">
+            </div>
+            <div class="category__item-label">instagram</div>
+            <div class="category__item category__item_input category__item_icon">
+              <i class="fa fa-instagram"></i>
+              <input class="input" type="text" placeholder="https://">
+            </div>
+            <div class="category__item-label">facebook</div>
+            <div class="category__item category__item_input category__item_icon">
+              <i class="fa fa-facebook"></i>
+              <input class="input" type="text" placeholder="https://">
+            </div>
+            <div class="category__item-label"></div>
+            <div class="category__item">
+              <button class="button button_success" type="button">Сохранить</button>
+            </div>
+            <div class="category__item-label"></div>
+            <div class="category__item"></div>
+            <div class="category__item-label">Новый пароль</div>
+            <div class="category__item category__item_input">
+              <input class="input" type="password" placeholder="Новый пароль">
+            </div>
+            <div class="category__item-label"></div>
+            <div class="category__item category__item_input">
+              <input class="input" type="password" placeholder="Повторить пароль">
+            </div>
+            <div class="category__item-label"></div>
+            <div class="category__item">
+              <button class="button button_success" type="button">Обновить пароль</button>
+            </div>
+            <div class="category__item-label"></div>
+            <div class="category__item"></div>
+          </div>
         </div>
-        <div class="category__item-label">Пол</div>
-        <div class="category__item category__item_drop category__item_input">
-          <input class="input" type="text" placeholder="Type here" value="Женский" readonly>
-          <div class="i-arrow i-arrow_to_down"></div>
-        </div>
-        <div class="category__item-label">Отдел</div>
-        <div class="category__item category__item_drop category__item_input">
-          <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly>
-          <div class="i-arrow i-arrow_to_down"></div>
-        </div>
-        <div class="category__item-label">Должность</div>
-        <div class="category__item category__item_drop category__item_input">
-          <input class="input" type="text" placeholder="Type here" value="Хорошая" readonly>
-          <div class="i-arrow i-arrow_to_down"></div>
-        </div>
-        <div class="category__item-label">Email</div>
-        <div class="category__item category__item_input">
-          <input class="input" type="email" placeholder="Email" value="my@mail.ru">
-        </div>
-        <div class="category__item-label">Телефон</div>
-        <div class="category__item category__item_input">
-          <input class="input" type="text" placeholder="+__ ( ___ ) __ __ ___">
-        </div>
-        <div class="category__item-label">Дата рождения</div>
-        <div class="category__item category__item_input" type="date">
-          <input class="input" type="text" placeholder="mm/dd/yyyy">
-        </div>
-        <div class="category__item-label">VKONTAKTE</div>
-        <div class="category__item category__item_input category__item_icon">
-          <i class="fa fa-vk"></i>
-          <input class="input" type="text" placeholder="https://">
-        </div>
-        <div class="category__item-label">instagram</div>
-        <div class="category__item category__item_input category__item_icon">
-          <i class="fa fa-instagram"></i>
-          <input class="input" type="text" placeholder="https://">
-        </div>
-        <div class="category__item-label">facebook</div>
-        <div class="category__item category__item_input category__item_icon">
-          <i class="fa fa-facebook"></i>
-          <input class="input" type="text" placeholder="https://">
-        </div>
-        <div class="category__item-label"></div>
-        <div class="category__item">
-          <button class="button button_success" type="button">Сохранить</button>
-          <button class="button" type="button">Сбросить</button>
-        </div>
-        <div class="category__item-label"></div>
-        <div class="category__item"></div>
       </div>
     </div>
     <div class="sidebar">
