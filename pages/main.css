@@ -3220,6 +3220,10 @@ body {
   position: absolute;
   z-index: 1;
 }
+.category-form_with-error {
+  border: 1px solid #f9aeae;
+  position: relative;
+}
 .category-form_left:after {
   content: "";
   width: 100%;
@@ -3258,6 +3262,13 @@ body {
   font-size: 15px;
   text-decoration: none;
   line-height: 34px;
+}
+.category-form__item_with-error {
+  border: 1px solid #f9aeae!important;
+  position: relative;
+}
+.category-form__item_with-error .tooltip_error {
+  display: block;
 }
 .category-form__item.category__item_drop {
   position: relative;
@@ -3522,10 +3533,10 @@ body {
 .category_hover .category__item:hover {
   background-color: #f5f5f7;
 }
-.category_hover .category__item:last-child {
+.category_hover .category__item:first-child {
   padding: 0 26px;
 }
-.category_hover .category__item:last-child:hover {
+.category_hover .category__item:first-child:hover {
   background-color: #fff;
 }
 .category_hover .category__item_icon .i-icon {
