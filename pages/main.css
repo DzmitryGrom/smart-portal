@@ -2419,14 +2419,9 @@ body {
 .actions {
   position: fixed;
   right: 50px;
-  bottom: 145px;
+  bottom: 50px;
   z-index: 5;
   text-align: center;
-}
-@media (max-height: 600px) {
-  .actions {
-    bottom: 50px;
-  }
 }
 .actions_open .actions__item.link {
   display: block;
@@ -3753,9 +3748,6 @@ textarea {
   width: 16px;
   height: 17px;
 }
-.tag .i-tag {
-  margin: 0 5px 0 0;
-}
 .tag_border {
   border: 1px solid #dedede;
 }
@@ -3914,6 +3906,9 @@ textarea {
   text-decoration: none;
   position: relative;
   top: -5px;
+}
+.article__link .icon-unlink {
+  color: black;
 }
 .article__link .text {
   display: inline-block;
@@ -4174,7 +4169,10 @@ textarea {
   margin-left: 20px;
   color: #979797;
 }
-.article__footer .text_pin_right .icon_article.icon-heart_full {
+.article__footer .text_pin_right .icon_article:hover {
+  cursor: pointer;
+}
+.article__footer .text_pin_right .icon_article.icon-heart:hover {
   color: #f15f5e;
 }
 .article__header {
@@ -4210,16 +4208,6 @@ textarea {
 .article__footer .text strong {
   font-family: "ProximaNovaReg";
   margin-right: .3em;
-}
-.i-tag {
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  vertical-align: middle;
-  background-image: url(interface/icons/tag.svg);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 [class^="icon-"],
 [class*=" icon-"] {
@@ -4268,38 +4256,50 @@ textarea {
 .icon-star:before {
   content: "\e906";
 }
-.icon-cancel:before {
+.icon-star-full:before {
   content: "\e907";
 }
-.icon-chat:before {
+.icon-trashcan:before {
   content: "\e908";
 }
-.icon-code:before {
+.icon-unlink:before {
   content: "\e909";
 }
-.icon-crown:before {
+.icon-tag:before {
   content: "\e90a";
 }
-.icon-education:before {
+.icon-cancel:before {
   content: "\e90b";
 }
-.icon-group:before {
+.icon-chat:before {
   content: "\e90c";
 }
-.icon-heart:before {
+.icon-code:before {
   content: "\e90d";
 }
-.icon-heart-full:before {
+.icon-crown:before {
   content: "\e90e";
 }
-.icon-leaf:before {
+.icon-education:before {
   content: "\e90f";
 }
-.icon-newspaper:before {
+.icon-group:before {
   content: "\e910";
 }
-.icon-notification:before {
+.icon-heart:before {
   content: "\e911";
+}
+.icon-leaf:before {
+  content: "\e913";
+}
+.icon-locked:before {
+  content: "\e914";
+}
+.icon-newspaper:before {
+  content: "\e915";
+}
+.icon-notification:before {
+  content: "\e916";
 }
 /*icon_color*/
 .icon_orange {
@@ -4383,7 +4383,11 @@ textarea {
   text-align: center;
   margin-bottom: 12px;
 }
-.icon-actions .fa {
+.icon-actions .icon-unlink {
+  transform: rotate(100deg);
+}
+.icon-actions .fa,
+.icon-actions .icon-unlink {
   font-size: 20px;
   color: #737373;
   line-height: 40px;
