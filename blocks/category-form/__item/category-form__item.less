@@ -1,0 +1,28 @@
+.category-form__item {
+    display: block;
+    color: #7e7e7e;
+    font-family: "ProximaNovaLight";
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 34px;
+    &.category__item_drop {
+      position: relative;
+      input {
+        cursor: pointer;
+        margin-right: -27px;
+        padding-right: 28px;
+      }
+    }
+    .icon-pencil {
+      display: none;
+    }
+    &:hover {
+      .icon-pencil {
+        display: inline-block;
+      }
+    }
+  
+    &_full-width {
+      flex: 0 0 100%;
+    }
+  }
