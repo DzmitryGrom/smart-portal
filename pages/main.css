@@ -2524,7 +2524,7 @@ body {
   width: 7px;
   height: 7px;
   top: 0;
-  left: 20px;
+  left: 27px;
 }
 .header-side__notification > .tooltip {
   margin-top: -2px;
@@ -3517,6 +3517,7 @@ body {
 }
 .category__item .icon-pencil {
   display: none;
+  padding: 10px;
 }
 .category__item:hover .icon-pencil {
   display: inline-block;
@@ -3541,6 +3542,9 @@ body {
 }
 .category_hover .category__item_icon .i-icon {
   right: 26px;
+}
+.category_hover .category__item_icon .i-icon.icon-pencil {
+  right: 16px;
 }
 .category_hover .category__item_active:after {
   content: "";
@@ -4501,7 +4505,11 @@ textarea {
 /*icon_header*/
 .icon_header {
   font-size: 22px;
-  margin-right: 30px;
+  margin-right: 20px;
+}
+.icon_header.icon-notification {
+  padding: 0 10px 15px 10px;
+  margin: 0 19px 0 -10px;
 }
 /*icon_sidebar and icon_category-form*/
 .icon_sidebar.icon-plus,
@@ -4520,7 +4528,7 @@ textarea {
 .icon_category-form.icon-pencil,
 .icon_sidebar.icon-pencil {
   font-size: 12px;
-  margin-top: -7px;
+  margin-top: -16px;
   color: #c0c0c0;
 }
 .icon_category-form.icon-search,
