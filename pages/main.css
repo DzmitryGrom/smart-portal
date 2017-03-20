@@ -2423,7 +2423,7 @@ body {
   z-index: 5;
   text-align: center;
 }
-.actions_open .actions__item.link {
+.actions__wrapper_open .actions__item.link {
   display: block;
 }
 .actions__item {
