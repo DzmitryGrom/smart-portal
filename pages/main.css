@@ -3197,7 +3197,6 @@ body {
   justify-content: space-around;
 }
 .category .tag__item_border {
-  flex: 1 0 30px;
   margin-bottom: 9px;
 }
 .category-form {
@@ -4064,7 +4063,6 @@ textarea {
   font-size: 12px;
   line-height: 20px;
   text-align: center;
-  margin: 0 5px 5px 5px;
   padding: 0 10px;
 }
 .button_link {
