@@ -2713,7 +2713,8 @@ body {
   padding-left: 2em;
   list-style: none;
 }
-.list__item_iconed .fa {
+.list__item_iconed .fa,
+.list__item_iconed .icon {
   font-size: 16px;
   position: absolute;
   color: #979797;
@@ -2874,7 +2875,8 @@ body {
 .user-profile_vertical_big .action .tooltip {
   display: none;
 }
-.user-profile_vertical_big .action .fa {
+.user-profile_vertical_big .action .fa,
+.user-profile_vertical_big .action .icon {
   font-size: 17px;
   color: #bbc5cc;
 }
@@ -2994,7 +2996,8 @@ body {
   height: 100%;
   display: block;
 }
-.avatar__shadow .fa {
+.avatar__shadow .fa,
+.avatar__shadow .icon {
   font-size: 15px;
   line-height: 30px;
 }
@@ -3008,7 +3011,6 @@ body {
   bottom: 83%;
   left: 83%;
   margin: -0.5em 0 0 -0.5em;
-  z-index: 3;
 }
 .avatar__online_big {
   top: 100%;
@@ -3017,6 +3019,7 @@ body {
   width: 100%;
   margin: -10px 0 0 0;
   height: auto;
+  z-index: 3;
 }
 .avatar__online_big .text {
   color: #fff;
@@ -3056,7 +3059,8 @@ body {
   width: 36px;
   height: 36px;
 }
-.avatar__edit_big .fa {
+.avatar__edit_big .fa,
+.avatar__edit_big .icon {
   line-height: 36px;
   margin-top: -1px;
 }
@@ -3081,7 +3085,8 @@ body {
   width: 36px;
   height: 36px;
 }
-.avatar__delete_big .fa {
+.avatar__delete_big .fa,
+.avatar__delete_big .icon {
   line-height: 36px;
   margin-top: -1px;
 }
@@ -3643,6 +3648,21 @@ textarea {
 .category__item_icon .icon-group.icon-status,
 .category__item_icon .icon.icon-status {
   margin-right: -4px;
+}
+.category__item_icon .icon-social {
+  color: #d8e2e9;
+  vertical-align: middle;
+  margin-top: -2px;
+  font-size: 21px;
+  position: relative;
+}
+.category__item_icon .icon-social:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 2px;
+  border-right: 1px solid #f0f0f0;
 }
 .category__item_icon .icon-group {
   vertical-align: middle;
@@ -4409,110 +4429,110 @@ textarea {
   background: url(interface/icons/arrow.svg) no-repeat;
   background-position: center center;
 }
-.icon-star-rating:before {
+.icon-notification:before {
   content: "\e900";
 }
-.icon-code:before {
+.icon-pencil:before {
   content: "\e901";
 }
-.icon-crown:before {
+.icon-people:before {
   content: "\e902";
 }
-.icon-education:before {
+.icon-pin:before {
   content: "\e903";
 }
-.icon-facebook:before {
+.icon-plus:before {
   content: "\e904";
 }
-.icon-glasses:before {
+.icon-question:before {
   content: "\e905";
 }
-.icon-group:before {
+.icon-search:before {
   content: "\e906";
 }
-.icon-heart:before {
+.icon-star:before {
   content: "\e907";
 }
-.icon-heart-full:before {
+.icon-star-full:before {
   content: "\e908";
 }
-.icon-instagram:before {
+.icon-star-rating:before {
   content: "\e909";
 }
-.icon-lamp:before {
+.icon-tag:before {
   content: "\e90a";
 }
-.icon-leaf:before {
+.icon-trashcan:before {
   content: "\e90b";
 }
-.icon-locked:before {
+.icon-unlink:before {
   content: "\e90c";
 }
-.icon-mail:before {
+.icon-upload:before {
   content: "\e90d";
 }
-.icon-newspaper:before {
+.icon-vk:before {
   content: "\e90e";
 }
-.icon-notification:before {
+.icon-add-plus:before {
   content: "\e90f";
 }
-.icon-pencil:before {
+.icon-cancel:before {
   content: "\e910";
 }
-.icon-people:before {
+.icon-chat:before {
   content: "\e911";
 }
-.icon-pin:before {
-  content: "\e912";
-}
-.icon-plus:before {
-  content: "\e913";
-}
-.icon-question:before {
-  content: "\e914";
-}
-.icon-search:before {
-  content: "\e915";
-}
-.icon-star:before {
-  content: "\e916";
-}
-.icon-star-full:before {
-  content: "\e917";
-}
-.icon-tag:before {
-  content: "\e918";
-}
-.icon-trashcan:before {
-  content: "\e919";
-}
-.icon-unlink:before {
-  content: "\e91a";
-}
-.icon-upload-photo:before {
-  content: "\e91b";
-}
-.icon-vk:before {
-  content: "\e91c";
-}
-.icon-add-plus:before {
-  content: "\e91d";
-}
-.icon-cancel:before {
-  content: "\e91e";
-}
-.icon-chat:before {
-  content: "\e91f";
-}
 .icon-status:before {
-  content: "\e920";
+  content: "\e912";
   color: #d8e2e9;
 }
 .icon-status:after {
-  content: "\e921";
+  content: "\e913";
   margin-left: -1em;
   color: #ffffff;
+}
+.icon-code:before {
+  content: "\e914";
+}
+.icon-crown:before {
+  content: "\e915";
+}
+.icon-education:before {
+  content: "\e916";
+}
+.icon-facebook:before {
+  content: "\e917";
+}
+.icon-glasses:before {
+  content: "\e918";
+}
+.icon-group:before {
+  content: "\e919";
+}
+.icon-heart:before {
+  content: "\e91a";
+}
+.icon-heart-full:before {
+  content: "\e91b";
+}
+.icon-instagram:before {
+  content: "\e91c";
+}
+.icon-lamp:before {
+  content: "\e91d";
+}
+.icon-leaf:before {
+  content: "\e91e";
+}
+.icon-locked:before {
+  content: "\e91f";
+}
+.icon-mail:before {
+  content: "\e920";
+}
+.icon-newspaper:before {
+  content: "\e921";
 }
 /*icon_color*/
 .icon_orange {
@@ -4535,6 +4555,9 @@ textarea {
 }
 .icon_red {
   color: #f76b64;
+}
+.icon_white {
+  color: #fff;
 }
 /*icon_nav*/
 .icon_nav {
@@ -5358,7 +5381,8 @@ body.ngdialog-open {
 .settings__item:first-child {
   margin-bottom: 10px;
 }
-.settings__item .fa {
+.settings__item .fa,
+.settings__item .icon {
   line-height: 25px;
 }
 .radio-button-label {
