@@ -4366,6 +4366,9 @@ textarea {
 .article__footer .text_pin_right .icon_article.icon-heart:hover {
   color: #f15f5e;
 }
+.article__footer .text_pin_right .icon_article.icon-heart_active {
+  color: #f15f5e;
+}
 .article__header {
   width: 100%;
   padding: 20px 24px 0;
@@ -4426,109 +4429,109 @@ textarea {
   background: url(interface/icons/arrow.svg) no-repeat;
   background-position: center center;
 }
-.icon-notification:before {
+.icon-leaf:before {
   content: "\e900";
 }
-.icon-pencil:before {
+.icon-locked:before {
   content: "\e901";
 }
-.icon-people:before {
+.icon-mail:before {
   content: "\e902";
 }
-.icon-pin:before {
+.icon-newspaper:before {
   content: "\e903";
 }
-.icon-plus:before {
+.icon-notification:before {
   content: "\e904";
 }
-.icon-question:before {
+.icon-pencil:before {
   content: "\e905";
 }
-.icon-search:before {
+.icon-people:before {
   content: "\e906";
 }
-.icon-star:before {
+.icon-pin:before {
   content: "\e907";
 }
-.icon-star-full:before {
+.icon-plus:before {
   content: "\e908";
 }
-.icon-star-rating:before {
+.icon-question:before {
   content: "\e909";
 }
-.icon-tag:before {
+.icon-search:before {
   content: "\e90a";
 }
-.icon-trashcan:before {
+.icon-star:before {
   content: "\e90b";
 }
-.icon-unlink:before {
+.icon-star-full:before {
   content: "\e90c";
 }
-.icon-upload:before {
+.icon-star-rating:before {
   content: "\e90d";
 }
-.icon-vk:before {
+.icon-tag:before {
   content: "\e90e";
 }
-.icon-add-plus:before {
+.icon-trashcan:before {
   content: "\e90f";
 }
-.icon-cancel:before {
+.icon-unlink:before {
   content: "\e910";
 }
-.icon-chat:before {
+.icon-upload:before {
   content: "\e911";
 }
-.icon-status:before {
+.icon-vk:before {
   content: "\e912";
+}
+.icon-add-plus:before {
+  content: "\e913";
+}
+.icon-cancel:before {
+  content: "\e914";
+}
+.icon-chat:before {
+  content: "\e915";
+}
+.icon-status:before {
+  content: "\e916";
   color: #d8e2e9;
 }
 .icon-status:after {
-  content: "\e913";
+  content: "\e917";
   margin-left: -1em;
   color: #ffffff;
 }
 .icon-code:before {
-  content: "\e914";
-}
-.icon-crown:before {
-  content: "\e915";
-}
-.icon-education:before {
-  content: "\e916";
-}
-.icon-facebook:before {
-  content: "\e917";
-}
-.icon-glasses:before {
   content: "\e918";
 }
-.icon-group:before {
+.icon-crown:before {
   content: "\e919";
 }
-.icon-heart:before {
+.icon-education:before {
   content: "\e91a";
 }
-.icon-heart-full:before {
+.icon-facebook:before {
   content: "\e91b";
 }
-.icon-instagram:before {
+.icon-glasses:before {
   content: "\e91c";
 }
-.icon-lamp:before {
+.icon-group:before {
   content: "\e91d";
 }
-.icon-leaf:before {
+.icon-heart:before {
   content: "\e91e";
 }
-.icon-locked:before {
+.icon-heart_active:before {
   content: "\e91f";
 }
-.icon-mail:before {
+.icon-instagram:before {
   content: "\e920";
 }
-.icon-newspaper:before {
+.icon-lamp:before {
   content: "\e921";
 }
 /*icon_color*/
