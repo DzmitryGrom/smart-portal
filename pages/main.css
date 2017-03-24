@@ -3541,11 +3541,11 @@ body {
 .category_hover .category__item:hover {
   background-color: #f5f5f7;
 }
+.category_hover .category__item_title:hover {
+  background-color: #fff;
+}
 .category_hover .category__item:first-child {
   padding: 0 26px;
-}
-.category_hover .category__item:first-child:hover {
-  background-color: #fff;
 }
 .category_hover .category__item_icon .i-icon {
   right: 26px;
