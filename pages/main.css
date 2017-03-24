@@ -2470,6 +2470,10 @@ body {
   font-family: AvenirNextCyrReg;
   font-weight: normal;
 }
+.header__logo a {
+  text-decoration: none;
+  color: #4c4c4c;
+}
 .header__logo b {
   color: #4c4c4c;
   font-family: AvenirNextCyrBold;
