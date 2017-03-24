@@ -3196,6 +3196,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+.category .tag_left {
+  justify-content: flex-start;
+}
 .category .tag__item_border {
   margin-bottom: 9px;
 }
