@@ -4183,7 +4183,7 @@ textarea {
   padding-bottom: 28px;
 }
 .article .content__text img {
-  max-width: 450px;
+  max-width: 100%;
 }
 .article .content__text_collapsed {
   overflow: hidden;
