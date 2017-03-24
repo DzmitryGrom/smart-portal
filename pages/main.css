@@ -3205,6 +3205,13 @@ body {
   margin-bottom: 14px;
   padding: 20px 26px 25px 26px;
 }
+.category .results {
+  color: #7e7e7e;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 15px;
+  font-family: ProximaNovaLight;
+}
 .category .tag {
   margin-top: 16px;
   display: flex;
@@ -4067,15 +4074,6 @@ textarea {
   font-size: 14px;
   font-family: "ProximaNovaLight";
   padding: 0 30px 0 11px;
-}
-.category__item.category__item_submit_search .results {
-  background: #fff;
-  margin: 0 -26px;
-  padding: 10px 26px 26px 26px;
-  position: absolute;
-  border-radius: 0 0 5px 5px;
-  width: 100%;
-  border-bottom: 1px solid #dedede;
 }
 .category__item.category__item_submit_search .i-search {
   cursor: pointer;
