@@ -3941,6 +3941,9 @@ textarea {
   width: 16px;
   height: 17px;
 }
+.tag .link {
+  color: #121212;
+}
 .tag_border {
   border: 1px solid #dedede;
 }
@@ -4064,6 +4067,7 @@ textarea {
   line-height: 20px;
   text-align: center;
   padding: 0 10px;
+  margin: 0 3px 5px;
 }
 .button_link {
   color: #61a3da;
@@ -4349,9 +4353,6 @@ textarea {
   display: flex;
   align-items: flex-start;
   width: 100%;
-}
-.article__footer .tag__item_border {
-  margin: 0 0 5px;
 }
 .article__footer .text_pin_right .icon_article {
   font-size: 20px;
