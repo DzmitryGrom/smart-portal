@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+
+<head>
+  <title>link</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href='main.css' rel='stylesheet' type='text/css'>
+  <script
+          src="https://code.jquery.com/jquery-2.2.4.min.js"
+          integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+          crossorigin="anonymous"></script>
+
+  <link href='../tmp/ng-tags-input/ng-tags-input.css' rel='stylesheet' type='text/css'>
+
+  <link href='../tmp/redactor/redactor.css' rel='stylesheet' type='text/css'>
+  <script src="../tmp/redactor/redactor.min.js"></script>
+
+  <script src="../tmp/angular/angular.min.js"></script>
+  <script src="../tmp/ng-dialog/js/ngDialog.min.js"></script>
+  <script src="../tmp/ng-tags-input/ng-tags-input.js"></script>
+  <script src="../tmp/app.js"></script>
+  <script src="../tmp/angularRedactor.js"></script>
+
+</head>
+
+<body ng-controller="TestController">
+  <h1>Modals</h1>
+  <button ng-click="open()">Create link</button>
+
+  <button ng-click="openConfirm()">Confirm</button>
+
+  <style>
+    body{
+      padding: 20px;
+    }
+    button{
+      width: 100px;
+      margin-bottom: 20px;
+    }
+  </style>
+</body>
+</html>

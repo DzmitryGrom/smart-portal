@@ -1,0 +1,3 @@
+.re-iframeinsert:before {
+    content: "\e617";
+}
