@@ -180,7 +180,7 @@ body.ngdialog-open {
 }
 
 .ngdialog.ngdialog-theme-default .ngdialog-content,
-.ngdialog.ngdialog_full-width .ngdialog-content, {
+.ngdialog.ngdialog_full-width .ngdialog-content {
   color: #444;
   font-family: 'Helvetica',sans-serif;
   font-size: 1.1em;
@@ -230,6 +230,11 @@ body.ngdialog-open {
   .ng-dialog__header {
     background-color: #fff;
   }
+  .header-side {
+    .button {
+      margin-left: 10px;
+    }
+  }
   .scroll {
     position: absolute;
     top: 0;
@@ -243,7 +248,7 @@ body.ngdialog-open {
     cursor: pointer;
     position: absolute;
     z-index: 20;
-    right: 65px;
+    right: 400px;
     top: 20px;
     &:before {
       background: transparent;

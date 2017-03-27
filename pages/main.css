@@ -2375,6 +2375,10 @@
   font-family: ProximaNovaXBold;
   src: url("fonts/ProximaNova-XBold.otf") format("opentype");
 }
+@font-face {
+  font-family: GothaProLig;
+  src: url("fonts/GothaProLig.otf") format("opentype");
+}
 /*icons*/
 @font-face {
   font-family: 'icomoon';
@@ -2482,6 +2486,12 @@ body {
   padding: 0 4px;
   margin: 0 11px 0 0;
 }
+.header__description {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: GothaProLig;
+  margin: 0;
+}
 .nav {
   display: flex;
   flex-direction: row;
@@ -2503,6 +2513,17 @@ body {
   border-bottom: 2px solid transparent;
   position: relative;
   border-bottom: 4px solid transparent;
+}
+.nav__link_dropdown {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-family: GothaProLig;
+  color: #62717b;
+  padding-top: 11px;
+  cursor: pointer;
+}
+.nav__link_dropdown .text {
+  margin-right: 10px;
 }
 .nav__link_active {
   color: #61a3da;
@@ -3758,6 +3779,10 @@ textarea {
 .button_success {
   color: #43c9ae;
 }
+.button_success-full {
+  background-color: #43c9ae;
+  color: #fff;
+}
 .checkbox-label {
   font-size: 14px;
   cursor: default;
@@ -4456,71 +4481,95 @@ textarea {
   background: url(interface/icons/arrow.svg) no-repeat;
   background-position: center center;
 }
-.icon-leaf:before {
+.icon-plus:before {
   content: "\e900";
 }
-.icon-locked:before {
+.icon-question:before {
   content: "\e901";
 }
-.icon-mail:before {
+.icon-search:before {
   content: "\e902";
 }
-.icon-newspaper:before {
+.icon-star:before {
   content: "\e903";
 }
-.icon-notification:before {
+.icon-star-full:before {
   content: "\e904";
 }
-.icon-pencil:before {
+.icon-star-rating:before {
   content: "\e905";
 }
-.icon-people:before {
+.icon-tag:before {
   content: "\e906";
 }
-.icon-pin:before {
+.icon-trashcan:before {
   content: "\e907";
 }
-.icon-plus:before {
+.icon-unlink:before {
   content: "\e908";
 }
-.icon-question:before {
+.icon-up-arrow:before {
   content: "\e909";
 }
-.icon-search:before {
+.icon-vk:before {
   content: "\e90a";
 }
-.icon-star:before {
+.icon-add-plus:before {
   content: "\e90b";
 }
-.icon-star-full:before {
+.icon-cancel:before {
   content: "\e90c";
 }
-.icon-star-rating:before {
+.icon-chat:before {
   content: "\e90d";
 }
-.icon-tag:before {
-  content: "\e90e";
-}
-.icon-trashcan:before {
-  content: "\e90f";
-}
-.icon-unlink:before {
+.icon-code:before {
   content: "\e910";
 }
-.icon-upload:before {
+.icon-crown:before {
   content: "\e911";
 }
-.icon-vk:before {
+.icon-education:before {
   content: "\e912";
 }
-.icon-add-plus:before {
+.icon-facebook:before {
   content: "\e913";
 }
-.icon-cancel:before {
+.icon-glasses:before {
   content: "\e914";
 }
-.icon-chat:before {
+.icon-group:before {
   content: "\e915";
+}
+.icon-instagram:before {
+  content: "\e918";
+}
+.icon-lamp:before {
+  content: "\e919";
+}
+.icon-leaf:before {
+  content: "\e91a";
+}
+.icon-locked:before {
+  content: "\e91b";
+}
+.icon-mail:before {
+  content: "\e91c";
+}
+.icon-newspaper:before {
+  content: "\e91d";
+}
+.icon-notification:before {
+  content: "\e91e";
+}
+.icon-pencil:before {
+  content: "\e91f";
+}
+.icon-people:before {
+  content: "\e920";
+}
+.icon-pin:before {
+  content: "\e921";
 }
 .icon-status:before {
   content: "\e916";
@@ -4531,35 +4580,11 @@ textarea {
   margin-left: -1em;
   color: #ffffff;
 }
-.icon-code:before {
-  content: "\e918";
-}
-.icon-crown:before {
-  content: "\e919";
-}
-.icon-education:before {
-  content: "\e91a";
-}
-.icon-facebook:before {
-  content: "\e91b";
-}
-.icon-glasses:before {
-  content: "\e91c";
-}
-.icon-group:before {
-  content: "\e91d";
-}
 .icon-heart:before {
-  content: "\e91e";
+  content: "\e917";
 }
 .icon-heart_active:before {
-  content: "\e91f";
-}
-.icon-instagram:before {
-  content: "\e920";
-}
-.icon-lamp:before {
-  content: "\e921";
+  content: "\e916";
 }
 /*icon_color*/
 .icon_orange {
@@ -5049,6 +5074,9 @@ body.ngdialog-open {
 .ngdialog_full-width .ng-dialog__header {
   background-color: #fff;
 }
+.ngdialog_full-width .header-side .button {
+  margin-left: 10px;
+}
 .ngdialog_full-width .scroll {
   position: absolute;
   top: 0;
@@ -5062,7 +5090,7 @@ body.ngdialog-open {
   cursor: pointer;
   position: absolute;
   z-index: 20;
-  right: 65px;
+  right: 400px;
   top: 20px;
 }
 .ngdialog_full-width .ngdialog-close:before {
