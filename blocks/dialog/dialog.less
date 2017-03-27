@@ -235,13 +235,102 @@ body.ngdialog-open {
       margin-left: 10px;
     }
   }
-  .scroll {
+  .scroll-content {
     position: absolute;
     top: 0;
     bottom: 75px;
     left: 0;
     right: 0;
     padding-top: 24px;
+    overflow: auto;
+  }
+  .tooltip_edit,
+  .tooltip_search {
+    width: 280px;
+    top: 50px;
+    left: -60px;
+    box-shadow: 0 3px 16px rgba(158, 157, 163, 0.54);
+    display: none;
+    .tooltip__content_default {
+      padding: 10px 0;
+    }
+    &.tooltip_active {
+      display: inline-block;
+      & ~ .category-form_right {
+        display: inline-block;
+      }
+    }
+    .tooltip__arrow {
+      right: 18px;
+    }
+    .list__item,
+    .search_icon {
+      margin-left: 0;
+    }
+    .list__item {
+      padding: 8px 20px;
+      &_action_add {
+        .text{
+          color: #afbcc2;
+        }
+      }
+    }
+    .search_icon {
+      padding: 5px 25px 15px 20px;
+      border-bottom: 1px solid #f6f6f6;
+    }
+    .i-icon {
+      right: 10px;
+      position: absolute;
+      top: 50%;
+    }
+    .icon-search {
+      margin-top: -11px;
+    }
+
+  }
+  .redactor-editor, .redactor-box, .redactor-box textarea {
+    z-index: 1;
+  }
+  .tooltip_search {
+    height: 290px;
+    .scroll {
+      margin-right: 10px;
+      .list {
+        padding-right: 10px;
+        &__item {
+          width: 100%;
+          left: 0px;
+          padding-left: 20px;
+
+          .i-icon {
+            display: none;
+            margin-top: -8px;
+          }
+          &:hover {
+            .i-icon {
+              display: inline-block;
+            }
+          }
+          &_active {
+            &> .text {
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+  .category-form {
+    &_right {
+      top: 62px;
+      left: 240px;
+      box-shadow: 0 3px 16px rgba(158, 157, 163, 0.54);
+      display: none;
+    }
+    &__arrow {
+      left: -6px;
+    }
   }
   .ngdialog-close {
     border-radius: 5px;
