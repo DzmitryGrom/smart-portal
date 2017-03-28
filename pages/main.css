@@ -4345,7 +4345,7 @@ tags-input .autocomplete .suggestion-item em {
 }
 .article__link .text {
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 .article .content__caption {
   display: flex;
@@ -6705,4 +6705,10 @@ body .redactor-box-fullscreen {
 .redactor-editor h6 {
   font-size: 12px;
   text-transform: uppercase;
+}
+.favicon {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  vertical-align: middle;
 }
