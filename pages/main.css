@@ -2564,7 +2564,7 @@ body {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 5px;
-  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+  box-shadow: 0 3px 36px rgba(158, 157, 163, 0.54);
   box-sizing: border-box;
   position: absolute;
   top: calc(100% + 10px);
@@ -2716,7 +2716,7 @@ body {
   cursor: pointer;
 }
 .list__item_hovered:hover {
-  background-color: #f9f9f9;
+  background-color: #f6f9fb;
 }
 .list__item_color_default {
   color: #b5b5b5;
@@ -3254,7 +3254,7 @@ body {
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 5px;
-  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+  box-shadow: 0 3px 36px rgba(158, 157, 163, 0.54);
   box-sizing: border-box;
   margin-bottom: 14px;
   padding: 20px 26px 25px 26px;
@@ -5320,7 +5320,6 @@ body.ngdialog-open {
   width: 280px;
   top: 50px;
   left: -60px;
-  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.54);
   display: none;
 }
 .ngdialog_full-width .tooltip_edit .tooltip__content_default,
@@ -5400,7 +5399,6 @@ body.ngdialog-open {
 .ngdialog_full-width .category-form_right {
   top: 62px;
   left: 240px;
-  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.54);
   display: none;
 }
 .ngdialog_full-width .category-form__arrow {
