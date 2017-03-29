@@ -70,21 +70,46 @@
       padding: 10px;
       overflow: visible;
     }
-
+    &_not-padding {
+      position: static;
+      padding: 10px 0px;
+      overflow: visible;
+      .search {
+        padding: 0 12px 10px 20px;
+      }
+     
+    }
     > .checkbox-label{
-      padding: 9px 5px 9px 0;
+      padding: 9px 15px 9px 20px;
+      .icon {
+        margin-right: 10px;
+        
+      }
     }
   }
   .list {
+    .icon, .text {
+      display: inline-block;
+      vertical-align: middle;
+    }
     .list__item_hovered{
       margin-left: 0;
-      padding-left: 12px;
+      padding-left: 20px;
     }
     .list__item_hovered.list__item_iconed {
-          position: relative;
-          width: ~'calc(100% + 24px)';
-          padding-left: ~'calc(2em + 12px)';
-          left: -12px;
+      position: relative;
+      padding-left: 45px;
+      
+    }
+    .list__item_iconed-right {
+      .icon {
+        display: none;
+      }
+      &:hover {
+        .icon {
+          display: inline-block;
+        }
+      }
     }
   }
 }

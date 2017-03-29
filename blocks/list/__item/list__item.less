@@ -38,15 +38,44 @@
     margin-left: 0;
     padding-left: 2em;
     list-style: none;
+    position: relative;
     .fa, .icon {
       font-size: 16px;
       position: absolute;
-      color: #979797;
-      left: 0;
+      left: 8px;
       width: 40px;
       text-align: center;
       height: 100%;
       line-height: 100%;
+    
+    }
+    &-right {
+      position: relative;
+      margin-left: 0;
+      padding-left: 2em;
+      list-style: none;
+      .fa, .icon {
+        right: 0;
+        font-size: 16px;
+        position: absolute;
+        min-width: 33px;
+        text-align: center;
+        line-height: 100%;
+        top: 50%;
+        margin-top: -18px;
+        display: none;
+      }
+      input {
+        border: none;
+        max-width: 195px;
+        overflow: hidden;
+        text-overflow: ellipsis
+      }
+    }
+    input {
+      border: none;
+      width: 100%;
+      padding-right: 5px;
     }
   }
 }

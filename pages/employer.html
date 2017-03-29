@@ -114,7 +114,7 @@
         <label class="taber__tab" for="notes">Заметки</label>
         <input class="taber__toggler" hidden="true" name="tabtoggle" type="radio" id="notes">
         <div class="content">
-          <div class="notes-list" style="max-height: 443px">
+          <div class="notes-list scroll scroll_gray" style="max-height: 443px">
             <div class="notes-list__item">
               <div class="avatar">
                 <div class="avatar__cover avatar__cover_small">
@@ -222,6 +222,7 @@
               </div>
             </div>
           </div>
+          <div class="content-footer"></div>
           <div class="notes-add">
             <button class="button button_link" type="button">
               <span class="icon-leaf icon_blue"></span>
@@ -235,7 +236,7 @@
         <label class="taber__tab" for="responsibilities">Обязанности</label>
         <input class="taber__toggler" hidden="true" name="tabtoggle" type="radio" id="responsibilities" checked="true">
         <div class="content">
-          <div class="notes-list notes-list_noborder" style="max-height: 500px">
+          <div class="notes-list notes-list_noborder scroll scroll_gray" style="max-height: 500px">
             <div class="notes-list__item">
               <div class="decor"></div>
               <div class="content">
@@ -272,6 +273,7 @@
               </div>
             </div>
           </div>
+          <div class="content-footer"></div>
         </div>
         <label class="taber__tab taber__tab_active" for="preferences">Настройки профиля</label>
         <input class="taber__toggler" hidden="true" name="tabtoggle" type="radio" id="preferences">
@@ -293,25 +295,14 @@
             <div class="category__item category__item_drop category__item_input">
               <input class="input" type="text" placeholder="Type here" value="Женский" readonly>
               <div class="i-arrow i-arrow_to_down"></div>
-              <div class="tooltip" style="width: 100%">
-                <div class="content tooltip__content tooltip__content_default">
-                  <ul class="list">
-                    <li class="list__item list__item_hovered">
-                      <div class="text">Мужской</div>
-                    </li>
-                    <li class="list__item list__item_hovered">
-                      <div class="text">Женский</div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              
             </div>
             <div class="category__item-label">Отдел</div>
             <div class="category__item category__item_drop category__item_input">
               <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly>
               <div class="i-arrow i-arrow_to_down"></div>
               <div class="tooltip" style="width: 100%">
-                <div class="content tooltip__content tooltip__content_default">
+                <div class="content tooltip__content tooltip__content_not-padding">
                   <ul class="list">
                     <li class="list__item list__item_hovered">
                       <div class="text">Дизайнеры</div>
@@ -454,7 +445,7 @@
         <label class="taber__tab taber__tab_active" for="responsibilitiesperson">Обязанности</label>
         <input class="taber__toggler" hidden="true" name="tabtogglers" type="radio" id="responsibilitiesperson" checked="true">
         <div class="content">
-          <div class="notes-list notes-list_noborder" style="max-height: 540px">
+          <div class="notes-list notes-list_noborder scroll scroll_gray" style="max-height: 540px">
             <div class="notes-list__item">
               <div class="decor"></div>
               <div class="content">
@@ -498,6 +489,7 @@
               </div>
             </div>
           </div>
+          <div class="content-footer"></div>
         </div>
       </div>
     </div>
@@ -511,7 +503,7 @@
           <i class="fa fa fa-ellipsis-h"></i>
           <div class="tooltip" style="top: 95%; width: 220px; right: -20px">
             <i class="tooltip__arrow" style="right: 17px"></i>
-            <div class="content tooltip__content tooltip__content_default">
+            <div class="content tooltip__content tooltip__content_not-padding">
               <ul class="list">
                 <li class="list__item list__item_iconed list__item_hovered">
                   <span class="icon icon-trashcan"></span>
@@ -769,7 +761,7 @@
         <label class="taber__tab" for="memo">Заметки</label>
         <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="memo" checked="true">
         <div class="content">
-          <div class="notes-list" style="max-height: 480px">
+          <div class="notes-list scroll scroll_gray" style="max-height: 480px">
             <div class="notes-list__item">
               <div class="avatar">
                 <div class="avatar__cover avatar__cover_small">
@@ -934,6 +926,7 @@
               </div>
             </div>
           </div>
+          <div class="content-footer"></div>
           <div class="notes-add">
             <button class="button button_link" type="button">
               <span class="icon-leaf icon_blue"></span>
@@ -947,7 +940,7 @@
         <label class="taber__tab taber__tab_active" for="duties">Обязанности</label>
         <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="duties">
         <div class="content">
-          <div class="notes-list notes-list_noborder" style="max-height: 480px">
+          <div class="notes-list notes-list_noborder scroll scroll_gray" style="max-height: 480px">
             <div class="notes-list__item">
               <div class="decor"></div>
               <div class="content">
@@ -1023,6 +1016,7 @@
               </div>
             </div>
           </div>
+          <div class="content-footer"></div>
           <div class="notes-add notes-add_two-input">
             <button class="button button_link" type="button">
               <span class=" icon-plus icon_blue"></span>
@@ -1038,11 +1032,41 @@
         <input class="taber__toggler" hidden="true" name="tabtoggler" type="radio" id="settings">
         <div class="content">
           <div class="category category_columns_two-with-labels">
-            <div class="category__item-label">Статус сотрудника</div>
+            <div class="category__item-label">Статус сотрудника1</div>
             <div class="category__item category__item_drop category__item_input category__item_icon">
               <span class="icon_taber icon_pink icon-crown"></span>
               <input class="input" type="text" placeholder="Type here" value="Гуру" readonly="">
               <div class="i-arrow i-arrow_to_down"></div>
+              <div class="tooltip" style="width: 100%;">
+                <div class="content tooltip__content tooltip__content_not-padding">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered list__item_iconed">
+                      <span class="icon icon-status"></span>
+                      <span class="text">Без статуса</span>
+                    </li>
+                    <li class="list__item list__item_hovered list__item_iconed">
+                      <span class="icon icon-leaf icon_green"></span>
+                      <span class="text">Новичок</span>
+                    </li>
+                    <li class="list__item list__item_hovered list__item_iconed">
+                      <span class="icon icon-glasses icon_blue"></span>
+                      <span class="text">Специалист</span>
+                    </li>
+                    <li class="list__item list__item_hovered list__item_iconed">
+                      <span class="icon icon-star-rating icon_orange"></span>
+                      <span class="text">Профи</span>
+                    </li>
+                    <li class="list__item list__item_hovered list__item_iconed">
+                      <span class="icon icon-lamp icon_red"></span>
+                      <span class="text">Эксперт</span>
+                    </li>
+                    <li class="list__item list__item_hovered list__item_iconed">
+                      <span class="icon icon-crown icon_pink"></span>
+                      <span class="text">Гуру</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="category__item-label"></div>
             <div class="category__item">
@@ -1067,25 +1091,14 @@
             <div class="category__item category__item_drop category__item_input">
               <input class="input" type="text" placeholder="Type here" value="Женский" readonly>
               <div class="i-arrow i-arrow_to_down"></div>
-              <div class="tooltip" style="width: 100%">
-                <div class="content tooltip__content tooltip__content_default">
-                  <ul class="list">
-                    <li class="list__item list__item_hovered">
-                      <div class="text">Мужской</div>
-                    </li>
-                    <li class="list__item list__item_hovered">
-                      <div class="text">Женский</div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+             
             </div>
             <div class="category__item-label">Отдел</div>
             <div class="category__item category__item_drop category__item_input">
               <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly>
               <div class="i-arrow i-arrow_to_down"></div>
               <div class="tooltip" style="width: 100%">
-                <div class="content tooltip__content tooltip__content_default">
+                <div class="content tooltip__content tooltip__content_not-padding">
                   <ul class="list">
                     <li class="list__item list__item_hovered">
                       <div class="text">Дизайнеры</div>
@@ -1101,6 +1114,40 @@
             <div class="category__item category__item_drop category__item_input">
               <input class="input" type="text" placeholder="Type here" value="Хорошая" readonly>
               <div class="i-arrow i-arrow_to_down"></div>
+               <div class="tooltip" style="width: 100%">
+                <div class="content tooltip__content tooltip__content_not-padding">
+                  <div class="search  search_icon">
+                   <input type="search" placeholder="Найти участника">
+                   <span class="icon-search icon_gray i-icon"></span>
+                  </div>
+                  <ul class="list">
+                    <li class="list__item list__item_dividered_top list__item_iconed-right list__item_hovered">
+                      <div class="text">
+                        <input сlass="search search_not-border" type="text" placeholder="Менеджер" readonly="">
+                        <span class="icon type icon-pencil"></span>
+                      </div>
+                    </li>
+                    <li class="list__item  list__item_iconed-right list__item_hovered">
+                      <div class="text">
+                        <input сlass="search search_not-border" type="text" placeholder="UI Designer" readonly="">
+                        <span class="icon type icon-pencil"></span>
+                      </div>
+                    </li>
+                    <li class="list__item list__item_iconed-right list__item_hovered">
+                      <div class="text">
+                        <input сlass="search search_not-border" type="text" placeholder="Designer" readonly="">
+                        <span class="icon type icon-pencil"></span>
+                      </div>
+                    </li>
+                     <li class="list__item list__item_iconed-right list__item_hovered">
+                      <div class="text">
+                        <input сlass="search search_not-border" type="text" placeholder="interior Designer and Cool Ddddddd" readonly="">
+                        <span class="icon type icon-pencil"></span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="category__item-label">Email</div>
             <div class="category__item category__item_input">
