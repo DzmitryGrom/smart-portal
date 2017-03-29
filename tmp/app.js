@@ -41,4 +41,16 @@ app.controller('TestController', ['$scope', 'ngDialog', '$q', function ($scope, 
       console.log('Modal promise rejected. Reason: ', reason);
     });
   };
+  $scope.openConfirmEmployer = function () {
+    ngDialog.openConfirm({
+      className: 'ngdialog_normal  ngdialog-theme-default',
+      template: '<div class="ng-dialog__wrapper">\n <p class="title">Удалить должность: Designer</p> <p class="description">Сотрудникам будет назначена должность:</p> <div class="category__item category__item_drop category__item_input"><input class="input" type="text" placeholder="Type here" value="Агент" readonly="true"><div class="i-arrow i-arrow_to_down"></div></div><div class="category__footer  category__footer_justify-center"><button class="button button_success" type="button">Сохранить</button></div>\n</div>',
+      plain: true,
+      scope: $scope
+    }).then(function (value) {
+      console.log('Modal promise resolved. Value: ', value);
+    }, function (reason) {
+      console.log('Modal promise rejected. Reason: ', reason);
+    });
+  };
 }]);
