@@ -2379,6 +2379,14 @@
   font-family: GothaProLig;
   src: url("fonts/GothaProLig.otf") format("opentype");
 }
+@font-face {
+  font-family: GothaProReg;
+  src: url("fonts/GothaProReg.otf") format("opentype");
+}
+@font-face {
+  font-family: GothaProBol;
+  src: url("fonts/GothaProBol.otf") format("opentype");
+}
 /*icons*/
 @font-face {
   font-family: 'icomoon';
@@ -2468,7 +2476,7 @@ body {
   font-size: 16px;
   line-height: 1.03;
   padding: 0;
-  margin: 0 0 0 10px;
+  margin: 0;
   flex: 0 1 auto;
   width: 176px;
   font-family: AvenirNextCyrReg;
@@ -2497,15 +2505,15 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 15px;
+  margin-top: 6px;
   width: 520px;
 }
 .nav__link {
   display: block;
   color: #000;
-  padding: 21px 10px 21px 3em;
+  padding: 26px 10px 26px 3em;
   font-size: 11px;
-  font-family: "ProximaNovaBold";
+  font-family: GothaProReg;
   font-weight: normal;
   text-transform: uppercase;
   text-decoration: none;
@@ -2528,6 +2536,7 @@ body {
 .nav__link_active {
   color: #61a3da;
   border-bottom: 4px solid;
+  font-family: GothaProBol;
 }
 .header-side {
   display: flex;
@@ -2898,7 +2907,7 @@ body {
 }
 /*icon_header*/
 .icon_header {
-  font-size: 22px;
+  font-size: 17px;
   margin-right: 30px;
 }
 .icon_header.icon-notification {
@@ -3072,7 +3081,8 @@ body {
 }
 .header-profile__name {
   display: inline-block;
-  font-family: "ProximaNovaReg";
+  font-family: GothaProReg;
+  font-size: 12px;
   vertical-align: middle;
   line-height: 1;
   white-space: nowrap;
@@ -3449,9 +3459,9 @@ body {
 }
 .datagrid__body .row:hover {
   position: relative;
-  z-index: 1;
+  z-index: 20;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 3px 36px rgba(158, 157, 163, 0.54);
 }
 .datagrid__body .row__cell {
   height: 100%;
@@ -6826,4 +6836,16 @@ body .redactor-box-fullscreen {
   height: 16px;
   border-radius: 2px;
   vertical-align: middle;
+}
+.bg {
+  display: none;
+  background: url(interface/bg.png) no-repeat;
+  background-position: top center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  opacity: 0.8;
 }
