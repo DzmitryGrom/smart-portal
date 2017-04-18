@@ -1,0 +1,119 @@
+.header-search {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+  z-index: 15;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0 ~'calc((100% - 1230px) / 2)';
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .header__logo {
+    flex: 1 0 255px;
+    width: 265px;
+    max-width: 265px;
+  }
+  &__input {
+    border: 1px solid #6fb8f9;
+    border-radius: 20px;
+    flex: 1 0 300px;
+    margin: 0 0 0 27px;
+    width: 100%;
+    position: relative;
+    .i-icon {
+      position: absolute;
+      top: 50%;
+     
+    }
+    .icon-search {
+      margin-top: -8px;
+      left: 20px;
+    }
+    .i-closer {
+      right: 20px;
+      width: 10px;
+      height: 10px;
+      margin-top: -5px;
+      &:after {
+        left: -3px;
+      }
+      &:before {
+        right: -3px;
+      }
+      &:after, &:before {
+        width: 5px;
+        height: 5px;
+      }
+    }
+  }
+  .tooltip__content {
+    padding-top: 20px;
+  }
+  .tooltip_search {
+    left: 0px;
+    right: 0px;
+    z-index: 10;
+    .list__item {
+      padding-top: 10px;
+    }
+    .tooltip__header {
+      padding: 0px 40px 0 45px;
+    }
+    .article {
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      margin: 0;
+      &__content {
+        padding: 0 15px;
+       
+      }
+      .content__caption {
+        margin-bottom: 2px;
+        &-text {
+          font-size: 15px;
+          color: #121212;
+          font-family: ProximaNovaReg;
+        }
+      }
+      .post-text {
+        display: inline-block;
+        font-size: 14px;
+        font-family: ProximaNovaReg;
+        color: #afbcc2;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 505px;
+        white-space: nowrap;
+        margin-left: 10px;
+        .select {
+          font-weight: bold;
+          background-color: #e7f1f9;
+          color: #000000;
+          display: inline-block;
+          padding: 5px;
+        }
+      }
+      .sidebar {
+        padding: 0;
+      }
+    }
+  }
+  
+  .search input {
+    padding: 13px 50px;
+  }
+  &__close {
+    flex: 1 0 255px;
+    width: 265px;
+    max-width: 265px;
+  }
+  .datagrid__body .row__cell:first-child {
+    padding-left: 45px;
+  }
+}
