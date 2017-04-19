@@ -8,9 +8,7 @@
     align-items: center;
     justify-content: space-between;
     height: 50px;
-    &:hover {
-      background: #f6f9fb;
-    }
+    
     &_not-border {
       border: none;
     }
@@ -47,6 +45,16 @@
         }
       }
     }
+    &__cell_solid {
+      padding: 0 1px;
+      background-color: transparent;
+    }
+    &:hover {
+      background: #f6f9fb;
+      .row__cell_solid {
+        background-color: #1f8ceb;
+      }
+    }
   }
 }
 .datagrid_not-border {
@@ -66,4 +74,5 @@
       }
     }
   }
+  
 }

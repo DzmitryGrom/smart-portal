@@ -2560,11 +2560,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.header-search .header__logo {
-  flex: 1 0 255px;
-  width: 265px;
-  max-width: 265px;
-}
 .header-search__input {
   border: 1px solid #6fb8f9;
   border-radius: 20px;
@@ -2612,45 +2607,6 @@ body {
 .header-search .tooltip_search .tooltip__header {
   padding: 0px 40px 0 45px;
 }
-.header-search .tooltip_search .article {
-  border: none;
-  box-shadow: none;
-  background-color: transparent;
-  margin: 0;
-}
-.header-search .tooltip_search .article__content {
-  padding: 0 15px;
-}
-.header-search .tooltip_search .article .content__caption {
-  margin-bottom: 2px;
-}
-.header-search .tooltip_search .article .content__caption-text {
-  font-size: 15px;
-  color: #121212;
-  font-family: ProximaNovaReg;
-}
-.header-search .tooltip_search .article .post-text {
-  display: inline-block;
-  font-size: 14px;
-  font-family: ProximaNovaReg;
-  color: #afbcc2;
-  vertical-align: middle;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 505px;
-  white-space: nowrap;
-  margin-left: 10px;
-}
-.header-search .tooltip_search .article .post-text .select {
-  font-weight: bold;
-  background-color: #e7f1f9;
-  color: #000000;
-  display: inline-block;
-  padding: 5px;
-}
-.header-search .tooltip_search .article .sidebar {
-  padding: 0;
-}
 .header-search .search input {
   padding: 13px 50px;
 }
@@ -2661,6 +2617,15 @@ body {
 }
 .header-search .datagrid__body .row__cell:first-child {
   padding-left: 45px;
+}
+.header-search_full-width .header-search__close {
+  flex: 1 0 10px;
+  width: 10px;
+  max-width: 10px;
+}
+.header-search_full-width .header-search__input {
+  flex: 0 1 70%;
+  margin: 0 auto;
 }
 .header-side__notification {
   display: inline-block;
@@ -2771,6 +2736,7 @@ body {
   position: static;
   padding: 10px 0px;
   overflow: visible;
+  margin: 0!important;
 }
 .tooltip__content_not-padding .search {
   padding: 0 12px 10px 20px;
@@ -2887,111 +2853,111 @@ body {
   background-position: center center;
 }
 .icon-status:before {
-  content: "\e911";
+  content: "\e903";
   color: #d8e2e9;
 }
 .icon-status:after {
-  content: "\e912";
+  content: "\e902";
   margin-left: -1em;
   color: #ffffff;
 }
 .icon-heart:before {
-  content: "\e91a";
-}
-.icon-heart_active:before {
-  content: "\e91b";
-}
-.icon-pencil:before {
-  content: "\e900";
-}
-.icon-people:before {
-  content: "\e901";
-}
-.icon-pin:before {
-  content: "\e902";
-}
-.icon-plus:before {
-  content: "\e903";
-}
-.icon-question:before {
-  content: "\e904";
-}
-.icon-search:before {
-  content: "\e905";
-}
-.icon-star:before {
-  content: "\e906";
-}
-.icon-star-full:before {
-  content: "\e907";
-}
-.icon-star-rating:before {
-  content: "\e908";
-}
-.icon-tag:before {
-  content: "\e909";
-}
-.icon-trashcan:before {
-  content: "\e90a";
-}
-.icon-unlink:before {
-  content: "\e90b";
-}
-.icon-up-arrow:before {
   content: "\e90c";
 }
-.icon-vk:before {
+.icon-heart_active:before {
   content: "\e90d";
 }
 .icon-add-plus:before {
-  content: "\e90e";
+  content: "\e900";
 }
 .icon-cancel:before {
-  content: "\e90f";
+  content: "\e901";
 }
 .icon-chat:before {
-  content: "\e910";
+  content: "\e902";
 }
 .icon-code:before {
-  content: "\e913";
+  content: "\e905";
 }
 .icon-crown:before {
-  content: "\e914";
+  content: "\e906";
 }
 .icon-education:before {
-  content: "\e915";
+  content: "\e907";
 }
 .icon-facebook:before {
-  content: "\e916";
+  content: "\e908";
 }
 .icon-files:before {
-  content: "\e917";
+  content: "\e909";
 }
 .icon-glasses:before {
-  content: "\e918";
+  content: "\e90a";
 }
 .icon-group:before {
-  content: "\e919";
+  content: "\e90b";
 }
 .icon-instagram:before {
-  content: "\e91c";
+  content: "\e90e";
 }
 .icon-lamp:before {
-  content: "\e91d";
+  content: "\e90f";
 }
 .icon-leaf:before {
-  content: "\e91e";
+  content: "\e910";
 }
 .icon-locked:before {
-  content: "\e91f";
+  content: "\e911";
 }
 .icon-mail:before {
-  content: "\e920";
+  content: "\e912";
 }
 .icon-newspaper:before {
-  content: "\e921";
+  content: "\e913";
 }
 .icon-notification:before {
+  content: "\e914";
+}
+.icon-pencil:before {
+  content: "\e915";
+}
+.icon-people:before {
+  content: "\e916";
+}
+.icon-pin:before {
+  content: "\e917";
+}
+.icon-plus:before {
+  content: "\e918";
+}
+.icon-question:before {
+  content: "\e919";
+}
+.icon-search:before {
+  content: "\e91a";
+}
+.icon-star:before {
+  content: "\e91b";
+}
+.icon-star-full:before {
+  content: "\e91c";
+}
+.icon-star-rating:before {
+  content: "\e91d";
+}
+.icon-tag:before {
+  content: "\e91e";
+}
+.icon-trashcan:before {
+  content: "\e91f";
+}
+.icon-unlink:before {
+  content: "\e920";
+}
+.icon-up-arrow:before {
+  content: "\e921";
+}
+.icon-vk:before {
   content: "\e922";
 }
 /*icon_color*/
@@ -3238,10 +3204,14 @@ body {
   padding: 20px calc((100% - 1230px) / 2);
   width: 100%;
 }
+.main > .content {
+  margin: 0;
+  width: 100%;
+}
 .main_justified_between {
   justify-content: space-between;
 }
-.main > .content {
+.main_justified_between .content {
   margin: 0 0 0 27px;
   width: 100%;
 }
@@ -3386,17 +3356,55 @@ body {
 .user-profile {
   position: relative;
 }
-.user-profile .bio__name {
+.user-profile .bio__name,
+.user-profile .bio__caption {
   color: #000000;
   font-family: ProximaNovaReg;
   font-size: 15px;
   font-weight: normal;
+}
+.user-profile .bio__caption .select {
+  font-weight: bold;
+  background-color: #e0ecf6;
+  color: #52aaf4;
+  display: inline-block;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 .user-profile .bio__position {
   color: #768894;
   font-family: ProximaNovaLight;
   font-size: 12px;
   font-weight: normal;
+}
+.user-profile .bio__post-text {
+  display: inline-block;
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  line-height: 1;
+  white-space: nowrap;
+}
+.user-profile .bio__post-text .link {
+  display: inline-block;
+  vertical-align: middle;
+  color: #62717b;
+}
+.user-profile .bio__post-text .text {
+  color: #afbcc2;
+  vertical-align: middle;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 505px;
+  white-space: nowrap;
+  margin-left: 10px;
+  display: inline-block;
+}
+.user-profile .bio__post-text .select {
+  font-weight: bold;
+  background-color: #e7f1f9;
+  color: #000000;
+  display: inline-block;
+  padding: 5px;
 }
 .user-profile .bio__department {
   color: #768894;
@@ -3589,9 +3597,6 @@ body {
   justify-content: space-between;
   height: 50px;
 }
-.datagrid__body .row:hover {
-  background: #f6f9fb;
-}
 .datagrid__body .row_not-border {
   border: none;
 }
@@ -3624,6 +3629,16 @@ body {
 .datagrid__body .row__cell > .action:hover .tooltip,
 .datagrid__body .row__cell > .action.hover .tooltip {
   display: block;
+}
+.datagrid__body .row__cell_solid {
+  padding: 0 1px;
+  background-color: transparent;
+}
+.datagrid__body .row:hover {
+  background: #f6f9fb;
+}
+.datagrid__body .row:hover .row__cell_solid {
+  background-color: #1f8ceb;
 }
 .datagrid_not-border .datagrid__body .row:hover {
   box-shadow: none;
@@ -4269,6 +4284,10 @@ textarea {
   display: flex;
   justify-content: space-between;
 }
+.checkbox-label_inline {
+  display: inline-block;
+  margin-right: 20px;
+}
 .checkbox-text {
   display: inline-block;
   vertical-align: middle;
@@ -4486,6 +4505,10 @@ textarea {
 }
 .tag:empty {
   display: none;
+}
+.tag .checkbox-label_inline {
+  margin-left: 16px;
+  margin-right: 12px;
 }
 .tag_border {
   border: 1px solid #dedede;
@@ -4777,7 +4800,7 @@ tags-input .autocomplete .suggestion-item em {
 .tag__item_border {
   color: #939393;
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 3px;
   border: 1px solid rgba(184, 184, 184, 0.44);
   box-sizing: border-box;
   font-family: "ProximaNovaReg";
@@ -4786,6 +4809,17 @@ tags-input .autocomplete .suggestion-item em {
   text-align: center;
   padding: 0 10px;
   margin: 0 3px 5px;
+}
+.tag__item_border-green {
+  color: #3bc7ab;
+  border: 1px solid #3bc7ab;
+}
+.tag__item_circle {
+  font-size: 10px;
+  font-family: ProximaNovaLight;
+  background-color: #f0f1f2;
+  border-radius: 100%;
+  padding: 5px;
 }
 .button_link {
   color: #61a3da;

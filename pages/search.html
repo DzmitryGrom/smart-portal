@@ -1,194 +1,74 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="app">
 
 <head>
   <title>search</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link href='main.css' rel='stylesheet' type='text/css'>
+
+
 </head>
 
 <body>
   <div class="header">
-    <h1 class="header__logo"><a href="home.html">Smart<b>Portal</b></a></h1>
-    <div class="nav">
-      <a class="nav__link nav__link_newspaper" ng-click="open()">
-        <span class="icon-newspaper icon_nav"></span>
-        <span class="text">База знаний</span>
-      </a>
-      <a class="nav__link nav__link_people nav__link_active" href="employeers.html">
-        <span class="icon-people icon_nav"></span>
-        <span class="text">Команда</span>
-      </a>
-      <a class="nav__link nav__link_education" href="/">
-        <span class="icon-education icon_nav"></span>
-        <span class="text">Обучение</span>
-      </a>
-      <a class="nav__link nav__link_code" href="/">
-        <span class="icon-code icon_nav"></span>
-        <span class="text">Скрипты</span>
-      </a>
-    </div>
-    <div class="header-side">
-      <span class="header-side__help icon-question icon_header"></span>
-      <span class="header-side__search icon-search icon_header"></span>
-      <div class="header-side__notification header-side__notification_active ">
-        <span class="icon-notification icon_header"></span>
-        <div class="tooltip" style="width: 240px; right: 17px">
-          <i class="tooltip__arrow tooltip__arrow_white" style="right: 12px"></i>
-          <div class="content tooltip__content tooltip__content_default">
-            <ul class="list">
-              <li class="list__item list__item_color_warning">
-                <div class="text">Updates Improved Parsing and Import Engine</div>
-              </li>
-              <li class="list__item list__item_color_default">
-                <div class="text">Updates Improved Parsing and Import</div>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <div class="header-search header-search_full-width">
+      <div class="header-search__close">
+        <i class="i-arrow i-arrow_gray i-arrow_to_left"></i>
       </div>
-      <div class="header-profile">
-        <div class="header-profile__avatar">
-          <img class="pic" src="interface/avatar.jpg" alt="">
+      <div class="header-search__input">
+        <div class="search">
+          <input type="search" placeholder="Искать" value="Должность">
+          <span class="icon-search icon_gray i-icon"></span>
+          <i class="i-closer i-closer_gray i-icon"></i>
         </div>
-        <span class="header-profile__name">Александрррррр</span>
-        <span class="header-profile__arrow"></span>
-        <div class="tooltip" style="width: 170px; right: -14px">
-          <i class="tooltip__arrow tooltip__arrow_white" style="right: 10px"></i>
-          <div class="content tooltip__content tooltip__content_default">
-            <ul class="list">
-              <li class="list__item">
-                <div class="text">Профиль</div>
-              </li>
-              <li class="list__item">
-                <div class="text">Настройки</div>
-              </li>
-              <li class="list__item list__item_dividered_top">
-                <div class="text">Выход</div>
-              </li>
-            </ul>
-          </div>
-        </div>
+        
       </div>
     </div>
   </div>
-  <div class="main main_justified_between">
-    <div class="sidebar">
-      <div class="category">
-        <div class="category__item category__item_submit category__item_submit_search category__item_input">
-          <div class="search">
-            <input type='search' placeholder='Поиск по сотрудникам'>
-            <i class="i-search"></i>
-          </div>
-        </div>
-        <div class="category__item-label">Отдел</div>
-        <div class="category__item category__item_drop category__item_input">
-          <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly>
-          <div class="i-arrow i-arrow_to_down"></div>
-        </div>
-        <div class="category__item-label">Статус сотрудника</div>
-        <div class="category__item category__item_drop category__item_input">
-          <input class="input" type="text" placeholder="Type here" value="Выбрано: 2" readonly>
-          <div class="i-arrow i-arrow_to_down"></div>
-          <div class="tooltip" style="width: 100%;">
-            <div class="content tooltip__content tooltip__content_not-padding">
-              <label class="checkbox-label">
-                <span class="checkbox-text">
-                  <span class="icon icon-status"></span>
-                  Без статуса
-                </span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-                
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text">
-                  <span class="icon icon-leaf icon_green"></span>Новичок
-                </span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text">
-                  <span class="icon icon-glasses icon_blue"></span>Специалист
-                </span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text">
-                  <span class="icon icon-star-rating icon_orange"></span>Профи
-                </span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text">
-                  <span class="icon icon-lamp icon_red"></span>Эксперт
-                </span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-              <label class="checkbox-label">
-                <span class="checkbox-text">
-                  <span class="icon icon-crown icon_pink"></span>Гуру
-                </span>
-                <input class="checkbox" type="checkbox">
-                <i class="checkbox__indicator"></i>
-              </label>
-            </div>
-          </div>
-        </div>
-        <div class="category__item-label">Должность</div>
-        <div class="category__item category__item_drop category__item_input">
-          <input class="input" type="text" placeholder="Type here" value="Хорошая" readonly>
-          <div class="i-arrow i-arrow_to_down"></div>
-        </div>
-        <div class="category__item-label">Пол</div>
-        <div class="category__item category__item_drop category__item_input">
-          <input class="input" type="text" placeholder="Type here" value="Любой" readonly>
-          <div class="i-arrow i-arrow_to_down"></div>
-        </div>
-      </div>
-    </div>
+  <div class="main">
     <div class="content">
       <div class="tag">
-        <div class="tag__item tag__item_border">Статус: Гуру
+        <label class="checkbox-label checkbox-label_inline">
+          <input class="checkbox" type="checkbox">
+          <i class="checkbox__indicator"></i>
+        </label>
+        <div class="tag__item tag__item_border">Раздел: Распространители
           <div class="i-closer"></div>
-        </div>
-        <div class="tag__item tag__item_border">Отдел: Design
+        </div><div class="tag__item tag__item_border">Раздел: Распространители
+          <div class="i-closer"></div>
+        </div><div class="tag__item tag__item_border">Раздел: Распространители
           <div class="i-closer"></div>
         </div>
       </div>
       <table class="datagrid">
-        <thead class="datagrid__header">
-          <tr class="row">
-            <th class="row__cell">ФИО</th>
-            <th class="row__cell">Отдел</th>
-            <th class="row__cell">EMAIL</th>
-            <th class="row__cell">Телефон</th>
-            <th class="row__cell"></th>
-          </tr>
-        </thead>
         <tbody class="datagrid__body">
-          <tr class="row">
+          <tr class="row ">
+            <td class="row__cell row__cell_solid"></td>
             <td class="row__cell">
               <div class="user-profile user-profile_horizontal_small">
+                <label class="checkbox-label checkbox-label_inline">
+                  <input class="checkbox" type="checkbox">
+                  <i class="checkbox__indicator"></i>
+                </label>
                 <div class="avatar">
-                  <div class="avatar__cover avatar__cover_small">
-                    <img class="pic" src="http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg" alt="" height="50" width="50">
-                  </div>
-                  <div class="avatar__online">
-                    <i class="fa fa-circle"></i>
-                  </div>
-                  <div class="avatar__status avatar__status_right">
-                    <span class="icon-crown"></span>
-                  </div>
+                  <img class="pic" src="interface/not-icon.jpg" alt="" width="26">
                 </div>
                 <div class="bio">
-                  <div class="bio__name">Марк Адамс</div>
-                  <div class="bio__position">UI Designer</div>
+                  <div class="bio__caption"><span class="select">Должность</span> мечты</div>
+                  <div class="bio__post-text">
+                    <span class="favicon icon-files icon_blue"></span>
+                    <span class="text">Когда есть возможность удаленно зарабатывать деньги, лежа на гамаке ты ни о чём больше</span>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="row__cell">
+              <div class="tag">
+                <div class="tag__item tag__item_border">Хостинг
+                </div><div class="tag__item tag__item_border tag__item_border-green">Дизайн
+                </div><div class="tag__item tag__item_border">Хостинг
+                </div><div class="tag__item tag__item_circle">+10
                 </div>
               </div>
             </td>
@@ -196,50 +76,34 @@
               <div class="text">Design</div>
             </td>
             <td class="row__cell">
-              <a class="link" href="mailto:mark.adams@smart.com">mark.adams@smart.com</a>
-            </td>
-            <td class="row__cell">
-              <a class="link" href="tel:+33088445566">+33 088 44 55 66</a>
-            </td>
-            <td class="row__cell">
-              <div class="action">
-                <i class="fa fa-ellipsis-h"></i>
-                <div class="tooltip" style="width: 220px; right: -20px; top: 97%">
-                  <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
-                  <div class="content tooltip__content tooltip__content_not-padding">
-                    <ul class="list">
-                      <li class="list__item list__item_iconed list__item_hovered">
-                          <span class="fa i-icon icon_content icon-pencil"></span>
-                        <div class="text">Редактировать</div>
-                      </li>
-                      <li class="list__item list__item_iconed list__item_hovered">
-                        <span class="fa i-icon icon_content icon-locked"></span>
-                        <div class="text">Поменять пароль</div>
-                      </li>
-                      <li class="list__item list__item_iconed list__item_hovered">
-                        <span class="fa i-icon icon_content icon-trashcan"></span>
-                        <div class="text">Уволить</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <a class="link" href="#"><span class="i-icon icon icon-star icon_orange"></span></a>
             </td>
           </tr>
           <tr class="row">
+            <td class="row__cell row__cell_solid"></td>
             <td class="row__cell">
               <div class="user-profile user-profile_horizontal_small">
+                <label class="checkbox-label checkbox-label_inline">
+                  <input class="checkbox" type="checkbox">
+                  <i class="checkbox__indicator"></i>
+                </label>
                 <div class="avatar">
-                  <div class="avatar__cover avatar__cover_small">
-                    <img class="pic" src="http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg" alt="" height="50" width="50">
-                  </div>
-                  <div class="avatar__status avatar__status_right">
-                    <span class="icon-crown"></span>
-                  </div>
+                  <img class="pic" src="interface/icon.jpg" alt="" width="26">
                 </div>
                 <div class="bio">
-                  <div class="bio__name">Марк Борн</div>
-                  <div class="bio__position">UI Designer</div>
+                  <div class="bio__caption"><span class="select">Должность</span> арт директора и трендовые методологии</div>
+                  <div class="bio__post-text">
+                    <span class="favicon icon-unlink icon_green"></span>
+                    <a class="link">vk.com</a>
+                    <span class="text">Более того, как-то вскоре после вступления еду с водителем в одно место в которое</span>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="row__cell">
+              <div class="tag">
+                <div class="tag__item tag__item_border">Хостинг
+                </div><div class="tag__item tag__item_border tag__item_border-green">Дизайн
                 </div>
               </div>
             </td>
@@ -247,53 +111,70 @@
               <div class="text">Design</div>
             </td>
             <td class="row__cell">
-              <a class="link" href="mailto:mark.adams@smart.com">mark.adams@smart.com</a>
-            </td>
-            <td class="row__cell">
-              <a class="link" href="tel:+33088445566">+33 088 44 55 66</a>
-            </td>
-            <td class="row__cell">
-              <div class="action">
-                <i class="fa fa-ellipsis-h"></i>
-                <div class="tooltip" style="width: 220px; right: -20px; top: 97%">
-                  <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
-                  <div class="content tooltip__content tooltip__content_not-padding">
-                    <ul class="list">
-                      <li class="list__item list__item_iconed list__item_hovered">
-                       <span class="fa i-icon icon_content icon-pencil"></span>
-                        <div class="text">Редактировать</div>
-                      </li>
-                      <li class="list__item list__item_iconed list__item_hovered">
-                        <span class="fa i-icon icon_content icon-locked"></span>
-                        <div class="text">Поменять пароль</div>
-                      </li>
-                      <li class="list__item list__item_iconed list__item_hovered">
-                        <span class="fa i-icon icon_content icon-trashcan"></span>
-                        <div class="text">Уволить</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              <a class="link" href="#"><span class="i-icon icon icon-star icon_orange"></span></a>
             </td>
           </tr>
           <tr class="row">
+            <td class="row__cell row__cell_solid"></td>
             <td class="row__cell">
               <div class="user-profile user-profile_horizontal_small">
+                <label class="checkbox-label checkbox-label_inline">
+                  <input class="checkbox" type="checkbox">
+                  <i class="checkbox__indicator"></i>
+                </label>
                 <div class="avatar">
-                  <div class="avatar__cover avatar__cover_small">
-                    <div class="text text_small">MA</div>
-                  </div>
-                  <div class="avatar__online">
-                    <i class="fa fa-circle"></i>
-                  </div>
-                  <div class="avatar__status avatar__status_right">
-                    <span class="icon-crown"></span>
-                  </div>
+                  <img class="pic" src="interface/icon.jpg" alt="" width="26">
                 </div>
                 <div class="bio">
-                  <div class="bio__name">Марк Адамс</div>
-                  <div class="bio__position">Дизайнер</div>
+                  <div class="bio__caption">Использование шаблонов в дизайне</div>
+                  <div class="bio__post-text">
+                    <span class="favicon icon-unlink icon_green"></span>
+                    <a class="link">habrahabr.ru</a>
+                    <span class="text">...более того, как-то вскоре после вступления в <span class="select">должность</span> еду с вдителем hhhhhhhhhhhhh</span>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="row__cell">
+              <div class="tag">
+                <div class="tag__item tag__item_border">Хостинг
+                </div><div class="tag__item tag__item_border tag__item_border-green">Дизайн
+                </div><div class="tag__item tag__item_border">Хостинг
+                </div><div class="tag__item tag__item_circle">+3</div>
+              </div>
+            </td>
+            <td class="row__cell">
+              <div class="text">Инструкция</div>
+            </td>
+            <td class="row__cell">
+              
+            </td>
+          </tr>
+          <tr class="row">
+            <td class="row__cell row__cell_solid"></td>
+            <td class="row__cell">
+              <div class="user-profile user-profile_horizontal_small">
+                <label class="checkbox-label checkbox-label_inline">
+                  <input class="checkbox" type="checkbox">
+                  <i class="checkbox__indicator"></i>
+                </label>
+                <div class="avatar">
+                  <img class="pic" src="interface/icon.jpg" alt="" width="26">
+                </div>
+                <div class="bio">
+                  <div class="bio__caption">200 шаблонов успешных заголовков</div>
+                  <div class="bio__post-text">
+                    <span class="favicon icon-files icon_blue"></span>
+                      <span class="text">...более того, как-то вскоре после вступления в <span class="select">должность</span> еду с вдителем hhhhhhhhhhhhh</span>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td class="row__cell">
+              <div class="tag">
+                <div class="tag__item tag__item_border">Хостинг
+                </div><div class="tag__item tag__item_border tag__item_border-green">Дизайн
+                </div><div class="tag__item tag__item_border">Хостинг
                 </div>
               </div>
             </td>
@@ -301,321 +182,19 @@
               <div class="text">Design</div>
             </td>
             <td class="row__cell">
-              <a class="link" href="mailto:mark.adams@smart.com">mark.adams@smart.com</a>
-            </td>
-            <td class="row__cell">
-              <a class="link" href="tel:+33088445566">+33 088 44 55 66</a>
-            </td>
-            <td class="row__cell">
-              <div class="action">
-                <i class="fa fa-ellipsis-h"></i>
-                <div class="tooltip" style="width: 220px; right: -20px; top: 97%">
-                  <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
-                  <div class="content tooltip__content tooltip__content_not-padding">
-                    <ul class="list">
-                      <li class="list__item list__item_iconed list__item_hovered">
-                       <span class="fa i-icon icon_content icon-pencil"></span>
-                        <div class="text">Редактировать</div>
-                      </li>
-                      <li class="list__item list__item_iconed list__item_hovered">
-                        <span class="fa i-icon icon_content icon-locked"></span>
-                        <div class="text">Поменять пароль</div>
-                      </li>
-                      <li class="list__item list__item_iconed list__item_hovered">
-                        <span class="fa i-icon icon_content icon-trashcan"></span>
-                        <div class="text">Уволить</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+              
             </td>
           </tr>
         </tbody>
+        <tfoot class="datagrid__footer">
+          <tr>
+            <td>
+              
+            </td>
+          </tr>
+        </tfoot>
       </table>
-      <div class="tag">
-        <div class="tag__item tag__item_border">Статус: ГуруГуруГуру
-          <div class="i-closer"></div>
-        </div>
-        <div class="tag__item tag__item_border">Отдел: Design
-          <div class="i-closer"></div>
-        </div>
-        <div class="tag__item tag__item_border">Отдел: Design
-          <div class="i-closer"></div>
-        </div>
-        <div class="tag__item tag__item_border">Отдел: Design
-          <div class="i-closer"></div>
-        </div>
-        <div class="tag__item tag__item_border">Отдел: Design
-          <div class="i-closer"></div>
-        </div>
-        <div class="tag__item tag__item_border">Отдел: Design
-          <div class="i-closer"></div>
-        </div>
-        <div class="tag__item tag__item_border">Отдел: Design
-          <div class="i-closer"></div>
-        </div>
-        <div class="tag__item tag__item_border">Отдел: Design
-          <div class="i-closer"></div>
-        </div>
-      </div>
-      <div class="cards">
-        <div class="cards__item">
-          <div class="user-profile user-profile_vertical_normal">
-            <div class="avatar">
-              <div class="avatar__cover">
-                <img class="pic" src="http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg" alt="" height="100" width="100">
-              </div>
-              <div class="avatar__online">
-                <i class="fa fa-circle"></i>
-              </div>
-              <div class="avatar__status">
-                <span class="icon-crown"></span>
-              </div>
-            </div>
-            <div class="bio">
-              <div class="bio__name">Марк Адамс</div>
-              <div class="bio__position">UI Designer</div>
-              <div class="bio__department">Design</div>
-            </div>
-          </div>
-          <div class="action">
-            <i class="fa fa-ellipsis-h"></i>
-            <div class="tooltip" style="width: calc(100% + 40px); top: 97%; left: -20px;">
-              <i class="tooltip__arrow tooltip__arrow_white" style="right: calc(50% - 7px);"></i>
-              <div class="content tooltip__content tooltip__content_not-padding">
-                <ul class="list">
-                  <li class="list__item list__item_iconed list__item_hovered">
-                   <span class="fa i-icon icon_content icon-pencil"></span>
-                    <div class="text">Редактировать</div>
-                  </li>
-                  <li class="list__item list__item_iconed list__item_hovered">
-                    <span class="fa i-icon icon_content icon-locked"></span>
-                    <div class="text">Поменять пароль</div>
-                  </li>
-                  <li class="list__item list__item_iconed list__item_hovered">
-                    <span class="fa i-icon icon_content icon-trashcan"></span>
-                    <div class="text">Уволить</div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="cards__item">
-          <div class="user-profile user-profile_vertical_normal">
-            <div class="avatar">
-              <div class="avatar__cover">
-                <div class="text">ДР</div>
-              </div>
-              <div class="avatar__online">
-                <i class="fa fa-circle"></i>
-              </div>
-              <div class="avatar__status">
-                <span class="icon-crown"></span>
-              </div>
-            </div>
-            <div class="bio">
-              <div class="bio__name">Марк Абрамс Адамс</div>
-              <div class="bio__position">UI Designer</div>
-              <div class="bio__department">Design</div>
-            </div>
-          </div>
-          <div class="action">
-            <i class="fa fa-ellipsis-h"></i>
-            <div class="tooltip" style="width: calc(100% + 40px); top: 97%; left: -20px;">
-              <i class="tooltip__arrow tooltip__arrow_white" style="right: calc(50% - 7px);"></i>
-              <div class="content tooltip__content tooltip__content_not-padding">
-                <ul class="list">
-                  <li class="list__item list__item_iconed list__item_hovered">
-                   <span class="fa i-icon icon_content icon-pencil"></span>
-                    <div class="text">Редактировать</div>
-                  </li>
-                  <li class="list__item list__item_iconed list__item_hovered">
-                    <span class="fa i-icon icon_content icon-locked"></span>
-                    <div class="text">Поменять пароль</div>
-                  </li>
-                  <li class="list__item list__item_iconed list__item_hovered">
-                    <span class="fa i-icon icon_content icon-trashcan"></span>
-                    <div class="text">Уволить</div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cards__item">
-          <div class="user-profile user-profile_vertical_normal">
-            <div class="avatar">
-              <div class="avatar__cover">
-                <img class="pic" src="http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg" alt="" height="100" width="100">
-              </div>
-              <div class="avatar__online">
-                <i class="fa fa-circle"></i>
-              </div>
-              <div class="avatar__status">
-                <span class="icon-crown"></span>
-              </div>
-            </div>
-            <div class="bio">
-              <div class="bio__name">Марк Адамс</div>
-              <div class="bio__position">UI Designer</div>
-              <div class="bio__department">Design</div>
-            </div>
-          </div>
-          <div class="action">
-            <i class="fa fa-ellipsis-h"></i>
-            <div class="tooltip" style="width: calc(100% + 40px); top: 97%; left: -20px;">
-              <i class="tooltip__arrow tooltip__arrow_white" style="right: calc(50% - 7px);"></i>
-              <div class="content tooltip__content tooltip__content_not-padding">
-                <ul class="list">
-                  <li class="list__item list__item_iconed list__item_hovered">
-                   <span class="fa i-icon icon_content icon-pencil"></span>
-                    <div class="text">Редактировать</div>
-                  </li>
-                  <li class="list__item list__item_iconed list__item_hovered">
-                    <span class="fa i-icon icon_content icon-locked"></span>
-                    <div class="text">Поменять пароль</div>
-                  </li>
-                  <li class="list__item list__item_iconed list__item_hovered">
-                    <span class="fa i-icon icon_content icon-trashcan"></span>
-                    <div class="text">Уволить</div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cards__item">
-          <div class="user-profile user-profile_vertical_normal">
-            <div class="avatar">
-              <div class="avatar__cover">
-                <div class="text">ДР</div>
-              </div>
-              <div class="avatar__online">
-                <i class="fa fa-circle"></i>
-              </div>
-              <div class="avatar__status">
-                <span class="icon-crown"></span>
-              </div>
-            </div>
-            <div class="bio">
-              <div class="bio__name">Марк Адамс</div>
-              <div class="bio__position">UI Designer</div>
-              <div class="bio__department">Design</div>
-            </div>
-          </div>
-          <div class="action">
-            <i class="fa fa-ellipsis-h"></i>
-            <div class="tooltip" style="width: calc(100% + 40px); top: 97%; left: -20px;">
-              <i class="tooltip__arrow tooltip__arrow_white" style="right: calc(50% - 7px);"></i>
-              <div class="content tooltip__content tooltip__content_not-padding">
-                <ul class="list">
-                  <li class="list__item list__item_iconed list__item_hovered">
-                   <span class="fa i-icon icon_content icon-pencil"></span>
-                    <div class="text">Редактировать</div>
-                  </li>
-                  <li class="list__item list__item_iconed list__item_hovered">
-                    <span class="fa i-icon icon_content icon-locked"></span>
-                    <div class="text">Поменять пароль</div>
-                  </li>
-                  <li class="list__item list__item_iconed list__item_hovered">
-                    <span class="fa i-icon icon_content icon-trashcan"></span>
-                    <div class="text">Уволить</div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cards__item">
-          <div class="user-profile user-profile_vertical_normal">
-            <div class="avatar">
-              <div class="avatar__cover">
-                <img class="pic" src="http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg" alt="" height="100" width="100">
-              </div>
-              <div class="avatar__online">
-                <i class="fa fa-circle"></i>
-              </div>
-              <div class="avatar__status">
-                <span class="icon-crown"></span>
-              </div>
-            </div>
-            <div class="bio">
-              <div class="bio__name">Марк Адамс</div>
-              <div class="bio__position">UI Designer</div>
-              <div class="bio__department">Design</div>
-            </div>
-          </div>
-          <div class="action">
-            <i class="fa fa-ellipsis-h"></i>
-            <div class="tooltip" style="width: calc(100% + 40px); top: 97%; left: -20px;">
-              <i class="tooltip__arrow tooltip__arrow_white" style="right: calc(50% - 7px);"></i>
-              <div class="content tooltip__content tooltip__content_not-padding">
-                <ul class="list">
-                  <li class="list__item list__item_iconed list__item_hovered">
-                   <span class="fa i-icon icon_content icon-pencil"></span>
-                    <div class="text">Редактировать</div>
-                  </li>
-                  <li class="list__item list__item_iconed list__item_hovered">
-                    <span class="fa i-icon icon_content icon-locked"></span>
-                    <div class="text">Поменять пароль</div>
-                  </li>
-                  <li class="list__item list__item_iconed list__item_hovered">
-                    <span class="fa i-icon icon_content icon-trashcan"></span>
-                    <div class="text">Уволить</div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cards__item">
-          <div class="user-profile user-profile_vertical_normal">
-            <div class="avatar">
-              <div class="avatar__cover">
-                <div class="text">ДР</div>
-              </div>
-              <div class="avatar__online">
-                <i class="fa fa-circle"></i>
-              </div>
-              <div class="avatar__status">
-                <span class="icon-crown"></span>
-              </div>
-            </div>
-            <div class="bio">
-              <div class="bio__name">Марк Адамс</div>
-              <div class="bio__position">UI Designer</div>
-              <div class="bio__department">Design</div>
-            </div>
-          </div>
-          <div class="action">
-            <i class="fa fa-ellipsis-h"></i>
-            <div class="tooltip" style="width: calc(100% + 40px); top: 97%; left: -20px;">
-              <i class="tooltip__arrow tooltip__arrow_white" style="right: calc(50% - 7px);"></i>
-              <div class="content tooltip__content tooltip__content_not-padding">
-                <ul class="list">
-                  <li class="list__item list__item_iconed list__item_hovered">
-                   <span class="fa i-icon icon_content icon-pencil"></span>
-                    <div class="text">Редактировать</div>
-                  </li>
-                  <li class="list__item list__item_iconed list__item_hovered">
-                    <span class="fa i-icon icon_content icon-locked"></span>
-                    <div class="text">Поменять пароль</div>
-                  </li>
-                  <li class="list__item list__item_iconed list__item_hovered">
-                    <span class="fa i-icon icon_content icon-trashcan"></span>
-                    <div class="text">Уволить</div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </body>
-
 </html>
