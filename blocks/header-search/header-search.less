@@ -47,7 +47,11 @@
     }
   }
   .tooltip__content {
-    padding-top: 20px;
+    padding: 20px 0px 0px;
+  }
+  .category__item_submit_search {
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .tooltip_search {
     left: 0px;
@@ -93,7 +97,7 @@
       left: 50%;
       margin-left: -112px;
       width: 260px;
-      top: 32px;
+      top: 35px;
       &__arrow {
         left: 50%;
         margin-left: -10px;
@@ -110,7 +114,11 @@
     &_tags {
       right: 115px;
       .tooltip {
-        height: 300px;
+        max-height: 300px;
+        .scroll {
+          padding-left: 20px;
+          max-height: 235px;
+        }
       }
     }
     .i-arrow {

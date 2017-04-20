@@ -2594,7 +2594,11 @@ body {
   height: 5px;
 }
 .header-search .tooltip__content {
-  padding-top: 20px;
+  padding: 20px 0px 0px;
+}
+.header-search .category__item_submit_search {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .header-search .tooltip_search {
   left: 0px;
@@ -2638,7 +2642,7 @@ body {
   left: 50%;
   margin-left: -112px;
   width: 260px;
-  top: 32px;
+  top: 35px;
 }
 .header-search .serch__tooltip .tooltip__arrow {
   left: 50%;
@@ -2656,7 +2660,11 @@ body {
   right: 115px;
 }
 .header-search .serch__tooltip_tags .tooltip {
-  height: 300px;
+  max-height: 300px;
+}
+.header-search .serch__tooltip_tags .tooltip .scroll {
+  padding-left: 20px;
+  max-height: 235px;
 }
 .header-search .serch__tooltip .i-arrow {
   width: 7px;
@@ -2893,111 +2901,111 @@ body {
   background-position: center center;
 }
 .icon-status:before {
-  content: "\e903";
+  content: "\e91d";
   color: #d8e2e9;
 }
 .icon-status:after {
-  content: "\e902";
+  content: "\e91e";
   margin-left: -1em;
   color: #ffffff;
 }
 .icon-heart:before {
-  content: "\e90c";
+  content: "\e903";
 }
 .icon-heart_active:before {
-  content: "\e90d";
-}
-.icon-add-plus:before {
-  content: "\e900";
-}
-.icon-cancel:before {
-  content: "\e901";
-}
-.icon-chat:before {
-  content: "\e902";
-}
-.icon-code:before {
-  content: "\e905";
-}
-.icon-crown:before {
-  content: "\e906";
-}
-.icon-education:before {
-  content: "\e907";
-}
-.icon-facebook:before {
-  content: "\e908";
+  content: "\e904";
 }
 .icon-files:before {
-  content: "\e909";
+  content: "\e900";
 }
 .icon-glasses:before {
-  content: "\e90a";
+  content: "\e901";
 }
 .icon-group:before {
-  content: "\e90b";
+  content: "\e902";
 }
 .icon-instagram:before {
-  content: "\e90e";
+  content: "\e905";
 }
 .icon-lamp:before {
-  content: "\e90f";
+  content: "\e906";
 }
 .icon-leaf:before {
-  content: "\e910";
+  content: "\e907";
 }
 .icon-locked:before {
-  content: "\e911";
+  content: "\e908";
 }
 .icon-mail:before {
-  content: "\e912";
+  content: "\e909";
 }
 .icon-newspaper:before {
-  content: "\e913";
+  content: "\e90a";
 }
 .icon-notification:before {
-  content: "\e914";
+  content: "\e90b";
 }
 .icon-pencil:before {
-  content: "\e915";
+  content: "\e90c";
 }
 .icon-people:before {
-  content: "\e916";
+  content: "\e90d";
 }
 .icon-pin:before {
-  content: "\e917";
+  content: "\e90e";
 }
 .icon-plus:before {
-  content: "\e918";
+  content: "\e90f";
 }
 .icon-question:before {
-  content: "\e919";
+  content: "\e910";
 }
 .icon-search:before {
-  content: "\e91a";
+  content: "\e911";
 }
 .icon-star:before {
-  content: "\e91b";
+  content: "\e912";
 }
 .icon-star-full:before {
-  content: "\e91c";
+  content: "\e913";
 }
 .icon-star-rating:before {
-  content: "\e91d";
+  content: "\e914";
 }
 .icon-tag:before {
-  content: "\e91e";
+  content: "\e915";
 }
 .icon-trashcan:before {
-  content: "\e91f";
+  content: "\e916";
 }
 .icon-unlink:before {
-  content: "\e920";
+  content: "\e917";
 }
 .icon-up-arrow:before {
-  content: "\e921";
+  content: "\e918";
 }
 .icon-vk:before {
+  content: "\e919";
+}
+.icon-add-plus:before {
+  content: "\e91a";
+}
+.icon-cancel:before {
+  content: "\e91b";
+}
+.icon-chat:before {
+  content: "\e91c";
+}
+.icon-code:before {
+  content: "\e91f";
+}
+.icon-crown:before {
+  content: "\e920";
+}
+.icon-education:before {
+  content: "\e921";
+}
+.icon-facebook:before {
   content: "\e922";
 }
 /*icon_color*/
