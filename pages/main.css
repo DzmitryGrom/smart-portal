@@ -5372,9 +5372,11 @@ tags-input .autocomplete .suggestion-item em {
 .avatar__status_right [class^="icon-"],
 .avatar__status_right [class*=" icon-"] {
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
+  text-align: center;
   top: 50%;
-  margin: -5px 0 0 -5px;
+  margin-top: -5px;
 }
 .cards {
   display: flex;
