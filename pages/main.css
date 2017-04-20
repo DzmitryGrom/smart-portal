@@ -2664,6 +2664,7 @@ body {
 }
 .header-search .serch__tooltip_tags .tooltip .scroll {
   padding-left: 20px;
+  padding-top: 5px;
   max-height: 235px;
 }
 .header-search .serch__tooltip .i-arrow {
