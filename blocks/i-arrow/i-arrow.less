@@ -11,13 +11,19 @@
   position: relative;
   bottom: 2px;
   transition: transform .3s;
-
+  &_gray {
+    border-right: 1px solid #afafaf;
+    border-bottom: 1px solid #afafaf;
+  }
   &_to{
     &_down{
       transform: rotate(45deg);
     }
     &_up{
       transform: rotate(-135deg);
+    }
+    &_left {
+      transform: rotate(135deg);
     }
   }
 }

@@ -5,7 +5,7 @@
   vertical-align: middle;
   height: 12px;
 
-
+  
   &:after,
   &:before{
     content: "";
@@ -19,6 +19,12 @@
     position: absolute;
     top: 2px;
   }
+  &_gray {
+    &:after,
+    &:before {
+      border-color: #afafaf;
+    }
+  }
   &:after{
     left: 0;
     border-bottom-color: transparent;
@@ -29,4 +35,5 @@
     border-top-color: transparent;
     border-right-color: transparent;
   }
+  
 }

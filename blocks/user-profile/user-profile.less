@@ -2,17 +2,57 @@
   position: relative;
 
   .bio{
-    &__name{
+    &__name, &__caption{
       color: #000000;
       font-family: ProximaNovaReg;
       font-size: 15px; 
       font-weight: normal;
+    }
+    &__caption {
+      .select {
+        font-weight: bold;
+        background-color: #e0ecf6;
+        color: #52aaf4;
+        display: inline-block;
+        padding-left: 2px;
+        padding-right: 2px;
+      }
     }
     &__position{
       color: #768894;
       font-family: ProximaNovaLight;
       font-size: 12px; 
       font-weight: normal;
+    }
+    
+    &__post-text {
+      display: inline-block;
+      font-size: 14px;
+      font-family: ProximaNovaReg;
+      line-height: 1;
+      white-space: nowrap;
+      .link {
+        display: inline-block;
+        vertical-align:middle;
+        color: #62717b;
+      }
+      .text {
+        color: #afbcc2;
+        vertical-align: middle;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 505px;
+        white-space: nowrap;
+        margin-left: 10px;
+        display: inline-block;
+      }
+      .select {
+        font-weight: bold;
+        background-color: #e0ecf6;
+        color: #52aaf4;
+        display: inline-block;
+        padding: 5px;
+      }
     }
     &__department{
       color: #768894;
