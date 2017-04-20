@@ -4141,7 +4141,7 @@ body {
   line-height: 30px;
   border-radius: 2px;
 }
-.category__item_input input[type=text] {
+.category__item_input > input[type=text] {
   font-family: "ProximaNovaReg";
   font-size: 14px;
   padding: 0 11px 0 20px;
@@ -5368,6 +5368,13 @@ tags-input .autocomplete .suggestion-item em {
 .avatar__status_right {
   left: 75%;
   margin: -15px 0 0 -6px;
+}
+.avatar__status_right [class^="icon-"],
+.avatar__status_right [class*=" icon-"] {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -5px 0 0 -5px;
 }
 .cards {
   display: flex;
