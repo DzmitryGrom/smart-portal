@@ -4141,7 +4141,7 @@ body {
   line-height: 30px;
   border-radius: 2px;
 }
-.category__item_input > input[type=text] {
+.category__item_input input[type=text] {
   font-family: "ProximaNovaReg";
   font-size: 14px;
   padding: 0 11px 0 20px;
