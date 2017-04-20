@@ -83,4 +83,44 @@
       margin: 0 auto;
     }
   }
+  .serch__tooltip {
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    cursor: pointer;
+    z-index: 2;
+    .tooltip {
+      left: 50%;
+      margin-left: -112px;
+      width: 260px;
+      top: 32px;
+      &__arrow {
+        left: 50%;
+        margin-left: -10px;
+      }
+      .category__item.category__item_submit_search .search:before {
+        content: "";
+        left: -10px;
+        right: -10px;
+      }
+    }
+    &_filter {
+      right: 50px;
+    }
+    &_tags {
+      right: 115px;
+      .tooltip {
+        height: 300px;
+      }
+    }
+    .i-arrow {
+      width: 7px;
+      height: 7px;
+    }
+    .text {
+      font-size: 12px;
+      font-family: ProximaNovaReg;
+      color: #939393;
+    }
+  }
 }
