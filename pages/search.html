@@ -71,41 +71,20 @@
             <i class="i-arrow i-arrow_to_down"></i>
             <div class="tooltip" style="display:;">
               <div class="content tooltip__content tooltip__content_default">
-                <div class="category__item category__item_submit category__item_submit_search category__item_input category__item_icon">
-                  <div class="search">
-                    <input type="search" placeholder="Поиск по тегам">
-                    <span class="icon-search icon-search_gray icon_sidebar i-icon_right"></span>
-                  </div>
+                <div class="category__item-label">Тип</div>
+                <div class="category__item category__item_drop category__item_input">
+                  <input class="input" type="text" placeholder="Type here" value="Все содержимое" readonly="">
+                  <div class="i-arrow i-arrow_to_down"></div>
                 </div>
-                <div class="scroll">
-                  <div class="tag tag_left">
-                    <span class="tag__item tag__item_border">Важная информация</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Дизайн</span>
-                    <span class="tag__item tag__item_border">Бизнесбм</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнесб</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнес</span>
-                    <span class="tag__item tag__item_border">Бизнесбм</span>
-                    <span class="tag__item tag__item_border">Бизнесбм</span>
-                    <span class="tag__item tag__item_border">Бизнесбм</span>
-                    <span class="tag__item tag__item_border">Бизнесбм</span>
-                    <span class="tag__item tag__item_border">Бизнесбм</span>
-                    <span class="tag__item tag__item_border">Бизнесбм</span>
-                  </div>
+                <div class="category__item-label">Раздел</div>
+                <div class="category__item category__item_drop category__item_input">
+                  <input class="input" type="text" placeholder="Type here" value="Design" readonly="">
+                  <div class="i-arrow i-arrow_to_down"></div>
+                </div>
+                <div class="category__item-label">Сортировать по</div>
+                <div class="category__item category__item_drop category__item_input">
+                  <input class="input" type="text" placeholder="Type here" value="Дата обновления" readonly="">
+                  <div class="i-arrow i-arrow_to_down"></div>
                 </div>
               </div>
               <i class="tooltip__arrow tooltip__arrow_white"></i>
@@ -167,12 +146,12 @@
               <a class="link" href="#"><span class="i-icon icon icon-star icon_orange"></span></a>
             </td>
           </tr>
-          <tr class="row">
+          <tr class="row row_active">
             <td class="row__cell row__cell_solid"></td>
             <td class="row__cell">
               <div class="user-profile user-profile_horizontal_small">
                 <label class="checkbox-label checkbox-label_inline">
-                  <input class="checkbox" type="checkbox">
+                  <input class="checkbox" type="checkbox" checked>
                   <i class="checkbox__indicator"></i>
                 </label>
                 <div class="avatar">
