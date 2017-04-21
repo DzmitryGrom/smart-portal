@@ -1,4 +1,23 @@
 .list{
   padding: 0;
   margin: 0;
+  &_two-col {
+    font-size: 0;
+    position: relative;
+    padding-top: 5px;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      width: 1px;
+      height: 100%;
+      left: 50%;
+      background-color: #e1e1e1;
+    }
+    .list__item {
+      display: inline-block;
+      width: 50%;
+    }
+  }
 }

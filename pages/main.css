@@ -2823,6 +2823,15 @@ body {
 .tooltip .list .list__item_iconed-right:hover .icon {
   display: inline-block;
 }
+.tooltip_table:after {
+  content: "";
+  display: none;
+}
+.tooltip_table .tooltip__content {
+  padding: 0;
+  position: static;
+  overflow: visible;
+}
 .tooltip_relative {
   position: relative;
   top: 0px;
@@ -2871,6 +2880,9 @@ body {
 .tooltip__arrow_left {
   top: 50%;
   margin-top: -7px;
+}
+.content > .tools {
+  margin-bottom: 20px;
 }
 .content-footer {
   display: flex;
@@ -3128,6 +3140,25 @@ body {
   padding: 0;
   margin: 0;
 }
+.list_two-col {
+  font-size: 0;
+  position: relative;
+  padding-top: 5px;
+}
+.list_two-col:before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 1px;
+  height: 100%;
+  left: 50%;
+  background-color: #e1e1e1;
+}
+.list_two-col .list__item {
+  display: inline-block;
+  width: 50%;
+}
 .list__item {
   font-family: ProximaNovaLight;
   box-sizing: border-box;
@@ -3203,6 +3234,9 @@ body {
   border: none;
   width: 100%;
   padding-right: 5px;
+}
+.list__item_left {
+  text-align: left;
 }
 .header-profile {
   display: inline-block;
@@ -4581,6 +4615,31 @@ textarea {
   margin-left: 18px;
   margin-right: 12px;
 }
+.tag_btns-right {
+  padding-right: 210px;
+  position: relative;
+}
+.tag_btns-right .icon {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.tag_btns-right .tag__item_pull-right {
+  top: -3px;
+}
+.tag_btns-right .btn-add {
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  color: #afbcc2;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+.tag_btns-right .btn-add .tooltip {
+  width: 335px;
+}
+.tag_btns-right .btn-add .tooltip .scroll {
+  max-height: 195px;
+}
 .tag_border {
   border: 1px solid #dedede;
 }
@@ -4800,7 +4859,7 @@ tags-input .autocomplete .suggestion-item em {
   position: relative;
   width: 13px;
   vertical-align: middle;
-  height: 12px;
+  height: 11px;
 }
 .i-closer:after,
 .i-closer:before {
@@ -4884,6 +4943,10 @@ tags-input .autocomplete .suggestion-item em {
 .tag__item_border-green {
   color: #3bc7ab;
   border: 1px solid #3bc7ab;
+}
+.tag__item_pull-right {
+  position: absolute;
+  right: 0px;
 }
 .tag__item_circle {
   font-size: 10px;
@@ -7127,4 +7190,47 @@ body .redactor-box-fullscreen {
   margin: 10px 0;
   height: 1px;
   background: #f0f0f0;
+}
+.tools .checkbox-label_inline {
+  margin-left: 18px;
+  margin-right: 12px;
+}
+.tools .text {
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  color: #979797;
+  display: inline-block;
+  vertical-align: middle;
+}
+.tools__item {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  text-align: center;
+  padding: 0 10px;
+  margin: 0 3px 0;
+}
+.tools__item:hover .text {
+  color: #62717b;
+}
+.tools__item .icon {
+  font-size: 12px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.tools__item .action {
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+  margin-bottom: -10px;
+  padding-bottom: 10px;
+}
+.tools__item .action .tooltip {
+  display: none;
+  top: 25px;
+  right: -30px;
+  width: 180px;
+}
+.tools__item .action:hover .tooltip {
+  display: block;
 }

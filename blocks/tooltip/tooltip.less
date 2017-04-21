@@ -34,6 +34,7 @@
     position: absolute;
     z-index: 1;
   }
+  
   &_top{
     bottom: 100%;
   }
@@ -119,6 +120,18 @@
           display: inline-block;
         }
       }
+    }
+  }
+  &_table {
+    &:after {
+      content: "";
+      display: none;
+    }
+    .tooltip__content {
+      padding: 0;
+      position: static;
+      overflow: visible;
+      
     }
   }
 }

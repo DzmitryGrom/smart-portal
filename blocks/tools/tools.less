@@ -1,0 +1,45 @@
+.tools {
+  .checkbox-label_inline {
+    margin-left: 18px;
+    margin-right: 12px;
+  }
+  .text {
+    font-size: 14px;
+    font-family: ProximaNovaReg;
+    color: #979797;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 3px 0;
+    &:hover .text {
+      color: #62717b;
+    }
+    .icon {
+      font-size: 12px;
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    .action {
+      vertical-align: middle;
+      display: inline-block;
+      position: relative;
+      margin-bottom: -10px;
+      padding-bottom: 10px;
+      .tooltip {
+        display: none;
+        top: 25px;
+        right: -30px;
+        width: 180px;
+      }
+      &:hover .tooltip {
+        display: block;
+      }
+    }
+  }
+}
