@@ -18,7 +18,10 @@
     vertical-align: middle;
     margin-top: -2px;
     font-size: 21px;
-    position: relative;
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -11px;
     &:after {
       content: "";
       position: absolute;
@@ -32,9 +35,13 @@
     vertical-align: middle;
     font-size: 20px;
   }
-  > input{
+  > input,
+  input[type=text]{
     padding-left: 45px;
-    margin-left: -39px;
+  }
+  > input,
+  input[type=text].input_margin {
+    margin-left: -45px;
   }
   .i-icon {
     position: absolute;

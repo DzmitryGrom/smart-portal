@@ -2409,6 +2409,7 @@ body {
   min-width: 1230px;
   padding: 0;
   margin: 0;
+  background-color: #f6f9fb;
 }
 .header {
   background-color: #fff;
@@ -3112,6 +3113,9 @@ body {
 /*icon_taber*/
 .icon_taber {
   margin-left: 22px;
+  position: absolute;
+  top: 50%;
+  margin-top: -7px;
 }
 /*icon-actions*/
 .icon-actions {
@@ -3313,6 +3317,9 @@ body {
 .main > .sidebar_big {
   width: 320px;
   max-width: 320px;
+}
+.main_one-col {
+  height: calc(26%);
 }
 .main {
   display: flex;
@@ -4193,7 +4200,8 @@ body {
   line-height: 30px;
   border-radius: 2px;
 }
-.category__item_input > input[type=text] {
+.category__item_input > input[type=text],
+.category__item_input input[type=password] {
   font-family: "ProximaNovaReg";
   font-size: 14px;
   padding: 0 11px 0 20px;
@@ -4205,13 +4213,16 @@ body {
   box-sizing: border-box;
   -webkit-appearance: none;
 }
-.category__item_input > input[type=text]::-webkit-input-placeholder {
+.category__item_input > input[type=text]::-webkit-input-placeholder,
+.category__item_input input[type=password]::-webkit-input-placeholder {
   color: #b1b1b1;
 }
-.category__item_input > input[type=text]::-webkit-search-cancel-button {
+.category__item_input > input[type=text]::-webkit-search-cancel-button,
+.category__item_input input[type=password]::-webkit-search-cancel-button {
   display: none;
 }
-.category__item_input > input[type=text]:focus {
+.category__item_input > input[type=text]:focus,
+.category__item_input input[type=password]:focus {
   outline: none;
 }
 .category__item_tag .tag {
@@ -4290,7 +4301,10 @@ textarea {
   vertical-align: middle;
   margin-top: -2px;
   font-size: 21px;
-  position: relative;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -11px;
 }
 .category__item_icon .icon-social:after {
   content: "";
@@ -4304,9 +4318,13 @@ textarea {
   vertical-align: middle;
   font-size: 20px;
 }
-.category__item_icon > input {
+.category__item_icon > input,
+.category__item_icon input[type=text] {
   padding-left: 45px;
-  margin-left: -39px;
+}
+.category__item_icon > input,
+.category__item_icon input[type=text].input_margin {
+  margin-left: -45px;
 }
 .category__item_icon .i-icon {
   position: absolute;
@@ -5975,6 +5993,7 @@ body.ngdialog-open {
   order: 2;
   flex: 1 0 100%;
   position: relative;
+  margin-left: 0px;
 }
 .taber > .content_row {
   background-color: #fff;
