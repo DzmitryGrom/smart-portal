@@ -1,9 +1,9 @@
-.taber{
+.taber {
   display: flex;
   flex-wrap: wrap;
   position: relative;
 
-  &__tab{
+  &__tab {
     order: 1;
   }
   .content-footer {
@@ -15,7 +15,7 @@
     z-index: 1;
     border-bottom: 20px solid #FFF;
   }
-  > .content{
+  > .content {
     display: none;
     order: 2;
     flex: 1 0 100%;
@@ -54,8 +54,8 @@
 
   }
 
-  &__toggler{
-    &:checked + .content{
+  &__tab_active {
+    & + .content{
       display: block;
     }
   }

@@ -6024,7 +6024,7 @@ body.ngdialog-open {
   margin-bottom: 0;
   padding: 0;
 }
-.taber__toggler:checked + .content {
+.taber__tab_active + .content {
   display: block;
 }
 .taber__tab {
