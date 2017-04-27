@@ -5989,7 +5989,7 @@ body.ngdialog-open {
   border-bottom: 20px solid #FFF;
 }
 .taber > .content {
-  display: none;
+  display: block;
   order: 2;
   flex: 1 0 100%;
   position: relative;
@@ -6023,9 +6023,6 @@ body.ngdialog-open {
   box-sizing: border-box;
   margin-bottom: 0;
   padding: 0;
-}
-.taber__tab_active + .content {
-  display: block;
 }
 .taber__tab {
   cursor: pointer;
