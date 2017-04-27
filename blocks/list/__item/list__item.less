@@ -1,4 +1,4 @@
-.list__item{
+.list__item {
   font-family: ProximaNovaLight;
   box-sizing: border-box;
   font-size: 14px;
@@ -7,39 +7,39 @@
   border: 1px solid transparent;
   margin-left: 20px;
   color: transparent;
-
-  &_hovered{
+  &_hovered {
     cursor: pointer;
-    
-    &:hover{
+    &:hover {
       background-color: #f6f9fb;
     }
   }
-  &_color_default{
+  &.active {
+    background-color: #f6f9fb;
+  }
+  &_color_default {
     color: #b5b5b5;
   }
-  &_color_warning{
+  &_color_warning {
     color: #da5c3e;
   }
-  &_color_info{
+  &_color_info {
     color: #61a3da;
   }
-  &_dividered{
-    &_top{
+  &_dividered {
+    &_top {
       border-top-color: #f6f6f6;
     }
   }
-  
-  > .text{
+  > .text {
     color: #979797;
   }
-
-  &_iconed{
+  &_iconed {
     margin-left: 0;
     padding-left: 2em;
     list-style: none;
     position: relative;
-    .fa, .icon {
+    .fa,
+    .icon {
       font-size: 16px;
       position: absolute;
       left: 8px;
@@ -47,14 +47,14 @@
       text-align: center;
       height: 100%;
       line-height: 100%;
-    
     }
     &-right {
       position: relative;
       margin-left: 0;
       padding-left: 2em;
       list-style: none;
-      .fa, .icon {
+      .fa,
+      .icon {
         right: 0;
         font-size: 16px;
         position: absolute;

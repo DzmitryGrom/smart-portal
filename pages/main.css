@@ -3179,6 +3179,9 @@ body {
 .list__item_hovered:hover {
   background-color: #f6f9fb;
 }
+.list__item.active {
+  background-color: #f6f9fb;
+}
 .list__item_color_default {
   color: #b5b5b5;
 }
