@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe663626-3594-4b54-8183-0cfb4b3d215f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/content/content.less" afterPath="$PROJECT_DIR$/blocks/content/content.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/i-closer/i-closer.less" afterPath="$PROJECT_DIR$/blocks/i-closer/i-closer.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/list/__item/list__item.less" afterPath="$PROJECT_DIR$/blocks/list/__item/list__item.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/tag/__item/tag__item.less" afterPath="$PROJECT_DIR$/blocks/tag/__item/tag__item.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/tag/tag.less" afterPath="$PROJECT_DIR$/blocks/tag/tag.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/main.css" afterPath="$PROJECT_DIR$/pages/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/main.less" afterPath="$PROJECT_DIR$/pages/main.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/search.html" afterPath="$PROJECT_DIR$/pages/search.html" />
-    </list>
+    <list default="true" id="fe663626-3594-4b54-8183-0cfb4b3d215f" name="Default" comment="" />
     <ignored path="smart-portal.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -30,61 +20,43 @@
     <favorites_list name="smart-portal" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="scroll.less" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/blocks/scroll/scroll.less">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tmp/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="83">
-                  <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#400#12833#0" expanded="false" />
-                    <element signature="e#27100#27971#0" expanded="false" />
-                    <marker date="1490795201905" expanded="true" signature="2386:2397" ph="..." />
-                    <marker date="1490795201905" expanded="true" signature="3137:3146" ph="..." />
-                    <marker date="1490795201905" expanded="true" signature="4359:4372" ph="..." />
-                    <marker date="1490795201905" expanded="true" signature="7098:7109" ph="..." />
-                    <marker date="1490795201905" expanded="true" signature="7849:7858" ph="..." />
-                    <marker date="1490795201905" expanded="true" signature="14857:14868" ph="..." />
-                    <marker date="1490795201905" expanded="true" signature="15608:15617" ph="..." />
-                    <marker date="1490795201905" expanded="true" signature="16815:16828" ph="..." />
-                    <marker date="1490795201905" expanded="true" signature="19554:19565" ph="..." />
-                    <marker date="1490795201905" expanded="true" signature="20305:20314" ph="..." />
-                    <marker date="1490795201905" expanded="true" signature="22225:22268" ph="..." />
-                    <marker date="1490795201905" expanded="true" signature="24336:24501" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="Angular2HTML Fragment (app.js:12949).html" pinned="false" current-in-tab="true">
-            <entry file="mock:///Angular2HTML Fragment (app.js:12949).html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="125">
-                  <caret line="161" column="33" selection-start-line="158" selection-start-column="20" selection-end-line="161" selection-end-column="33" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="scroll.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blocks/scroll/scroll.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tmp/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+              <folding>
+                <element signature="e#400#12833#0" expanded="false" />
+                <element signature="e#27100#27971#0" expanded="false" />
+                <marker date="1490795201905" expanded="true" signature="2386:2397" ph="..." />
+                <marker date="1490795201905" expanded="true" signature="3137:3146" ph="..." />
+                <marker date="1490795201905" expanded="true" signature="4359:4372" ph="..." />
+                <marker date="1490795201905" expanded="true" signature="7098:7109" ph="..." />
+                <marker date="1490795201905" expanded="true" signature="7849:7858" ph="..." />
+                <marker date="1490795201905" expanded="true" signature="14857:14868" ph="..." />
+                <marker date="1490795201905" expanded="true" signature="15608:15617" ph="..." />
+                <marker date="1490795201905" expanded="true" signature="16815:16828" ph="..." />
+                <marker date="1490795201905" expanded="true" signature="19554:19565" ph="..." />
+                <marker date="1490795201905" expanded="true" signature="20305:20314" ph="..." />
+                <marker date="1490795201905" expanded="true" signature="22225:22268" ph="..." />
+                <marker date="1490795201905" expanded="true" signature="24336:24501" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -227,8 +199,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,18 +273,19 @@
       <workItem from="1490794812673" duration="986000" />
       <workItem from="1491483108262" duration="91000" />
       <workItem from="1492773044647" duration="1024000" />
+      <workItem from="1492873530446" duration="32000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48276000" />
+    <option name="totallyTimeSpent" value="48308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27231467" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -708,7 +681,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
+        <state relative-caret-position="17">
           <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
           <folding>
             <element signature="e#400#12833#0" expanded="false" />

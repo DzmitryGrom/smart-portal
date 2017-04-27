@@ -4200,7 +4200,7 @@ body {
   line-height: 30px;
   border-radius: 2px;
 }
-.category__item_input > input[type=text],
+.category__item_input input[type=text],
 .category__item_input input[type=password] {
   font-family: "ProximaNovaReg";
   font-size: 14px;
@@ -4213,15 +4213,15 @@ body {
   box-sizing: border-box;
   -webkit-appearance: none;
 }
-.category__item_input > input[type=text]::-webkit-input-placeholder,
+.category__item_input input[type=text]::-webkit-input-placeholder,
 .category__item_input input[type=password]::-webkit-input-placeholder {
   color: #b1b1b1;
 }
-.category__item_input > input[type=text]::-webkit-search-cancel-button,
+.category__item_input input[type=text]::-webkit-search-cancel-button,
 .category__item_input input[type=password]::-webkit-search-cancel-button {
   display: none;
 }
-.category__item_input > input[type=text]:focus,
+.category__item_input input[type=text]:focus,
 .category__item_input input[type=password]:focus {
   outline: none;
 }
@@ -5994,6 +5994,17 @@ body.ngdialog-open {
   flex: 1 0 100%;
   position: relative;
   margin-left: 0px;
+}
+.taber > .content:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 1px;
+  height: 18px;
+  left: 1px;
+  right: 20px;
+  background-color: #fff;
+  z-index: 1000;
 }
 .taber > .content_row {
   background-color: #fff;
