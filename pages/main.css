@@ -2799,10 +2799,10 @@ body {
 .tooltip__content_not-padding .search {
   padding: 0 12px 10px 20px;
 }
-.tooltip__content > .checkbox-label {
+.tooltip__content .checkbox-label {
   padding: 9px 15px 9px 20px;
 }
-.tooltip__content > .checkbox-label .icon {
+.tooltip__content .checkbox-label .icon {
   margin-right: 10px;
 }
 .tooltip .list .icon,
