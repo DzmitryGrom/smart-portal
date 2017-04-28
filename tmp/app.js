@@ -41,6 +41,19 @@ app.controller('TestController', ['$scope', 'ngDialog', '$q', function ($scope, 
       console.log('Modal promise rejected. Reason: ', reason);
     });
   };
+
+  $scope.openCrop = function () {
+    ngDialog.openConfirm({
+      className: 'ngdialog ngdialog-theme-default ngdialog_half-width',
+      template: '<div class="ng-dialog__wrapper">\n    <div class="ng-dialog__header header">\n        <p class="title">Фотография профиля</p>\n    </div>\n    <p class="description">Выберите область, каторая  будет отоброжаться  в вашем профиле.</p>\n    <div class="article article_modal">\n        <div class="content article__content">\n            <img src="interface/ava-crop.jpg" alt="">\n        </div>\n        <div class="sidebar">\n            <img src="interface/ava-post-crop.jpg" alt="">\n        </div>\n    </div>\n    <div class="ng-dialog__footer ng-dialog__footer_right">\n        <a href="#" class="link button button_success">Сохранить</a>\n    </div>\n</div>',
+      plain: true,
+      scope: $scope
+    }).then(function (value) {
+      console.log('Modal promise resolved. Value: ', value);
+    }, function (reason) {
+      console.log('Modal promise rejected. Reason: ', reason);
+    });
+  };
   $scope.openConfirmEmployer = function () {
     ngDialog.openConfirm({
       className: 'ngdialog_normal  ngdialog-theme-default',

@@ -5700,12 +5700,16 @@ body.ngdialog-open {
   padding-bottom: 160px;
   padding-top: 160px;
 }
+.ng-dialog__footer_right {
+  text-align: right;
+}
 .ngdialog.ngdialog-theme-default.ngdialog-closing .ngdialog-content {
   -webkit-animation: ngdialog-flyout 0.5s;
   animation: ngdialog-flyout 0.5s;
 }
 .ngdialog.ngdialog-theme-default .ngdialog-content,
-.ngdialog.ngdialog_full-width .ngdialog-content {
+.ngdialog.ngdialog_full-width .ngdialog-content,
+.ngdialog.ngdialog_half-width .ngdialog-content {
   color: #444;
   font-family: 'Helvetica', sans-serif;
   font-size: 1.1em;
@@ -5743,23 +5747,70 @@ body.ngdialog-open {
   top: 15px;
   right: 15px;
 }
-/*ngdialog_full-width*/
-.ngdialog_full-width .button {
-  width: auto;
+/*ngdialog_half-width*/
+.ngdialog_half-width .article {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
-.ngdialog_full-width .ng-dialog__content {
+.ngdialog_half-width .article .sidebar {
+  padding: 0 30px 0 0;
+}
+.ngdialog_half-width .description {
+  margin: 0;
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  color: #afbcc2;
+  padding: 30px 0;
+}
+.ngdialog_half-width .ngdialog-content {
+  width: 810px;
   position: relative;
+  text-align: center;
+  padding: 0;
+  border-radius: 3px;
 }
+.ngdialog_half-width .ngdialog-content .header {
+  padding: 0 32px;
+  border-bottom: 1px solid #ecf2f5;
+}
+.ngdialog_half-width .ngdialog-content .title {
+  font-size: 16px;
+  font-family: ProximaNovaBold;
+  color: #121212;
+  margin: 0;
+}
+.ngdialog_half-width .ngdialog-content .ngdialog-close {
+  right: 20px;
+}
+.ngdialog_half-width .ngdialog-content .ngdialog-close:before {
+  color: #88959e;
+}
+.ngdialog_half-width .ngdialog-content .ng-dialog__footer {
+  padding: 30px;
+}
+/*ngdialog_full-width*/
 .ngdialog_full-width .ng-dialog__wrapper {
   background: #f0f0f0;
 }
-.ngdialog_full-width .ng-dialog__header {
+.ngdialog_full-width .button,
+.ngdialog_half-width .button {
+  width: auto;
+}
+.ngdialog_full-width .ng-dialog__content,
+.ngdialog_half-width .ng-dialog__content {
+  position: relative;
+}
+.ngdialog_full-width .ng-dialog__header,
+.ngdialog_half-width .ng-dialog__header {
   background-color: #fff;
 }
-.ngdialog_full-width .header-side .button {
+.ngdialog_full-width .header-side .button,
+.ngdialog_half-width .header-side .button {
   margin-left: 10px;
 }
-.ngdialog_full-width .scroll-content {
+.ngdialog_full-width .scroll-content,
+.ngdialog_half-width .scroll-content {
   position: absolute;
   top: 0;
   bottom: 75px;
@@ -5769,95 +5820,132 @@ body.ngdialog-open {
   overflow: auto;
 }
 .ngdialog_full-width .tooltip_edit,
-.ngdialog_full-width .tooltip_search {
+.ngdialog_half-width .tooltip_edit,
+.ngdialog_full-width .tooltip_search,
+.ngdialog_half-width .tooltip_search {
   width: 280px;
   top: 50px;
   left: -60px;
   display: none;
 }
 .ngdialog_full-width .tooltip_edit .tooltip__content_default,
-.ngdialog_full-width .tooltip_search .tooltip__content_default {
+.ngdialog_half-width .tooltip_edit .tooltip__content_default,
+.ngdialog_full-width .tooltip_search .tooltip__content_default,
+.ngdialog_half-width .tooltip_search .tooltip__content_default {
   padding: 10px 0;
 }
 .ngdialog_full-width .tooltip_edit.tooltip_active,
-.ngdialog_full-width .tooltip_search.tooltip_active {
+.ngdialog_half-width .tooltip_edit.tooltip_active,
+.ngdialog_full-width .tooltip_search.tooltip_active,
+.ngdialog_half-width .tooltip_search.tooltip_active {
   display: inline-block;
 }
 .ngdialog_full-width .tooltip_edit.tooltip_active ~ .category-form_right,
-.ngdialog_full-width .tooltip_search.tooltip_active ~ .category-form_right {
+.ngdialog_half-width .tooltip_edit.tooltip_active ~ .category-form_right,
+.ngdialog_full-width .tooltip_search.tooltip_active ~ .category-form_right,
+.ngdialog_half-width .tooltip_search.tooltip_active ~ .category-form_right {
   display: inline-block;
 }
 .ngdialog_full-width .tooltip_edit .tooltip__arrow,
-.ngdialog_full-width .tooltip_search .tooltip__arrow {
+.ngdialog_half-width .tooltip_edit .tooltip__arrow,
+.ngdialog_full-width .tooltip_search .tooltip__arrow,
+.ngdialog_half-width .tooltip_search .tooltip__arrow {
   right: 18px;
 }
 .ngdialog_full-width .tooltip_edit .list__item,
+.ngdialog_half-width .tooltip_edit .list__item,
 .ngdialog_full-width .tooltip_search .list__item,
+.ngdialog_half-width .tooltip_search .list__item,
 .ngdialog_full-width .tooltip_edit .search_icon,
-.ngdialog_full-width .tooltip_search .search_icon {
+.ngdialog_half-width .tooltip_edit .search_icon,
+.ngdialog_full-width .tooltip_search .search_icon,
+.ngdialog_half-width .tooltip_search .search_icon {
   margin-left: 0;
 }
 .ngdialog_full-width .tooltip_edit .list__item,
-.ngdialog_full-width .tooltip_search .list__item {
+.ngdialog_half-width .tooltip_edit .list__item,
+.ngdialog_full-width .tooltip_search .list__item,
+.ngdialog_half-width .tooltip_search .list__item {
   padding: 8px 20px;
 }
 .ngdialog_full-width .tooltip_edit .list__item_action_add .text,
-.ngdialog_full-width .tooltip_search .list__item_action_add .text {
+.ngdialog_half-width .tooltip_edit .list__item_action_add .text,
+.ngdialog_full-width .tooltip_search .list__item_action_add .text,
+.ngdialog_half-width .tooltip_search .list__item_action_add .text {
   color: #afbcc2;
 }
 .ngdialog_full-width .tooltip_edit .search_icon,
-.ngdialog_full-width .tooltip_search .search_icon {
+.ngdialog_half-width .tooltip_edit .search_icon,
+.ngdialog_full-width .tooltip_search .search_icon,
+.ngdialog_half-width .tooltip_search .search_icon {
   padding: 5px 25px 15px 20px;
   border-bottom: 1px solid #f6f6f6;
 }
 .ngdialog_full-width .tooltip_edit .i-icon,
-.ngdialog_full-width .tooltip_search .i-icon {
+.ngdialog_half-width .tooltip_edit .i-icon,
+.ngdialog_full-width .tooltip_search .i-icon,
+.ngdialog_half-width .tooltip_search .i-icon {
   right: 10px;
   position: absolute;
   top: 50%;
 }
 .ngdialog_full-width .tooltip_edit .icon-search,
-.ngdialog_full-width .tooltip_search .icon-search {
+.ngdialog_half-width .tooltip_edit .icon-search,
+.ngdialog_full-width .tooltip_search .icon-search,
+.ngdialog_half-width .tooltip_search .icon-search {
   margin-top: -11px;
 }
 .ngdialog_full-width .redactor-editor,
+.ngdialog_half-width .redactor-editor,
 .ngdialog_full-width .redactor-box,
-.ngdialog_full-width .redactor-box textarea {
+.ngdialog_half-width .redactor-box,
+.ngdialog_full-width .redactor-box textarea,
+.ngdialog_half-width .redactor-box textarea {
   z-index: 1;
 }
-.ngdialog_full-width .tooltip_search {
+.ngdialog_full-width .tooltip_search,
+.ngdialog_half-width .tooltip_search {
   height: 290px;
 }
-.ngdialog_full-width .tooltip_search .scroll {
+.ngdialog_full-width .tooltip_search .scroll,
+.ngdialog_half-width .tooltip_search .scroll {
   margin-right: 10px;
 }
-.ngdialog_full-width .tooltip_search .scroll .list {
+.ngdialog_full-width .tooltip_search .scroll .list,
+.ngdialog_half-width .tooltip_search .scroll .list {
   padding-right: 5px;
 }
-.ngdialog_full-width .tooltip_search .scroll .list__item {
+.ngdialog_full-width .tooltip_search .scroll .list__item,
+.ngdialog_half-width .tooltip_search .scroll .list__item {
   width: 100%;
   left: 0px;
   padding-left: 20px;
 }
-.ngdialog_full-width .tooltip_search .scroll .list__item .i-icon {
+.ngdialog_full-width .tooltip_search .scroll .list__item .i-icon,
+.ngdialog_half-width .tooltip_search .scroll .list__item .i-icon {
   display: none;
   margin-top: -8px;
 }
-.ngdialog_full-width .tooltip_search .scroll .list__item:hover .i-icon {
+.ngdialog_full-width .tooltip_search .scroll .list__item:hover .i-icon,
+.ngdialog_half-width .tooltip_search .scroll .list__item:hover .i-icon {
   display: inline-block;
 }
-.ngdialog_full-width .tooltip_search .scroll .list__item_active > .text {
+.ngdialog_full-width .tooltip_search .scroll .list__item_active > .text,
+.ngdialog_half-width .tooltip_search .scroll .list__item_active > .text {
   color: #000000;
 }
-.ngdialog_full-width .category-form_right {
+.ngdialog_full-width .category-form_right,
+.ngdialog_half-width .category-form_right {
   top: 62px;
   left: 240px;
   display: none;
 }
-.ngdialog_full-width .category-form__arrow {
+.ngdialog_full-width .category-form__arrow,
+.ngdialog_half-width .category-form__arrow {
   left: -6px;
 }
-.ngdialog_full-width .ngdialog-close {
+.ngdialog_full-width .ngdialog-close,
+.ngdialog_half-width .ngdialog-close {
   border-radius: 5px;
   cursor: pointer;
   position: absolute;
@@ -5865,7 +5953,8 @@ body.ngdialog-open {
   right: 400px;
   top: 20px;
 }
-.ngdialog_full-width .ngdialog-close:before {
+.ngdialog_full-width .ngdialog-close:before,
+.ngdialog_half-width .ngdialog-close:before {
   background: transparent;
   border-radius: 3px;
   color: #82dbc9;

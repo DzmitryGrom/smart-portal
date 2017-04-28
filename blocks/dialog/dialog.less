@@ -173,14 +173,17 @@ body.ngdialog-open {
   padding-bottom: 160px;
   padding-top: 160px;
 }
-
+.ng-dialog__footer_right {
+  text-align: right;
+}
 .ngdialog.ngdialog-theme-default.ngdialog-closing .ngdialog-content {
   -webkit-animation: ngdialog-flyout .5s;
   animation: ngdialog-flyout .5s;
 }
 
 .ngdialog.ngdialog-theme-default .ngdialog-content,
-.ngdialog.ngdialog_full-width .ngdialog-content {
+.ngdialog.ngdialog_full-width .ngdialog-content,
+.ngdialog.ngdialog_half-width .ngdialog-content {
   color: #444;
   font-family: 'Helvetica',sans-serif;
   font-size: 1.1em;
@@ -219,16 +222,65 @@ body.ngdialog-open {
     right: 15px;
   }
 }
+
+/*ngdialog_half-width*/
+.ngdialog_half-width {
+  .article {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    .sidebar {
+      padding: 0 30px 0 0;
+    }
+  }
+  .description {
+    margin: 0;
+    font-size: 14px;
+    font-family: ProximaNovaReg;
+    color: #afbcc2;
+    padding: 30px 0;
+  }
+  .ngdialog-content {
+    width: 810px;
+    position: relative;
+    text-align: center;
+    padding: 0;
+    border-radius: 3px;
+    .header {
+      padding: 0 32px;
+      border-bottom: 1px solid #ecf2f5;
+
+    }
+    .title {
+      font-size: 16px;
+      font-family: ProximaNovaBold;
+      color: #121212;
+      margin: 0;
+    }
+    .ngdialog-close {
+      right: 20px;
+      &:before {
+        color: #88959e;
+      }
+    }
+    .ng-dialog__footer {
+      padding: 30px;
+    }
+  }
+}
+
 /*ngdialog_full-width*/
 .ngdialog_full-width {
+  .ng-dialog__wrapper {
+    background: #f0f0f0;
+  }
+}
+.ngdialog_full-width, .ngdialog_half-width {
   .button {
     width: auto;
   }
   .ng-dialog__content {
     position: relative;
-  }
-  .ng-dialog__wrapper {
-    background: #f0f0f0;
   }
   .ng-dialog__header {
     background-color: #fff;
