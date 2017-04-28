@@ -1,4 +1,4 @@
-.taber__tab{
+.taber__tab {
   cursor: pointer;
   font-family: ProximaNovaReg;
   border-radius: 5px 5px 0 0;
@@ -9,12 +9,12 @@
   font-size: 12px;
   margin-bottom: -3px;
   position: relative;
-
-  &_active{
+  border: 1px solid transparent;
+  &_active {
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.06);
     box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
-    &:after{
+    &:after {
       content: '';
       display: block;
       position: absolute;
@@ -27,7 +27,7 @@
       margin-left: -10px;
       z-index: 1000;
     }
-    &:before{
+    &:before {
       content: '';
       display: block;
       position: absolute;

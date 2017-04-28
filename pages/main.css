@@ -6126,6 +6126,7 @@ body.ngdialog-open {
   font-size: 12px;
   margin-bottom: -3px;
   position: relative;
+  border: 1px solid transparent;
 }
 .taber__tab_active {
   background-color: #fff;
@@ -6222,7 +6223,7 @@ body.ngdialog-open {
   border-top: 1px solid #ecf2f5;
 }
 .notes-list__item .content {
-  margin: 0 20px;
+  margin: 0 30px 0 20px;
 }
 .notes-list__item .content .title {
   color: #2f3f4c;
@@ -6300,6 +6301,12 @@ body.ngdialog-open {
 .notes-list__item .actions .link .fa {
   line-height: 24px;
 }
+.notes-list__item .settings {
+  position: absolute;
+  right: 30px;
+  top: 22px;
+  z-index: 1;
+}
 .notes-list_noborder .notes-list__item + .notes-list__item {
   border-top: none;
 }
@@ -6310,7 +6317,7 @@ body.ngdialog-open {
   width: 25px;
   height: 25px;
   text-align: center;
-  display: inline-block;
+  display: block;
 }
 .settings__item:first-child {
   margin-bottom: 10px;
