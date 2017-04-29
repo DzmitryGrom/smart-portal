@@ -6175,6 +6175,7 @@ body.ngdialog-open {
   padding: 10px 30px 10px 40px;
   top: -5px;
   display: flex;
+  align-items: flex-end;
 }
 .notes-add:before {
   content: '';
@@ -6187,18 +6188,23 @@ body.ngdialog-open {
   height: 1px;
   background-color: #fff;
 }
-.notes-add input {
+.notes-add input,
+.notes-add textarea {
   flex: 1 0 30px;
   line-height: 1;
-  height: 36px;
   border: 1px solid lightgray;
   border-radius: 3px;
   padding: 0 10px;
   margin: 2px 10px 2px 35px;
+  font-size: 13px;
+  font-family: GothaProLig;
+}
+.notes-add textarea {
+  padding-top: 10px;
 }
 .notes-add .button {
   flex: 0 0 26px;
-  margin: 0;
+  margin: 0 0 5px 0;
   padding: 0;
   font-size: 18px;
   text-align: center;
