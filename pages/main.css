@@ -6242,7 +6242,7 @@ body.ngdialog-open {
   border-top: 1px solid #ecf2f5;
 }
 .notes-list__item .content {
-  margin: 0 30px 0 20px;
+  margin: 0 35px 0 20px;
 }
 .notes-list__item .content .title {
   color: #2f3f4c;
@@ -6263,6 +6263,12 @@ body.ngdialog-open {
   margin-top: 16px;
   color: #b0bfc9;
 }
+.notes-list__item .footer {
+  padding-top: 10px;
+}
+.notes-list__item .footer_right {
+  text-align: right;
+}
 .notes-list__item:first-child .decor {
   top: 20px;
 }
@@ -6271,6 +6277,16 @@ body.ngdialog-open {
 }
 .notes-list__item:first-child .decor:after {
   top: 5px;
+}
+.notes-list__item_removed .content .text {
+  font-size: 14px;
+  padding-left: 50px;
+  color: #aaaaaa;
+}
+.notes-list__item_delete .content .text {
+  border: 1px solid #f0f0f0;
+  border-radius: 3px;
+  padding: 15px;
 }
 .notes-list__item .decor {
   width: 1px;
@@ -6323,7 +6339,7 @@ body.ngdialog-open {
 .notes-list__item .settings {
   position: absolute;
   right: 30px;
-  top: 22px;
+  top: 20px;
   z-index: 1;
 }
 .notes-list_noborder .notes-list__item + .notes-list__item {
