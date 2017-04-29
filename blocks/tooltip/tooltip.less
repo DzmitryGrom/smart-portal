@@ -11,7 +11,6 @@
   min-height: 32px;
   line-height: 1;
   z-index: 3;
- 
   &__description {
     font-size: 12px;
     text-transform: uppercase;
@@ -34,11 +33,10 @@
     position: absolute;
     z-index: 1;
   }
-  
-  &_top{
+  &_top {
     bottom: 100%;
   }
-  &_error{
+  &_error {
     background-color: #f35e5e;
     color: #fff;
     font-size: 12px;
@@ -83,35 +81,33 @@
       position: static;
       padding: 10px 0px;
       overflow: visible;
-      
       .search {
         padding: 0 12px 10px 20px;
       }
-     
     }
     .checkbox-label {
       padding: 9px 15px 9px 20px;
       .icon {
         margin-right: 10px;
-        
       }
     }
   }
   .list {
-    .icon, .text {
+    .icon,
+    .text {
       display: inline-block;
       vertical-align: middle;
     }
-    .list__item_hovered{
+    .list__item_hovered {
       margin-left: 0;
       padding-left: 20px;
     }
     .list__item_hovered.list__item_iconed {
       position: relative;
       padding-left: 45px;
-      
     }
     .list__item_iconed-right {
+      padding-left: 0px;
       .icon {
         display: none;
       }
@@ -120,6 +116,11 @@
           display: inline-block;
         }
       }
+    }
+    .button_not-border {
+      padding-left: 0px;
+      text-transform: uppercase;
+      font-size: 12px;
     }
   }
   &_table {
@@ -131,7 +132,6 @@
       padding: 0;
       position: static;
       overflow: visible;
-      
     }
   }
 }
