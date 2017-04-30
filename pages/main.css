@@ -2411,6 +2411,9 @@ body {
   margin: 0;
   background-color: #f6f9fb;
 }
+a {
+  cursor: pointer;
+}
 .header {
   background-color: #fff;
   box-sizing: border-box;
@@ -6247,9 +6250,10 @@ body.ngdialog-open {
   align-items: flex-start;
   padding: 20px 30px;
   position: relative;
-}
-.notes-list__item + .notes-list__item {
   border-top: 1px solid #ecf2f5;
+}
+.notes-list__item:first-child {
+  border-top: none;
 }
 .notes-list__item .content {
   margin: 0 35px 0 20px;
