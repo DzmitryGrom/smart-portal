@@ -2368,8 +2368,12 @@
   src: url("fonts/ProximaNova-LightIt.otf") format("opentype");
 }
 @font-face {
-  font-family: ProximaNovaLig;
+  font-family: ProximaNovaLight;
   src: url("fonts/ProximaNova-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: ProximaNovaSem;
+  src: url("fonts/ProximaNova-Semibold.otf") format("opentype");
 }
 @font-face {
   font-family: ProximaNovaReg;
@@ -3336,8 +3340,8 @@ a {
   width: 100%;
 }
 .main > .sidebar {
-  width: 265px;
-  max-width: 265px;
+  width: 264px;
+  max-width: 264px;
 }
 .main > .sidebar_big {
   width: 320px;
@@ -3845,7 +3849,17 @@ a {
   justify-content: flex-start;
 }
 .category .tag__item_border {
-  margin-bottom: 9px;
+  margin-bottom: 4px;
+}
+.category__collapser {
+  margin-top: 25px;
+  position: relative;
+}
+.category__collapser .button_round {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  margin: -20px 0 0 -17px;
 }
 .category-form {
   background-color: #fff;
@@ -4176,8 +4190,8 @@ a {
 }
 .category__item {
   display: block;
-  color: #7e7e7e;
-  font-family: ProximaNovaLig;
+  color: #556066;
+  font-family: ProximaNovaLight;
   font-size: 16px;
   text-decoration: none;
   line-height: 34px;
@@ -4206,8 +4220,11 @@ a {
 .category__item_full-width {
   flex: 0 0 100%;
 }
+.category__item_add {
+  color: #9aa5ab;
+}
 .category_hover {
-  padding: 20px 0;
+  padding: 20px 8px;
 }
 .category_hover .category__item {
   padding: 0 26px;
@@ -4230,6 +4247,9 @@ a {
 .category_hover .category__item_active:after {
   content: "";
   margin-left: -36px;
+}
+.category_hover .solid {
+  margin: 10px 25px;
 }
 .category__item_input {
   border: 1px solid #dedede;
@@ -4480,7 +4500,7 @@ textarea {
   margin: -4px 0 0 -4px;
 }
 .category__item_title {
-  font-family: "ProximaNovaBold";
+  font-family: ProximaNovaSem;
   font-size: 16px;
   color: #121212;
 }
@@ -4491,7 +4511,7 @@ textarea {
   position: relative;
 }
 .category__item_active {
-  font-family: "ProximaNovaBold";
+  font-family: ProximaNovaReg;
   color: #61a3da;
   position: relative;
 }
@@ -4658,7 +4678,7 @@ textarea {
   display: block;
 }
 .tag_closed {
-  max-height: 85px;
+  max-height: 100px;
   overflow: hidden;
 }
 .tag .link {
@@ -4994,7 +5014,7 @@ tags-input .autocomplete .suggestion-item em {
   line-height: 20px;
   text-align: center;
   padding: 0 10px;
-  margin: 0 3px 5px;
+  margin: 0 2px 5px;
 }
 .tag__item_border-green {
   color: #3bc7ab;
