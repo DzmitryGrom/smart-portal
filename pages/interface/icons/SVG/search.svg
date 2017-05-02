@@ -1,9 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="56 -56 612 612" style="enable-background:new 56 -56 612 612;" xml:space="preserve">
-<path d="M322.3,474.6C176.5,474.6,58,355.7,58,209.3C58,63.1,176.5-56,322.3-56S586.7,62.9,586.7,209.3S468.1,474.6,322.3,474.6z
-	 M322.3-14.9C198.9-14.9,98.7,85.7,98.7,209.5S199.1,434,322.3,434S546,333.3,546,209.5S445.6-14.9,322.3-14.9z"/>
-<path d="M647.6,556c-5.3,0-10.3-1.9-14.4-6l-153-153.4c-8-8-8-20.8,0-28.8c8-8,20.8-8,28.8,0l153,153.6c8,8,8,20.8,0,28.8
-	C658.1,554.1,652.9,556,647.6,556z"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>icons / search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Smart-Portal-Elements" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Large-Device-Desktops" transform="translate(-597.000000, -1756.000000)">
+            <g id="icons-/-search" transform="translate(593.000000, 1751.000000)">
+                <g id="search" transform="translate(4.000000, 5.000000)">
+                    <path d="M11.4362127,10.7291059 C12.4110487,9.59233848 13,8.11494771 13,6.5 C13,2.91014913 10.0898509,0 6.5,0 C2.91014913,0 0,2.91014913 0,6.5 C0,10.0898509 2.91014913,13 6.5,13 C8.11494771,13 9.59233848,12.4110487 10.7291059,11.4362127 L14.5937738,15.3008806 C14.7850605,15.4921673 15.1080387,15.498563 15.3033009,15.3033009 C15.4928524,15.1137493 15.4974794,14.7903726 15.3008806,14.5937738 L11.4362127,10.7291059 Z" id="Combined-Shape" fill="#556066"></path>
+                    <circle id="Oval-7" fill="#FFFFFF" cx="6.5" cy="6.5" r="5.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>

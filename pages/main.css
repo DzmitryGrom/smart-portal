@@ -2356,12 +2356,20 @@
   src: url("fonts/ProximaNova-BoldIt.otf") format("opentype");
 }
 @font-face {
-  font-family: ProximaNovaLight;
-  src: url("fonts/ProximaNova-Light.otf") format("opentype");
+  font-family: ProximaNovaBoldIt;
+  src: url("fonts/ProximaNova-BoldIt.otf") format("opentype");
+}
+@font-face {
+  font-family: ProximaNovaExtrabold;
+  src: url("fonts/ProximaNova-Extrabold.otf") format("opentype");
 }
 @font-face {
   font-family: ProximaNovaLightIt;
   src: url("fonts/ProximaNova-LightIt.otf") format("opentype");
+}
+@font-face {
+  font-family: ProximaNovaLig;
+  src: url("fonts/ProximaNova-Light.otf") format("opentype");
 }
 @font-face {
   font-family: ProximaNovaReg;
@@ -2386,6 +2394,10 @@
 @font-face {
   font-family: GothaProBol;
   src: url("fonts/GothaProBol.otf") format("opentype");
+}
+@font-face {
+  font-family: GothaProMed;
+  src: url("fonts/GothaProMed.otf") format("opentype");
 }
 /*icons*/
 @font-face {
@@ -2425,7 +2437,7 @@ a {
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 calc((100% - 1230px) / 2);
-  min-height: 75px;
+  min-height: 72px;
   width: 100%;
   position: relative;
 }
@@ -2483,7 +2495,7 @@ a {
   margin: 0;
   flex: 0 1 auto;
   width: 176px;
-  font-family: AvenirNextCyrReg;
+  font-family: ProximaNovaReg;
   font-weight: normal;
 }
 .header__logo a {
@@ -2492,7 +2504,7 @@ a {
 }
 .header__logo b {
   color: #4c4c4c;
-  font-family: AvenirNextCyrBold;
+  font-family: ProximaNovaExtrabold;
   font-weight: normal;
   display: inline-block;
   padding: 0 4px;
@@ -2509,7 +2521,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 6px;
+  margin-bottom: -6px;
   width: 520px;
 }
 .nav__link {
@@ -2539,8 +2551,8 @@ a {
 }
 .nav__link_active {
   color: #61a3da;
-  border-bottom: 4px solid;
-  font-family: GothaProBol;
+  border-bottom: 2px solid;
+  font-family: ProximaNovaReg;
 }
 .header-side {
   display: flex;
@@ -3070,7 +3082,7 @@ a {
   font-size: 25px;
   display: inline-block;
   position: absolute;
-  left: 0px;
+  left: 5px;
   top: 50%;
   margin-top: -13px;
   width: 3em;
@@ -3284,7 +3296,7 @@ a {
 .header-profile__name {
   display: inline-block;
   font-family: GothaProReg;
-  font-size: 12px;
+  font-size: 14px;
   vertical-align: middle;
   line-height: 1;
   white-space: nowrap;
@@ -4165,8 +4177,8 @@ a {
 .category__item {
   display: block;
   color: #7e7e7e;
-  font-family: "ProximaNovaLight";
-  font-size: 15px;
+  font-family: ProximaNovaLig;
+  font-size: 16px;
   text-decoration: none;
   line-height: 34px;
 }
