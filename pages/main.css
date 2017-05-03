@@ -3863,9 +3863,9 @@ a {
 }
 .category-form {
   background-color: #fff;
-  min-width: 265px;
+  min-width: 292px;
   position: absolute;
-  left: 270px;
+  left: 280px;
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 5px;
@@ -3933,6 +3933,16 @@ a {
   flex: 1 0 30px;
   margin-bottom: 9px;
 }
+.category-form__label {
+  color: #afbcc2;
+  font-size: 12px;
+  margin-top: 24px;
+  font-family: GothaProLig;
+  text-transform: uppercase;
+}
+.category-form__label_not-margin {
+  margin: 0px;
+}
 .category-form__item {
   display: block;
   color: #7e7e7e;
@@ -3973,7 +3983,7 @@ a {
   border-radius: 2px;
 }
 .category-form__item_input > input {
-  font-family: "ProximaNovaReg";
+  font-family: ProximaNovaReg;
   font-size: 14px;
   padding: 0 11px;
   margin: 0;
@@ -4181,8 +4191,8 @@ a {
 .category__item-label {
   color: #afbcc2;
   font-size: 12px;
-  margin-top: 18px;
-  font-family: ProximaNovaLight;
+  margin-top: 24px;
+  font-family: GothaProLig;
   text-transform: uppercase;
 }
 .category__item-label_not-margin {
@@ -4260,7 +4270,7 @@ a {
 }
 .category__item_input input[type=text],
 .category__item_input input[type=password] {
-  font-family: "ProximaNovaReg";
+  font-family: ProximaNovaReg;
   font-size: 14px;
   padding: 0 11px 0 20px;
   margin: 0;
@@ -4503,6 +4513,7 @@ textarea {
   font-family: ProximaNovaSem;
   font-size: 16px;
   color: #121212;
+  line-height: 1;
 }
 .category__item_border-top {
   border-top: 1px solid #f0f0f0;
@@ -6413,10 +6424,23 @@ body.ngdialog-open {
 .settings__item .icon {
   line-height: 25px;
 }
+.radio-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .radio-button-label {
   font-size: 14px;
   cursor: default;
   user-select: none;
+}
+.radio-button-label .text {
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  color: #9aa5ab;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
 }
 .radio-button-label .radio-button {
   display: none;
@@ -6442,6 +6466,12 @@ body.ngdialog-open {
   top: 50%;
   left: 50%;
   margin: -5px 0 0 -5px;
+}
+.radio-button-label .radio-button:checked + .radio-button__indicator_blue:before {
+  background: #1f8ceb;
+}
+.radio-button-label .radio-button:checked + .radio-button__indicator_blue + .text {
+  color: #556066;
 }
 /*
 	Icon font

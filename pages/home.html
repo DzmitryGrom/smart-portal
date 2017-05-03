@@ -307,21 +307,36 @@
               Ничего не найденно
             </span> </div>
       </div>
-      <div style="top: 132px" class="category-form category-form_right"> <i class="category-form__arrow" style="left: -6px; top: 70px"></i>
-        <div class="category-form__item category__item_title category-form__item_icon"> <span class="text">Добавить раздел11</span> <span class="i-icon icon_category-form icon-cancel icon_green"></span> </div>
-        <div class="category-form__item category-form__item_input  category-form__item_with-error">
+      <div style="top: 175px" class="category-form category-form_right"> 
+        <i class="category-form__arrow" style="left: -6px; top: initial; bottom: 30px;"></i>
+        <div class="category-form__item category__item_title category-form__item_icon"> <span class="text">Добавить раздел</span> <span class="i-icon icon_category-form icon-cancel icon_green"></span> </div>
+        <div class="category-form__label">Название раздела</div>
+        <div class="category-form__item category-form__item_input  ">
           <div class="tooltip tooltip_error tooltip_top"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Недопустимые символы <i class="tooltip__arrow tooltip__arrow_red tooltip__arrow_bottom" style="left: 5px"></i> </div>
-          <input type='text' placeholder='Распространители'> </div>
-        <div class="category-form__item category-form__item_tag category-form__item_input  category-form__item_icon"> <span class="icon-group icon_blue"></span>
-          <div class="tag"> <span class="tag__item tag__item_closer">
-              <span class="tag__text">Менеджеры</span> <i class="i-closer"></i> </span> <span class="tag__item_closer">
-              <span class="tag__text">Игорь Павлов</span> <i class="i-closer"></i> </span> <span class="tag__item tag__item_closer">
-              <span class="tag__text">Стажеры</span> <i class="i-closer"></i> </span>
+          <input type='text' placeholder='Название'> 
+        </div>
+        <div class="category-form__label">Доступ к разделу</div>
+        <div class="category-form__item">
+          <div class="radio-button">
+            <label class="radio-button-label">
+              <input class="radio-button" name="user" type="radio"> 
+              <i class="radio-button__indicator radio-button__indicator_blue"></i>
+              <span class="text">Всем</span>
+            </label>
+            <label class="radio-button-label">
+              <input class="radio-button" name="user" type="radio"> 
+              <i class="radio-button__indicator radio-button__indicator_blue"></i>
+              <span class="text">Мне</span>
+            </label>
+            <label class="radio-button-label">
+            <input class="radio-button" name="user" type="radio"> 
+            <i class="radio-button__indicator radio-button__indicator_blue"></i>
+            <span class="text">Список</span>
+          </label>
           </div>
         </div>
-        <div class="category-form__footer">
-          <button class="button button_success" type="button">Сохранить</button>
-          <button class="button" type="button">Удалить</button>
+        <div class="category-form__footer category-form__footer_justify-center">
+          <button class="button" type="button">Сохранить</button>
         </div>
       </div>
     </div>
