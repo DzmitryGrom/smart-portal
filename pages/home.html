@@ -209,7 +209,7 @@
         </div>
       </div>
       <div class="category">
-        <div class="category__item category__item_title category__item_icon"> <span class="text">Добавить раздел1</span> <span class="i-icon icon_sidebar icon-cancel icon_green"></span> </div>
+        <div class="category__item category__item_title category__item_icon"> <span class="text">Добавить раздел</span> <span class="i-icon icon_sidebar icon-cancel icon_green"></span> </div>
         <div class="category__item category__item_input">
           <input type='text' placeholder='Распространители'> </div>
         <div class="category__item category__item_icon">
@@ -327,13 +327,49 @@
               Ничего не найденно
             </span> </div>
       </div>
-      <div style="top: 175px" class="category-form category-form_right"> 
+      <div style="top: 232px;display:none;" class="category-form category-form_right"> 
         <i class="category-form__arrow" style="left: -6px; top: initial; bottom: 30px;"></i>
-        <div class="category-form__item category__item_title category-form__item_icon"> <span class="text">Добавить раздел</span> <span class="i-icon icon_category-form icon-cancel icon_green"></span> </div>
+        <div class="category-form__item category__item_title category-form__item_icon"> <span class="text">Добавить раздел</span> 
+          <span class="i-icon icon_category-form icon-close"></span> 
+        </div>
         <div class="category-form__label">Название раздела</div>
         <div class="category-form__item category-form__item_input  ">
           <div class="tooltip tooltip_error tooltip_top"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Недопустимые символы <i class="tooltip__arrow tooltip__arrow_red tooltip__arrow_bottom" style="left: 5px"></i> </div>
           <input type='text' placeholder='Название'> 
+        </div>
+        <div class="category-form__label">Доступ к разделу</div>
+        <div class="category-form__item">
+          <div class="radio-button">
+            <label class="radio-button-label">
+              <input class="radio-button" name="user" type="radio"> 
+              <i class="radio-button__indicator radio-button__indicator_blue"></i>
+              <span class="text">Всем</span>
+            </label>
+            <label class="radio-button-label">
+              <input class="radio-button" name="user" type="radio"> 
+              <i class="radio-button__indicator radio-button__indicator_blue"></i>
+              <span class="text">Мне</span>
+            </label>
+            <label class="radio-button-label">
+            <input class="radio-button" name="user" type="radio"> 
+            <i class="radio-button__indicator radio-button__indicator_blue"></i>
+            <span class="text">Список</span>
+          </label>
+          </div>
+        </div>
+        <div class="category-form__footer category-form__footer_justify-center">
+          <button class="button" type="button">Сохранить</button>
+        </div>
+      </div>
+      <div style="top: 232px;display:;" class="category-form category-form_right"> 
+        <i class="category-form__arrow" style="left: -6px; top: initial; bottom: 30px;"></i>
+        <div class="category-form__item category__item_title category-form__item_icon"> <span class="text">Редактировать раздел</span> 
+          <span class="i-icon icon_category-form icon-close"></span> 
+        </div>
+        <div class="category-form__label">Название раздела</div>
+        <div class="category-form__item category-form__item_input  ">
+          <div class="tooltip tooltip_error tooltip_top"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Недопустимые символы <i class="tooltip__arrow tooltip__arrow_red tooltip__arrow_bottom" style="left: 5px"></i> </div>
+          <input type='text' placeholder='Название' value="Стартапы"> 
         </div>
         <div class="category-form__label">Доступ к разделу</div>
         <div class="category-form__item">

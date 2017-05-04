@@ -2949,124 +2949,136 @@ a {
   background-position: center center;
 }
 .icon-status:before {
-  content: "\e91e";
+  content: "\e914";
   color: #d8e2e9;
 }
 .icon-status:after {
-  content: "\e91f";
+  content: "\e915";
   margin-left: -1em;
   color: #ffffff;
 }
 .icon-heart:before {
-  content: "\e926";
+  content: "\e91f";
 }
 .icon-heart_active:before {
-  content: "\e900";
-}
-f .icon-help:before {
-  content: "\e901";
-}
-.icon-home:before {
-  content: "\e902";
-}
-.icon-instagram:before {
-  content: "\e903";
-}
-.icon-lamp:before {
-  content: "\e904";
-}
-.icon-leaf:before {
-  content: "\e905";
-}
-.icon-list:before {
-  content: "\e906";
-}
-.icon-locked:before {
-  content: "\e907";
-}
-.icon-mail:before {
-  content: "\e908";
-}
-.icon-notification:before {
-  content: "\e909";
+  content: "\e91e";
 }
 .icon-pencil:before {
-  content: "\e90a";
+  content: "\e900";
 }
 .icon-pin:before {
-  content: "\e90b";
+  content: "\e901";
 }
 .icon-plus-add:before {
-  content: "\e90c";
+  content: "\e902";
 }
 .icon-plus:before {
-  content: "\e90d";
+  content: "\e903";
 }
 .icon-scripts:before {
-  content: "\e90e";
+  content: "\e904";
 }
 .icon-search:before {
-  content: "\e90f";
+  content: "\e905";
 }
 .icon-star:before {
-  content: "\e910";
+  content: "\e906";
 }
 .icon-star-full:before {
-  content: "\e911";
+  content: "\e907";
 }
 .icon-star-rating:before {
-  content: "\e912";
+  content: "\e908";
 }
 .icon-tag:before {
-  content: "\e913";
+  content: "\e909";
 }
 .icon-team:before {
-  content: "\e914";
+  content: "\e90a";
 }
 .icon-trash:before {
-  content: "\e915";
+  content: "\e90b";
 }
 .icon-trashcan:before {
-  content: "\e916";
+  content: "\e90c";
 }
 .icon-unlink:before {
-  content: "\e917";
+  content: "\e90d";
 }
 .icon-up-arrow:before {
-  content: "\e918";
+  content: "\e90e";
 }
 .icon-vk:before {
-  content: "\e919";
+  content: "\e90f";
 }
 .icon-add-plus:before {
-  content: "\e91a";
+  content: "\e910";
 }
 .icon-book:before {
-  content: "\e91b";
+  content: "\e911";
 }
 .icon-cancel:before {
-  content: "\e91c";
+  content: "\e912";
 }
 .icon-chat:before {
-  content: "\e91d";
+  content: "\e913";
+}
+.icon-close:before {
+  content: "\e916";
+}
+.icon-comments:before {
+  content: "\e917";
 }
 .icon-crown:before {
-  content: "\e920";
+  content: "\e918";
 }
 .icon-facebook:before {
-  content: "\e921";
+  content: "\e919";
 }
 .icon-files:before {
-  content: "\e922";
+  content: "\e91a";
 }
 .icon-filter:before {
-  content: "\e923";
+  content: "\e91b";
 }
 .icon-glasses:before {
-  content: "\e924";
+  content: "\e91c";
 }
 .icon-hat:before {
+  content: "\e91d";
+}
+.icon-help:before {
+  content: "\e920";
+}
+.icon-home:before {
+  content: "\e921";
+}
+.icon-instagram:before {
+  content: "\e922";
+}
+.icon-lamp:before {
+  content: "\e923";
+}
+.icon-leaf:before {
+  content: "\e924";
+}
+.icon-link:before {
   content: "\e925";
+}
+.icon-list:before {
+  content: "\e926";
+}
+.icon-locked:before {
+  content: "\e927";
+}
+.icon-mail:before {
+  content: "\e928";
+}
+.icon-menu:before {
+  content: "\e929";
+}
+.icon-notification:before {
+  content: "\e92a";
 }
 /*icon_nav*/
 .icon_nav {
@@ -3976,6 +3988,11 @@ f .icon-help:before {
 .category-form__item_full-width {
   flex: 0 0 100%;
 }
+.category-form__item .i-icon {
+  font-size: 24px;
+  margin-top: -10px;
+  color: #c4c7cc;
+}
 .category-form__item_input {
   border: 1px solid #dedede;
   margin-top: 7px;
@@ -3984,7 +4001,8 @@ f .icon-help:before {
   border-radius: 2px;
 }
 .category-form__item_input > input {
-  font-family: ProximaNovaReg;
+  font-family: ProximaNovaSem;
+  color: #556066;
   font-size: 14px;
   padding: 0 11px;
   margin: 0;
@@ -3997,9 +4015,17 @@ f .icon-help:before {
 }
 .category-form__item_input > input::-webkit-input-placeholder {
   color: #b1b1b1;
+  font-family: ProximaNovaReg;
 }
 .category-form__item_input > input::-webkit-search-cancel-button {
   display: none;
+}
+.category-form__item_input > input::-moz-input-placeholder {
+  color: #b1b1b1;
+  font-family: ProximaNovaReg;
+}
+.category-form__item_input > input::-moz-placeholder {
+  font-family: ProximaNovaReg;
 }
 .category-form__item_input > input:focus {
   outline: none;
