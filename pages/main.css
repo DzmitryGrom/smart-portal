@@ -3096,8 +3096,11 @@ a {
 }
 /*icon-tools*/
 .icon-tools {
-  font-size: 24px;
   color: #9aa5ab;
+  font-size: 24px;
+}
+.icon-tools:hover {
+  color: #1f8ceb;
 }
 /*icon_header*/
 .icon_header {
@@ -3124,9 +3127,14 @@ a {
 }
 .icon_category-form.icon-pencil,
 .icon_sidebar.icon-pencil {
-  font-size: 12px;
-  margin-top: -16px;
-  color: #c0c0c0;
+  font-size: 16px;
+  margin-top: -18px;
+  color: #9aa5ab;
+}
+.category_hover .icon-plus-add {
+  margin-top: -12px;
+  font-size: 24px;
+  right: 20px;
 }
 .icon_category-form.icon-search,
 .icon_sidebar.icon-search {
@@ -3329,7 +3337,7 @@ a {
 .main {
   background-color: #f6f9fb;
   box-sizing: border-box;
-  padding: 20px calc((100% - 1230px) / 2);
+  padding: 48px calc((100% - 1230px) / 2);
   width: 100%;
 }
 .main > .content {
@@ -3872,11 +3880,10 @@ a {
 }
 .category__tools .link {
   font-size: 24px;
-  color: #9aa5ab;
 }
 .category-form {
   background-color: #fff;
-  min-width: 292px;
+  width: 282px;
   position: absolute;
   left: 280px;
   z-index: 10;
@@ -3885,7 +3892,7 @@ a {
   box-shadow: 0 3px 36px rgba(158, 157, 163, 0.54);
   box-sizing: border-box;
   margin-bottom: 14px;
-  padding: 20px 26px 25px 26px;
+  padding: 24px;
 }
 .category-form_right:after {
   content: "";
@@ -4262,17 +4269,14 @@ a {
   padding: 20px 8px;
 }
 .category_hover .category__item {
-  padding: 0 26px;
+  padding: 0 16px;
 }
 .category_hover .category__item:hover {
-  background-color: #f5f5f7;
+  background-color: #f6f9fb;
 }
 .category_hover .category__item_title:hover,
 .category_hover .category__item_not-hover:hover {
   background-color: #fff;
-}
-.category_hover .category__item:first-child {
-  padding: 0 26px;
 }
 .category_hover .category__item_icon .i-icon {
   right: 26px;
@@ -4280,12 +4284,15 @@ a {
 .category_hover .category__item_icon .i-icon.icon-pencil {
   right: 16px;
 }
+.category_hover .category__item_icon .i-icon.icon-plus-add {
+  right: 20px;
+}
 .category_hover .category__item_active:after {
   content: "";
   margin-left: -36px;
 }
 .category_hover .solid {
-  margin: 10px 25px;
+  margin: 10px 16px;
 }
 .category__item_input {
   border: 1px solid #dedede;
@@ -4441,7 +4448,7 @@ textarea {
   box-sizing: border-box;
   font-family: "ProximaNovaReg";
   line-height: 28px;
-  padding: 0 16px;
+  padding: 0 26px;
   margin: 0;
   white-space: nowrap;
   -webkit-appearance: none;
@@ -5042,7 +5049,7 @@ tags-input .autocomplete .suggestion-item em {
   margin-right: -27px;
   font-size: 14px;
   font-family: "ProximaNovaLight";
-  padding: 0 30px 0 11px;
+  padding: 0 30px 0 0px;
 }
 .category__item.category__item_submit_search .i-search {
   cursor: pointer;
