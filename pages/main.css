@@ -2815,13 +2815,33 @@ a {
   overflow: visible;
 }
 .tooltip__content_not-padding .search {
-  padding: 0 12px 10px 20px;
+  padding: 0 30px 5px 5px;
+}
+.tooltip__content_padding-top {
+  position: static;
+  padding: 10px 0px 0;
+  overflow: visible;
+}
+.tooltip__content_padding-top .search {
+  padding: 0 30px 5px 5px;
 }
 .tooltip__content .checkbox-label {
-  padding: 9px 15px 9px 20px;
+  padding: 8px 0px;
 }
 .tooltip__content .checkbox-label .icon {
   margin-right: 10px;
+}
+.tooltip__content .search {
+  margin: 11px 0;
+  position: relative;
+}
+.tooltip__content .search:before {
+  content: "";
+  border-bottom: 1px solid #dedede;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .tooltip .list .icon,
 .tooltip .list .text {
@@ -3138,8 +3158,9 @@ a {
 }
 .icon_category-form.icon-search,
 .icon_sidebar.icon-search {
-  font-size: 16px;
-  margin-top: -12px;
+  font-size: 24px;
+  margin-top: -17px;
+  color: #9aa5ab;
 }
 /*icon_tag*/
 .icon_tag {
@@ -4072,6 +4093,12 @@ a {
 .category-form__item_icon .icon-cancel {
   top: 15px;
 }
+.category-form__item_icon .icon-search {
+  font-size: 24px;
+  margin-top: -15px;
+  right: 10px;
+  color: #9aa5ab;
+}
 .category-form__footer {
   display: flex;
   justify-content: space-between;
@@ -4381,6 +4408,9 @@ textarea {
 .i-arrow_to_left {
   transform: rotate(135deg);
 }
+.i-arrow_to_right {
+  transform: rotate(-45deg);
+}
 .category__item_icon {
   position: relative;
 }
@@ -4526,7 +4556,8 @@ textarea {
 .checkbox {
   display: none;
 }
-.checkbox__indicator {
+.checkbox__indicator,
+.checkbox__indicator-solid {
   border: 1px solid lightgray;
   border-radius: 2px;
   box-sizing: border-box;
@@ -4536,18 +4567,39 @@ textarea {
   height: 1.14285em;
   position: relative;
 }
+.checkbox:checked + .checkbox__indicator-solid:before {
+  content: "";
+  width: 7px;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -1px 0 0 -4px;
+}
+.checkbox:checked + .checkbox__indicator-solid_blue:before {
+  content: "";
+  border-color: #1f8ceb;
+}
 .checkbox:checked + .checkbox__indicator:before {
   content: "";
   width: 7px;
   height: 3px;
   border: 1px solid transparent;
-  border-left-color: #3bc7ab;
-  border-bottom-color: #3bc7ab;
   position: absolute;
   transform: rotate(-45deg);
   top: 50%;
   left: 50%;
   margin: -4px 0 0 -4px;
+}
+.checkbox:checked + .checkbox__indicator_blue:before {
+  content: "";
+  border-left-color: #1f8ceb;
+  border-bottom-color: #1f8ceb;
+}
+.checkbox:checked + .checkbox__indicator_green:before {
+  content: "";
+  border-left-color: #3bc7ab;
+  border-bottom-color: #3bc7ab;
 }
 .category__item_title {
   font-family: ProximaNovaSem;
@@ -4605,18 +4657,20 @@ textarea {
   font-family: ProximaNovaBold;
   display: flex;
   align-items: center;
-  margin-bottom: 11px;
   justify-content: space-between;
 }
 .checkbox-group__title > .i-arrow {
   left: -3px;
+  color: #9aa5ab;
 }
 .checkbox-group__title .checkbox-text {
-  margin-left: 4px;
+  margin-left: 8px;
+  font-size: 14px;
+  font-family: ProximaNovaSem;
+  color: #556066;
 }
 .checkbox-group__item {
   display: flex;
-  margin-bottom: 10px;
 }
 .checkbox-group__item > .checkbox-label {
   display: flex;
@@ -4630,6 +4684,8 @@ textarea {
 }
 .checkbox-group__item > .checkbox-label > .checkbox-text {
   width: 140px;
+  font-family: ProximaNovaLight;
+  color: #556066;
 }
 .checkbox-group_closed > .checkbox-group__item {
   display: none;
@@ -4683,6 +4739,8 @@ textarea {
   width: 100%;
   box-sizing: border-box;
   -webkit-appearance: none;
+  font-size: 14px;
+  font-family: "ProximaNovaLight";
 }
 .search input::-webkit-input-placeholder {
   color: #b1b1b1;
@@ -6468,6 +6526,19 @@ body.ngdialog-open {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.radio-button_border-bottom {
+  position: relative;
+  padding-bottom: 16px;
+}
+.radio-button_border-bottom:before {
+  content: "";
+  border-bottom: 1px solid #dedede;
+  position: absolute;
+  left: -25px;
+  right: -25px;
+  bottom: 0px;
+  z-index: 2;
 }
 .radio-button-label {
   font-size: 14px;

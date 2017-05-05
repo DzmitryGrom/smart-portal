@@ -1,4 +1,5 @@
-.checkbox__indicator {
+.checkbox__indicator,
+.checkbox__indicator-solid {
   border: 1px solid lightgray;
   border-radius: 2px;
   box-sizing: border-box;
@@ -11,20 +12,50 @@
 
 .checkbox {
   &:checked {
+    + .checkbox__indicator-solid {
+      &:before {
+        content: "";
+        width: 7px;
+        border: 1px solid transparent;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -1px 0 0 -4px;
+      }
+      &_blue {
+        &:before {
+          content: "";
+          border-color: #1f8ceb;
+        }
+      }
+    }
     + .checkbox__indicator {
       &:before {
         content: "";
         width: 7px;
         height: 3px;
         border: 1px solid transparent;
-        border-left-color: #3bc7ab;
-        border-bottom-color: #3bc7ab;
         position: absolute;
         transform: rotate(-45deg);
         top: 50%;
         left: 50%;
         margin: -4px 0 0 -4px;
       }
+      &_blue {
+        &:before {
+          content: "";
+          border-left-color: #1f8ceb;
+          border-bottom-color: #1f8ceb;
+        }
+      }
+      &_green {
+        &:before {
+          content: "";
+          border-left-color: #3bc7ab;
+          border-bottom-color: #3bc7ab;
+        }
+      }
     }
+    
   }
 }

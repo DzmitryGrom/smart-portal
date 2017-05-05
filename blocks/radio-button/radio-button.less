@@ -2,6 +2,19 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  &_border-bottom {
+    position: relative;
+    padding-bottom: 16px;
+    &:before {
+      content: "";
+      border-bottom: 1px solid #dedede;
+      position: absolute;
+      left: -25px;
+      right: -25px;
+      bottom: 0px;
+      z-index: 2;
+    }
+  }
   &-label {
     font-size: 14px;
     cursor: default;
