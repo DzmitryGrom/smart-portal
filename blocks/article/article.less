@@ -40,9 +40,10 @@
       margin: 0 0 10px 0;
       &-text {
         display: inline-block;
-        font-family: "ProximaNovaBold";
-        font-size: 21px;
+        font-family: ProximaNovaSem;
+        font-size: 24px;
         font-weight: normal;
+        line-height: 1;
         .text, .i-icon, .fa {
           display: inline-block;
           vertical-align: middle;
@@ -50,7 +51,7 @@
         
         .i-icon {
           margin-left: 4px;
-          font-size: 16px;
+          font-size: 24px;
           cursor: pointer;
         }
         
@@ -60,6 +61,9 @@
         cursor: pointer;
         padding: 20px 10px;
         position: relative;
+        .icon-menu {
+          
+        }
         .tooltip {
           display: none;
           margin-top: -10px;
@@ -74,8 +78,8 @@
     }
     &__text {
       color: #616161;
-      font-family: "ProximaNovaReg";
-      font-size: 15px;
+      font-family: ProximaNovaLight;
+      font-size: 16px;
       line-height: 23px;
       padding-bottom: 28px; // height of footer
       img {
@@ -83,8 +87,9 @@
       }
       &_collapsed {
         overflow: hidden;
-        height: ~'calc(23px * 3)'; // 24px line height, 3 lines
+        height: ~'calc(23px * 2)'; // 24px line height, 3 lines
       }
+      
     }
     &__footer {
       .button_hidden {
@@ -93,6 +98,10 @@
       .button_pin_right {
         margin-left: auto;
       }
+    }
+    .content-footer {
+      height: 23px;
+      margin-top: -30px;
     }
   }
   .sidebar {
