@@ -2940,7 +2940,7 @@ a {
   z-index: 1;
 }
 .content > .tag {
-  margin-bottom: 20px;
+  margin-bottom: 9px;
 }
 [class^="icon-"],
 [class*=" icon-"] {
@@ -5113,17 +5113,30 @@ tags-input .autocomplete .suggestion-item em {
   cursor: pointer;
 }
 .tag__item_border {
-  color: #939393;
+  color: #556066;
   cursor: pointer;
   border-radius: 3px;
   border: 1px solid rgba(184, 184, 184, 0.44);
   box-sizing: border-box;
-  font-family: "ProximaNovaReg";
+  font-family: ProximaNovaReg;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 24px;
   text-align: center;
-  padding: 0 10px;
+  padding: 0 4px;
   margin: 0 2px 5px;
+}
+.tag__item_border .icon-list {
+  font-size: 24px;
+  color: #9aa5ab;
+}
+.tag__item_border .icon-close {
+  font-size: 15px;
+  color: #c4c7cc;
+}
+.tag__item_border .text,
+.tag__item_border .icon {
+  vertical-align: middle;
+  display: inline-block;
 }
 .tag__item_border-green {
   color: #3bc7ab;
