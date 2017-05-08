@@ -3396,11 +3396,11 @@ a {
   justify-content: space-between;
 }
 .main_justified_between .content {
-  margin: 0 0 0 27px;
   width: 100%;
 }
 .main > .sidebar {
   width: 264px;
+  margin: 0 27px 0 0;
   max-width: 264px;
 }
 .main > .sidebar_big {
@@ -4815,7 +4815,7 @@ textarea {
   display: block;
 }
 .tag_closed {
-  max-height: 118px;
+  max-height: 120px;
   overflow: hidden;
 }
 .tag .link {
@@ -5145,8 +5145,6 @@ tags-input .autocomplete .suggestion-item em {
   border-radius: 4px;
   border: 1px solid rgba(184, 184, 184, 0.44);
   box-sizing: border-box;
-  font-family: ProximaNovaReg;
-  font-size: 12px;
   line-height: 24px;
   text-align: center;
   padding: 0px;
@@ -5169,10 +5167,22 @@ tags-input .autocomplete .suggestion-item em {
 }
 .tag__item_border .text {
   color: #556066;
+  font-family: ProximaNovaReg;
+  font-size: 12px;
 }
 .tag__item_border-green {
   color: #3bc7ab;
   border: 1px solid #3bc7ab;
+}
+.tag__item_border-circle {
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  background-color: #f5f5f7;
+  border-radius: 100%;
+  font-size: 12px;
+  font-family: ProximaNovaReg;
+  line-height: 24px;
 }
 .tag__item_pull-right {
   position: absolute;
@@ -5216,19 +5226,21 @@ tags-input .autocomplete .suggestion-item em {
   padding: 24px;
   display: inline-block;
   box-sizing: border-box;
-  font-family: "ProximaNovaReg";
+  font-family: ProximaNovaReg;
   font-size: 14px;
   flex: 1 1 500px;
+}
+.article__content .text__gray {
+  color: #9aa5ab;
 }
 .article__link {
   display: block;
   cursor: pointer;
   color: #616161;
-  font-size: 15px;
+  font-size: 14px;
   font-family: ProximaNovaReg;
   text-decoration: none;
-  position: relative;
-  top: -5px;
+  margin-right: 8px;
 }
 .article__link .icon-unlink {
   color: black;
@@ -5240,15 +5252,15 @@ tags-input .autocomplete .suggestion-item em {
 .article .content__caption {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 0 0 10px 0;
+  margin: 0;
 }
 .article .content__caption-text {
   display: inline-block;
   font-family: ProximaNovaSem;
   font-size: 24px;
   font-weight: normal;
-  line-height: 1;
+  line-height: 28px;
+  margin-bottom: 8px;
 }
 .article .content__caption-text .text,
 .article .content__caption-text .i-icon,
@@ -5264,7 +5276,7 @@ tags-input .autocomplete .suggestion-item em {
 .article .content__caption-action {
   font-size: 0;
   cursor: pointer;
-  padding: 20px 10px;
+  padding: 0px;
   position: relative;
 }
 .article .content__caption-action .tooltip {
@@ -5280,6 +5292,7 @@ tags-input .autocomplete .suggestion-item em {
   font-family: ProximaNovaLight;
   font-size: 16px;
   line-height: 23px;
+  margin-top: 8px;
   padding-bottom: 28px;
 }
 .article .content__text img {
@@ -5406,7 +5419,7 @@ tags-input .autocomplete .suggestion-item em {
 .article__collapser {
   text-align: center;
   margin-bottom: -17px;
-  margin-top: -17px;
+  margin-top: -20px;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -5457,10 +5470,18 @@ tags-input .autocomplete .suggestion-item em {
   justify-content: center;
 }
 .article__footer {
-  border-top: 1px solid #f7f7f7;
+  position: relative;
   display: flex;
   align-items: flex-start;
   width: 100%;
+}
+.article__footer:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 24px;
+  right: 24px;
+  border-top: 1px solid #f7f7f7;
 }
 .article__footer .tag__item_border {
   padding: 0 8px;
@@ -5488,13 +5509,6 @@ tags-input .autocomplete .suggestion-item em {
 .article__footer {
   padding: 30px 24px 17px 24px;
 }
-.article__footer .text {
-  display: inline-block;
-  font-family: ProximaNovaLight;
-  font-size: 14px;
-  line-height: 20px;
-  margin-right: 20px;
-}
 .article__footer .text_small {
   font-size: 12px;
 }
@@ -5509,6 +5523,7 @@ tags-input .autocomplete .suggestion-item em {
   vertical-align: middle;
   display: inline-block;
   font-family: ProximaNovaReg;
+  font-size: 14px;
   color: #9aa5ab;
 }
 .article__footer .text__text ~ i {
