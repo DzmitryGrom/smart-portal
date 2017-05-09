@@ -17,21 +17,21 @@
     .text__gray {
       color: #9aa5ab;
     }
+   
   }
   &__link {
-    display: block;
+    display: inline-block;
     cursor: pointer;
     color: #616161;
     font-size: 14px;
     font-family: ProximaNovaReg;
     text-decoration: none;
     margin-right: 8px;
-	.icon-unlink {
-      color: black; 
-	}
+    position: relative;
+    top: -1px;
     .text {
       display: inline-block;
-      margin-left: 1px;
+      margin-left: 4px;
     }
   }
   .content {
@@ -63,6 +63,7 @@
         cursor: pointer;
         padding: 0px;
         position: relative;
+        margin-left: 50px;
         .icon-menu {
           
         }
@@ -152,5 +153,21 @@
       padding-bottom: 0;
     }
   }
- 
+  &__content_icon {
+    position: relative;
+    .content__caption, .article__link {
+      margin-left: 80px;
+    }
+    .content__text {
+      text-indent: 80px;
+    }
+    .pic {
+      display: inline-block;
+      position: absolute;
+      left: 24px;
+      top: 24px;
+      z-index: 1;
+      border-radius: 5px;
+    }
+  }
 }

@@ -5234,20 +5234,19 @@ tags-input .autocomplete .suggestion-item em {
   color: #9aa5ab;
 }
 .article__link {
-  display: block;
+  display: inline-block;
   cursor: pointer;
   color: #616161;
   font-size: 14px;
   font-family: ProximaNovaReg;
   text-decoration: none;
   margin-right: 8px;
-}
-.article__link .icon-unlink {
-  color: black;
+  position: relative;
+  top: -1px;
 }
 .article__link .text {
   display: inline-block;
-  margin-left: 1px;
+  margin-left: 4px;
 }
 .article .content__caption {
   display: flex;
@@ -5278,6 +5277,7 @@ tags-input .autocomplete .suggestion-item em {
   cursor: pointer;
   padding: 0px;
   position: relative;
+  margin-left: 50px;
 }
 .article .content__caption-action .tooltip {
   display: none;
@@ -5357,6 +5357,24 @@ tags-input .autocomplete .suggestion-item em {
 }
 .article_modal .article__content {
   padding-bottom: 0;
+}
+.article__content_icon {
+  position: relative;
+}
+.article__content_icon .content__caption,
+.article__content_icon .article__link {
+  margin-left: 80px;
+}
+.article__content_icon .content__text {
+  text-indent: 80px;
+}
+.article__content_icon .pic {
+  display: inline-block;
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  z-index: 1;
+  border-radius: 5px;
 }
 .article.article_transparent {
   background-color: transparent;
@@ -7577,9 +7595,8 @@ body .redactor-box-fullscreen {
   text-transform: uppercase;
 }
 .favicon {
-  width: 16px;
-  height: 16px;
-  border-radius: 2px;
+  display: inline-block;
+  font-size: 24px;
   vertical-align: middle;
 }
 .solid {
