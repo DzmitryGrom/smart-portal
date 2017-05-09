@@ -326,12 +326,46 @@
 .icon-circle {
   width: 6px;
   height: 6px;
-  background-color: #e4e5e9;
+  background-color: #c4c7cc;
   border-radius: 100%;
   display: inline-block;
   vertical-align: middle;
   margin: 0 2px;
-  &_active {
-    background-color: #c4c7cc;
+  opacity: 0.2;
+  -webkit-animation-duration: 750ms;
+  -o-animation-duration: 750ms;
+  animation-duration: 750ms;
+  -webkit-animation-name: pr_bt_anim;
+  -o-animation-name: pr_bt_anim;
+  animation-name: pr_bt_anim;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  &:nth-child(1) {
+    -webkit-animation-delay: 0ms;
+    -o-animation-delay: 0ms;
+    animation-delay: 0ms;
+  }
+  &:nth-child(2) {
+    -webkit-animation-delay: 180ms;
+    -o-animation-delay: 180ms;
+    animation-delay: 180ms;
+  }
+  &:nth-child(3) {
+    -webkit-animation-delay: 360ms;
+    -o-animation-delay: 360ms;
+    animation-delay: 360ms;
+  }
+  
+}
+@keyframes pr_bt_anim {
+  0% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
   }
 }
