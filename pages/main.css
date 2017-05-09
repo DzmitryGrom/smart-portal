@@ -3226,6 +3226,19 @@ a {
   font-size: 24px;
   color: #9aa5ab;
 }
+/*icon-circle*/
+.icon-circle {
+  width: 6px;
+  height: 6px;
+  background-color: #e4e5e9;
+  border-radius: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+.icon-circle_active {
+  background-color: #c4c7cc;
+}
 .list {
   padding: 0;
   margin: 0;
@@ -5295,6 +5308,9 @@ tags-input .autocomplete .suggestion-item em {
   margin-top: 8px;
   padding-bottom: 28px;
 }
+.article .content__text-not-margin {
+  margin: 0;
+}
 .article .content__text img {
   max-width: 100%;
 }
@@ -5417,7 +5433,7 @@ tags-input .autocomplete .suggestion-item em {
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 5px;
   box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
-  margin-bottom: 14px;
+  margin-bottom: 28px;
 }
 .article .caption {
   display: flex;
@@ -5482,7 +5498,8 @@ tags-input .autocomplete .suggestion-item em {
   background-color: #fff;
   border: 1px solid #dedede;
   border-radius: 3px;
-  width: 195px;
+  width: 192px;
+  height: 32px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -5490,7 +5507,7 @@ tags-input .autocomplete .suggestion-item em {
 .article__footer {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   width: 100%;
 }
 .article__footer:before {
@@ -5503,6 +5520,9 @@ tags-input .autocomplete .suggestion-item em {
 }
 .article__footer .tag__item_border {
   padding: 0 8px;
+}
+.article__footer .text_pin_right {
+  margin-bottom: 5px;
 }
 .article__footer .text_pin_right .icon_article {
   font-size: 24px;
