@@ -2994,7 +2994,7 @@ a {
   content: "\e903";
 }
 .icon-heart_active:before {
-  content: "\e902";
+  content: "\e904";
 }
 .icon-filter:before {
   content: "\e900";
@@ -3002,8 +3002,8 @@ a {
 .icon-glasses:before {
   content: "\e901";
 }
-.icon-heart-full:before {
-  content: "\e904";
+.icon-hat:before {
+  content: "\e902";
 }
 .icon-help:before {
   content: "\e905";
