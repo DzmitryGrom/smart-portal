@@ -23,31 +23,25 @@
     .i-icon {
       position: absolute;
       top: 50%;
-     
+      font-size: 24px;
+      margin-top: -12px;
     }
     .icon-search {
-      margin-top: -8px;
-      left: 20px;
+      left: 16px;
     }
-    .i-closer {
-      right: 20px;
-      width: 10px;
-      height: 10px;
-      margin-top: -5px;
-      &:after {
-        left: -3px;
-      }
-      &:before {
-        right: -3px;
-      }
-      &:after, &:before {
-        width: 5px;
-        height: 5px;
-      }
+    .icon-close {
+      right: 16px;
     }
   }
   .tooltip__content {
-    padding: 20px 0px 0px;
+    padding: 0px;
+    > .scroll {
+      padding: 0 23px;
+      > .solid {
+        margin: 0;
+      }
+    }
+    
   }
   .category__item_submit_search {
     padding-left: 10px;
@@ -60,8 +54,21 @@
     .list__item {
       padding-top: 10px;
     }
+    .tooltip__description {
+      margin: 0 0 0 8px;
+      line-height: 1;
+      font-family: GothaProLig;
+    }
     .tooltip__header {
-      padding: 0px 40px 0 45px;
+      padding: 0;
+      margin: 24px 0 16px;
+      .button {
+        padding-right: 0px;
+        line-height: 1;
+      }
+    }
+    .user-profile_horizontal_small .avatar {
+      margin-right: 16px;
     }
   }
   
@@ -73,9 +80,15 @@
     width: 265px;
     max-width: 265px;
   }
-  .datagrid__body .row__cell:first-child {
-    padding-left: 45px;
+  .datagrid {
+    margin-bottom: 16px;
+    &__body {
+      .row__cell {
+        padding: 6px 8px;
+      }
+    }
   }
+  
   &_full-width {
     .header-search__close {
       flex: 1 0 10px;

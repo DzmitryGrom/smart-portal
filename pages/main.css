@@ -2525,7 +2525,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: -6px;
+  margin-bottom: -4px;
   width: 520px;
 }
 .nav__link {
@@ -2590,30 +2590,23 @@ a {
 .header-search__input .i-icon {
   position: absolute;
   top: 50%;
+  font-size: 24px;
+  margin-top: -12px;
 }
 .header-search__input .icon-search {
-  margin-top: -8px;
-  left: 20px;
+  left: 16px;
 }
-.header-search__input .i-closer {
-  right: 20px;
-  width: 10px;
-  height: 10px;
-  margin-top: -5px;
-}
-.header-search__input .i-closer:after {
-  left: -3px;
-}
-.header-search__input .i-closer:before {
-  right: -3px;
-}
-.header-search__input .i-closer:after,
-.header-search__input .i-closer:before {
-  width: 5px;
-  height: 5px;
+.header-search__input .icon-close {
+  right: 16px;
 }
 .header-search .tooltip__content {
-  padding: 20px 0px 0px;
+  padding: 0px;
+}
+.header-search .tooltip__content > .scroll {
+  padding: 0 23px;
+}
+.header-search .tooltip__content > .scroll > .solid {
+  margin: 0;
 }
 .header-search .category__item_submit_search {
   padding-left: 10px;
@@ -2627,8 +2620,21 @@ a {
 .header-search .tooltip_search .list__item {
   padding-top: 10px;
 }
+.header-search .tooltip_search .tooltip__description {
+  margin: 0 0 0 8px;
+  line-height: 1;
+  font-family: GothaProLig;
+}
 .header-search .tooltip_search .tooltip__header {
-  padding: 0px 40px 0 45px;
+  padding: 0;
+  margin: 24px 0 16px;
+}
+.header-search .tooltip_search .tooltip__header .button {
+  padding-right: 0px;
+  line-height: 1;
+}
+.header-search .tooltip_search .user-profile_horizontal_small .avatar {
+  margin-right: 16px;
 }
 .header-search .search input {
   padding: 13px 50px;
@@ -2638,8 +2644,11 @@ a {
   width: 265px;
   max-width: 265px;
 }
-.header-search .datagrid__body .row__cell:first-child {
-  padding-left: 45px;
+.header-search .datagrid {
+  margin-bottom: 16px;
+}
+.header-search .datagrid__body .row__cell {
+  padding: 6px 8px;
 }
 .header-search_full-width .header-search__close {
   flex: 1 0 10px;
@@ -2969,133 +2978,121 @@ a {
   background-position: center center;
 }
 .icon-status:before {
-  content: "\e915";
+  content: "\e91e";
   color: #d8e2e9;
 }
 .icon-status:after {
-  content: "\e916";
+  content: "\e91f";
   margin-left: -1em;
   color: #ffffff;
 }
 .icon-heart:before {
-  content: "\e920";
-}
-.icon-heart_active:before {
-  content: "\e91f";
-}
-.icon-notification:before {
-  content: "\e900";
-}
-.icon-pencil:before {
-  content: "\e901";
-}
-.icon-pin:before {
-  content: "\e902";
-}
-.icon-plus-add:before {
   content: "\e903";
 }
-.icon-plus:before {
-  content: "\e904";
-}
-.icon-scripts:before {
-  content: "\e905";
-}
-.icon-search:before {
-  content: "\e906";
-}
-.icon-star:before {
-  content: "\e907";
-}
-.icon-star-full:before {
-  content: "\e908";
-}
-.icon-star-rating:before {
-  content: "\e909";
-}
-.icon-tag:before {
-  content: "\e90a";
-}
-.icon-team:before {
-  content: "\e90b";
-}
-.icon-trash:before {
-  content: "\e90c";
-}
-.icon-trashcan:before {
-  content: "\e90d";
-}
-.icon-unlink:before {
-  content: "\e90e";
-}
-.icon-up-arrow:before {
-  content: "\e90f";
-}
-.icon-vk:before {
-  content: "\e910";
-}
-.icon-menu:before {
-  content: "\e911";
-}
-.icon-add-plus:before {
-  content: "\e912";
-}
-.icon-book:before {
-  content: "\e913";
-}
-.icon-cancel:before {
-  content: "\e914";
-}
-.icon-close:before {
-  content: "\e917";
-}
-.icon-comments:before {
-  content: "\e918";
-}
-.icon-crown:before {
-  content: "\e919";
-}
-.icon-facebook:before {
-  content: "\e91a";
-}
-.icon-files:before {
-  content: "\e91b";
-}
-.icon-filter:before {
-  content: "\e91c";
-}
-.icon-glasses:before {
-  content: "\e91d";
+.icon-heart_active:before {
+  content: "\e902";
 }
 .icon-hat:before {
-  content: "\e91e";
+  content: "\e901";
 }
 .icon-help:before {
-  content: "\e921";
+  content: "\e904";
 }
 .icon-home:before {
-  content: "\e922";
+  content: "\e905";
 }
 .icon-instagram:before {
-  content: "\e923";
+  content: "\e906";
 }
 .icon-lamp:before {
-  content: "\e924";
+  content: "\e907";
 }
 .icon-leaf:before {
-  content: "\e925";
+  content: "\e908";
 }
 .icon-link:before {
-  content: "\e926";
+  content: "\e909";
 }
 .icon-list:before {
-  content: "\e927";
+  content: "\e90a";
 }
 .icon-locked:before {
-  content: "\e928";
+  content: "\e90b";
 }
 .icon-mail:before {
-  content: "\e929";
+  content: "\e90c";
+}
+.icon-menu:before {
+  content: "\e90d";
+}
+.icon-notification:before {
+  content: "\e90e";
+}
+.icon-pencil:before {
+  content: "\e90f";
+}
+.icon-pin:before {
+  content: "\e910";
+}
+.icon-plus-add:before {
+  content: "\e911";
+}
+.icon-scripts:before {
+  content: "\e912";
+}
+.icon-search:before {
+  content: "\e913";
+}
+.icon-star:before {
+  content: "\e914";
+}
+.icon-star-full:before {
+  content: "\e915";
+}
+.icon-star-rating:before {
+  content: "\e916";
+}
+.icon-tag:before {
+  content: "\e917";
+}
+.icon-team:before {
+  content: "\e918";
+}
+.icon-trash:before {
+  content: "\e900";
+}
+.icon-unlink:before {
+  content: "\e919";
+}
+.icon-up-arrow:before {
+  content: "\e91a";
+}
+.icon-vk:before {
+  content: "\e91b";
+}
+.icon-add-plus:before {
+  content: "\e91c";
+}
+.icon-book:before {
+  content: "\e91d";
+}
+.icon-comments:before {
+  content: "\e921";
+}
+.icon-crown:before {
+  content: "\e922";
+}
+.icon-document:before {
+  content: "\e923";
+}
+.icon-facebook:before {
+  content: "\e924";
+}
+.icon-filter:before {
+  content: "\e925";
+}
+.icon-glasses:before {
+  content: "\e926";
 }
 /*icon_nav*/
 .icon_nav {
@@ -3184,6 +3181,9 @@ a {
 }
 .icon_blue {
   color: #82dbc9;
+}
+.icon_dark-blue {
+  color: #1f8ceb;
 }
 .icon_red {
   color: #f76b64;
@@ -3594,9 +3594,9 @@ a {
 }
 .user-profile .bio__name,
 .user-profile .bio__caption {
-  color: #000000;
-  font-family: ProximaNovaReg;
-  font-size: 15px;
+  color: #556066;
+  font-family: ProximaNovaSem;
+  font-size: 16px;
   font-weight: normal;
 }
 .user-profile .bio__caption .select {
@@ -4565,7 +4565,7 @@ textarea {
   border: 1px solid;
   border-radius: 500px;
   box-sizing: border-box;
-  font-family: "ProximaNovaReg";
+  font-family: ProximaNovaReg;
   line-height: 28px;
   padding: 0 26px;
   margin: 0;
