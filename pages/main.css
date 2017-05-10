@@ -2982,124 +2982,124 @@ a {
   background-position: center center;
 }
 .icon-status:before {
-  content: "\e921";
+  content: "\e91c";
   color: #d8e2e9;
 }
 .icon-status:after {
-  content: "\e922";
+  content: "\e91d";
   margin-left: -1em;
   color: #ffffff;
 }
 .icon-heart:before {
-  content: "\e903";
-}
-.icon-heart_active:before {
-  content: "\e904";
-}
-.icon-filter:before {
   content: "\e900";
 }
-.icon-glasses:before {
+.icon-heart_active:before {
   content: "\e901";
 }
-.icon-hat:before {
+.icon-help:before {
   content: "\e902";
 }
-.icon-help:before {
-  content: "\e905";
-}
 .icon-home:before {
-  content: "\e906";
+  content: "\e903";
 }
 .icon-instagram:before {
-  content: "\e907";
+  content: "\e904";
 }
 .icon-lamp:before {
-  content: "\e908";
+  content: "\e905";
 }
 .icon-leaf:before {
-  content: "\e909";
+  content: "\e906";
 }
 .icon-link:before {
-  content: "\e90a";
+  content: "\e907";
 }
 .icon-list:before {
-  content: "\e90b";
+  content: "\e908";
 }
 .icon-locked:before {
-  content: "\e90c";
+  content: "\e909";
 }
 .icon-mail:before {
-  content: "\e90d";
+  content: "\e90a";
 }
 .icon-menu:before {
-  content: "\e90e";
+  content: "\e90b";
 }
 .icon-notification:before {
-  content: "\e90f";
+  content: "\e90c";
 }
 .icon-pencil:before {
-  content: "\e911";
+  content: "\e90d";
 }
 .icon-pin:before {
-  content: "\e912";
+  content: "\e90e";
 }
 .icon-plus-add:before {
-  content: "\e913";
+  content: "\e90f";
 }
 .icon-scripts:before {
-  content: "\e914";
+  content: "\e910";
 }
 .icon-search:before {
-  content: "\e915";
+  content: "\e911";
 }
 .icon-star:before {
-  content: "\e916";
+  content: "\e912";
 }
 .icon-star-full:before {
-  content: "\e917";
+  content: "\e913";
 }
 .icon-star-rating:before {
-  content: "\e918";
+  content: "\e914";
 }
 .icon-tag:before {
-  content: "\e919";
+  content: "\e915";
 }
 .icon-team:before {
-  content: "\e91a";
+  content: "\e916";
 }
 .icon-trash:before {
-  content: "\e91b";
+  content: "\e917";
 }
 .icon-unlink:before {
-  content: "\e91c";
+  content: "\e918";
 }
 .icon-up-arrow:before {
-  content: "\e91d";
+  content: "\e919";
 }
 .icon-vk:before {
-  content: "\e91e";
-}
-.icon-add-plus:before {
-  content: "\e91f";
+  content: "\e91a";
 }
 .icon-book:before {
-  content: "\e920";
+  content: "\e91b";
 }
 .icon-close:before {
-  content: "\e923";
+  content: "\e91e";
 }
 .icon-comments:before {
-  content: "\e924";
+  content: "\e91f";
 }
 .icon-crown:before {
-  content: "\e925";
+  content: "\e920";
 }
 .icon-document:before {
-  content: "\e926";
+  content: "\e921";
+}
+.icon-documents:before {
+  content: "\e922";
 }
 .icon-facebook:before {
-  content: "\e927";
+  content: "\e923";
+}
+.icon-filter:before {
+  content: "\e924";
+}
+.icon-glasses:before {
+  content: "\e925";
+}
+.icon-hat:before {
+  content: "\e926";
 }
 /*icon_nav*/
 .icon_nav {
@@ -4191,7 +4191,7 @@ a {
 .category-form__item_title {
   font-family: ProximaNovaSem;
   font-size: 16px;
-  color: #121212;
+  color: #556066;
   line-height: 1;
   margin-bottom: 24px;
 }
@@ -4373,10 +4373,14 @@ a {
   right: 20px;
 }
 .category__item .icon-pencil {
-  display: none;
   padding: 10px;
 }
-.category__item:hover .icon-pencil {
+.category__item .icon-pencil,
+.category__item .icon-filter {
+  display: none;
+}
+.category__item:hover .icon-pencil,
+.category__item:hover .icon-filter {
   display: inline-block;
 }
 .category__item_full-width {
@@ -4401,14 +4405,22 @@ a {
 .category_hover .category__item_not-hover:hover {
   background-color: #fff;
 }
+.category_hover .category__item_title:hover {
+  cursor: pointer;
+}
 .category_hover .category__item_icon .i-icon {
   right: 26px;
 }
 .category_hover .category__item_icon .i-icon.icon-pencil {
-  right: 16px;
+  right: 10px;
 }
 .category_hover .category__item_icon .i-icon.icon-plus-add {
   right: 20px;
+}
+.category_hover .category__item_icon .i-icon.icon-filter {
+  right: 15px;
+  margin-top: -12px;
+  color: #556066;
 }
 .category_hover .category__item_active:after {
   content: "";
@@ -4558,6 +4570,7 @@ textarea {
   right: 0;
   top: 50%;
   z-index: 1;
+  font-size: 24px;
 }
 .category__item_icon .i-icon_right {
   left: inherit;
@@ -4700,7 +4713,7 @@ textarea {
 .category__item_title {
   font-family: ProximaNovaSem;
   font-size: 16px;
-  color: #121212;
+  color: #556066;
   line-height: 1;
 }
 .category__item_border-top {
