@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 6px;
   &_border-bottom {
     position: relative;
     padding-bottom: 16px;
@@ -16,12 +17,13 @@
     }
   }
   &-label {
-    font-size: 14px;
+    line-height: 24px;
     cursor: default;
     user-select: none;
     .text {
       font-size: 14px;
       font-family: ProximaNovaReg;
+      line-height: 1;
       color: #9aa5ab;
       display: inline-block;
       vertical-align: middle;
@@ -36,21 +38,21 @@
       box-sizing: border-box;
       display: inline-block;
       vertical-align: middle;
-      width: 20px;
-      height: 20px;
+      width: 16px;
+      height: 16px;
       position: relative;
     }
     .radio-button:checked + .radio-button__indicator:before {
       content: "";
-      width: 8px;
-      height: 8px;
+      width: 6px;
+      height: 6px;
       border: 1px solid transparent;
       border-radius: 100%;
       background: #3bc7ab;
       position: absolute;
       top: 50%;
       left: 50%;
-      margin: -5px 0 0 -5px;
+      margin: -4px 0 0 -4px;
     }
     .radio-button:checked + .radio-button__indicator_blue:before {
       background: #1f8ceb;

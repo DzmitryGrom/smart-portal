@@ -2,7 +2,6 @@
   background-color: #fff;
   width: 282px;
   position: absolute;
-  left: 280px; 
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 5px;
@@ -31,7 +30,7 @@
       background-color: #fff;
       border-radius: 5px;
       height: 10px;
-      top: 0;
+      bottom: 0;
       left: 0;
       right: 0;
       position: absolute;
@@ -39,7 +38,7 @@
     }
   }
   &_with-error {
-        border: 1px solid #f9aeae;
+    border: 1px solid #f9aeae;
     position: relative;
   }
   &_left {
@@ -62,7 +61,6 @@
     background-color: #fff;
     width: 12px;
     position: absolute;
-    top: -7px;
     transform: rotate(45deg);
   }
   .tag{
@@ -78,5 +76,12 @@
       }
     }
   }
-  
+  .icon-close {
+    font-size: 24px;
+    color: #c4c7cc;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+  }
 }

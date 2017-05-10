@@ -2775,7 +2775,7 @@ a {
   padding: 11px;
   width: 100%;
   top: inherit;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   left: -1px;
   display: none;
 }
@@ -3586,6 +3586,9 @@ a {
   position: relative;
   left: -2px;
 }
+.sidebar .category-form {
+  left: 280px;
+}
 .user-profile {
   position: relative;
 }
@@ -3980,7 +3983,6 @@ a {
   background-color: #fff;
   width: 282px;
   position: absolute;
-  left: 280px;
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, 0.06);
   border-radius: 5px;
@@ -4007,7 +4009,7 @@ a {
   background-color: #fff;
   border-radius: 5px;
   height: 10px;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
   position: absolute;
@@ -4035,7 +4037,6 @@ a {
   background-color: #fff;
   width: 12px;
   position: absolute;
-  top: -7px;
   transform: rotate(45deg);
 }
 .category-form .tag {
@@ -4048,10 +4049,17 @@ a {
   flex: 1 0 30px;
   margin-bottom: 9px;
 }
+.category-form .icon-close {
+  font-size: 24px;
+  color: #c4c7cc;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1;
+}
 .category-form__label {
   color: #afbcc2;
   font-size: 12px;
-  margin-top: 24px;
   font-family: GothaProLig;
   text-transform: uppercase;
 }
@@ -4098,7 +4106,7 @@ a {
 .category-form__item_input {
   border: 1px solid #dedede;
   margin-top: 7px;
-  margin-bottom: 11px;
+  margin-bottom: 24px;
   line-height: 30px;
   border-radius: 2px;
 }
@@ -4172,6 +4180,13 @@ a {
   margin-top: -15px;
   right: 10px;
   color: #9aa5ab;
+}
+.category-form__item_title {
+  font-family: ProximaNovaSem;
+  font-size: 16px;
+  color: #121212;
+  line-height: 1;
+  margin-bottom: 24px;
 }
 .category-form__footer {
   display: flex;
@@ -6643,6 +6658,7 @@ body.ngdialog-open {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 6px;
 }
 .radio-button_border-bottom {
   position: relative;
@@ -6658,13 +6674,14 @@ body.ngdialog-open {
   z-index: 2;
 }
 .radio-button-label {
-  font-size: 14px;
+  line-height: 24px;
   cursor: default;
   user-select: none;
 }
 .radio-button-label .text {
   font-size: 14px;
   font-family: ProximaNovaReg;
+  line-height: 1;
   color: #9aa5ab;
   display: inline-block;
   vertical-align: middle;
@@ -6679,21 +6696,21 @@ body.ngdialog-open {
   box-sizing: border-box;
   display: inline-block;
   vertical-align: middle;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   position: relative;
 }
 .radio-button-label .radio-button:checked + .radio-button__indicator:before {
   content: "";
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
   border: 1px solid transparent;
   border-radius: 100%;
   background: #3bc7ab;
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -5px 0 0 -5px;
+  margin: -4px 0 0 -4px;
 }
 .radio-button-label .radio-button:checked + .radio-button__indicator_blue:before {
   background: #1f8ceb;
