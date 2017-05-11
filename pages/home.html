@@ -428,6 +428,9 @@
     </div>
     <div class="content">
       <div class="tag">
+        <div class="tag__item tag__item_border"> <span class="icon icon-home"></span> <span class="text">Все разделы</span>
+          <div class="icon icon-close"></div>
+        </div>
         <div class="tag__item tag__item_border"> <span class="icon icon-list"></span> <span class="text">Распространители</span>
           <div class="icon icon-close"></div>
         </div>
@@ -444,14 +447,14 @@
           <div class="content__caption">
             <div class="content__caption-text"> <span class="text">200 шаблонов эффективных заголовков</span> <span class="i-icon icon icon-star icon_orange"></span> <span class="i-icon icon-pin icon_blue"></span> </div>
             <div class="content__caption-action"> <span class="icon-menu"></span>
-              <div class="tooltip" style="width: 220px; right: -20px"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
+              <div class="tooltip" style="width: 224px; right: -20px;display:block"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 32px"></i>
                 <div class="content tooltip__content tooltip__content_not-padding">
                   <ul class="list">
                     <li class="list__item list__item_iconed list__item_hovered">
                       <div class="text"> <span class="fa i-icon icon_content icon-pencil"></span> <span class="text">Редактировать</span> </div>
                     </li>
                     <li class="list__item list__item_iconed list__item_hovered">
-                      <div class="text"> <span class="fa i-icon icon_content icon-locked"></span> <span class="text">Закрепить запись</span> </div>
+                      <div class="text"> <span class="fa i-icon icon_content icon-lock"></span> <span class="text">Закрепить запись</span> </div>
                     </li>
                     <li class="list__item list__item_iconed list__item_hovered">
                       <div class="text"> <span class="fa i-icon icon_content icon-star-full"></span> <span class="text">Добавить в избранное</span> </div>
@@ -460,7 +463,7 @@
                       <div class="text"> <span class="fa i-icon icon_content icon-unlink"></span> <span class="text">Скопировать ссылку</span> </div>
                     </li>
                     <li class="list__item list__item_iconed list__item_hovered" ng-click="openConfirm()">
-                      <div class="text"> <span class="fa i-icon icon_content icon-trashcan"></span> <span class="text">Удалить в корзину</span> </div>
+                      <div class="text"> <span class="fa i-icon icon_content icon-trash"></span> <span class="text">Удалить в корзину</span> </div>
                     </li>
                   </ul>
                 </div>
@@ -479,7 +482,7 @@
             <button class="tag__item button button_pseudo button_small tag__item_border-circle" type="button">+4</button>
           </div>
           <div style="position:relative;" class="text text_pin_right text_nowrap">
-            <div style="bottom: 100%;right: 25px;  " class="category-form category-form_top"> <i class="category-form__arrow category-form__arrow_down" style="bottom: 0px;margin-bottom:-7px;left: 120px;"></i> <span class="i-icon  icon-close"></span>
+            <div style="bottom: 100%;right: 25px;display:none" class="category-form category-form_top"> <i class="category-form__arrow category-form__arrow_down" style="bottom: 0px;margin-bottom:-7px;left: 120px;"></i> <span class="i-icon  icon-close"></span>
               <div class="category-form__label">Доступ к публикации</div>
               <div class="category-form__item">
                 <div class="radio-button radio-button_border-bottom">

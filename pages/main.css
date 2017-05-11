@@ -2867,7 +2867,7 @@ a {
 }
 .tooltip .list .list__item_hovered.list__item_iconed {
   position: relative;
-  padding-left: 45px;
+  padding-left: 47px;
 }
 .tooltip .list .list__item_iconed-right {
   padding-left: 0px;
@@ -3017,7 +3017,7 @@ a {
 .icon-list:before {
   content: "\e908";
 }
-.icon-locked:before {
+.icon-lock:before {
   content: "\e909";
 }
 .icon-mail:before {
@@ -3303,11 +3303,11 @@ a {
   width: 50%;
 }
 .list__item {
-  font-family: ProximaNovaLight;
+  font-family: ProximaNovaReg;
   box-sizing: border-box;
   font-size: 14px;
-  padding-top: .4em;
-  padding-bottom: .4em;
+  padding-top: .5em;
+  padding-bottom: .5em;
   border: 1px solid transparent;
   margin-left: 20px;
   color: transparent;
@@ -3344,13 +3344,12 @@ a {
 }
 .list__item_iconed .fa,
 .list__item_iconed .icon {
-  font-size: 16px;
+  font-size: 24px;
   position: absolute;
-  left: 8px;
-  width: 40px;
+  left: 15px;
   text-align: center;
-  height: 100%;
-  line-height: 100%;
+  top: 50%;
+  margin-top: -12px;
 }
 .list__item_iconed-right {
   position: relative;
@@ -5279,7 +5278,7 @@ tags-input .autocomplete .suggestion-item em {
   padding: 0px;
   margin: 0 2px 5px;
 }
-.tag__item_border .icon-list {
+.tag__item_border .icon {
   font-size: 24px;
   color: #9aa5ab;
   margin: 0 4px;
