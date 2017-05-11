@@ -3212,12 +3212,12 @@ a {
 .icon-actions {
   width: 48px;
   height: 48px;
-  background-color: #f4f4f4;
+  background-color: #fff;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-content: center;
-  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+  box-shadow: 0 3px 16px rgba(158, 157, 163, 0.3);
   text-align: center;
   margin-bottom: 16px;
 }
