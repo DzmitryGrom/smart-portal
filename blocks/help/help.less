@@ -1,0 +1,30 @@
+.help {
+  position: relative;
+  &__item {
+    display: none;
+    position: absolute; /* Абсолютное позиционирование */
+    left: -23px;
+    width: auto;
+    white-space: nowrap;
+    top: -50px;
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: #1ebfe9;
+    font-family: ProximaNovaReg;
+    line-height: 1;
+    font-size: 14px; /* Размер текста подсказки */
+    padding: 13px 16px; /* Поля */
+    color: #fff;
+    border-radius: 3px;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -18px;
+      left: 25px;
+      border: 10px solid transparent;
+      border-top: 10px solid  #1ebfe9;
+    }
+  }
+  &:hover &__item {
+    display: block;
+  }
+}
