@@ -3986,6 +3986,53 @@ a {
 .category__tools .link {
   font-size: 24px;
 }
+.category__form {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  box-shadow: 0 3px 36px rgba(158, 157, 163, 0.54);
+  box-sizing: border-box;
+  margin-bottom: 14px;
+  padding: 24px;
+}
+.category__form:after {
+  content: "";
+  width: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+  height: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+}
+.category__form .icon-close {
+  font-size: 24px;
+  color: #c4c7cc;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 1;
+}
+.category__form div.category__item {
+  padding: 0;
+}
+.category__form div.category__item:hover {
+  background-color: #fff;
+}
+.category__form .checkbox-group__item > .checkbox-label {
+  width: 100%;
+  justify-content: flex-start;
+}
+.category__form .checkbox-text {
+  margin-left: 8px;
+}
 .category-form {
   background-color: #fff;
   width: 282px;
@@ -4114,14 +4161,14 @@ a {
   border: 1px solid #dedede;
   margin-top: 7px;
   margin-bottom: 24px;
-  line-height: 30px;
+  line-height: 37px;
   border-radius: 2px;
 }
 .category-form__item_input > input {
   font-family: ProximaNovaReg;
   color: #556066;
   font-size: 14px;
-  padding: 0 11px;
+  padding: 0 16px;
   margin: 0;
   border: none;
   display: inline-block;
@@ -4433,20 +4480,21 @@ a {
   border: 1px solid #dedede;
   margin-top: 7px;
   margin-bottom: 11px;
-  line-height: 30px;
+  line-height: 37px;
   border-radius: 2px;
 }
 .category__item_input input[type=text],
 .category__item_input input[type=password] {
   font-family: ProximaNovaReg;
   font-size: 14px;
-  padding: 0 11px 0 20px;
+  padding: 0 11px 0 16px;
   margin: 0;
   border: none;
   display: inline-block;
   line-height: inherit;
   width: 100%;
   box-sizing: border-box;
+  color: #556066;
   -webkit-appearance: none;
 }
 .category__item_input input[type=text]::-webkit-input-placeholder,
@@ -6680,6 +6728,21 @@ body.ngdialog-open {
   justify-content: space-between;
   margin-top: 6px;
 }
+.radio-button_two-btns {
+  display: block;
+  margin-top: 8px;
+  font-size: 0px;
+}
+.radio-button_two-btns .radio-button-label:first-child .radio-button__indicator-rectangle {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  border-right: none;
+}
+.radio-button_two-btns .radio-button-label:last-child .radio-button__indicator-rectangle {
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-left: none;
+}
 .radio-button_border-bottom {
   position: relative;
   padding-bottom: 16px;
@@ -6719,6 +6782,23 @@ body.ngdialog-open {
   width: 16px;
   height: 16px;
   position: relative;
+  cursor: pointer;
+}
+.radio-button-label .radio-button__indicator-rectangle {
+  width: 50%;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  position: relative;
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  color: #9aa5ab;
+  text-align: center;
+  cursor: pointer;
+  line-height: 40px;
 }
 .radio-button-label .radio-button:checked + .radio-button__indicator:before {
   content: "";
@@ -6734,6 +6814,11 @@ body.ngdialog-open {
 }
 .radio-button-label .radio-button:checked + .radio-button__indicator_blue:before {
   background: #1f8ceb;
+}
+.radio-button-label .radio-button:checked + .radio-button__indicator-rectangle {
+  color: #fff;
+  background: #1f8ceb;
+  border-color: #1f8ceb;
 }
 .radio-button-label .radio-button:checked + .radio-button__indicator_blue + .text {
   color: #556066;

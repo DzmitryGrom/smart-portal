@@ -201,6 +201,55 @@
     <div class="sidebar">
       <div class="category category_hover">
         <div class="category__item category__item_title  category__item_icon"> <span class="text">Разделы</span> <span class="icon-filter i-icon  icon_sidebar"></span> </div>
+        <div class="category__form" style="top: 54px;"> <i class="category-form__arrow" style="top: -7px; right: 25px;;"></i> <span class="i-icon icon_category-form icon-close"></span>
+          <div class="category__item category__item_title category__item_icon"> <span class="text">Фильтр и вид</span> </div>
+          <div class="category__item-label">Вид</div>
+          <div class="category__item">
+            <div class="radio-button radio-button_two-btns">
+              <label class="radio-button-label">
+                <input class="radio-button" name="access" type="radio" checked>
+                <i class="radio-button__indicator-rectangle">Лента</i> 
+              </label>
+              <label class="radio-button-label">
+                <input class="radio-button" name="access" type="radio"> 
+                <i class="radio-button__indicator-rectangle">Таблица</i> 
+              </label>
+            </div>
+          </div>
+          <div class="category__item-label">Сортировка</div>
+          <div class="category__item category__item_drop category__item_input">
+            <div class="tooltip tooltip_error tooltip_top"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Недопустимые символы <i class="tooltip__arrow tooltip__arrow_red tooltip__arrow_bottom" style="left: 5px"></i> </div>
+            <input type="text" placeholder="Сортировка" value="По Алфовиту от А до Я"> 
+            <div class="i-arrow i-arrow_to_down"></div>
+          </div>
+          <div class="category__item-label">Тип</div>
+          <div class="category__item">
+            <div class="checkbox-group__item">
+              <label class="checkbox-label"> 
+                <input class="checkbox" type="checkbox" checked=""> 
+                <i class="checkbox__indicator checkbox__indicator_blue"></i>
+                <span class="checkbox-text">Ссылки</span>
+              </label>
+            </div>
+            <div class="checkbox-group__item">
+              <label class="checkbox-label"> 
+                <input class="checkbox" type="checkbox" checked=""> 
+                <i class="checkbox__indicator checkbox__indicator_blue"></i>
+                <span class="checkbox-text">Статьи</span>
+              </label>
+            </div>
+            <div class="checkbox-group__item">
+              <label class="checkbox-label"> 
+                <input class="checkbox" type="checkbox" checked=""> 
+                <i class="checkbox__indicator checkbox__indicator_blue"></i>
+                <span class="checkbox-text">Видео</span>
+              </label>
+            </div>
+          </div>
+          <div class="category__footer category__footer_justify-center">
+            <button class="button button_success" type="button">Применить</button>
+          </div>
+        </div>
         <div class="category__item category__item_not-hover">
           <div class="category__tools">
             <a href="#" class="link"> <span class="icon-tools icon-home"></span> </a>
@@ -431,7 +480,7 @@
           </div>
           <div style="position:relative;" class="text text_pin_right text_nowrap">
             <div style="bottom: 100%;right: 25px;  " class="category-form category-form_top"> <i class="category-form__arrow category-form__arrow_down" style="bottom: 0px;margin-bottom:-7px;left: 120px;"></i> <span class="i-icon  icon-close"></span>
-              <div class="category-form__label">Доступ к разделу</div>
+              <div class="category-form__label">Доступ к публикации</div>
               <div class="category-form__item">
                 <div class="radio-button radio-button_border-bottom">
                   <label class="radio-button-label">
@@ -588,7 +637,7 @@
           </div>
           <div style="position:relative;" class="text text_pin_right text_nowrap">
             <div style="bottom: 100%;right: 25px;" class="category-form category-form_top"> <i class="category-form__arrow category-form__arrow_down" style="bottom: 0px;margin-bottom:-7px;left: 120px;"></i> <span class="i-icon  icon-close"></span>
-              <div class="category-form__label">Доступ к разделу</div>
+              <div class="category-form__label">Доступ к публикации</div>
               <div class="category-form__item">
                 <div class="radio-button">
                   <label class="radio-button-label">

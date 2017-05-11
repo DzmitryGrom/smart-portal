@@ -1,0 +1,47 @@
+.category__form {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  box-shadow: 0 3px 36px rgba(158, 157, 163, 0.54);
+  box-sizing: border-box;
+  margin-bottom: 14px;
+  padding: 24px;
+  &:after {
+    content: "";
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .icon-close {
+    font-size: 24px;
+    color: #c4c7cc;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+  }
+  div.category__item  {
+    padding: 0;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  .checkbox-group__item > .checkbox-label {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .checkbox-text {
+    margin-left: 8px;
+  }
+}
