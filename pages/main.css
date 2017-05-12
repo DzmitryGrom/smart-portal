@@ -2452,7 +2452,7 @@ a {
   position: fixed;
   right: 50px;
   bottom: 50px;
-  z-index: 5;
+  z-index: 10;
   text-align: center;
 }
 .actions__wrapper_open .actions__item.link {
@@ -4032,7 +4032,7 @@ a {
 }
 .category-form {
   background-color: #fff;
-  width: 282px;
+  width: 285px;
   position: absolute;
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -4107,6 +4107,37 @@ a {
   right: 20px;
   top: 20px;
   z-index: 1;
+}
+.category-form_small {
+  padding: 16px 0 16px 16px;
+  width: 205px;
+}
+.category-form_small > .content {
+  padding: 0;
+}
+.category-form_small .category-form__item {
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.category-form_small .category-form__item:last-child {
+  margin-bottom: 0;
+}
+.category-form_small .pic,
+.category-form_small .text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.category-form_small .pic {
+  border-radius: 500px;
+}
+.category-form_small .text {
+  font-size: 14px;
+  margin-left: 8px;
+  font-family: ProximaNovaLight;
+  color: #556066;
+  max-width: 125px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .category-form__label {
   color: #afbcc2;
@@ -4837,9 +4868,12 @@ textarea {
   border-radius: 500px;
 }
 .checkbox-group__item > .checkbox-label > .checkbox-text {
-  width: 140px;
+  width: 135px;
   font-family: ProximaNovaLight;
   color: #556066;
+  margin-left: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .checkbox-group_closed > .checkbox-group__item {
   display: none;

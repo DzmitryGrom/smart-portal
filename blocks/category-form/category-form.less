@@ -1,6 +1,6 @@
 .category-form {
   background-color: #fff;
-  width: 282px;
+  width: 285px;
   position: absolute;
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -83,5 +83,36 @@
     right: 20px;
     top: 20px;
     z-index: 1;
+  }
+  &_small {
+    padding: 16px 0 16px 16px;
+    width: 205px;
+    > .content {
+      padding: 0;
+      
+    }
+    .category-form__item {
+      line-height: 1;
+      margin-bottom: 8px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    .pic, .text {
+      display: inline-block;
+      vertical-align: middle
+    }
+    .pic {
+      border-radius: 500px;
+    }
+    .text {
+      font-size: 14px;
+      margin-left: 8px;
+      font-family: ProximaNovaLight;
+      color: #556066;
+      max-width: 125px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
   }
 }
