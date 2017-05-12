@@ -58,6 +58,36 @@
       margin-right: 5px;
     }
   }
+  &_warning {
+    color: #f35e5e;
+    border: 1px solid #f35e5e;
+    background: #fef7f7;
+    position: fixed;
+    width: 60%;
+    margin-left: -30%;
+    max-width: 750px;
+    top: 80px;
+    left: 50%;
+    z-index: 15;
+    padding: 0 25px;
+    .text {
+      font-size: 14px;
+      font-family: ProximaNovaReg;
+      line-height: 56px;
+    }
+    .text, .icon {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .icon {
+      font-size: 24px;
+      margin-right: 11px;
+    }
+    &:after {
+      content: "";
+      display: none;
+    }
+  }
   &__content {
     overflow-y: auto;
     font-size: initial;
