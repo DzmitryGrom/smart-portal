@@ -7963,3 +7963,26 @@ body .redactor-box-fullscreen {
 .help:hover .help__item {
   display: block;
 }
+.scrolling {
+  position: fixed;
+  bottom: 51px;
+  left: 80px;
+  z-index: 10;
+}
+.scrolling .text {
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  color: #9aa5ab;
+  margin-left: 8px;
+}
+.scrolling .i-arrow,
+.scrolling .text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.scrolling .i-arrow_to_up {
+  margin-bottom: -9px;
+}
+.scrolling .i-arrow_to_down {
+  margin-top: -1px;
+}
