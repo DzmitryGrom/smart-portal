@@ -2584,7 +2584,7 @@ a {
 }
 .header-search__input {
   border: 1px solid #6fb8f9;
-  border-radius: 20px;
+  border-radius: 30px;
   flex: 1 0 300px;
   margin: 0 0 0 27px;
   width: 100%;
@@ -3976,11 +3976,6 @@ a {
 }
 .datagrid__body .row:hover {
   background: #f6f9fb;
-}
-.datagrid__body .row:hover .row__cell_solid {
-  background-color: #1f8ceb;
-  box-shadow: 0 4px 30px 0 rgba(24, 205, 232, 0.4);
-  -moz-box-shadow: 0px 5px 30px #18cde8;
 }
 .datagrid__body .row_active {
   background: #f6f9fb;
@@ -5418,7 +5413,7 @@ tags-input .autocomplete .suggestion-item em {
 .tag__item_border .icon {
   font-size: 24px;
   color: #9aa5ab;
-  margin: 0;
+  margin: 0 4px 0 0;
 }
 .tag__item_border .icon-close {
   font-size: 15px;
@@ -5434,7 +5429,6 @@ tags-input .autocomplete .suggestion-item em {
   color: #556066;
   font-family: ProximaNovaReg;
   font-size: 12px;
-  margin-left: 4px;
 }
 .tag__item_border-green {
   color: #3bc7ab;
@@ -5933,7 +5927,7 @@ tags-input .autocomplete .suggestion-item em {
   font-size: 14px;
   font-family: ProximaNovaReg;
   color: #aaaaaa;
-  margin-left: 24px;
+  margin-left: 110px;
 }
 .datagrid__footer_search .row {
   height: 73px;
