@@ -13,14 +13,19 @@
       border: none;
     }
     &__cell {
-      height: 100%;
+      height: 72px;
 //      display: flex;
-      padding: 15px;
+      padding: 11px 15px;
       flex-direction: row;
       align-items: center;
       box-sizing: border-box;
-      > .icon {
-        margin-right: 5px;
+      .user-profile {
+        .checkbox-label_inline {
+          margin-left: 9px;
+        }
+      }
+      .icon {
+        font-size: 24px;
       }
       > .text {
         color: #768894;
@@ -64,6 +69,9 @@
         box-shadow: 0 4px 30px 0 rgba(24, 205, 232, 0.4);
         -moz-box-shadow: 0px 5px 30px #18cde8;
       }
+    }
+    .tag__item_border {
+      padding: 0 8px;
     }
   }
 }

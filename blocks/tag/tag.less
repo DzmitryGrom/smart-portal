@@ -1,4 +1,8 @@
 .tag {
+  font-size: 0;
+  > .icon {
+    font-size: 24px;
+  }
   &_closed {
     max-height: 120px;
     overflow: hidden;
@@ -10,9 +14,14 @@
   &:empty {
     display: none;
   }
+  .tag__item_border {
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
   .checkbox-label_inline {
-    margin-left: 18px;
-    margin-right: 12px;
+    margin-left: 27px;
+    margin-right: 18px;
   }
   &_btns-right {
     padding-right: 210px;
@@ -31,10 +40,18 @@
       display: inline-block;
       vertical-align: middle;
       position: relative;
+      bottom: 4px;
+      margin-left: 4px;
       .tooltip {
-        width: 335px;
+        width: 324px;
         .scroll {
-          max-height: 195px;
+          max-height: 263px;
+          .list .text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 113px;
+          }
         }
       }
     }
