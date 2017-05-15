@@ -2519,9 +2519,10 @@ a {
 }
 .header__description {
   text-transform: uppercase;
-  font-size: 14px;
-  font-family: GothaProLig;
+  font-size: 11px;
+  font-family: GothaProReg;
   margin: 0;
+  color: #000000;
 }
 .nav {
   display: flex;
@@ -2548,9 +2549,12 @@ a {
 .nav__link_dropdown {
   text-transform: capitalize;
   font-size: 14px;
-  font-family: GothaProLig;
-  color: #62717b;
+  font-family: GothaProReg;
+  color: #556066;
   padding-top: 11px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding: 12px 24px;
   cursor: pointer;
 }
 .nav__link_dropdown .text {
@@ -2674,7 +2678,7 @@ a {
 }
 .header-search .serch__tooltip .category-form {
   width: 285px;
-  top: 35px;
+  top: 40px;
 }
 .header-search .serch__tooltip .category-form__arrow {
   right: 0px;
@@ -2701,7 +2705,7 @@ a {
   padding-bottom: 5px;
 }
 .header-search .serch__tooltip .category-form_tags .scroll {
-  max-height: 180px;
+  max-height: 160px;
   padding: 0 24px;
 }
 .header-search .serch__tooltip .category-form_tags .scroll .tag {
@@ -3996,9 +4000,6 @@ a {
   box-shadow: 0 4px 30px 0 rgba(24, 205, 232, 0.4);
   -moz-box-shadow: 0px 5px 30px #18cde8;
 }
-.datagrid__body .row .tag__item_border {
-  padding: 0 8px;
-}
 .datagrid_not-border .datagrid__body .row:hover {
   box-shadow: none;
 }
@@ -4195,9 +4196,6 @@ a {
   margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
-}
-.category-form .tag__item_border {
-  margin-bottom: 9px;
 }
 .category-form .icon-close {
   font-size: 24px;
@@ -5093,6 +5091,17 @@ textarea {
 .tag_relative {
   position: relative;
 }
+.tag_relative .category-form {
+  width: 265px;
+  padding: 0 0 16px 16px;
+}
+.tag_relative .category-form .tag {
+  margin-top: 0;
+}
+.tag_relative .category-form .scroll {
+  margin-top: 16px;
+  max-height: 120px;
+}
 .tag_closed {
   max-height: 120px;
   overflow: hidden;
@@ -5438,7 +5447,10 @@ tags-input .autocomplete .suggestion-item em {
   line-height: 24px;
   text-align: center;
   padding: 0px 4px;
-  margin: 0 4px 5px 0;
+  margin: 0 4px 4px 0;
+}
+.tag__item_border:last-child {
+  margin-right: 0px;
 }
 .tag__item_border .icon {
   font-size: 24px;
