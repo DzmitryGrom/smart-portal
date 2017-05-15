@@ -5474,6 +5474,7 @@ tags-input .autocomplete .suggestion-item em {
   font-family: ProximaNovaReg;
   line-height: 24px;
   margin-left: 2px;
+  position: relative;
 }
 .tag__item_pull-right {
   position: absolute;
@@ -6058,7 +6059,8 @@ tags-input .autocomplete .suggestion-item em {
   margin-bottom: 25px;
 }
 .scroll {
-  overflow-y: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .scroll::-webkit-scrollbar {
   width: 6px;
