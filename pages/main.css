@@ -4195,10 +4195,8 @@ a {
   margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 .category-form .tag__item_border {
-  flex: 1 0 30px;
   margin-bottom: 9px;
 }
 .category-form .icon-close {
@@ -5092,6 +5090,9 @@ textarea {
 .tag > .icon {
   font-size: 24px;
 }
+.tag_relative {
+  position: relative;
+}
 .tag_closed {
   max-height: 120px;
   overflow: hidden;
@@ -5437,7 +5438,7 @@ tags-input .autocomplete .suggestion-item em {
   line-height: 24px;
   text-align: center;
   padding: 0px 4px;
-  margin: 0 2px 5px;
+  margin: 0 4px 5px 0;
 }
 .tag__item_border .icon {
   font-size: 24px;
@@ -5473,7 +5474,6 @@ tags-input .autocomplete .suggestion-item em {
   font-size: 12px;
   font-family: ProximaNovaReg;
   line-height: 24px;
-  margin-left: 2px;
   position: relative;
 }
 .tag__item_pull-right {
