@@ -37,6 +37,20 @@
       z-index: 1;
     }
   }
+  &_bottom {
+    &:after {
+      content: "";
+      width: 100%;
+      background-color: #fff;
+      border-radius: 5px;
+      height: 10px;
+      top: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      z-index: 1;
+    }
+  }
   &_with-error {
     border: 1px solid #f9aeae;
     position: relative;
@@ -114,5 +128,9 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
+  }
+  .radio-button_two-btns {
+    margin-top: 7px;
+    margin-bottom: 24px;
   }
 }
