@@ -31,9 +31,22 @@
     
     position: relative;
     z-index: 1;
-    .button_not-border:hover .i-arrow {
-      border-right: 1px solid #556066;
-      border-bottom: 1px solid #556066;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 19px;
+      left: 24px;
+      right: 24px;
+      border-top: 1px solid #f7f7f7;
+      z-index: 1;
+    }
+    .button_not-border{
+      position: relative;
+      z-index: 2;
+      &:hover .i-arrow {
+        border-right: 1px solid #556066;
+        border-bottom: 1px solid #556066;
+      }
     }
   }
 }

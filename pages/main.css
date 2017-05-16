@@ -5609,6 +5609,15 @@ tags-input .autocomplete .suggestion-item em {
 .article__content .text__gray {
   color: #9aa5ab;
 }
+.article__content_small {
+  padding-bottom: 0px;
+}
+.article__content_small div.content__text {
+  padding-bottom: 0px;
+}
+.article__content_small + .article__footer {
+  padding-top: 10px;
+}
 .article__link {
   display: inline-block;
   cursor: pointer;
@@ -5825,6 +5834,19 @@ tags-input .autocomplete .suggestion-item em {
   position: relative;
   z-index: 1;
 }
+.article__collapser:before {
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: 24px;
+  right: 24px;
+  border-top: 1px solid #f7f7f7;
+  z-index: 1;
+}
+.article__collapser .button_not-border {
+  position: relative;
+  z-index: 2;
+}
 .article__collapser .button_not-border:hover .i-arrow {
   border-right: 1px solid #556066;
   border-bottom: 1px solid #556066;
@@ -5883,14 +5905,6 @@ tags-input .autocomplete .suggestion-item em {
   display: flex;
   align-items: flex-end;
   width: 100%;
-}
-.article__footer:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 24px;
-  right: 24px;
-  border-top: 1px solid #f7f7f7;
 }
 .article__footer .tag__item_border {
   padding: 0 8px;
