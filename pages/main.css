@@ -3088,133 +3088,190 @@ a {
   background-position: center center;
 }
 .icon-status:before {
-  content: "\e913";
+  content: "\e91e";
   color: #d8e2e9;
 }
 .icon-status:after {
-  content: "\e914";
+  content: "\e91f";
   margin-left: -1em;
   color: #ffffff;
 }
 .icon-heart:before {
-  content: "\e920";
+  content: "\e92e";
 }
 .icon-heart_active:before {
-  content: "\e921";
-}
-.icon-mail:before {
   content: "\e900";
 }
-.icon-menu:before {
-  content: "\e901";
-}
-.icon-notification:before {
-  content: "\e902";
-}
-.icon-pencil:before {
-  content: "\e903";
-}
-.icon-pin:before {
-  content: "\e904";
-}
-.icon-plus-add:before {
-  content: "\e905";
-}
-.icon-scripts:before {
-  content: "\e906";
-}
-.icon-search:before {
-  content: "\e907";
-}
-.icon-star:before {
-  content: "\e908";
-}
-.icon-star-full:before {
-  content: "\e909";
-}
-.icon-star-rating:before {
-  content: "\e90a";
-}
-.icon-tag:before {
-  content: "\e90b";
-}
-.icon-team:before {
-  content: "\e90c";
-}
-.icon-trash:before {
-  content: "\e90d";
-}
-.icon-unlink:before {
-  content: "\e90e";
-}
-.icon-up-arrow:before {
-  content: "\e90f";
-}
-.icon-video:before {
-  content: "\e910";
-}
-.icon-vk:before {
-  content: "\e911";
-}
-.icon-book:before {
-  content: "\e912";
-}
-.icon-close:before {
-  content: "\e915";
-}
-.icon-comments:before {
-  content: "\e916";
-}
-.icon-crown:before {
-  content: "\e917";
-}
-.icon-document:before {
-  content: "\e918";
-}
-.icon-documents:before {
-  content: "\e919";
-}
-.icon-done:before {
-  content: "\e91a";
-}
-.icon-facebook:before {
-  content: "\e91b";
-}
-.icon-filter:before {
-  content: "\e91c";
-}
-.icon-ghost:before {
-  content: "\e91d";
-}
-.icon-glasses:before {
-  content: "\e91e";
-}
-.icon-hat:before {
-  content: "\e91f";
-}
 .icon-help:before {
-  content: "\e922";
+  content: "\e901";
+  color: #556066;
 }
 .icon-home:before {
-  content: "\e923";
+  content: "\e902";
+  color: #556066;
 }
 .icon-instagram:before {
-  content: "\e924";
+  content: "\e903";
+  color: #d8e2e9;
 }
 .icon-lamp:before {
-  content: "\e925";
+  content: "\e904";
+  color: #f76b64;
 }
 .icon-leaf:before {
-  content: "\e926";
+  content: "\e905";
+  color: #7fd5c2;
 }
 .icon-link:before {
-  content: "\e927";
+  content: "\e906";
+  color: #556066;
 }
 .icon-list:before {
-  content: "\e928";
+  content: "\e907";
+  color: #9aa5ab;
 }
 .icon-lock:before {
+  content: "\e908";
+  color: #556066;
+}
+.icon-mail:before {
+  content: "\e909";
+  color: #7fd5c2;
+}
+.icon-menu:before {
+  content: "\e90a";
+  color: #c4c7cc;
+}
+.icon-notification:before {
+  content: "\e90b";
+  color: #556066;
+}
+.icon-pencil:before {
+  content: "\e90c";
+  color: #556066;
+}
+.icon-picture:before {
+  content: "\e90d";
+  color: #1f8ceb;
+}
+.icon-pin:before {
+  content: "\e90e";
+  color: #43c9ae;
+}
+.icon-plus-add:before {
+  content: "\e90f";
+  color: #9aa5ab;
+}
+.icon-scripts:before {
+  content: "\e910";
+  color: #556066;
+}
+.icon-search:before {
+  content: "\e911";
+  color: #556066;
+}
+.icon-sound:before {
+  content: "\e912";
+  color: #1f8ceb;
+}
+.icon-star:before {
+  content: "\e913";
+  color: #e9a93f;
+}
+.icon-star-full:before {
+  content: "\e914";
+  color: #556066;
+}
+.icon-star-rating:before {
+  content: "\e915";
+  color: #febc80;
+}
+.icon-tag:before {
+  content: "\e916";
+  color: #1f8ceb;
+}
+.icon-team:before {
+  content: "\e917";
+  color: #556066;
+}
+.icon-trash:before {
+  content: "\e918";
+  color: #556066;
+}
+.icon-unlink:before {
+  content: "\e919";
+  color: #556066;
+}
+.icon-up-arrow:before {
+  content: "\e91a";
+}
+.icon-video:before {
+  content: "\e91b";
+  color: #9aa5ab;
+}
+.icon-vk:before {
+  content: "\e91c";
+  color: #d8e2e9;
+}
+.icon-book:before {
+  content: "\e91d";
+  color: #556066;
+}
+.icon-close:before {
+  content: "\e920";
+  color: #556066;
+}
+.icon-comments:before {
+  content: "\e921";
+  color: #556066;
+}
+.icon-crown:before {
+  content: "\e922";
+  color: #f992a7;
+}
+.icon-document:before {
+  content: "\e923";
+  color: #1f8ceb;
+}
+.icon-documents:before {
+  content: "\e924";
+  color: #9aa5ab;
+}
+.icon-done:before {
+  content: "\e925";
+  color: #3bc7ab;
+}
+.icon-dropbox:before {
+  content: "\e926";
+  color: #9aa5ab;
+}
+.icon-emoji:before {
+  content: "\e927";
+  color: #556066;
+}
+.icon-facebook:before {
+  content: "\e928";
+  color: #d8e2e9;
+}
+.icon-filter:before {
   content: "\e929";
+  color: #556066;
+}
+.icon-ghost:before {
+  content: "\e92a";
+  color: #f35e5e;
+}
+.icon-glasses:before {
+  content: "\e92b";
+  color: #7bbafc;
+}
+.icon-googledrive:before {
+  content: "\e92c";
+  color: #9aa5ab;
+}
+.icon-hat:before {
+  content: "\e92d";
+  color: #556066;
 }
 /*icon_nav*/
 .icon_nav {
@@ -3397,6 +3454,9 @@ a {
   padding: 0;
   margin: 0;
 }
+.list_full .list__item .icon {
+  left: 0;
+}
 .list-col {
   font-size: 0;
   position: relative;
@@ -3430,6 +3490,9 @@ a {
 .list__item > .text {
   color: #979797;
 }
+.list__item_blue > .text {
+  color: #1f8ceb;
+}
 .list__item_hovered {
   cursor: pointer;
 }
@@ -3438,6 +3501,9 @@ a {
 }
 .list__item_hovered:hover .text {
   color: #556066;
+}
+.list__item_hovered.list__item_blue:hover .text {
+  color: #1f8ceb;
 }
 .list__item.active {
   background-color: #f6f9fb;
@@ -5609,6 +5675,10 @@ tags-input .autocomplete .suggestion-item em {
 .article__content .text__gray {
   color: #9aa5ab;
 }
+.article__content .pic {
+  border-radius: 5px;
+  margin: 0 6px 10px 0;
+}
 .article__content_small {
   padding-bottom: 0px;
 }
@@ -5617,6 +5687,9 @@ tags-input .autocomplete .suggestion-item em {
 }
 .article__content_small + .article__footer {
   padding-top: 10px;
+}
+.article__content_open .content-footer {
+  display: none;
 }
 .article__link {
   display: inline-block;
@@ -5765,7 +5838,6 @@ tags-input .autocomplete .suggestion-item em {
   left: 24px;
   top: 24px;
   z-index: 1;
-  border-radius: 5px;
 }
 .article.article_transparent {
   background-color: transparent;

@@ -9,6 +9,12 @@
   color: transparent;
   > .text {
     color: #979797;
+    
+  }
+  &_blue {
+    > .text {
+      color: #1f8ceb;
+    }   
   }
   &_hovered {
     cursor: pointer;
@@ -16,6 +22,12 @@
       background-color: #f6f9fb;
       .text {
         color: #556066;
+      }
+      
+    }
+    &.list__item_blue:hover {
+      .text {
+        color: #1f8ceb;
       }
     }
   }
