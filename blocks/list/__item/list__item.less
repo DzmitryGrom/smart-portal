@@ -7,10 +7,16 @@
   border: 1px solid transparent;
   margin-left: 20px;
   color: transparent;
+  > .text {
+    color: #979797;
+  }
   &_hovered {
     cursor: pointer;
     &:hover {
       background-color: #f6f9fb;
+      .text {
+        color: #556066;
+      }
     }
   }
   &.active {
@@ -30,9 +36,7 @@
       border-top-color: #f6f6f6;
     }
   }
-  > .text {
-    color: #979797;
-  }
+  
   &_iconed {
     margin-left: 0;
     padding-left: 2em;

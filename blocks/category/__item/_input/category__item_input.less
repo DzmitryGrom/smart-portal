@@ -1,9 +1,21 @@
 .category__item_input {
-  border: 1px solid #dedede;
+  border: 1px solid #e4e5e9;
   margin-top: 7px;
   margin-bottom: 11px;
   line-height: 37px;
   border-radius: 2px;
+  .icon-search {
+    color: #9aa5ab;
+  }
+  &:hover {
+    border: 1px solid #c4c7cc;
+    .icon-search {
+      color: #556066;
+    }
+  }
+  &_active {
+    border: 1px solid #1ebfe9;
+  }
   input[type=text],
   input[type=password] {
     font-family: ProximaNovaReg;
