@@ -1,0 +1,21 @@
+.dot {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding: 0 20px 0 0;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    top: 50%;
+    margin-top: -2px;
+    z-index: 2;
+    background-color: #9aa5ab;
+  }
+  &:after {
+    content: "";
+    right: 8px;
+  }
+}

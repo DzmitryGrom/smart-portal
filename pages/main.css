@@ -3104,174 +3104,132 @@ a {
 }
 .icon-help:before {
   content: "\e901";
-  color: #556066;
 }
 .icon-home:before {
   content: "\e902";
-  color: #556066;
 }
 .icon-instagram:before {
   content: "\e903";
-  color: #d8e2e9;
 }
 .icon-lamp:before {
   content: "\e904";
-  color: #f76b64;
 }
 .icon-leaf:before {
   content: "\e905";
-  color: #7fd5c2;
 }
 .icon-link:before {
   content: "\e906";
-  color: #556066;
 }
 .icon-list:before {
   content: "\e907";
-  color: #9aa5ab;
 }
 .icon-lock:before {
   content: "\e908";
-  color: #556066;
 }
 .icon-mail:before {
   content: "\e909";
-  color: #7fd5c2;
 }
 .icon-menu:before {
   content: "\e90a";
-  color: #c4c7cc;
 }
 .icon-notification:before {
   content: "\e90b";
-  color: #556066;
 }
 .icon-pencil:before {
   content: "\e90c";
-  color: #556066;
 }
 .icon-picture:before {
   content: "\e90d";
-  color: #1f8ceb;
 }
 .icon-pin:before {
   content: "\e90e";
-  color: #43c9ae;
 }
 .icon-plus-add:before {
   content: "\e90f";
-  color: #9aa5ab;
 }
 .icon-scripts:before {
   content: "\e910";
-  color: #556066;
 }
 .icon-search:before {
   content: "\e911";
-  color: #556066;
 }
 .icon-sound:before {
   content: "\e912";
-  color: #1f8ceb;
 }
 .icon-star:before {
   content: "\e913";
-  color: #e9a93f;
 }
 .icon-star-full:before {
   content: "\e914";
-  color: #556066;
 }
 .icon-star-rating:before {
   content: "\e915";
-  color: #febc80;
 }
 .icon-tag:before {
   content: "\e916";
-  color: #1f8ceb;
 }
 .icon-team:before {
   content: "\e917";
-  color: #556066;
 }
 .icon-trash:before {
   content: "\e918";
-  color: #556066;
 }
 .icon-unlink:before {
   content: "\e919";
-  color: #556066;
 }
 .icon-up-arrow:before {
   content: "\e91a";
 }
 .icon-video:before {
   content: "\e91b";
-  color: #9aa5ab;
 }
 .icon-vk:before {
   content: "\e91c";
-  color: #d8e2e9;
 }
 .icon-book:before {
   content: "\e91d";
-  color: #556066;
 }
 .icon-close:before {
   content: "\e920";
-  color: #556066;
 }
 .icon-comments:before {
   content: "\e921";
-  color: #556066;
 }
 .icon-crown:before {
   content: "\e922";
-  color: #f992a7;
 }
 .icon-document:before {
   content: "\e923";
-  color: #1f8ceb;
 }
 .icon-documents:before {
   content: "\e924";
-  color: #9aa5ab;
 }
 .icon-done:before {
   content: "\e925";
-  color: #3bc7ab;
 }
 .icon-dropbox:before {
   content: "\e926";
-  color: #9aa5ab;
 }
 .icon-emoji:before {
   content: "\e927";
-  color: #556066;
 }
 .icon-facebook:before {
   content: "\e928";
-  color: #d8e2e9;
 }
 .icon-filter:before {
   content: "\e929";
-  color: #556066;
 }
 .icon-ghost:before {
   content: "\e92a";
-  color: #f35e5e;
 }
 .icon-glasses:before {
   content: "\e92b";
-  color: #7bbafc;
 }
 .icon-googledrive:before {
   content: "\e92c";
-  color: #9aa5ab;
 }
 .icon-hat:before {
   content: "\e92d";
-  color: #556066;
 }
 /*icon_nav*/
 .icon_nav {
@@ -5694,7 +5652,7 @@ tags-input .autocomplete .suggestion-item em {
 .article__link {
   display: inline-block;
   cursor: pointer;
-  color: #616161;
+  color: #9aa5ab;
   font-size: 14px;
   font-family: ProximaNovaReg;
   text-decoration: none;
@@ -5702,9 +5660,15 @@ tags-input .autocomplete .suggestion-item em {
   position: relative;
   top: -1px;
 }
+.article__link .favicon {
+  margin-right: 4px;
+}
 .article__link .text {
   display: inline-block;
-  margin-left: 4px;
+}
+.article__link .name {
+  display: inline-block;
+  vertical-align: middle;
 }
 .article .content__caption {
   display: flex;
@@ -5753,7 +5717,7 @@ tags-input .autocomplete .suggestion-item em {
   font-family: ProximaNovaLight;
   font-size: 16px;
   line-height: 23px;
-  margin-top: 8px;
+  margin-top: 10px;
   padding-bottom: 28px;
 }
 .article .content__text-not-margin {
@@ -8229,4 +8193,25 @@ body .redactor-box-fullscreen {
 }
 .scrolling .i-arrow_to_down {
   margin-top: -1px;
+}
+.dot {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding: 0 20px 0 0;
+}
+.dot:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  top: 50%;
+  margin-top: -2px;
+  z-index: 2;
+  background-color: #9aa5ab;
+}
+.dot:after {
+  content: "";
+  right: 8px;
 }
