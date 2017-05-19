@@ -7,8 +7,11 @@
   border: 1px solid transparent;
   margin-left: 20px;
   color: transparent;
+  list-style: none;
   > .text {
     color: #979797;
+    font-family: ProximaNovaReg;
+    font-size: 14px;
     
   }
   &_blue {
@@ -44,8 +47,18 @@
     color: #61a3da;
   }
   &_dividered {
+
     &_top {
-      border-top-color: #f6f6f6;
+      position: relative;
+      &:before {
+        content: "";
+        border-top: 1px solid #f5f5f7;
+        position: absolute;
+        left: -10px;
+        right: -10px;
+        top: -1px;
+        z-index: 2;
+      }
     }
   }
   

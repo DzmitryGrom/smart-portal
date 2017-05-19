@@ -2965,7 +2965,7 @@ a {
 }
 .tooltip__content .search:before {
   content: "";
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #f5f5f7;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -3428,6 +3428,12 @@ a {
 .list_full .list__item .icon {
   left: 0;
 }
+.list_bordered {
+  border-top: 1px solid #f5f5f7;
+  border-bottom: 1px solid #f5f5f7;
+  padding: 15px 0;
+  margin: 5px 0;
+}
 .list-col {
   font-size: 0;
   position: relative;
@@ -3457,9 +3463,12 @@ a {
   border: 1px solid transparent;
   margin-left: 20px;
   color: transparent;
+  list-style: none;
 }
 .list__item > .text {
   color: #979797;
+  font-family: ProximaNovaReg;
+  font-size: 14px;
 }
 .list__item_blue > .text {
   color: #1f8ceb;
@@ -3489,7 +3498,16 @@ a {
   color: #61a3da;
 }
 .list__item_dividered_top {
-  border-top-color: #f6f6f6;
+  position: relative;
+}
+.list__item_dividered_top:before {
+  content: "";
+  border-top: 1px solid #f5f5f7;
+  position: absolute;
+  left: -10px;
+  right: -10px;
+  top: -1px;
+  z-index: 2;
 }
 .list__item_iconed {
   margin-left: 0;
@@ -4308,11 +4326,32 @@ a {
   margin-top: 7px;
   margin-bottom: 24px;
 }
+.category-form_not-padding {
+  padding: 16px 0;
+}
+.category-form_not-padding .list__item_hovered {
+  padding: 2px 16px;
+  margin: 0px 8px;
+}
+.category-form_not-padding .list__item_hovered .text {
+  color: #556066;
+}
+.category-form_not-padding .search {
+  padding: 0 24px 5px;
+}
+.category-form_not-padding .search .icon-search {
+  right: 20px;
+}
 .category-form__label {
   color: #afbcc2;
   font-size: 12px;
   font-family: GothaProLig;
   text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.category-form__label_xs {
+  margin-bottom: 10px;
 }
 .category-form__label_not-margin {
   margin: 0px;
@@ -4356,8 +4395,8 @@ a {
 }
 .category-form__item_input {
   border: 1px solid #e4e5e9;
-  margin-top: 7px;
-  margin-bottom: 24px;
+  margin-top: 0px;
+  margin-bottom: 22px;
   line-height: 37px;
   border-radius: 2px;
 }
@@ -4446,7 +4485,7 @@ a {
 }
 .category-form__item_title {
   line-height: 1;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .category-form__item_title .text {
   font-family: ProximaNovaSem;
@@ -4456,7 +4495,7 @@ a {
 .category-form__footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
+  margin-top: 22px;
 }
 .category-form__footer_justify-center {
   justify-content: center;
@@ -4688,6 +4727,17 @@ a {
 }
 .category_hover .solid {
   margin: 10px 16px;
+}
+.category_hover .icon-filter {
+  font-size: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 2;
+  display: none;
+}
+.category_hover:hover .icon-filter {
+  display: inline-block;
 }
 .category__item_input {
   border: 1px solid #e4e5e9;
@@ -5487,7 +5537,7 @@ tags-input .autocomplete .suggestion-item em {
   content: "";
   border-style: solid;
   border-color: #3e3e3e;
-  border-width: 1px;
+  border-width: 2px;
   display: block;
   width: 4px;
   height: 4px;
@@ -5533,7 +5583,7 @@ tags-input .autocomplete .suggestion-item em {
 }
 .category__item.category__item_submit_search .search:before {
   content: "";
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #f5f5f7;
   position: absolute;
   bottom: 0;
   left: -26px;
@@ -6619,12 +6669,6 @@ body.ngdialog-open {
 .ngdialog_half-width .tooltip_search .scroll .list__item_active > .text {
   color: #000000;
 }
-.ngdialog_full-width .category-form_right,
-.ngdialog_half-width .category-form_right {
-  top: 62px;
-  left: 240px;
-  display: none;
-}
 .ngdialog_full-width .category-form__arrow,
 .ngdialog_half-width .category-form__arrow {
   left: -6px;
@@ -7046,7 +7090,7 @@ body.ngdialog-open {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 6px;
+  margin-top: 0px;
 }
 .radio-button_two-btns {
   display: block;
@@ -7069,7 +7113,7 @@ body.ngdialog-open {
 }
 .radio-button_border-bottom:before {
   content: "";
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #f5f5f7;
   position: absolute;
   left: -25px;
   right: -25px;
