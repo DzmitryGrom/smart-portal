@@ -3290,12 +3290,6 @@ a {
 .icon_category-form.icon-cancel:hover {
   cursor: pointer;
 }
-.icon_category-form.icon-pencil,
-.icon_sidebar.icon-pencil {
-  font-size: 16px;
-  margin-top: -18px;
-  color: #9aa5ab;
-}
 .category_hover .icon-plus-add {
   margin-top: -12px;
   font-size: 24px;
@@ -3434,6 +3428,11 @@ a {
   padding: 15px 0;
   margin: 5px 0;
 }
+.list_border-top {
+  border-top: 1px solid #f5f5f7;
+  padding: 15px 0;
+  margin: 5px 0;
+}
 .list-col {
   font-size: 0;
   position: relative;
@@ -3533,13 +3532,14 @@ a {
 .list__item_iconed-right .fa,
 .list__item_iconed-right .icon {
   right: 0;
-  font-size: 16px;
+  font-size: 24px;
   position: absolute;
   min-width: 33px;
   text-align: center;
   line-height: 100%;
   top: 50%;
-  margin-top: -18px;
+  margin-top: -12px;
+  color: #9aa5ab;
   display: none;
 }
 .list__item_iconed-right input {
@@ -3547,6 +3547,10 @@ a {
   max-width: 195px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.list__item_iconed-right:hover .fa,
+.list__item_iconed-right .icon {
+  display: inline-block;
 }
 .list__item_iconed input {
   border: none;
@@ -4332,9 +4336,6 @@ a {
 .category-form_not-padding .list__item_hovered {
   padding: 2px 16px;
   margin: 0px 8px;
-}
-.category-form_not-padding .list__item_hovered .text {
-  color: #556066;
 }
 .category-form_not-padding .search {
   padding: 0 24px 5px;
