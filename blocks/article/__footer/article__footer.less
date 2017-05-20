@@ -6,26 +6,31 @@
   .tag__item_border {
     padding: 0 8px;
   }
-  .text_pin_right {
-    margin-bottom: 5px;
-    .icon_article {
-      font-size: 24px;
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0 4px 0 20px;
-      color: #979797;
-      &:hover {
-        cursor: pointer;
+  .text_pin {
+    &__item {
+      cursor: pointer;
+      &:hover .icon_article {
         color: #556066;
-      }
-      &.icon-heart {
-        &:hover {
-          color: #f15f5e;
-        }
-        &_active {
+        &.icon-heart {
           color: #f15f5e;
         }
       }
     }
+    &_right {
+      margin-bottom: 5px;
+      .icon_article {
+        font-size: 24px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 4px 0 20px;
+        color: #979797;
+        &.icon-heart {
+          &_active {
+            color: #f15f5e;
+          }
+        }
+      }
+    }
+    
   }
 }

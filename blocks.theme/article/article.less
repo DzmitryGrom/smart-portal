@@ -28,7 +28,7 @@
     margin-bottom: -17px;
     margin-top: -20px;
     width: 100%;
-    
+    cursor: pointer;
     position: relative;
     z-index: 1;
     &:before {
@@ -43,9 +43,16 @@
     .button_not-border{
       position: relative;
       z-index: 2;
-      &:hover .i-arrow {
-        border-right: 1px solid #556066;
-        border-bottom: 1px solid #556066;
+      
+    }
+    &:hover .i-arrow {
+      border-right: 1px solid #556066;
+      border-bottom: 1px solid #556066;
+    }
+    &:hover {
+      
+      &:before {
+        border-top: 1px solid #556066;
       }
     }
   }
