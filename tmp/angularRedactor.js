@@ -1,8 +1,6 @@
+
 var redactorOptions = {
-  convertLinks: false,
-  linkify: false,
-  focus: false,
-  minHeight: 150,
+  minHeight: 20,
   plugins: ['fullscreen', 'iframeinsert', 'video', 'fontcolor', 'fontfamily', 'fontsize', 'table'],
   buttons: [
     'html',

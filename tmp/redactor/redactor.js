@@ -111,7 +111,7 @@
 		focus: false,
 		focusEnd: false,
 
-		placeholder: false,
+		placeholder: true,
 
 		visual: true,
 		tabindex: false,

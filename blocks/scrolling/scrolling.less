@@ -3,6 +3,7 @@
   bottom: 51px;
   left: 80px;
   z-index: 10;
+  cursor: pointer;
   .text {
     font-size: 14px;
     font-family: ProximaNovaReg;
@@ -19,6 +20,15 @@
     }
     &_to_down {
       margin-top: -1px;
+    }
+  }
+  &:hover {
+    .text {
+      color: #556066;
+    }
+    .i-arrow {
+      border-right: 1px solid #556066;
+      border-bottom: 1px solid #556066;
     }
   }
 }
