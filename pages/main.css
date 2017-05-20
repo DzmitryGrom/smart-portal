@@ -2433,7 +2433,7 @@ a {
 .header {
   background-color: #fff;
   box-sizing: border-box;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.01);
+  box-shadow: 0 0px 40px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -4694,6 +4694,11 @@ a {
 .category__item_full-width {
   flex: 0 0 100%;
 }
+.category__item_full-width .i-icon {
+  right: inherit;
+  left: 8px;
+  margin-top: -12px;
+}
 .category__item_add {
   color: #9aa5ab;
 }
@@ -4947,6 +4952,24 @@ textarea {
 }
 .button:disabled {
   cursor: default;
+}
+.button_load {
+  border: none;
+}
+.button_load .icon {
+  font-size: 24px;
+}
+.button_load .text {
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+}
+.button_load .icon,
+.button_load .text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.button_load input {
+  display: none;
 }
 .button {
   min-width: 100px;
@@ -5732,6 +5755,9 @@ tags-input .autocomplete .suggestion-item em {
 .article__content_open .content-footer {
   display: none;
 }
+.article__content_center {
+  text-align: center;
+}
 .article__link {
   display: inline-block;
   cursor: pointer;
@@ -5860,7 +5886,7 @@ tags-input .autocomplete .suggestion-item em {
 .article_modal .category__item_tag .tag {
   margin-top: -29px;
 }
-.article_modal .tag__item tag__item_closer {
+.article_modal .tag__item .tag__item_closer {
   margin-bottom: 3px;
 }
 .article_modal .category__item_input {
@@ -5892,7 +5918,7 @@ tags-input .autocomplete .suggestion-item em {
   box-shadow: none;
   position: relative;
 }
-.article.article_transparent .icon {
+.article.article_transparent > .icon {
   margin: 0 auto 32px;
 }
 .article.article_transparent .icon-favorites,
@@ -5910,7 +5936,7 @@ tags-input .autocomplete .suggestion-item em {
   margin-right: -210px;
   right: 50%;
 }
-.article.article_transparent .text {
+.article.article_transparent > .text {
   font-size: 16px;
   font-family: ProximaNovaSem;
   color: #afafaf;
@@ -6552,15 +6578,32 @@ body.ngdialog-open {
 }
 /*ngdialog_full-width*/
 .ngdialog_full-width .ng-dialog__wrapper {
-  background: #f0f0f0;
+  background: #fff;
 }
 .ngdialog_full-width .button,
 .ngdialog_half-width .button {
   width: auto;
 }
+.ngdialog_full-width .button_add-more,
+.ngdialog_half-width .button_add-more {
+  width: 192px;
+}
+.ngdialog_full-width .solid,
+.ngdialog_half-width .solid {
+  width: 100%;
+  margin: 24px 0;
+}
 .ngdialog_full-width .ng-dialog__content,
 .ngdialog_half-width .ng-dialog__content {
   position: relative;
+}
+.ngdialog_full-width .ng-dialog__content .article__header,
+.ngdialog_half-width .ng-dialog__content .article__header {
+  padding: 0;
+}
+.ngdialog_full-width .article.article_transparent,
+.ngdialog_half-width .article.article_transparent {
+  margin-bottom: 0;
 }
 .ngdialog_full-width .ng-dialog__header,
 .ngdialog_half-width .ng-dialog__header {
@@ -6577,7 +6620,7 @@ body.ngdialog-open {
   bottom: 75px;
   left: 0;
   right: 0;
-  padding-top: 24px;
+  padding-top: 48px;
   overflow: auto;
 }
 .ngdialog_full-width .tooltip_edit,

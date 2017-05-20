@@ -272,15 +272,29 @@ body.ngdialog-open {
 /*ngdialog_full-width*/
 .ngdialog_full-width {
   .ng-dialog__wrapper {
-    background: #f0f0f0;
+    background: #fff;
   }
 }
 .ngdialog_full-width, .ngdialog_half-width {
   .button {
     width: auto;
   }
+  .button_add-more {
+    width: 192px;
+  }
+  .solid {
+    width: 100%;
+    margin: 24px 0;
+  }
   .ng-dialog__content {
     position: relative;
+    .article__header {
+      padding: 0;
+    }
+  }
+
+  .article.article_transparent {
+    margin-bottom: 0;
   }
   .ng-dialog__header {
     background-color: #fff;
@@ -296,7 +310,7 @@ body.ngdialog-open {
     bottom: 75px;
     left: 0;
     right: 0;
-    padding-top: 24px;
+    padding-top: 48px;
     overflow: auto;
   }
   .tooltip_edit,
