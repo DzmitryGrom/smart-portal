@@ -3769,6 +3769,9 @@ a {
   line-height: 36px;
   margin-top: -1px;
 }
+.links {
+  margin-bottom: 16px;
+}
 .links .link {
   margin: 0 4px;
 }
@@ -5540,6 +5543,27 @@ tags-input .autocomplete .suggestion-item em {
 }
 .host .icon-tag {
   transform: rotate(-90deg);
+}
+.tags__right {
+  display: inline-block;
+  font-size: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.tags__right .icon-team {
+  font-size: 24px;
+  margin-right: 8px;
+}
+.tags__right .text {
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+}
+.tags__right .icon-team,
+.tags__right .text {
+  display: inline-block;
+  vertical-align: middle;
 }
 .tag__text {
   display: inline-block;
