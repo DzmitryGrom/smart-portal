@@ -4979,6 +4979,7 @@ textarea {
 }
 .button_load {
   border: none;
+  line-height: 1;
 }
 .button_load .icon {
   font-size: 24px;
@@ -4987,6 +4988,7 @@ textarea {
 .button_load .text {
   font-size: 14px;
   font-family: ProximaNovaReg;
+  line-height: 1;
 }
 .button_load .icon,
 .button_load .text {
@@ -5808,6 +5810,7 @@ tags-input .autocomplete .suggestion-item em {
 }
 .article__content_center {
   text-align: center;
+  width: 100%;
 }
 .article__link {
   display: inline-block;
@@ -5908,7 +5911,7 @@ tags-input .autocomplete .suggestion-item em {
   border-radius: 5px;
 }
 .article_modal {
-  max-width: 810px;
+  max-width: 732px;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -6646,9 +6649,23 @@ body.ngdialog-open {
 .ngdialog_full-width .redactor-box {
   display: none;
 }
-.ngdialog_full-width .redactor {
+.ngdialog_full-width .redactor img {
+  width: 100%;
+}
+.ngdialog_full-width .redactor .input_description {
+  width: 100%;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-family: ProximanovaReg;
+}
+.ngdialog_full-width .redactor,
+.ngdialog_full-width .redactor > .text {
   font-size: 16px;
   font-family: ProximaNovaLight;
+}
+.ngdialog_full-width .redactor > .text {
+  margin: 0 0 24px 0;
 }
 .ngdialog_full-width .add {
   font-size: 24px;
@@ -6671,6 +6688,16 @@ body.ngdialog-open {
 .ngdialog_half-width .solid {
   width: 100%;
   margin: 24px 0;
+}
+.ngdialog_full-width .text_caption,
+.ngdialog_half-width .text_caption {
+  width: 100%;
+  font-size: 24px;
+  font-family: ProximaNovaSem;
+  color: #121212;
+  line-height: 21px;
+  margin: 0 0 24px 0;
+  padding: 0;
 }
 .ngdialog_full-width .ng-dialog__content,
 .ngdialog_half-width .ng-dialog__content {
