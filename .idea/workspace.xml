@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe663626-3594-4b54-8183-0cfb4b3d215f" name="Default" comment="Све">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/header-search/header-search.less" afterPath="$PROJECT_DIR$/blocks/header-search/header-search.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/dialog/dialog.less" afterPath="$PROJECT_DIR$/blocks/dialog/dialog.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/list/list.less" afterPath="$PROJECT_DIR$/blocks/list/list.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/tag/tag.less" afterPath="$PROJECT_DIR$/blocks/tag/tag.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/tags/tags.less" afterPath="$PROJECT_DIR$/blocks/tags/tags.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/main.css" afterPath="$PROJECT_DIR$/pages/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/app.js" afterPath="$PROJECT_DIR$/tmp/app.js" />
     </list>
     <ignored path="smart-portal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,15 +30,15 @@
     <splitter split-orientation="vertical" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="dialog.less" pinned="false" current-in-tab="true">
+          <file leaf-file-name="dialog.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blocks/dialog/dialog.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="154">
-                  <caret line="289" column="21" selection-start-line="289" selection-start-column="21" selection-end-line="289" selection-end-column="21" />
+                <state relative-caret-position="176">
+                  <caret line="301" column="23" selection-start-line="301" selection-start-column="23" selection-end-line="301" selection-end-column="23" />
                   <folding>
                     <element signature="e#3464#3959#0" expanded="false" />
-                    <element signature="e#8283#8382#0" expanded="false" />
-                    <element signature="e#8466#8505#0" expanded="false" />
+                    <element signature="e#8282#8381#0" expanded="false" />
+                    <element signature="e#8465#8504#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -45,46 +50,46 @@
                 <state relative-caret-position="105">
                   <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
                   <folding>
-                    <element signature="e#41006#56817#0" expanded="false" />
-                    <element signature="e#56854#57725#0" expanded="false" />
-                    <marker date="1495445944374" expanded="true" signature="959:992" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="1081:1116" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="2383:2418" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="2502:2541" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="3155:3164" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="4622:4655" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="4744:4779" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="5210:5227" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="8643:8678" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="8762:8801" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="9415:9424" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="12597:12607" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="13239:13253" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="17007:17041" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="17149:17192" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="18955:18969" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="30577:30615" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="30723:30766" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="32529:32543" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="41563:41596" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="41685:41720" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="43069:43104" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="43188:43227" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="43841:43850" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="45308:45341" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="45430:45465" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="45896:45913" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="49329:49364" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="49448:49487" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="50101:50110" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="51979:52022" ph="..." />
-                    <marker date="1495445944374" expanded="true" signature="54090:54255" ph="..." />
+                    <element signature="e#47024#62835#0" expanded="false" />
+                    <element signature="e#62872#63743#0" expanded="false" />
+                    <marker date="1495453337868" expanded="true" signature="959:992" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="1081:1116" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="2383:2418" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="2502:2541" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="3155:3164" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="4622:4655" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="4744:4779" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="5210:5227" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="8643:8678" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="8762:8801" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="9415:9424" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="12597:12607" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="13239:13253" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="17007:17041" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="17149:17192" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="18955:18969" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="30577:30615" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="30723:30766" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="32529:32543" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="47581:47614" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="47703:47738" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="49087:49122" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="49206:49245" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="49859:49868" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="51326:51359" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="51448:51483" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="51914:51931" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="55347:55382" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="55466:55505" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="56119:56128" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="57997:58040" ph="..." />
+                    <marker date="1495453337868" expanded="true" signature="60108:60273" ph="..." />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="redactor.less" pinned="false" current-in-tab="false">
+          <file leaf-file-name="redactor.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blocks/redactor/redactor.less">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-14294">
@@ -118,22 +123,49 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Angular2HTML Fragment (app.js:478).html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Angular2HTML Fragment (app.js:478).html" pinned="false" current-in-tab="true">
             <entry file="mock:///Angular2HTML Fragment (app.js:478).html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="155">
-                  <caret line="373" column="78" selection-start-line="373" selection-start-column="78" selection-end-line="373" selection-end-column="78" />
+                <state relative-caret-position="291">
+                  <caret line="478" column="44" selection-start-line="478" selection-start-column="44" selection-end-line="478" selection-end-column="44" />
                   <folding>
                     <element signature="n#div#2;n#div#1;n#div#4;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
                     <element signature="n#tags-input#0;n#div#1;n#div#4;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
                     <element signature="n#div#1;n#div#2;n#div#0;n#div#0;n#tags-input#0;n#div#1;n#div#4;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#tags-input#0;n#div#1;n#div#6;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#div#0;n#div#0;n#tags-input#0;n#div#1;n#div#6;n#div#0;n#div#1;n#div#0;n#!!top" expanded="false" />
+                    <element signature="n#style#0;n#div#1;n#tags-input#0;n#div#1;n#div#6;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="header-search.less" pinned="false" current-in-tab="true">
+          <file leaf-file-name="list.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blocks/list/list.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="116">
+                  <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tag.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blocks/tag/tag.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="48">
+                  <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#33#59#0" expanded="false" />
+                    <element signature="e#73#300#0" expanded="false" />
+                    <element signature="e#312#362#0" expanded="false" />
+                    <element signature="e#470#525#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="header-search.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blocks/header-search/header-search.less">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="153">
@@ -148,6 +180,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="74">
                   <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="tags.less" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/blocks/tags/tags.less">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="172">
+                  <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -192,7 +234,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/blocks/button/_white/button_white.less" />
         <option value="$PROJECT_DIR$/blocks/avatar/__shadow/avatar__shadow.less" />
         <option value="$PROJECT_DIR$/blocks/avatar/__edit/avatar__edit.less" />
         <option value="$PROJECT_DIR$/blocks/avatar/__delete/avatar__delete.less" />
@@ -216,7 +257,6 @@
         <option value="$PROJECT_DIR$/blocks/category-form/__footer/category-form__footer.less" />
         <option value="$PROJECT_DIR$/pages/home.html" />
         <option value="$PROJECT_DIR$/blocks/category-form/__label/category-form__label.less" />
-        <option value="$PROJECT_DIR$/blocks/list/list.less" />
         <option value="$PROJECT_DIR$/blocks/category-form/category-form.less" />
         <option value="$PROJECT_DIR$/blocks/icons/icons.less" />
         <option value="$PROJECT_DIR$/blocks/list/__item/list__item.less" />
@@ -231,7 +271,6 @@
         <option value="$PROJECT_DIR$/blocks/redactor/redactor.less" />
         <option value="$PROJECT_DIR$/tmp/redactor/redactor.js" />
         <option value="$PROJECT_DIR$/tmp/angularRedactor.js" />
-        <option value="$PROJECT_DIR$/blocks/tags/tags.less" />
         <option value="$PROJECT_DIR$/blocks/link/link.less" />
         <option value="$PROJECT_DIR$/blocks/radio-button/radio-button.less" />
         <option value="$PROJECT_DIR$/blocks/checkbox/__indicator/checkbox__indicator.less" />
@@ -240,9 +279,12 @@
         <option value="$PROJECT_DIR$/pages/main.less" />
         <option value="$PROJECT_DIR$/blocks/button/_load/button_load.less" />
         <option value="$PROJECT_DIR$/blocks/article/article.less" />
-        <option value="$PROJECT_DIR$/blocks/dialog/dialog.less" />
-        <option value="/Angular2HTML Fragment (app.js:478).html" />
         <option value="$PROJECT_DIR$/blocks/header-search/header-search.less" />
+        <option value="$PROJECT_DIR$/blocks/dialog/dialog.less" />
+        <option value="$PROJECT_DIR$/blocks/tags/tags.less" />
+        <option value="/Angular2HTML Fragment (app.js:478).html" />
+        <option value="$PROJECT_DIR$/blocks/list/list.less" />
+        <option value="$PROJECT_DIR$/blocks/tag/tag.less" />
       </list>
     </option>
   </component>
@@ -325,6 +367,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-portal" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tags" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-portal" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tag" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-portal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="smart-portal" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blocks" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="list" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -488,12 +584,12 @@
       <workItem from="1495015567977" duration="630000" />
       <workItem from="1495186955988" duration="9598000" />
       <workItem from="1495264071944" duration="26228000" />
-      <workItem from="1495441824416" duration="4717000" />
+      <workItem from="1495441824416" duration="7591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100065000" />
+    <option name="totallyTimeSpent" value="102939000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -566,7 +662,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/blocks/avatar/__delete/avatar__delete.less" />
     <entry file="file://$PROJECT_DIR$/blocks/avatar/avatar.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -717,14 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/list/list.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="17" column="3" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/category-form/category-form.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -844,14 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/tags/tags.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3298">
-          <caret line="194" column="1" selection-start-line="194" selection-start-column="1" selection-end-line="194" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/radio-button/radio-button.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -897,40 +976,40 @@
         <state relative-caret-position="105">
           <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
           <folding>
-            <element signature="e#41006#56817#0" expanded="false" />
-            <element signature="e#56854#57725#0" expanded="false" />
-            <marker date="1495445944374" expanded="true" signature="959:992" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="1081:1116" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="2383:2418" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="2502:2541" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="3155:3164" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="4622:4655" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="4744:4779" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="5210:5227" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="8643:8678" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="8762:8801" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="9415:9424" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="12597:12607" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="13239:13253" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="17007:17041" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="17149:17192" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="18955:18969" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="30577:30615" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="30723:30766" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="32529:32543" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="41563:41596" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="41685:41720" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="43069:43104" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="43188:43227" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="43841:43850" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="45308:45341" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="45430:45465" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="45896:45913" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="49329:49364" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="49448:49487" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="50101:50110" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="51979:52022" ph="..." />
-            <marker date="1495445944374" expanded="true" signature="54090:54255" ph="..." />
+            <element signature="e#47024#62835#0" expanded="false" />
+            <element signature="e#62872#63743#0" expanded="false" />
+            <marker date="1495453337868" expanded="true" signature="959:992" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="1081:1116" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="2383:2418" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="2502:2541" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="3155:3164" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="4622:4655" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="4744:4779" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="5210:5227" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="8643:8678" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="8762:8801" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="9415:9424" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="12597:12607" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="13239:13253" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="17007:17041" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="17149:17192" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="18955:18969" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="30577:30615" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="30723:30766" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="32529:32543" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="47581:47614" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="47703:47738" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="49087:49122" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="49206:49245" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="49859:49868" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="51326:51359" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="51448:51483" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="51914:51931" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="55347:55382" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="55466:55505" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="56119:56128" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="57997:58040" ph="..." />
+            <marker date="1495453337868" expanded="true" signature="60108:60273" ph="..." />
           </folding>
         </state>
       </provider>
@@ -939,14 +1018,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="21" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/redactor/redactor.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14294">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -987,22 +1058,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/dialog/dialog.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="289" column="21" selection-start-line="289" selection-start-column="21" selection-end-line="289" selection-end-column="21" />
-          <folding>
-            <element signature="e#3464#3959#0" expanded="false" />
-            <element signature="e#8283#8382#0" expanded="false" />
-            <element signature="e#8466#8505#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/header-search/header-search.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/dialog/dialog.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="301" column="23" selection-start-line="301" selection-start-column="23" selection-end-line="301" selection-end-column="23" />
+          <folding>
+            <element signature="e#3464#3959#0" expanded="false" />
+            <element signature="e#8282#8381#0" expanded="false" />
+            <element signature="e#8465#8504#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/redactor/redactor.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14294">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/tags/tags.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/tag/tag.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="e#33#59#0" expanded="false" />
+            <element signature="e#73#300#0" expanded="false" />
+            <element signature="e#312#362#0" expanded="false" />
+            <element signature="e#470#525#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/list/list.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="29" column="3" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
           <folding />
         </state>
       </provider>

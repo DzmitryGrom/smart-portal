@@ -24,11 +24,21 @@
 .list-col {
   font-size: 0;
   position: relative;
+  width: 324px;
+  .scroll {
+    max-height: 263px;
+  }
   .list {
     padding: 16px 8px 0 8px;;
     display: inline-block;
     width: 50%;
     box-sizing: border-box;
+    .text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 113px;
+    }
   }
   &:before {
     content: "";
