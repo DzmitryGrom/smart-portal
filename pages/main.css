@@ -3806,6 +3806,7 @@ a {
   margin-top: -1px;
 }
 .links {
+  line-height: 1;
   margin-bottom: 16px;
 }
 .links .icon {
@@ -3814,6 +3815,8 @@ a {
 }
 .links .link {
   margin: 0 4px;
+  display: inline-block;
+  line-height: 1;
 }
 .links .link:hover .icon {
   color: #71b8f4;
@@ -5938,7 +5941,17 @@ tags-input .autocomplete .suggestion-item em {
 }
 .article_modal .sidebar,
 .article_modal .article__content {
-  padding-top: 0px;
+  padding: 0px;
+}
+.article_modal .links {
+  width: 100%;
+}
+.article_modal .article__content_icon {
+  margin-bottom: 16px;
+}
+.article_modal .article__content_icon .pic {
+  left: 0;
+  top: 0;
 }
 .article_modal .avatar__cover_square {
   height: 65px;
