@@ -2593,7 +2593,7 @@ a {
   z-index: 15;
   background-color: #fff;
   box-sizing: border-box;
-  padding: 0 calc((100% - 1230px) / 2);
+  margin: 0 calc((100% - 1230px) / 2);
   display: flex;
   align-items: center;
   flex-direction: row;
