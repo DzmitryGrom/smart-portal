@@ -3772,12 +3772,15 @@ a {
 .links {
   margin-bottom: 16px;
 }
-.links .link {
-  margin: 0 4px;
-}
 .links .icon {
   font-size: 24px;
   color: #979797;
+}
+.links .link {
+  margin: 0 4px;
+}
+.links .link:hover .icon {
+  color: #71b8f4;
 }
 .sidebar {
   position: relative;
@@ -5075,6 +5078,7 @@ textarea {
   top: 50%;
   left: 50%;
   margin: -1px 0 0 -4px;
+  box-sizing: content-box;
 }
 .checkbox:checked + .checkbox__indicator-solid_blue:before {
   content: "";
@@ -5082,6 +5086,7 @@ textarea {
 }
 .checkbox:checked + .checkbox__indicator:before {
   content: "";
+  box-sizing: content-box;
   width: 7px;
   height: 3px;
   border: 1px solid transparent;
@@ -5392,7 +5397,7 @@ tags-input .host:active {
   outline: none;
 }
 tags-input .tags {
-  padding: 0px;
+  padding: 0 150px 0 0;
   overflow: hidden;
   word-wrap: break-word;
   cursor: text;
@@ -5944,6 +5949,13 @@ tags-input .autocomplete .suggestion-item em {
 }
 .article_modal .article__content {
   padding: 0;
+}
+.article_full-width {
+  width: 100%;
+  max-width: 100%;
+}
+.article_full-width img {
+  width: 100%;
 }
 .article__content_icon {
   position: relative;
@@ -7311,6 +7323,7 @@ body.ngdialog-open {
   top: 50%;
   left: 50%;
   margin: -4px 0 0 -4px;
+  box-sizing: content-box;
 }
 .radio-button-label .radio-button:checked + .radio-button__indicator_blue:before {
   background: #1f8ceb;
