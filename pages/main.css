@@ -5022,9 +5022,9 @@ textarea {
 }
 .button_load .icon {
   font-size: 24px;
-  margin-right: 16px;
 }
 .button_load .text {
+  margin-left: 16px;
   font-size: 14px;
   font-family: ProximaNovaReg;
   line-height: 1;
@@ -5587,6 +5587,10 @@ tags-input .autocomplete .suggestion-item em {
   font-size: 24px;
   margin-right: 8px;
 }
+.tags__right .icon-team:hover,
+.tags__right .icon-team_active {
+  color: #71b8f4;
+}
 .tags__right .text {
   font-size: 14px;
   font-family: ProximaNovaReg;
@@ -5986,6 +5990,7 @@ tags-input .autocomplete .suggestion-item em {
 }
 .article_modal .article__content {
   padding: 0;
+  position: relative;
 }
 .article_full-width {
   width: 100%;
@@ -6701,6 +6706,16 @@ body.ngdialog-open {
 .ngdialog_full-width .redactor > .text {
   margin: 0 0 24px 0;
 }
+.ngdialog_full-width .article__content_center {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  margin: 24px 0;
+  min-height: 72px;
+}
+.ngdialog_full-width .article__content_center .button_load {
+  padding: 24px 0;
+  width: 100%;
+}
 .ngdialog_full-width .add {
   font-size: 24px;
   position: absolute;
@@ -6709,6 +6724,27 @@ body.ngdialog-open {
   transition: visibility 0s linear 0s,opacity .1s,width 0s linear 0s;
   visibility: visible;
   opacity: 1;
+}
+.ngdialog_full-width .add__list {
+  display: inline-block;
+  padding-left: 22px;
+}
+.ngdialog_full-width .add__item {
+  cursor: pointer;
+  transform: scale(0);
+  transition-property: transform;
+  transition-duration: .1s;
+  display: inline-block;
+}
+.ngdialog_full-width .add__item .icon {
+  font-size: 24px;
+}
+.ngdialog_full-width .add__item:hover .icon {
+  color: #71b8f4;
+}
+.ngdialog_full-width .add_open .add__item {
+  transform: scale(1);
+  transition-duration: .2s;
 }
 .ngdialog_full-width .button,
 .ngdialog_half-width .button {
