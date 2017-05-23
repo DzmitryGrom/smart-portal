@@ -6,7 +6,23 @@
   .caption {
     margin-bottom: 20px;
   }
-  
+  &__description {
+    display: inline-block;
+    font-size: 14px;
+    font-family: ProximaNovaReg;
+    color: #9aa5ab;
+    position: absolute;
+    z-index: 2;
+    right: 100%;
+    margin-right: 24px;
+    &_text {
+      top: 0px;
+    }
+    &_icon {
+      top: 50%;
+      margin-top: -12px;
+    }
+  }
   &__content {
     padding: 24px;
     display: inline-block;
@@ -17,7 +33,7 @@
     .text__gray {
       color: #9aa5ab;
     }
-    .pic {
+    > .avatar {
       border-radius: 5px;
       margin: 0 6px 10px 0;
     }
@@ -159,7 +175,7 @@
     .article__content_icon {
       margin-bottom: 16px;
     }
-    .article__content_icon .pic {
+    .article__content_icon .avatar {
       left: 0;
       top: 0;
     }
@@ -217,7 +233,7 @@
     .content__text {
       text-indent: 80px;
     }
-    .pic {
+    .avatar {
       display: inline-block;
       position: absolute;
       left: 24px;
