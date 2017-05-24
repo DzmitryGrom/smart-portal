@@ -3869,7 +3869,7 @@ a {
   vertical-align: middle;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 505px;
+  max-width: 422px;
   white-space: nowrap;
   margin-left: 10px;
   display: inline-block;
@@ -4103,6 +4103,9 @@ a {
 }
 .datagrid__body .row__cell .user-profile .checkbox-label_inline {
   margin-left: 9px;
+}
+.datagrid__body .row__cell .tag_relative {
+  display: inline-block;
 }
 .datagrid__body .row__cell .icon {
   font-size: 24px;
@@ -5388,7 +5391,7 @@ textarea {
   margin-right: 18px;
 }
 .tag_btns-right {
-  padding-right: 210px;
+  padding-right: 240px;
   position: relative;
 }
 .tag_btns-right .icon {
@@ -5774,6 +5777,21 @@ tags-input .autocomplete .suggestion-item em {
 }
 .tag__item_border-circle:hover {
   background-color: #e4e5e9;
+}
+.tag__item_button {
+  position: relative;
+  display: inline-block;
+}
+.tag__item_button .category-form {
+  width: 265px;
+  padding: 0 0 16px 16px;
+}
+.tag__item_button .scroll {
+  margin-top: 16px;
+  max-height: 120px;
+}
+.tag__item_button .scroll .tag {
+  margin-top: 0;
 }
 .tag__item_pull-right {
   position: absolute;

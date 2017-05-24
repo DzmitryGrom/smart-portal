@@ -128,7 +128,7 @@
           <div class="btn-add">Добавить тег...
             <div class="tooltip tooltip_table" style="display:;">
               <div class="content tooltip__content ">
-                <div class="scroll scroll_gray">
+                <div class="scroll scroll_gray" style="max-height:255px">
                   <div class="list-col">
                     <ul class="list">
                       <li class="list__item list__item_hovered ">
@@ -236,8 +236,9 @@
                   <div class="tag__item tag__item_border"><span class="text">стандартный</span></div>
                   <div class="tag__item tag__item_border"><span class="text">дизайн</span></div>
                   <div class="tag__item tag__item_border"><span class="text">хостинг</span></div>
-                  <button class="tag__item button button_pseudo button_small tag__item_border-circle" type="button">+4</button>
-                  
+                  <div class="tag__item tag__item_button">
+                    <button class="button button_pseudo button_small tag__item_border-circle" type="button">+4</button>
+                  </div>
                 </div>
               </td>
               <td class="row__cell">
@@ -263,7 +264,9 @@
                   <div class="tag__item tag__item_border"><span class="text">стандартный</span></div>
                   <div class="tag__item tag__item_border"><span class="text">дизайн</span></div>
                   <div class="tag__item tag__item_border"><span class="text">хостинг</span></div>
-                  <button class="tag__item button button_pseudo button_small tag__item_border-circle" type="button">+4</button>
+                  <div class="tag__item tag__item_button">
+                    <button class="button button_pseudo button_small tag__item_border-circle" type="button">+4</button>
+                  </div>
                 </div>
               </td>
               <td class="row__cell">
@@ -290,7 +293,9 @@
                   <div class="tag__item tag__item_border"><span class="text">стандартный</span></div>
                   <div class="tag__item tag__item_border"><span class="text">дизайн</span></div>
                   <div class="tag__item tag__item_border"><span class="text">хостинг</span></div>
-                  <button class="tag__item button button_pseudo button_small tag__item_border-circle" type="button">+4</button>
+                  <div class="tag__item tag__item_button">
+                    <button class="button button_pseudo button_small tag__item_border-circle" type="button">+4</button>
+                  </div>
                 </div>
               </td>
               <td class="row__cell">
@@ -317,36 +322,38 @@
                   <div class="tag__item tag__item_border"><span class="text">стандартный</span></div>
                   <div class="tag__item tag__item_border"><span class="text">дизайн</span></div>
                   <div class="tag__item tag__item_border"><span class="text">хостинг</span></div>
-                  <button class="tag__item button button_pseudo button_small tag__item_border-circle" type="button">+4</button>
-                  <div class="category-form category-form_bottom" style="display:;top: 40px;right: 0px;margin-right: -6px;">
-                    <div class="scroll scroll_gray">
-                      <div class="tag tag_left">
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">продуктивность еще</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">дизайнерские продукции</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">продуктивность еще</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">дизайнерские продукции</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span><span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">продуктивность еще</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">дизайнерские продукции</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span><span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">продуктивность еще</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">дизайнерские продукции</span></span>
-                        <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
-                      </div>
+                  <div class="tag__item tag__item_button">
+                    <button class="button button_pseudo button_small tag__item_border-circle" type="button">+4</button>
+                    <div class="category-form category-form_bottom" style="display:;top: 40px;right: 0px;margin-right: -16px;">
+                      <div class="scroll scroll_gray">
+                                <div class="tag tag_left">
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">продуктивность еще</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">дизайнерские продукции</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">продуктивность еще</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">дизайнерские продукции</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span><span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">продуктивность еще</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">дизайнерские продукции</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span><span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">продуктивность еще</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">дизайнерские продукции</span></span>
+                                  <span class="tag__item tag__item_border"><span class="text">стандартный</span></span>
+                                </div>
+                              </div>
+                      <i class="category-form__arrow" style="top: 0px;right: 20px;margin-top: -6px;"></i>
                     </div>
-                  <i class="category-form__arrow" style="top: 0px;right: 20px;margin-top: -6px;"></i>
-                </div>
+                  </div>
               </div>
               </td>
               <td class="row__cell">
