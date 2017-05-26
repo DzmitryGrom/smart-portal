@@ -3096,6 +3096,10 @@ a {
   background: url(interface/icons/not-content.svg) no-repeat;
   background-position: center center;
 }
+.icon-trashcan-empty {
+  background: url(interface/icons/trashcan.svg) no-repeat;
+  background-position: center center;
+}
 .icon-arrow {
   background: url(interface/icons/arrow.svg) no-repeat;
   background-position: center center;
@@ -6096,7 +6100,8 @@ tags-input .autocomplete .suggestion-item em {
   margin: 0 auto 32px;
 }
 .article.article_transparent .icon-favorites,
-.article.article_transparent .icon-page {
+.article.article_transparent .icon-page,
+.article.article_transparent .icon-trashcan-empty {
   width: 168px;
   height: 168px;
   background-size: 168px 168px;
