@@ -212,8 +212,69 @@
             </div>
           </div>
           <div class="tag__item tag__item_pull-right">
-            <button class="button" type="button">Отменить</button>
+            <button class="button button_not-border" type="button">Отменить</button>
             <button class="button button_success" type="button">Сохранить</button>
+          </div>
+        </div>
+        <div class="tag tag_btns-right">
+          <label class="checkbox-label checkbox-label_inline">
+            <input class="checkbox" type="checkbox"><i class="checkbox__indicator checkbox__indicator_blu"></i>
+          </label>
+          <div class="tag__item tag__item_border"><span class="icon icon-list"></span><span class="text">Design</span>
+            <div class="icon icon-close"></div>
+          </div>
+          <div class="tag__item tag__item_border"><span class="icon icon-unlink"></span><span class="text">Ссылки</span>
+            <div class="icon icon-close"></div>
+          </div>
+          <div class="tag__item tag__item_border"><span class="icon icon-document"></span><span class="text">Статьи</span>
+            <div class="icon icon-close"></div>
+          </div>
+          <div class="tag__item tag__item_border"><span class="icon icon-video"></span><span class="text">Видео</span>
+            <div class="icon icon-close"></div>
+          </div>
+          <div class="tag__item tag__item_border"><span class="text">стандартный</span>
+            <div class="icon icon-close"></div>
+          </div>
+          <div class="tag__item tag__item_pull-right">
+            <span class="icon-filter"></span>
+            <div class="category-form category-form_bottom" style="top: 42px;display:;right: 0;"> 
+              <i class="category-form__arrow" style="top: -7px; right: 15px;"></i>     
+              <span class="i-icon icon_category-form icon-close"></span>
+              <div class="category__item category__item_title category__item_icon"> <span class="text">Фильтр и вид</span> </div>
+              <div class="category__item-label">Вид</div>
+              <div class="category__item">
+                <div class="radio-button radio-button_two-btns">
+                  <label class="radio-button-label">
+                    <input class="radio-button" name="access" type="radio" checked=""> <span class="radio-button__indicator-rectangle">Лента</span> </label>
+                  <label class="radio-button-label">
+                    <input class="radio-button" name="access" type="radio"> <span class="radio-button__indicator-rectangle">Таблица</span> </label>
+                </div>
+              </div>
+              <div class="category__item-label">Сортировка</div>
+              <div class="category__item category__item_drop category__item_input">
+                <div class="tooltip tooltip_error tooltip_top"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Недопустимые символы <i class="tooltip__arrow tooltip__arrow_red tooltip__arrow_bottom" style="left: 5px"></i> </div>
+                <input type="text" placeholder="Сортировка" value="По Алфовиту от А до Я">
+                <div class="i-arrow i-arrow_to_down"></div>
+              </div>
+              <div class="category__item-label">Тип</div>
+              <div class="category__item">
+                <div class="checkbox-group__item checkbox-group__item_left">
+                  <label class="checkbox-label">
+                    <input class="checkbox" type="checkbox" checked=""> <i class="checkbox__indicator checkbox__indicator_blue"></i> <span class="checkbox-text">Ссылки</span> </label>
+                </div>
+                <div class="checkbox-group__item checkbox-group__item_left">
+                  <label class="checkbox-label">
+                    <input class="checkbox" type="checkbox" checked=""> <i class="checkbox__indicator checkbox__indicator_blue"></i> <span class="checkbox-text">Статьи</span> </label>
+                </div>
+                <div class="checkbox-group__item checkbox-group__item_left">
+                  <label class="checkbox-label">
+                    <input class="checkbox" type="checkbox" checked=""> <i class="checkbox__indicator checkbox__indicator_blue"></i> <span class="checkbox-text">Видео</span> </label>
+                </div>
+              </div>
+              <div class="category__footer category__footer_justify-center">
+                <button class="button button_success" type="button">Применить</button>
+              </div>
+            </div>
           </div>
         </div>
         <table class="datagrid">
