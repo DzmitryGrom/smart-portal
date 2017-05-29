@@ -225,7 +225,7 @@
       <div class="category category_hover">
         <div class="category__item category__item_title"><span class="text">Разделы</span></div>
         <div class="category__item category__item_not-hover">
-          <div class="category__tools"> <a href="#" class="link help"><span class="help__item">Все разделы</span><span class="icon-tools icon-tools_active icon-home"></span> </a> <a href="#" class="link help"><span class="help__item">Неотсортированное</span><span class="icon-tools icon-documents"></span> </a> <a href="#" class="link help"><span class="help__item">Избранное</span><span class="icon-tools icon-star-full"></span> </a> <a href="#" class="link help"><span class="help__item">Корзина</span><span class="icon-tools icon-trash"></span> </a> </div>
+          <div class="category__tools category__tools_between"> <a href="#" class="link link_active help"><span class="help__item">Все разделы</span><span class="icon-tools icon-home"></span> </a> <a href="#" class="link help"><span class="help__item">Неотсортированное</span><span class="icon-tools icon-documents"></span> </a> <a href="#" class="link help"><span class="help__item">Избранное</span><span class="icon-tools icon-star-full"></span> </a> <a href="#" class="link help"><span class="help__item">Корзина</span><span class="icon-tools icon-trash"></span> </a> </div>
         </div>
         <div class="solid"></div>
         <a class="category__item category__item_icon" href="/"> <span class="text">Дизайнеры</span> <span class="i-icon icon_sidebar icon-pencil"></span> </a>
@@ -235,7 +235,24 @@
         <a class="category__item category__item_icon" href="/"> <span class="text">Руководители</span> <span class="i-icon  icon_sidebar icon-pencil"></span> </a>
         <a class="category__item category__item_icon" href="/"> <span class="text">Отчеты с мероприятий</span> <span class="i-icon  icon_sidebar icon-pencil"></span> </a> <a class="category__item category__item_add category__item_icon" href="/">Новый раздел
           <span class="i-icon  icon_sidebar icon-plus-add"></span>
-        </a> </div>
+        </a> 
+      </div>
+      <div class="category category_hover">
+        <div class="category__item category__item_title"><span class="text">Отделы</span></div>
+        <div class="category__item category__item_not-hover">
+          <div class="category__tools category__tools_start"> <a href="#" class="link help link_active"><span class="help__item">Все разделы</span><span class="icon-tools icon-team"></span></a><a href="#" class="link help"><span class="help__item">Уволенные</span><span class="icon-tools icon-fired"></span></a> 
+          </div>
+        </div>
+        <div class="solid"></div>
+        <a class="category__item category__item_icon" href="/"> <span class="text">Дизайнеры</span> <span class="i-icon icon_sidebar icon-pencil"></span> </a>
+        <a class="category__item category__item_icon" href="/"> <span class="text">Менеджеры</span> <span class="i-icon icon_sidebar icon-pencil"></span> </a>
+        <a class="category__item  category__item_active category__item_icon" href="/"> <span class="text">Распространители</span> <span class="i-icon icon_sidebar icon-pencil"></span> </a>
+        <a class="category__item  category__item_icon" href="/"> <span class="text">Техническая поддержка</span> <span class="i-icon icon_sidebar icon-pencil"></span> </a>
+        <a class="category__item category__item_icon" href="/"> <span class="text">Руководители</span> <span class="i-icon  icon_sidebar icon-pencil"></span> </a>
+        <a class="category__item category__item_icon" href="/"> <span class="text">Бухгалтерия</span> <span class="i-icon  icon_sidebar icon-pencil"></span> </a> <a class="category__item category__item_add category__item_icon" href="/">Новый раздел
+          <span class="i-icon  icon_sidebar icon-plus-add"></span>
+        </a> 
+      </div>
       <div class="category">
         <div class="category__item category__item_submit category__item_submit_search category__item_input category__item_icon">
           <div class="search">
@@ -256,6 +273,12 @@
         <div class="results"> <span>
               Ничего не найденно
             </span> </div>
+      </div>
+      <div class="category category_not-padding">
+        <div class="category__item category__item_submit category__item_submit_search category__item_input category__item_icon">
+          <div class="search">
+            <input type='search' placeholder='Поиск по сотрудникам'> <span class="icon-search  icon_sidebar i-icon"></span> </div>
+        </div>
       </div>
       <div style="top: 105px;display:;" class="category-form category-form_right"> <i class="category-form__arrow" style="left: -6px; top: initial; bottom: 30px;"></i> <span class="i-icon icon_category-form icon-close"></span>
         <div class="category-form__item category-form__item_title category-form__item_icon"> <span class="text">Добавить раздел</span> </div>
@@ -432,6 +455,11 @@
         </span>
         <div class="tools__item"><span class="icon icon-trash icon_red"></span> <span class="text">Удалить</span> </div>
         <div class="tools__item"><span class="icon icon-restore icon_blue"></span> <span class="text">Восстановить</span> </div>
+      </div>
+      <div class="tag">
+        <div class="tag__item tag__item_border"> <span class="icon icon-fired"></span> <span class="text">Уволенные</span>
+          <div class="icon icon-close"></div>
+        </div>
       </div>
       <div class="tag tag_btns-right">
         <label class="checkbox-label checkbox-label_inline">
@@ -1450,6 +1478,9 @@
       </div>
       <div class="article article_transparent"> <span class="icon icon-trashcan-empty"></span>
         <p class="text">Корзина пуста</p>
+      </div>
+      <div class="article article_transparent"> <span class="icon icon-fired-mans"></span>
+        <p class="text">Здесь будет список уволенных сотрудников</p>
       </div>
     </div>
     <div class="actions actions_open">

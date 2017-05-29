@@ -1,8 +1,20 @@
 .category__tools {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  
   .link {
     font-size: 24px;
+    &:hover .icon-tools, &_active .icon-tools {
+      color: #1f8ceb;
+    }
+  }
+  &_between {
+    justify-content: space-between;
+  }
+  &_start {
+    justify-content: flex-start;
+    .help:first-child {
+      margin-right: 32px;
+    }
   }
 }
