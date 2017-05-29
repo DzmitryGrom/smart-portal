@@ -1,13 +1,14 @@
 .help {
   position: relative;
   &__item {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     position: absolute; /* Абсолютное позиционирование */
     left: -23px;
     width: auto;
     white-space: nowrap;
     top: -50px;
-    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    z-index: 2; /* Отображаем подсказку поверх других элементов */
     background: #1ebfe9;
     font-family: ProximaNovaReg;
     line-height: 1;
@@ -15,6 +16,7 @@
     padding: 13px 16px; /* Поля */
     color: #fff;
     border-radius: 3px;
+    transition: all .2s linear;
     &:after {
       content: "";
       position: absolute;
@@ -25,6 +27,7 @@
     }
   }
   &:hover &__item {
-    display: block;
+    visibility: visible;
+    opacity: 1;
   }
 }
