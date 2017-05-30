@@ -2921,7 +2921,7 @@ a {
 }
 .tooltip__content_default {
   position: static;
-  padding: 8px;
+  padding: 10px 8px;
   overflow: visible;
 }
 .tooltip__content_not-padding {
@@ -2972,7 +2972,7 @@ a {
 }
 .tooltip .list .list__item_hovered.list__item_iconed {
   position: relative;
-  padding-left: 47px;
+  padding-left: 40px;
 }
 .tooltip .list .list__item_iconed-right {
   padding-left: 0px;
@@ -3573,7 +3573,7 @@ a {
 .list__item_iconed .icon {
   font-size: 24px;
   position: absolute;
-  left: 15px;
+  left: 10px;
   text-align: center;
   top: 50%;
   margin-top: -12px;
@@ -3620,9 +3620,6 @@ a {
   vertical-align: middle;
   position: relative;
   cursor: pointer;
-}
-.header-profile .tooltip__content {
-  padding: 10px 0px;
 }
 .header-profile .tooltip .list .list__item {
   margin: 0;
@@ -3843,9 +3840,6 @@ a {
 .sidebar .category-form {
   left: 280px;
 }
-.user-profile {
-  position: relative;
-}
 .user-profile .bio__name,
 .user-profile .bio__caption {
   color: #556066;
@@ -3908,6 +3902,12 @@ a {
 }
 .user-profile .bio__status_ex:before {
   background: #e86d31;
+}
+.user-profile .bio__status_guru {
+  color: #f35e5e;
+}
+.user-profile .bio__status_guru:before {
+  background: #f35e5e;
 }
 .user-profile .bio__post-text {
   display: inline-block;
@@ -4038,27 +4038,43 @@ a {
 .avatar__cover {
   border-radius: 500px;
   background-color: #d8f1ec;
-  width: 100px;
-  height: 100px;
+  width: 104px;
+  height: 104px;
   text-align: center;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.avatar__cover:before {
+  content: "";
+  position: absolute;
+  border: 1px solid #1ebfe9;
+  top: 1px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+  z-index: 1;
+  border-radius: 500px;
 }
 .avatar__cover img {
   border-radius: 500px;
+  position: relative;
+  z-index: 1;
 }
 .avatar__cover .text {
-  color: #98c5bc;
-  font-family: ProximaNovaBold;
-  font-size: 20px;
-  line-height: 100px;
+  color: #1ebfe9;
+  font-family: ProximaNovaSem;
+  font-size: 18px;
+  line-height: 104px;
+  text-transform: uppercase;
 }
 .avatar__cover .text_small {
-  font-size: 15px;
-  line-height: 50px;
+  font-size: 14px;
+  line-height: 48px;
 }
 .avatar__cover_small {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
 }
 .avatar__cover_small .link__opacity,
 .avatar__cover_small .link__link,
@@ -6501,11 +6517,11 @@ tags-input .autocomplete .suggestion-item em {
   box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
   border-radius: 5px;
   background-color: #fff;
-  flex: 0 0 24%;
-  padding: 20px;
+  flex: 0 0 23.2%;
+  padding: 24px;
   box-sizing: border-box;
-  margin-right: 1.333%;
-  margin-bottom: 10px;
+  margin-right: 2.333%;
+  margin-bottom: 24px;
 }
 .cards__item:hover {
   position: relative;
@@ -6513,13 +6529,18 @@ tags-input .autocomplete .suggestion-item em {
   transition: transform 0.3s, box-shadow 0.3s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+.cards__item .user-profile {
+  position: relative;
+  z-index: 0;
+}
 .cards__item:nth-child(4n+4) {
   margin-right: 0;
 }
 .cards__item > .action {
-  margin: 0 auto;
+  margin: 8px auto 0;
   text-align: center;
   position: relative;
+  z-index: 2;
 }
 .cards__item > .action .fa {
   color: #bbc5cc;
@@ -6527,6 +6548,7 @@ tags-input .autocomplete .suggestion-item em {
 .cards__item > .action > .tooltip {
   text-align: left;
   display: none;
+  z-index: 5;
 }
 .cards__item > .action:hover > .tooltip,
 .cards__item > .action .hover > .tooltip {
@@ -6539,8 +6561,7 @@ tags-input .autocomplete .suggestion-item em {
   margin: 20px 0 20px 6px;
 }
 .user-profile_vertical_normal .avatar {
-  width: 100px;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 .scroll {
   overflow-y: scroll;
