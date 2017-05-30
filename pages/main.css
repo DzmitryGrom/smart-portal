@@ -3867,6 +3867,48 @@ a {
   font-size: 12px;
   font-weight: normal;
 }
+.user-profile .bio__status {
+  display: inline-block;
+  font-size: 12px;
+  font-family: ProximaNovaReg;
+  position: relative;
+  padding-left: 12px;
+}
+.user-profile .bio__status:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  top: 50%;
+  margin-top: -2px;
+  z-index: 2;
+  left: 2px;
+}
+.user-profile .bio__status_new {
+  color: #3bc7ab;
+}
+.user-profile .bio__status_new:before {
+  background: #3bc7ab;
+}
+.user-profile .bio__status_spec {
+  color: #1ebfe9;
+}
+.user-profile .bio__status_spec:before {
+  background: #1ebfe9;
+}
+.user-profile .bio__status_prof {
+  color: #e9a93f;
+}
+.user-profile .bio__status_prof:before {
+  background: #e9a93f;
+}
+.user-profile .bio__status_ex {
+  color: #e86d31;
+}
+.user-profile .bio__status_ex:before {
+  background: #e86d31;
+}
 .user-profile .bio__post-text {
   display: inline-block;
   font-size: 14px;
@@ -4134,12 +4176,14 @@ a {
   position: relative;
   padding: 0 12px;
   font-size: 20px;
+  text-align: right;
 }
 .datagrid__body .row__cell > .action .fa {
   color: #bbc5cc;
 }
 .datagrid__body .row__cell > .action .tooltip {
   display: none;
+  text-align: left;
 }
 .datagrid__body .row__cell > .action:hover .tooltip,
 .datagrid__body .row__cell > .action.hover .tooltip {

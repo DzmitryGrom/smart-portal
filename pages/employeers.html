@@ -8,18 +8,17 @@
   <link href='main.css' rel='stylesheet' type='text/css'> </head>
 
 <body>
-  <div class="bg"></div>
   <div class="header">
     <h1 class="header__logo"><a href="home.html">Smart<b>Portal</b></a></h1>
     <div class="nav">
-      <a class="nav__link nav__link_newspaper" ng-click="open()"> <span class="icon-newspaper icon_nav"></span> <span class="text">База знаний</span> </a>
-      <a class="nav__link nav__link_people nav__link_active" href="employeers.html"> <span class="icon-people icon_nav"></span> <span class="text">Команда</span> </a>
-      <a class="nav__link nav__link_education" href="/"> <span class="icon-education icon_nav"></span> <span class="text">Обучение</span> </a>
-      <a class="nav__link nav__link_code" href="/"> <span class="icon-code icon_nav"></span> <span class="text">Скрипты</span> </a>
+      <a class="nav__link nav__link_newspaper nav__link_active" ng-click="open()"> <span class="icon-book icon_nav"></span> <span class="text">База знаний</span> </a>
+      <a class="nav__link nav__link_people" href="employeers.html"> <span class="icon-team icon_nav"></span> <span class="text">Команда</span> </a>
+      <a class="nav__link nav__link_education" href="/"> <span class="icon-hat icon_nav"></span> <span class="text">Обучение</span> </a>
+      <a class="nav__link nav__link_code" href="/"> <span class="icon-scripts icon_nav"></span> <span class="text">Скрипты</span> </a>
     </div>
-    <div class="header-side"> <span class="header-side__help icon-question icon_header"></span> <span class="header-side__search icon-search icon_header"></span>
+    <div class="header-side"> <span class="header-side__help icon-help icon_header"></span> <span class="header-side__search icon-search icon_header"></span>
       <div class="header-side__notification header-side__notification_active "> <span class="icon-notification icon_header"></span>
-        <div class="tooltip" style="width: 240px; right: 17px"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 12px"></i>
+        <div class="tooltip" style="width: 240px; right: 17px;"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 12px"></i>
           <div class="content tooltip__content tooltip__content_default">
             <ul class="list">
               <li class="list__item list__item_color_warning">
@@ -34,16 +33,16 @@
       </div>
       <div class="header-profile">
         <div class="header-profile__avatar"> <img class="pic" src="interface/avatar.jpg" alt=""> </div> <span class="header-profile__name">Александрррррр</span> <span class="header-profile__arrow"></span>
-        <div class="tooltip" style="width: 170px; right: -14px"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 10px"></i>
+        <div class="tooltip" style="width: 170px; right: -14px;display:;"> <i class="tooltip__arrow tooltip__arrow_white" style="right: 10px"></i>
           <div class="content tooltip__content tooltip__content_default">
             <ul class="list">
-              <li class="list__item">
+              <li class="list__item list__item_hovered">
                 <div class="text">Профиль</div>
               </li>
-              <li class="list__item">
+              <li class="list__item list__item_hovered">
                 <div class="text">Настройки</div>
               </li>
-              <li class="list__item list__item_dividered_top">
+              <li class="list__item list__item_hovered">
                 <div class="text">Выход</div>
               </li>
             </ul>
@@ -51,11 +50,175 @@
         </div>
       </div>
     </div>
+    <div class="header-search" style="display:none">
+      <div class="header-search__close"> <i class="i-arrow i-arrow_gray i-arrow_to_left"></i> </div>
+      <div class="header-search__input">
+        <div class="search">
+          <input type="search" placeholder="Искать" value="Должность"> <span class="icon-search  i-icon"></span> <i class="icon-close icon_gray i-icon"></i> </div>
+        <div class="tooltip tooltip_search">
+          <div class="content tooltip__content tooltip__content_not-padding">
+            <div class="scroll scroll_gray" style="max-height: 394px">
+              <div class="tooltip__header tooltip__header_transparent">
+                <h2 class="tooltip__description">База знаний</h2>
+                <button class="button button_link button_pin_right" type="button">Все результаты</button>
+              </div>
+              <table class="datagrid">
+                <tbody class="datagrid__body">
+                  <tr class="row row_not-border">
+                    <td class="row__cell">
+                      <div class="user-profile user-profile_horizontal_small">
+                        <div class="avatar"> <img class="pic" src="interface/icon.jpg" alt="" width="32"> </div>
+                        <div class="bio">
+                          <div class="bio__caption">Использование шаблонов в дизайне</div>
+                          <div class="bio__post-text"> <span class="favicon icon-unlink icon_green"></span> <span class="link">habrahabr.ru</span> <span class="text">...более того, как-то вскоре после вступления в  еду с водителемhhhhhhhhhhhhh</span> </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="row row_not-border">
+                    <td class="row__cell">
+                      <div class="user-profile user-profile_horizontal_small">
+                        <div class="avatar"> <img class="pic" src="interface/icon.jpg" alt="" width="32"> </div>
+                        <div class="bio">
+                          <div class="bio__caption">200 шаблонов успешных заголовков</div>
+                          <div class="bio__post-text"> <span class="favicon icon-document icon_blue icon_dark-blue"></span> <span class="text">...более того, как-то вскоре после вступления в  еду с водителемhhhhhhhhhhhhh</span> </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="solid"></div>
+              <div class="tooltip__header tooltip__header_transparent">
+                <h2 class="tooltip__description">Команда</h2>
+                <button class="button button_link button_pin_right" type="button">Показать всех</button>
+              </div>
+              <table class="datagrid">
+                <tbody class="datagrid__body">
+                  <tr class="row row_not-border">
+                    <td class="row__cell">
+                      <div class="user-profile user-profile_horizontal_small">
+                        <div class="avatar">
+                          <div class="avatar__cover avatar__cover_small-xs"> <img class="pic" src="interface/ava.jpg" alt="" height="32" width="32"> </div>
+                        </div>
+                        <div class="bio">
+                          <div class="bio__name">Марк Адамс</div>
+                          <div class="bio__position">UI Designer</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="row__cell">
+                      <div class="text">Design</div>
+                    </td>
+                    <td class="row__cell"> <a class="link" href="mailto:mark.adams@smart.com">mark.adams@smart.com</a> </td>
+                    <td class="row__cell"> <a class="link" href="tel:+33088445566">+33 088 44 55 66</a> </td>
+                  </tr>
+                  <tr class="row row_not-border">
+                    <td class="row__cell">
+                      <div class="user-profile user-profile_horizontal_small">
+                        <div class="avatar">
+                          <div class="avatar__cover avatar__cover_small-xs"> <img class="pic" src="interface/ava.jpg" alt="" height="32" width="32"> </div>
+                        </div>
+                        <div class="bio">
+                          <div class="bio__name">Марк Адамс</div>
+                          <div class="bio__position">UI Designer</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="row__cell">
+                      <div class="text">Design</div>
+                    </td>
+                    <td class="row__cell"> <a class="link" href="mailto:mark.adams@smart.com">mark.adams@smart.com</a> </td>
+                    <td class="row__cell"> <a class="link" href="tel:+33088445566">+33 088 44 55 66</a> </td>
+                  </tr>
+                  <tr class="row row_not-border">
+                    <td class="row__cell">
+                      <div class="user-profile user-profile_horizontal_small">
+                        <div class="avatar">
+                          <div class="avatar__cover avatar__cover_small-xs"> <img class="pic" src="interface/ava.jpg" alt="" height="32" width="32"> </div>
+                        </div>
+                        <div class="bio">
+                          <div class="bio__name">Марк Адамс</div>
+                          <div class="bio__position">UI Designer</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="row__cell">
+                      <div class="text">Design</div>
+                    </td>
+                    <td class="row__cell"> <a class="link" href="mailto:mark.adams@smart.com">mark.adams@smart.com</a> </td>
+                    <td class="row__cell"> <a class="link" href="tel:+33088445566">+33 088 44 55 66</a> </td>
+                  </tr>
+                  <tr class="row row_not-border">
+                    <td class="row__cell">
+                      <div class="user-profile user-profile_horizontal_small">
+                        <div class="avatar">
+                          <div class="avatar__cover avatar__cover_small-xs"> <img class="pic" src="interface/ava.jpg" alt="" height="32" width="32"> </div>
+                        </div>
+                        <div class="bio">
+                          <div class="bio__name">Марк Борн</div>
+                          <div class="bio__position">UI Designer</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="row__cell">
+                      <div class="text">Design</div>
+                    </td>
+                    <td class="row__cell"> <a class="link" href="mailto:mark.adams@smart.com">mark.adams@smart.com</a> </td>
+                    <td class="row__cell"> <a class="link" href="tel:+33088445566">+33 088 44 55 66</a> </td>
+                  </tr>
+                  <tr class="row row_not-border">
+                    <td class="row__cell">
+                      <div class="user-profile user-profile_horizontal_small">
+                        <div class="avatar">
+                          <div class="avatar__cover avatar__cover_small-xs"> <img class="pic" src="interface/ava.jpg" alt="" height="32" width="32"> </div>
+                        </div>
+                        <div class="bio">
+                          <div class="bio__name">Марк Адамс</div>
+                          <div class="bio__position">Дизайнер</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="row__cell">
+                      <div class="text">Design</div>
+                    </td>
+                    <td class="row__cell"> <a class="link" href="mailto:mark.adams@smart.com">mark.adams@smart.com</a> </td>
+                    <td class="row__cell"> <a class="link" href="tel:+33088445566">+33 088 44 55 66</a> </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="main main_justified_between">
     <div class="sidebar">
+      <div class="category category_hover">
+        <div class="category__item category__item_title"><span class="text">Отделы</span></div>
+        <div class="category__item category__item_not-hover">
+          <div class="category__tools category__tools_start"> <a href="#" class="link help link_active"><span class="help__item">Все разделы</span><span class="icon-tools icon-team"></span></a><a href="#" class="link help"><span class="help__item">Уволенные</span><span class="icon-tools icon-fired"></span></a> 
+          </div>
+        </div>
+        <div class="solid"></div>
+        <a class="category__item category__item_icon" href="/"> <span class="text">Дизайнеры</span> <span class="i-icon icon_sidebar icon-pencil"></span> </a>
+        <a class="category__item category__item_icon" href="/"> <span class="text">Менеджеры</span> <span class="i-icon icon_sidebar icon-pencil"></span> </a>
+        <a class="category__item  category__item_active category__item_icon" href="/"> <span class="text">Распространители</span> <span class="i-icon icon_sidebar icon-pencil"></span> </a>
+        <a class="category__item  category__item_icon" href="/"> <span class="text">Техническая поддержка</span> <span class="i-icon icon_sidebar icon-pencil"></span> </a>
+        <a class="category__item category__item_icon" href="/"> <span class="text">Руководители</span> <span class="i-icon  icon_sidebar icon-pencil"></span> </a>
+        <a class="category__item category__item_icon" href="/"> <span class="text">Бухгалтерия</span> <span class="i-icon  icon_sidebar icon-pencil"></span> </a> <a class="category__item category__item_add category__item_icon" href="/">Новый раздел
+          <span class="i-icon  icon_sidebar icon-plus-add"></span>
+        </a> 
+      </div>
+      <div class="category category_not-padding">
+        <div class="category__item category__item_submit category__item_submit_search category__item_input category__item_icon">
+          <div class="search">
+            <input type="search" placeholder="Поиск по сотрудникам"> <span class="icon-search  icon_sidebar i-icon"></span> </div>
+        </div>
+      </div>
       <div class="category">
-        <div class="category__item category__item_submit category__item_submit_search category__item_input">
+          <div class="category__item category__item_submit category__item_submit_search category__item_input">
           <div class="search">
             <input type='search' placeholder='Поиск по сотрудникам'> <i class="i-search"></i> </div>
         </div>
@@ -171,36 +334,75 @@
       </div>
     </div>
     <div class=" content ">
-      <div class="tag ">
-        <div class="tag__item tag__item_border ">Статус: Гуру
-          <div class="i-closer "></div>
+      <div class="tag">
+        <div class="tag__item tag__item_border"> <span class="icon icon-fired"></span> <span class="text">Уволенные</span>
+          <div class="icon icon-close"></div>
         </div>
-        <div class="tag__item tag__item_border ">Отдел: Design
-          <div class="i-closer "></div>
+      </div>
+      <div class="article article_transparent"> <span class="icon icon-fired-mans"></span>
+        <p class="text">Здесь будет список уволенных сотрудников</p>
+      </div>
+      <div class="tag tag_btns-right">
+        <div class="tag__item tag__item_border"> <span class="icon icon-fired"></span> <span class="text">Уволенные</span>
+          <div class="icon icon-close"></div>
+        </div>
+        <div class="tag__item tag__item_pull-right">
+          <span class="icon-filter"></span>
+          <div class="category-form category-form_bottom" style="top: 42px;display:none;right: 0;"> 
+            <i class="category-form__arrow" style="top: -7px; right: 15px;"></i>     
+            <span class="i-icon icon_category-form icon-close"></span>
+            <div class="category__item category__item_title category__item_icon"> <span class="text">Фильтр и вид</span> </div>
+            <div class="category__item-label">Вид</div>
+            <div class="category__item">
+              <div class="radio-button radio-button_two-btns">
+                <label class="radio-button-label">
+                  <input class="radio-button" name="access" type="radio" checked=""> <span class="radio-button__indicator-rectangle">Лента</span> </label>
+                <label class="radio-button-label">
+                  <input class="radio-button" name="access" type="radio"> <span class="radio-button__indicator-rectangle">Таблица</span> </label>
+              </div>
+            </div>
+            <div class="category__item-label">Сортировка</div>
+            <div class="category__item category__item_drop category__item_input">
+              <div class="tooltip tooltip_error tooltip_top"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Недопустимые символы <i class="tooltip__arrow tooltip__arrow_red tooltip__arrow_bottom" style="left: 5px"></i> </div>
+              <input type="text" placeholder="Сортировка" value="По Алфовиту от А до Я">
+              <div class="i-arrow i-arrow_to_down"></div>
+            </div>
+            <div class="category__item-label">Тип</div>
+            <div class="category__item">
+              <div class="checkbox-group__item checkbox-group__item_left">
+                <label class="checkbox-label">
+                  <input class="checkbox" type="checkbox" checked=""> <i class="checkbox__indicator checkbox__indicator_blue"></i> <span class="checkbox-text">Ссылки</span> </label>
+              </div>
+              <div class="checkbox-group__item checkbox-group__item_left">
+                <label class="checkbox-label">
+                  <input class="checkbox" type="checkbox" checked=""> <i class="checkbox__indicator checkbox__indicator_blue"></i> <span class="checkbox-text">Статьи</span> </label>
+              </div>
+              <div class="checkbox-group__item checkbox-group__item_left">
+                <label class="checkbox-label">
+                  <input class="checkbox" type="checkbox" checked=""> <i class="checkbox__indicator checkbox__indicator_blue"></i> <span class="checkbox-text">Видео</span> </label>
+              </div>
+            </div>
+            <div class="category__footer category__footer_justify-center">
+              <button class="button button_success" type="button">Применить</button>
+            </div>
+          </div>
         </div>
       </div>
       <table class="datagrid ">
-        <thead class="datagrid__header ">
-          <tr class="row ">
-            <th class="row__cell ">ФИО</th>
-            <th class="row__cell ">Отдел</th>
-            <th class="row__cell ">EMAIL</th>
-            <th class="row__cell ">Телефон</th>
-            <th class="row__cell "></th>
-          </tr>
-        </thead>
         <tbody class="datagrid__body ">
           <tr class="row ">
             <td class="row__cell ">
               <div class="user-profile user-profile_horizontal_small ">
                 <div class="avatar ">
                   <div class="avatar__cover avatar__cover_small "> <img class="pic " src="http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg " alt=" " height="50 " width="50 "> </div>
-                  <div class="avatar__online "> <i class="fa fa-circle "></i> </div>
-                  <div class="avatar__status avatar__status_right "> <span class="icon-crown "></span> </div>
                 </div>
                 <div class="bio ">
-                  <div class="bio__name ">Марк Адамс</div>
-                  <div class="bio__position ">UI Designer</div>
+                  <div class="bio__name ">Юлианна Банишридзе</div>
+                  <div>
+                    <span class="bio__position">UI Designer</span>
+                    <div class="bio__status bio__status_new">Новичек</div>
+                  </div>
+                  
                 </div>
               </div>
             </td>
@@ -210,17 +412,17 @@
             <td class="row__cell "> <a class="link " href="mailto:mark.adams@smart.com ">mark.adams@smart.com</a> </td>
             <td class="row__cell "> <a class="link " href="tel:+33088445566 ">+33 088 44 55 66</a> </td>
             <td class="row__cell ">
-              <div class="action "> <i class="fa fa-ellipsis-h "></i>
+              <div class="action "><span class="icon-menu"></span>
                 <div class="tooltip " style="width: 220px; right: -20px; top: 97% "> <i class="tooltip__arrow tooltip__arrow_white " style="right: 32px "></i>
                   <div class="content tooltip__content tooltip__content_not-padding ">
                     <ul class="list ">
                       <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-pencil "></span>
                         <div class="text ">Редактировать</div>
                       </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-locked "></span>
+                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-lock"></span>
                         <div class="text ">Поменять пароль</div>
                       </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-trashcan "></span>
+                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-restore "></span>
                         <div class="text ">Уволить</div>
                       </li>
                     </ul>
@@ -234,11 +436,13 @@
               <div class="user-profile user-profile_horizontal_small ">
                 <div class="avatar ">
                   <div class="avatar__cover avatar__cover_small "> <img class="pic " src="http://img1.rnkr-static.com/user_node_img/3143/62850064/C100/gossip-girl-tv-characters-photo-u1.jpg " alt=" " height="50 " width="50 "> </div>
-                  <div class="avatar__status avatar__status_right "> <span class="icon-crown "></span> </div>
                 </div>
                 <div class="bio ">
                   <div class="bio__name ">Марк Борн</div>
-                  <div class="bio__position ">UI Designer</div>
+                  <div>
+                    <span class="bio__position ">UI Designer</span>
+                    <div class="bio__status bio__status_spec">Специалист</div>
+                  </div>
                 </div>
               </div>
             </td>
@@ -248,17 +452,17 @@
             <td class="row__cell "> <a class="link " href="mailto:mark.adams@smart.com ">mark.adams@smart.com</a> </td>
             <td class="row__cell "> <a class="link " href="tel:+33088445566 ">+33 088 44 55 66</a> </td>
             <td class="row__cell ">
-              <div class="action "> <i class="fa fa-ellipsis-h "></i>
+              <div class="action "><span class="icon-menu"></span>
                 <div class="tooltip " style="width: 220px; right: -20px; top: 97% "> <i class="tooltip__arrow tooltip__arrow_white " style="right: 32px "></i>
                   <div class="content tooltip__content tooltip__content_not-padding ">
                     <ul class="list ">
                       <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-pencil "></span>
                         <div class="text ">Редактировать</div>
                       </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-locked "></span>
+                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-lock"></span>
                         <div class="text ">Поменять пароль</div>
                       </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-trashcan "></span>
+                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-restore "></span>
                         <div class="text ">Уволить</div>
                       </li>
                     </ul>
@@ -274,12 +478,13 @@
                   <div class="avatar__cover avatar__cover_small ">
                     <div class="text text_small ">MA</div>
                   </div>
-                  <div class="avatar__online "> <i class="fa fa-circle "></i> </div>
-                  <div class="avatar__status avatar__status_right "> <span class="icon-status "></span> </div>
                 </div>
                 <div class="bio ">
                   <div class="bio__name ">Марк Адамс</div>
-                  <div class="bio__position ">Дизайнер</div>
+                  <div>
+                    <span class="bio__position ">UI Designer</span>
+                    <div class="bio__status bio__status_prof">Профи</div>
+                  </div>
                 </div>
               </div>
             </td>
@@ -289,17 +494,17 @@
             <td class="row__cell "> <a class="link " href="mailto:mark.adams@smart.com ">mark.adams@smart.com</a> </td>
             <td class="row__cell "> <a class="link " href="tel:+33088445566 ">+33 088 44 55 66</a> </td>
             <td class="row__cell ">
-              <div class="action "> <i class="fa fa-ellipsis-h "></i>
+              <div class="action "><span class="icon-menu"></span>
                 <div class="tooltip " style="width: 220px; right: -20px; top: 97% "> <i class="tooltip__arrow tooltip__arrow_white " style="right: 32px "></i>
                   <div class="content tooltip__content tooltip__content_not-padding ">
                     <ul class="list ">
                       <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-pencil "></span>
                         <div class="text ">Редактировать</div>
                       </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-locked "></span>
+                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-lock"></span>
                         <div class="text ">Поменять пароль</div>
                       </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-trashcan "></span>
+                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-restore "></span>
                         <div class="text ">Уволить</div>
                       </li>
                     </ul>
@@ -315,12 +520,13 @@
                   <div class="avatar__cover avatar__cover_small ">
                     <div class="text text_small ">MA</div>
                   </div>
-                  <div class="avatar__online "> <i class="fa fa-circle "></i> </div>
-                  <div class="avatar__status avatar__status_right "> <span class="icon-leaf icon_white "></span> </div>
                 </div>
                 <div class="bio ">
                   <div class="bio__name ">Марк Адамс</div>
-                  <div class="bio__position ">Дизайнер</div>
+                  <div>
+                    <span class="bio__position ">UI Designer</span>
+                    <div class="bio__status bio__status_ex">Эксперт</div>
+                  </div>
                 </div>
               </div>
             </td>
@@ -330,140 +536,17 @@
             <td class="row__cell "> <a class="link " href="mailto:mark.adams@smart.com ">mark.adams@smart.com</a> </td>
             <td class="row__cell "> <a class="link " href="tel:+33088445566 ">+33 088 44 55 66</a> </td>
             <td class="row__cell ">
-              <div class="action "> <i class="fa fa-ellipsis-h "></i>
+              <div class="action "><span class="icon-menu"></span>
                 <div class="tooltip " style="width: 220px; right: -20px; top: 97% "> <i class="tooltip__arrow tooltip__arrow_white " style="right: 32px "></i>
                   <div class="content tooltip__content tooltip__content_not-padding ">
                     <ul class="list ">
                       <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-pencil "></span>
                         <div class="text ">Редактировать</div>
                       </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-locked "></span>
+                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-lock"></span>
                         <div class="text ">Поменять пароль</div>
                       </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-trashcan "></span>
-                        <div class="text ">Уволить</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr class="row ">
-            <td class="row__cell ">
-              <div class="user-profile user-profile_horizontal_small ">
-                <div class="avatar ">
-                  <div class="avatar__cover avatar__cover_small ">
-                    <div class="text text_small ">MA</div>
-                  </div>
-                  <div class="avatar__online "> <i class="fa fa-circle "></i> </div>
-                  <div class="avatar__status avatar__status_right "> <span class="icon-glasses icon_white "></span> </div>
-                </div>
-                <div class="bio ">
-                  <div class="bio__name ">Марк Адамс</div>
-                  <div class="bio__position ">Дизайнер</div>
-                </div>
-              </div>
-            </td>
-            <td class="row__cell ">
-              <div class="text ">Design</div>
-            </td>
-            <td class="row__cell "> <a class="link " href="mailto:mark.adams@smart.com ">mark.adams@smart.com</a> </td>
-            <td class="row__cell "> <a class="link " href="tel:+33088445566 ">+33 088 44 55 66</a> </td>
-            <td class="row__cell ">
-              <div class="action "> <i class="fa fa-ellipsis-h "></i>
-                <div class="tooltip " style="width: 220px; right: -20px; top: 97% "> <i class="tooltip__arrow tooltip__arrow_white " style="right: 32px "></i>
-                  <div class="content tooltip__content tooltip__content_not-padding ">
-                    <ul class="list ">
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-pencil "></span>
-                        <div class="text ">Редактировать</div>
-                      </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-locked "></span>
-                        <div class="text ">Поменять пароль</div>
-                      </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-trashcan "></span>
-                        <div class="text ">Уволить</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr class="row ">
-            <td class="row__cell ">
-              <div class="user-profile user-profile_horizontal_small ">
-                <div class="avatar ">
-                  <div class="avatar__cover avatar__cover_small ">
-                    <div class="text text_small ">MA</div>
-                  </div>
-                  <div class="avatar__online "> <i class="fa fa-circle "></i> </div>
-                  <div class="avatar__status avatar__status_right "> <span class="icon-star-rating icon_white "></span> </div>
-                </div>
-                <div class="bio ">
-                  <div class="bio__name ">Марк Адамс</div>
-                  <div class="bio__position ">Дизайнер</div>
-                </div>
-              </div>
-            </td>
-            <td class="row__cell ">
-              <div class="text ">Design</div>
-            </td>
-            <td class="row__cell "> <a class="link " href="mailto:mark.adams@smart.com ">mark.adams@smart.com</a> </td>
-            <td class="row__cell "> <a class="link " href="tel:+33088445566 ">+33 088 44 55 66</a> </td>
-            <td class="row__cell ">
-              <div class="action "> <i class="fa fa-ellipsis-h "></i>
-                <div class="tooltip " style="width: 220px; right: -20px; top: 97% "> <i class="tooltip__arrow tooltip__arrow_white " style="right: 32px "></i>
-                  <div class="content tooltip__content tooltip__content_not-padding ">
-                    <ul class="list ">
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-pencil "></span>
-                        <div class="text ">Редактировать</div>
-                      </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-locked "></span>
-                        <div class="text ">Поменять пароль</div>
-                      </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-trashcan "></span>
-                        <div class="text ">Уволить</div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr class="row ">
-            <td class="row__cell ">
-              <div class="user-profile user-profile_horizontal_small ">
-                <div class="avatar ">
-                  <div class="avatar__cover avatar__cover_small ">
-                    <div class="text text_small ">MA</div>
-                  </div>
-                  <div class="avatar__online "> <i class="fa fa-circle "></i> </div>
-                  <div class="avatar__status avatar__status_right "> <span class="icon-lamp icon_white "></span> </div>
-                </div>
-                <div class="bio ">
-                  <div class="bio__name ">Марк Адамс</div>
-                  <div class="bio__position ">Дизайнер</div>
-                </div>
-              </div>
-            </td>
-            <td class="row__cell ">
-              <div class="text ">Design</div>
-            </td>
-            <td class="row__cell "> <a class="link " href="mailto:mark.adams@smart.com ">mark.adams@smart.com</a> </td>
-            <td class="row__cell "> <a class="link " href="tel:+33088445566 ">+33 088 44 55 66</a> </td>
-            <td class="row__cell ">
-              <div class="action "> <i class="fa fa-ellipsis-h "></i>
-                <div class="tooltip " style="width: 220px; right: -20px; top: 97% "> <i class="tooltip__arrow tooltip__arrow_white " style="right: 32px "></i>
-                  <div class="content tooltip__content tooltip__content_not-padding ">
-                    <ul class="list ">
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-pencil "></span>
-                        <div class="text ">Редактировать</div>
-                      </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-locked "></span>
-                        <div class="text ">Поменять пароль</div>
-                      </li>
-                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-trashcan "></span>
+                      <li class="list__item list__item_iconed list__item_hovered "> <span class="fa i-icon icon_content icon-restore "></span>
                         <div class="text ">Уволить</div>
                       </li>
                     </ul>
@@ -694,17 +777,6 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="sidebar ">
-      <div class="content-filter "> <span class="content-filter__list ">
-
-<i class="fa fa-bars "></i>
-
-</span> <span class="content-filter__squad ">
-
-<i class="fa fa-th "></i>
-
-</span> </div>
     </div>
   </div>
 </body>

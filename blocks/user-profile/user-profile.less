@@ -24,7 +24,48 @@
       font-size: 12px; 
       font-weight: normal;
     }
-    
+    &__status {
+      display: inline-block;
+      font-size: 12px;
+      font-family: ProximaNovaReg;
+      position: relative;
+      padding-left: 12px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        top: 50%;
+        margin-top: -2px;
+        z-index: 2;
+        left: 2px;
+      }
+      &_new {
+        color: #3bc7ab;
+        &:before {
+        background: #3bc7ab;
+        }
+      }
+      &_spec {
+        color: #1ebfe9;
+        &:before {
+        background: #1ebfe9;
+        }
+      }
+      &_prof {
+        color: #e9a93f;
+        &:before {
+        background: #e9a93f;
+        }
+      }
+      &_ex {
+        color: #e86d31;
+        &:before {
+        background: #e86d31;
+        }
+      }
+    }
     &__post-text {
       display: inline-block;
       font-size: 14px;
