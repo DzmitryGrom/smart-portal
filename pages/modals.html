@@ -23,17 +23,18 @@
 
 <body ng-controller="TestController">
   <h1>Modals</h1>
-  <button ng-click="openLink()">Create link</button>
-  <button ng-click="openArticle()">Create article</button>
-  <button ng-click="openConfirm()">Confirm</button>
-  <button ng-click="openConfirmEmployer()">ConfirmEmp</button>
-  <button ng-click="openCrop()">Crop</button>
+  <button ng-click="openLink()" class="btn">Create link</button>
+  <button ng-click="openArticle()" class="btn">Create article</button>
+  <button ng-click="openConfirm()" class="btn">Confirm</button>
+  <button ng-click="openConfirmDelete()" class="btn">ConfirmDelete</button>
+  <button ng-click="openConfirmEmployer()" class="btn">ConfirmEmp</button>
+  <button ng-click="openCrop()" class="btn">Crop</button>
 
   <style>
     body{
       padding: 20px;
     }
-    button{
+    .btn{
       width: 100px;
       margin-bottom: 20px;
     }

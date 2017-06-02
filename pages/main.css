@@ -3087,6 +3087,10 @@ a {
   background: url(interface/icons/trashcan.svg) no-repeat;
   background-position: center center;
 }
+.icon-trashcan-modal {
+  background: url(interface/icons/trashcan-modal.svg) no-repeat;
+  background-position: center center;
+}
 .icon-arrow {
   background: url(interface/icons/arrow.svg) no-repeat;
   background-position: center center;
@@ -4837,6 +4841,12 @@ a {
   margin-top: -6px;
   right: 20px;
 }
+.category__item .number_sidebar {
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  color: #1f8ceb;
+  display: inline-block;
+}
 .category__item .icon-pencil {
   padding: 10px;
 }
@@ -4847,6 +4857,9 @@ a {
 .category__item:hover .icon-pencil,
 .category__item:hover .icon-filter {
   display: inline-block;
+}
+.category__item:hover .number_sidebar {
+  display: none;
 }
 .category__item_full-width {
   flex: 0 0 100%;
@@ -5039,6 +5052,13 @@ textarea {
 .category__item_icon .icon.icon-status {
   margin-right: -4px;
 }
+.category__item_icon .number_sidebar {
+  position: absolute;
+  right: 20px;
+  line-height: 1;
+  top: 50%;
+  margin-top: -5px;
+}
 .category__item_icon .icon-social {
   color: #d8e2e9;
   vertical-align: middle;
@@ -5188,9 +5208,21 @@ textarea {
   display: flex;
   justify-content: space-between;
 }
+.checkbox-label .checkbox-text {
+  color: #9aa5ab;
+}
 .checkbox-label_inline {
   display: inline-block;
   margin-right: 18px;
+}
+.checkbox-label:hover {
+  cursor: pointer;
+}
+.checkbox-label:hover .checkbox__indicator {
+  background-color: #f5f5f8;
+}
+.checkbox-label:hover .checkbox-text {
+  color: #556066;
 }
 .checkbox-text {
   display: inline-block;
@@ -5330,7 +5362,6 @@ textarea {
 .checkbox-group__item > .checkbox-label > .checkbox-text {
   width: 135px;
   font-family: ProximaNovaLight;
-  color: #556066;
   margin-left: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -6755,11 +6786,16 @@ body.ngdialog-open {
 }
 /*ngdialog.ngdialog_normal*/
 .ngdialog.ngdialog_normal .ngdialog-content {
-  width: 430px;
+  width: 389px;
   position: relative;
   text-align: center;
   padding: 30px 0;
   border-radius: 3px;
+}
+.ngdialog.ngdialog_normal .ngdialog-content .radio-button_block {
+  width: 272px;
+  margin: 0 auto;
+  text-align: left;
 }
 .ngdialog.ngdialog_normal .ngdialog-content .title {
   font-size: 16px;
@@ -6768,19 +6804,30 @@ body.ngdialog-open {
   color: #121212;
 }
 .ngdialog.ngdialog_normal .ngdialog-content .description {
-  font-size: 15px;
-  font-family: "ProximaNovaBold";
+  font-size: 16px;
+  font-family: ProximaNovaSem;
   color: #7e7e7e;
 }
 .ngdialog.ngdialog_normal .ngdialog-content .category__item_input {
-  width: 250px;
+  width: 272px;
   margin: 0 auto;
+}
+.ngdialog.ngdialog_normal .ngdialog-content .icon {
+  width: 168px;
+  height: 168px;
+  background-size: 168px 168px;
+  margin: 0 auto;
+  display: inline-block;
 }
 .ngdialog.ngdialog_normal .ngdialog-content .ngdialog-close {
   display: inline-block;
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  font-size: 30px;
+  color: #c4c7cc;
 }
 /*ngdialog_half-width*/
 .ngdialog_half-width .article {
@@ -7484,6 +7531,12 @@ body.ngdialog-open {
   justify-content: space-between;
   margin-top: 0px;
 }
+.radio-button_block {
+  display: block;
+}
+.radio-button__item {
+  margin: 0 0 8px 0;
+}
 .radio-button_two-btns {
   display: block;
   margin-top: 8px;
@@ -7586,22 +7639,8 @@ body.ngdialog-open {
 .radio-button-label:hover .text {
   color: #556066;
 }
-.radio-button-label:hover .radio-button + .radio-button__indicator:before {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border: 1px solid transparent;
-  border-radius: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -4px 0 0 -4px;
-  box-sizing: content-box;
-}
-.radio-button-label:hover .radio-button + .radio-button__indicator_blue:before {
-  content: "";
-  background: #1f8ceb;
-  opacity: 0.5;
+.radio-button-label:hover .radio-button__indicator {
+  background-color: #f5f5f8;
 }
 /*
 	Icon font

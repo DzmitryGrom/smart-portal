@@ -3,6 +3,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 0px;
+  &_block {
+    display: block;
+  }
+  &__item {
+    margin: 0 0 8px 0;
+  }
   &_two-btns {
     display: block;
     margin-top: 8px;
@@ -103,22 +109,8 @@
       .text {
         color: #556066;
       }
-      .radio-button + .radio-button__indicator:before {
-        content: "";
-        width: 6px;
-        height: 6px;
-        border: 1px solid transparent;
-        border-radius: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -4px 0 0 -4px;
-        box-sizing: content-box;
-      }
-      .radio-button + .radio-button__indicator_blue:before {
-        content: "";
-        background: #1f8ceb;
-        opacity: 0.5;
+      .radio-button__indicator {
+        background-color: #f5f5f8;
         
       }
     }

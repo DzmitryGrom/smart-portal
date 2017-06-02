@@ -4,8 +4,20 @@
   user-select: none;
   display: flex;
   justify-content: space-between;
+  .checkbox-text {
+    color: #9aa5ab;
+  }
   &_inline {
     display: inline-block;
     margin-right: 18px;
+  }
+  &:hover {
+    cursor: pointer;
+    .checkbox__indicator {
+      background-color: #f5f5f8;
+    }
+    .checkbox-text {
+      color: #556066
+    }
   }
 }

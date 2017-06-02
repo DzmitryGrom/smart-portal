@@ -41,6 +41,18 @@ app.controller('TestController', ['$scope', 'ngDialog', '$q', function ($scope, 
       console.log('Modal promise rejected. Reason: ', reason);
     });
   };
+  $scope.openConfirmDelete = function () {
+    ngDialog.openConfirm({
+      className: 'ngdialog_normal  ngdialog-theme-default',
+      template: '<div class="ng-dialog__wrapper">\n <span class="icon icon-trashcan-modal"></span><p class="description">Удалить раздел: Распространители</p><div class="radio-button radio-button_block"><p class="radio-button__item"><label class="radio-button-label">\n    <input class="radio-button" name="user" type="radio"> <i class="radio-button__indicator radio-button__indicator_blue"></i> <span class="text">Отправить содержимое в корзину</span> </label></p><p class="radio-button__item"><label class="radio-button-label">\n    <input class="radio-button" name="user" type="radio"> <i class="radio-button__indicator radio-button__indicator_blue"></i> <span class="text">Перенести содержимое в раздел</span> </label></p></div> <div class="category__item category__item_drop category__item_input"><input class="input" type="text" placeholder="Type here" value="Неотсортированное" readonly="true"><div class="i-arrow i-arrow_to_down"></div></div><div class="category__footer  category__footer_justify-center"><button class="button button_success" type="button">Применить</button></div>\n</div>',
+      plain: true,
+      scope: $scope
+    }).then(function (value) {
+      console.log('Modal promise resolved. Value: ', value);
+    }, function (reason) {
+      console.log('Modal promise rejected. Reason: ', reason);
+    });
+  };
 
   $scope.openCrop = function () {
     ngDialog.openConfirm({
