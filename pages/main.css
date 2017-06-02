@@ -3091,6 +3091,10 @@ a {
   background: url(interface/icons/trashcan-modal.svg) no-repeat;
   background-position: center center;
 }
+.icon-folder {
+  background: url(interface/icons/folder.svg) no-repeat;
+  background-position: center center;
+}
 .icon-arrow {
   background: url(interface/icons/arrow.svg) no-repeat;
   background-position: center center;
@@ -6803,10 +6807,14 @@ body.ngdialog-open {
   margin-bottom: 25px;
   color: #121212;
 }
+.ngdialog.ngdialog_normal .ngdialog-content .category__footer {
+  margin-top: 72px;
+}
 .ngdialog.ngdialog_normal .ngdialog-content .description {
   font-size: 16px;
   font-family: ProximaNovaSem;
   color: #7e7e7e;
+  margin: 16px 0;
 }
 .ngdialog.ngdialog_normal .ngdialog-content .category__item_input {
   width: 272px;
