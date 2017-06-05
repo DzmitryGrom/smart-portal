@@ -293,6 +293,7 @@ body.ngdialog-open {
 .ngdialog_full-width {
   .ng-dialog__wrapper {
     background: #fff;
+
   }
   .textarea {
     border: none;
@@ -368,17 +369,111 @@ body.ngdialog-open {
     }
   }
 }
+.ngdialog_full-width_blue {
+  .ng-dialog__wrapper {
+    background: #f6f9fb;
+  }
+}
 .ngdialog_full-width, .ngdialog_half-width {
   .button {
     width: auto;
   }
   .button_add-more {
     width: 192px;
+    &-plus {
+      width: 32px;
+      min-width: 32px;
+      padding: 0px;
+    }
   }
   .solid {
     width: 100%;
     margin: 24px 0;
   }
+  .category {
+    padding: 24px 24px 0;
+    .icon-close {
+      font-size: 24px;
+      position: absolute;
+      right: 28px;
+      top: 22px;
+      z-index: 2;
+    }
+  }
+  .category_columns_two-with-labels.category_not-bg {
+    padding-top: 0;
+    padding-bottom: 24px;
+    .category__item_input {
+      margin-bottom: 0;
+    }
+  }
+  .datagrid_user {
+    margin-bottom: 28px;
+    border-radius: 5px;
+    .row__cell {
+      &:first-child,
+      &:first-child .bio__name,
+      &:nth-child(2),
+      &:nth-child(2) .link,
+      &:nth-child(3) ,
+      &:nth-child(3) .text ,
+      &:nth-child(4),
+      &:nth-child(4) .text ,
+      &:nth-child(5),
+      &:nth-child(5) .text {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      &:first-child {
+        padding: 11px 15px 11px 24px;
+        width: 15%;
+        max-width: 110px;
+        .bio__name {
+          max-width: 90px;
+        }
+      }
+      &:nth-child(2){
+        width: 22%;
+        max-width: 160px;
+        .link {
+          max-width: 160px;
+        }
+      }
+      &:nth-child(3){
+        width: 12%;
+        max-width: 87px;
+        .text {
+          max-width: 87px;
+        }
+      }
+      &:nth-child(4){
+        width: 15%;
+        max-width: 110px;
+        .text {
+          max-width: 110px;
+        }
+      }
+      &:nth-child(5){
+        width: 15%;
+        max-width: 110px;
+        .text {
+          max-width: 110px;
+        }
+      }
+      &:nth-child(6) {
+        width: 80px;
+      }
+      &:nth-child(7) {
+        padding: 11px 24px 11px 15px;
+        width: 24px;
+      }
+      .icon-close {
+        text-align: center;
+      }
+    }
+  }
+
   .text_caption {
     width: 100%;
     font-size: 24px;

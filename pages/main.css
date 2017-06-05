@@ -3103,6 +3103,13 @@ a {
   background: url(interface/icons/fired.svg) no-repeat;
   background-position: center center;
 }
+.icon-moderator:before {
+  content: "\e910";
+}
+.icon-moderator:after {
+  content: "\e911";
+  margin-left: -1em;
+}
 .icon-status:before {
   content: "\e92b";
   color: #d8e2e9;
@@ -3113,189 +3120,192 @@ a {
   color: #ffffff;
 }
 .icon-heart:before {
-  content: "\e90d";
-}
-.icon-heart_active:before {
-  content: "\e90e";
-}
-.icon-divider:before {
-  content: "\e900";
-}
-.icon-document:before {
-  content: "\e901";
-}
-.icon-documents:before {
-  content: "\e902";
-}
-.icon-done:before {
-  content: "\e903";
-}
-.icon-dropbox:before {
-  content: "\e904";
-}
-.icon-emoji:before {
-  content: "\e905";
-}
-.icon-facebook:before {
-  content: "\e906";
-}
-.icon-filter:before {
-  content: "\e907";
-}
-.icon-fired:before {
-  content: "\e908";
-}
-.icon-ghost:before {
-  content: "\e909";
-}
-.icon-glasses:before {
-  content: "\e90a";
-}
-.icon-googledrive:before {
-  content: "\e90b";
-}
-.icon-hat:before {
-  content: "\e90c";
-}
-.icon-help:before {
-  content: "\e90f";
-}
-.icon-home:before {
-  content: "\e910";
-}
-.icon-info:before {
-  content: "\e911";
-}
-.icon-instagram:before {
-  content: "\e912";
-}
-.icon-italic:before {
-  content: "\e913";
-}
-.icon-lamp:before {
-  content: "\e914";
-}
-.icon-leaf:before {
-  content: "\e915";
-}
-.icon-link:before {
-  content: "\e916";
-}
-.icon-list:before {
-  content: "\e917";
-}
-.icon-lock:before {
-  content: "\e918";
-}
-.icon-mail:before {
-  content: "\e919";
-}
-.icon-menu:before {
-  content: "\e91a";
-}
-.icon-moderator .path1:before {
-  content: "\e91b";
-}
-.icon-moderator .path2:before {
-  content: "\e91c";
-  margin-left: -1em;
-}
-.icon-notification:before {
-  content: "\e91d";
-}
-.icon-ordered-list:before {
-  content: "\e91e";
-}
-.icon-pencil:before {
-  content: "\e91f";
-}
-.icon-picture:before {
-  content: "\e920";
-}
-.icon-pin:before {
-  content: "\e921";
-}
-.icon-plus-add:before {
-  content: "\e922";
-}
-.icon-quote:before {
-  content: "\e923";
-}
-.icon-replace:before {
-  content: "\e924";
-}
-.icon-restore:before {
-  content: "\e925";
-}
-.icon-scripts:before {
-  content: "\e926";
-}
-.icon-search:before {
   content: "\e927";
 }
-.icon-sound:before {
+.icon-heart_active:before {
   content: "\e928";
 }
+.icon-sound:before {
+  content: "\e900";
+}
 .icon-star:before {
-  content: "\e929";
+  content: "\e901";
 }
 .icon-star-full:before {
-  content: "\e92a";
+  content: "\e902";
 }
 .icon-star-rating:before {
-  content: "\e92b";
+  content: "\e903";
+}
+.icon-sunglasses:before {
+  content: "\e904";
 }
 .icon-tag:before {
-  content: "\e92c";
+  content: "\e905";
 }
 .icon-team:before {
-  content: "\e92d";
+  content: "\e906";
 }
 .icon-trash:before {
-  content: "\e92e";
+  content: "\e907";
+}
+.icon-trashcan:before {
+  content: "\e908";
 }
 .icon-unlink:before {
-  content: "\e92f";
+  content: "\e909";
 }
 .icon-up-arrow:before {
-  content: "\e930";
+  content: "\e90a";
+}
+.icon-upload:before {
+  content: "\e90b";
 }
 .icon-user-admin:before {
-  content: "\e931";
-}
-.icon-user:before {
-  content: "\e932";
+  content: "\e90c";
 }
 .icon-video:before {
-  content: "\e933";
+  content: "\e90d";
 }
 .icon-vk:before {
-  content: "\e934";
+  content: "\e90e";
+}
+.icon-user:before {
+  content: "\e90f";
 }
 .icon-bold:before {
-  content: "\e935";
+  content: "\e912";
 }
 .icon-book:before {
-  content: "\e936";
+  content: "\e913";
 }
 .icon-camera:before {
-  content: "\e937";
-}
-.icon-circle .path1:before {
-  content: "\e938";
-}
-.icon-circle .path2:before {
-  content: "\e939";
-  margin-left: -1em;
+  content: "\e914";
 }
 .icon-close:before {
-  content: "\e93a";
+  content: "\e916";
 }
 .icon-comments:before {
-  content: "\e93b";
+  content: "\e917";
 }
 .icon-crown:before {
+  content: "\e918";
+  color: #f35e5e;
+}
+.icon-divider:before {
+  content: "\e919";
+}
+.icon-document:before {
+  content: "\e91a";
+}
+.icon-documents:before {
+  content: "\e91b";
+}
+.icon-done:before {
+  content: "\e91c";
+}
+.icon-down-arrow:before {
+  content: "\e91d";
+}
+.icon-dropbox:before {
+  content: "\e91e";
+}
+.icon-emoji:before {
+  content: "\e91f";
+}
+.icon-facebook:before {
+  content: "\e920";
+}
+.icon-filter:before {
+  content: "\e921";
+}
+.icon-fired:before {
+  content: "\e922";
+}
+.icon-ghost:before {
+  content: "\e923";
+}
+.icon-glasses:before {
+  content: "\e924";
+}
+.icon-googledrive:before {
+  content: "\e925";
+}
+.icon-hat:before {
+  content: "\e926";
+}
+.icon-help:before {
+  content: "\e929";
+}
+.icon-home:before {
+  content: "\e92a";
+}
+.icon-info:before {
+  content: "\e92b";
+}
+.icon-instagram:before {
+  content: "\e92c";
+}
+.icon-italic:before {
+  content: "\e92d";
+}
+.icon-lamp:before {
+  content: "\e92e";
+}
+.icon-leaf:before {
+  content: "\e92f";
+  color: #3bc7ab;
+}
+.icon-link:before {
+  content: "\e930";
+}
+.icon-list:before {
+  content: "\e931";
+}
+.icon-lock:before {
+  content: "\e932";
+}
+.icon-mail:before {
+  content: "\e933";
+}
+.icon-menu:before {
+  content: "\e934";
+}
+.icon-notification:before {
+  content: "\e935";
+}
+.icon-ordered-list:before {
+  content: "\e936";
+}
+.icon-ordered-list2:before {
+  content: "\e937";
+}
+.icon-pencil:before {
+  content: "\e938";
+}
+.icon-picture:before {
+  content: "\e939";
+}
+.icon-pin:before {
+  content: "\e93a";
+}
+.icon-plus-add:before {
+  content: "\e93b";
+}
+.icon-quote:before {
   content: "\e93c";
+}
+.icon-replace:before {
+  content: "\e93d";
+}
+.icon-restore:before {
+  content: "\e93e";
+}
+.icon-scripts:before {
+  content: "\e93f";
+}
+.icon-search:before {
+  content: "\e940";
 }
 /*icon_nav*/
 .icon_nav {
@@ -3732,6 +3742,9 @@ a {
 }
 .link[href^=tel] {
   color: #768894;
+}
+.link_black {
+  color: #556066;
 }
 .link__slide {
   cursor: pointer;
@@ -4185,6 +4198,11 @@ a {
 .datagrid__body .row__cell .user-profile .checkbox-label_inline {
   margin-left: 9px;
 }
+.datagrid__body .row__cell .cell__tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .datagrid__body .row__cell .tag_relative {
   display: inline-block;
 }
@@ -4300,6 +4318,13 @@ a {
 .category .tag__item_border {
   margin-bottom: 4px;
   padding: 0 8px;
+}
+.category_not-bg {
+  width: 100%;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
 }
 .category__collapser {
   margin-top: 10px;
@@ -5046,10 +5071,13 @@ textarea {
 .category__item_icon .fa,
 .category__item_icon .icon-group,
 .category__item_icon .icon {
-  min-width: 36px;
   text-align: center;
-  margin-right: -1px;
+  font-size: 24px;
   display: inline-block;
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  z-index: 2;
 }
 .category__item_icon .fa.icon-status,
 .category__item_icon .icon-group.icon-status,
@@ -6327,6 +6355,16 @@ tags-input .autocomplete .suggestion-item em {
   -o-transition: opacity 350ms linear;
   transition: opacity 350ms linear;
 }
+.button_add-more-plus {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  box-shadow: 0 0px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+.button_add-more-plus .icon {
+  font-size: 11px;
+}
 .article__footer {
   position: relative;
   display: flex;
@@ -6948,6 +6986,9 @@ body.ngdialog-open {
   transform: scale(1);
   transition-duration: .2s;
 }
+.ngdialog_full-width_blue .ng-dialog__wrapper {
+  background: #f6f9fb;
+}
 .ngdialog_full-width .button,
 .ngdialog_half-width .button {
   width: auto;
@@ -6956,10 +6997,125 @@ body.ngdialog-open {
 .ngdialog_half-width .button_add-more {
   width: 192px;
 }
+.ngdialog_full-width .button_add-more-plus,
+.ngdialog_half-width .button_add-more-plus {
+  width: 32px;
+  min-width: 32px;
+  padding: 0px;
+}
 .ngdialog_full-width .solid,
 .ngdialog_half-width .solid {
   width: 100%;
   margin: 24px 0;
+}
+.ngdialog_full-width .category,
+.ngdialog_half-width .category {
+  padding: 24px 24px 0;
+}
+.ngdialog_full-width .category .icon-close,
+.ngdialog_half-width .category .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 28px;
+  top: 22px;
+  z-index: 2;
+}
+.ngdialog_full-width .category_columns_two-with-labels.category_not-bg,
+.ngdialog_half-width .category_columns_two-with-labels.category_not-bg {
+  padding-top: 0;
+  padding-bottom: 24px;
+}
+.ngdialog_full-width .category_columns_two-with-labels.category_not-bg .category__item_input,
+.ngdialog_half-width .category_columns_two-with-labels.category_not-bg .category__item_input {
+  margin-bottom: 0;
+}
+.ngdialog_full-width .datagrid_user,
+.ngdialog_half-width .datagrid_user {
+  margin-bottom: 28px;
+  border-radius: 5px;
+}
+.ngdialog_full-width .datagrid_user .row__cell:first-child,
+.ngdialog_half-width .datagrid_user .row__cell:first-child,
+.ngdialog_full-width .datagrid_user .row__cell:first-child .bio__name,
+.ngdialog_half-width .datagrid_user .row__cell:first-child .bio__name,
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(2),
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(2),
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(2) .link,
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(2) .link,
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(3),
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(3),
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(3) .text,
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(3) .text,
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(4),
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(4),
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(4) .text,
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(4) .text,
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(5),
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(5),
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(5) .text,
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(5) .text {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.ngdialog_full-width .datagrid_user .row__cell:first-child,
+.ngdialog_half-width .datagrid_user .row__cell:first-child {
+  padding: 11px 15px 11px 24px;
+  width: 15%;
+  max-width: 110px;
+}
+.ngdialog_full-width .datagrid_user .row__cell:first-child .bio__name,
+.ngdialog_half-width .datagrid_user .row__cell:first-child .bio__name {
+  max-width: 90px;
+}
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(2),
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(2) {
+  width: 22%;
+  max-width: 160px;
+}
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(2) .link,
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(2) .link {
+  max-width: 160px;
+}
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(3),
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(3) {
+  width: 12%;
+  max-width: 87px;
+}
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(3) .text,
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(3) .text {
+  max-width: 87px;
+}
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(4),
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(4) {
+  width: 15%;
+  max-width: 110px;
+}
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(4) .text,
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(4) .text {
+  max-width: 110px;
+}
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(5),
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(5) {
+  width: 15%;
+  max-width: 110px;
+}
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(5) .text,
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(5) .text {
+  max-width: 110px;
+}
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(6),
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(6) {
+  width: 80px;
+}
+.ngdialog_full-width .datagrid_user .row__cell:nth-child(7),
+.ngdialog_half-width .datagrid_user .row__cell:nth-child(7) {
+  padding: 11px 24px 11px 15px;
+  width: 24px;
+}
+.ngdialog_full-width .datagrid_user .row__cell .icon-close,
+.ngdialog_half-width .datagrid_user .row__cell .icon-close {
+  text-align: center;
 }
 .ngdialog_full-width .text_caption,
 .ngdialog_half-width .text_caption {
@@ -8665,6 +8821,7 @@ body .redactor-box-fullscreen {
   left: -23px;
   width: auto;
   white-space: nowrap;
+  box-shadow: 0 0px 40px rgba(0, 0, 0, 0.1);
   top: -50px;
   z-index: 2;
   /* Отображаем подсказку поверх других элементов */

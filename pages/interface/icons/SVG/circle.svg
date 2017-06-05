@@ -1,12 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="56 -56 612 612" style="enable-background:new 56 -56 612 612;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#D8E2E9;}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-</style>
-<path class="st0" d="M362-56c169,0,306,137,306,306S531,556,362,556C193,556,56,419,56,250S193-56,362-56z"/>
-<path class="st1" d="M362,97c84.5,0,153,68.5,153,153c0,84.5-68.5,153-153,153c-84.5,0-153-68.5-153-153C209,165.5,277.5,97,362,97z
-	"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <path fill="#D8E2E9" d="M8,0 C12.418278,2.705415e-16 16,3.581722 16,8 C16,12.418278 12.418278,16 8,16 C3.581722,16 5.41083001e-16,12.418278 0,8 C-5.41083001e-16,3.581722 3.581722,8.11624501e-16 8,0 L8,0 Z M4,8 C4,10.209139 5.790861,12 8,12 C10.209139,12 12,10.209139 12,8 C12,5.790861 10.209139,4 8,4 C5.790861,4 4,5.790861 4,8 L4,8 Z" transform="translate(4 4)"/>
 </svg>
