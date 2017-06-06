@@ -2770,7 +2770,7 @@ a {
   left: 17px;
 }
 .header-side__notification > .tooltip {
-  margin-top: -2px;
+  margin-top: 6px;
   display: none;
 }
 .header-side__notification:hover > .tooltip,
@@ -2986,6 +2986,45 @@ a {
 .tooltip .list .list__item {
   padding-left: 8px;
 }
+.tooltip .list .list__item_bordered {
+  border-bottom: 1px solid #e4e5e9;
+  margin: 0 24px;
+  padding: 16px 0;
+}
+.tooltip .list .list__item_bordered:last-child {
+  border-bottom: none;
+}
+.tooltip .list .list__item_bordered .info {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 16px;
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 345px;
+  font-size: 16px;
+  font-family: ProximaNovaReg;
+  color: #000000;
+}
+.tooltip .list .list__item_bordered .info p {
+  margin: 0;
+}
+.tooltip .list .list__item_bordered .info p.time {
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  color: #9aa5ab;
+}
+.tooltip .list .pic {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 100%;
+}
+.tooltip .list .pic img {
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+}
 .tooltip .list .button_not-border {
   padding-left: 0px;
   text-transform: uppercase;
@@ -2999,6 +3038,14 @@ a {
   padding: 0;
   position: static;
   overflow: visible;
+}
+.tooltip .icon-close {
+  position: absolute;
+  right: 25px;
+  top: 22px;
+  z-index: 2;
+  font-size: 24px;
+  color: #c4c7cc;
 }
 .tooltip_relative {
   position: relative;
@@ -5429,7 +5476,6 @@ textarea {
   border-bottom-right-radius: 5px;
 }
 .tooltip__header {
-  background-color: #fbfbfb;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   position: relative;
   z-index: 2;
@@ -5439,7 +5485,7 @@ textarea {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 0 5px;
+  padding: 15px 24px 25px;
   justify-content: space-between;
 }
 .tooltip__header .link {
@@ -5454,6 +5500,12 @@ textarea {
 .tooltip__header_transparent {
   background-color: transparent;
   border-bottom: none;
+}
+.tooltip__header-text {
+  font-size: 16px;
+  font-family: ProximaNovaSem;
+  color: #556066;
+  line-height: 1;
 }
 .search .icon-search {
   color: #9aa5ab;
