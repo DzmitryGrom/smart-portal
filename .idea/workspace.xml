@@ -2,31 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe663626-3594-4b54-8183-0cfb4b3d215f" name="Default" comment="Све">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/interface/icons/SVG/user admin.svg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fonts/icomoon.eot" afterPath="$PROJECT_DIR$/pages/fonts/icomoon.eot" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fonts/icomoon.ttf" afterPath="$PROJECT_DIR$/pages/fonts/icomoon.ttf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fonts/icomoon.woff" afterPath="$PROJECT_DIR$/pages/fonts/icomoon.woff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/button/_add-more/button_add-more.less" afterPath="$PROJECT_DIR$/blocks/button/_add-more/button_add-more.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/category/__item/_icon/category__item_icon.less" afterPath="$PROJECT_DIR$/blocks/category/__item/_icon/category__item_icon.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/category/__item/category__item.less" afterPath="$PROJECT_DIR$/blocks/category/__item/category__item.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/category/category.less" afterPath="$PROJECT_DIR$/blocks/category/category.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/datagrid/__body/datagrid__body.less" afterPath="$PROJECT_DIR$/blocks/datagrid/__body/datagrid__body.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/dialog/dialog.less" afterPath="$PROJECT_DIR$/blocks/dialog/dialog.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/help/help.less" afterPath="$PROJECT_DIR$/blocks/help/help.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/icons/icons.less" afterPath="$PROJECT_DIR$/blocks/icons/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/link/link.less" afterPath="$PROJECT_DIR$/blocks/link/link.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/fonts/icomoon.svg" afterPath="$PROJECT_DIR$/pages/fonts/icomoon.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/interface/icons/SVG/circle.svg" afterPath="$PROJECT_DIR$/pages/interface/icons/SVG/circle.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/interface/icons/SVG/crown.svg" afterPath="$PROJECT_DIR$/pages/interface/icons/SVG/crown.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/interface/icons/SVG/lamp.svg" afterPath="$PROJECT_DIR$/pages/interface/icons/SVG/lamp.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/interface/icons/SVG/leaf.svg" afterPath="$PROJECT_DIR$/pages/interface/icons/SVG/leaf.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/interface/icons/SVG/moderator.svg" afterPath="$PROJECT_DIR$/pages/interface/icons/SVG/moderator.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/interface/icons/SVG/star.svg" afterPath="$PROJECT_DIR$/pages/interface/icons/SVG/star.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/interface/icons/SVG/user.svg" afterPath="$PROJECT_DIR$/pages/interface/icons/SVG/user.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/main.css" afterPath="$PROJECT_DIR$/pages/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/modals.html" afterPath="$PROJECT_DIR$/pages/modals.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/app.js" afterPath="$PROJECT_DIR$/tmp/app.js" />
     </list>
     <ignored path="smart-portal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +34,7 @@
           <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tmp/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
+                <state relative-caret-position="255">
                   <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
                   <folding>
                     <element signature="e#400#57443#0" expanded="false" />
@@ -138,7 +120,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="button_add-more.less" pinned="false" current-in-tab="true">
+          <file leaf-file-name="button_add-more.less" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/blocks/button/_add-more/button_add-more.less">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="201">
@@ -187,11 +169,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="icons.less" pinned="false" current-in-tab="false">
+          <file leaf-file-name="icons.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blocks/icons/icons.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="74">
-                  <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+                <state relative-caret-position="108">
+                  <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -268,13 +250,13 @@
         <option value="$PROJECT_DIR$/blocks/category/__item/_icon/category__item_icon.less" />
         <option value="$PROJECT_DIR$/blocks/category/__item/category__item.less" />
         <option value="$PROJECT_DIR$/blocks/category/category.less" />
-        <option value="$PROJECT_DIR$/blocks/icons/icons.less" />
         <option value="$PROJECT_DIR$/blocks/help/help.less" />
         <option value="/HTML Fragment (app.js:57579).html" />
         <option value="$PROJECT_DIR$/pages/modals.html" />
         <option value="$PROJECT_DIR$/tmp/app.js" />
         <option value="$PROJECT_DIR$/blocks/dialog/dialog.less" />
         <option value="$PROJECT_DIR$/blocks/button/_add-more/button_add-more.less" />
+        <option value="$PROJECT_DIR$/blocks/icons/icons.less" />
       </list>
     </option>
   </component>
@@ -615,16 +597,16 @@
       <workItem from="1495544760645" duration="8553000" />
       <workItem from="1495618999355" duration="29000" />
       <workItem from="1496414702480" duration="4430000" />
-      <workItem from="1496653005314" duration="16459000" />
+      <workItem from="1496653005314" duration="18204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139396000" />
+    <option name="totallyTimeSpent" value="141141000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34266263" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1030,14 +1012,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blocks/icons/icons.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blocks/help/help.less">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -1056,7 +1030,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tmp/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
+        <state relative-caret-position="255">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="e#400#57443#0" expanded="false" />
@@ -1129,6 +1103,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/icons/icons.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
           <folding />
         </state>
       </provider>
