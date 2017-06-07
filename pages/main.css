@@ -2835,9 +2835,6 @@ a {
   top: 100%;
   margin-top: -10px;
 }
-.tooltip_error .fa {
-  margin-right: 5px;
-}
 .tooltip_warning {
   color: #f35e5e;
   border: 1px solid #f35e5e;
@@ -2993,6 +2990,7 @@ a {
 .tooltip .list .text {
   display: inline-block;
   vertical-align: middle;
+  left: 8px;
 }
 .tooltip .list .list__item_hovered {
   margin-left: 0;
@@ -3660,8 +3658,10 @@ a {
 }
 .list__item_hovered:hover {
   background-color: #f6f9fb;
+  border-radius: 4px;
 }
-.list__item_hovered:hover .text {
+.list__item_hovered:hover .text,
+.list__item_hovered:hover .icon {
   color: #556066;
 }
 .list__item_hovered.list__item_blue:hover .text {
@@ -3697,14 +3697,14 @@ a {
   list-style: none;
   position: relative;
 }
-.list__item_iconed .fa,
 .list__item_iconed .icon {
+  margin-top: -2px;
   font-size: 24px;
+  color: #9aa5ab;
   position: absolute;
-  left: 10px;
-  text-align: center;
-  top: 50%;
-  margin-top: -12px;
+  top: 7px;
+  left: 7px;
+  z-index: 1;
 }
 .list__item_iconed-right {
   position: relative;
@@ -3712,7 +3712,6 @@ a {
   padding-left: 2em;
   list-style: none;
 }
-.list__item_iconed-right .fa,
 .list__item_iconed-right .icon {
   right: 0;
   font-size: 24px;
@@ -3731,8 +3730,7 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.list__item_iconed-right:hover .fa,
-.list__item_iconed-right .icon {
+.list__item_iconed-right:hover .icon {
   display: inline-block;
 }
 .list__item_iconed input {
@@ -4958,19 +4956,26 @@ a {
 .category__item-label_not-margin {
   margin: 0px;
 }
-.category__item-label .icon {
-  font-size: 24px;
-}
 .category__item-label .info {
   position: relative;
   display: inline-block;
   vertical-align: top;
+  cursor: pointer;
 }
 .category__item-label .info .tooltip {
   display: none;
 }
+.category__item-label .info .tooltip:hover {
+  display: block;
+}
 .category__item-label .info .tooltip_top {
   margin-bottom: 10px;
+}
+.category__item-label .info .icon {
+  font-size: 24px;
+}
+.category__item-label .info .icon:hover ~ .tooltip {
+  display: block;
 }
 .category__item {
   display: block;
@@ -4993,6 +4998,9 @@ a {
   top: 50%;
   margin-top: -6px;
   right: 20px;
+}
+.category__item.category__item_drop .tooltip_top {
+  margin-bottom: 15px;
 }
 .category__item .number_sidebar {
   font-size: 14px;

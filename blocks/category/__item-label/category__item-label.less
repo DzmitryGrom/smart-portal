@@ -7,18 +7,27 @@
   &_not-margin {
     margin: 0px;
   }
-  .icon {
-    font-size: 24px;
-  }
+
   .info {
     position: relative;
     display: inline-block;
     vertical-align: top;
+    cursor: pointer;
     .tooltip {
       display: none;
+      &:hover {
+        display: block;
+      }
       &_top {
         margin-bottom: 10px;
       }
     }
+    .icon {
+       font-size: 24px;
+      &:hover ~ .tooltip {
+        display: block;
+      }
+    }
+
   }
 }

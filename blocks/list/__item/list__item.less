@@ -23,10 +23,10 @@
     cursor: pointer;
     &:hover {
       background-color: #f6f9fb;
-      .text {
+      border-radius: 4px;
+      .text, .icon {
         color: #556066;
       }
-      
     }
     &.list__item_blue:hover {
       .text {
@@ -67,22 +67,20 @@
     padding-left: 2em;
     list-style: none;
     position: relative;
-    .fa,
     .icon {
+      margin-top: -2px;
       font-size: 24px;
+      color: #9aa5ab;
       position: absolute;
-      left: 10px;
-      text-align: center;
-      top: 50%;
-      margin-top: -12px;
-
+      top: 7px;
+      left: 7px;
+      z-index: 1;
     }
     &-right {
       position: relative;
       margin-left: 0;
       padding-left: 2em;
       list-style: none;
-      .fa,
       .icon {
         right: 0;
         font-size: 24px;
@@ -101,7 +99,7 @@
         overflow: hidden;
         text-overflow: ellipsis
       }
-      &:hover .fa,.icon {
+      &:hover .icon {
         display: inline-block;
       }
     }
