@@ -3082,7 +3082,7 @@ a {
   top: 100%;
 }
 .tooltip_bottom .tooltip__arrow {
-  top: 7px;
+  top: -7px;
 }
 .tooltip_top {
   bottom: 100%;
@@ -4965,6 +4965,9 @@ a {
   position: relative;
   display: inline-block;
   vertical-align: top;
+}
+.category__item-label .info .tooltip {
+  display: none;
 }
 .category__item-label .info .tooltip_top {
   margin-bottom: 10px;
