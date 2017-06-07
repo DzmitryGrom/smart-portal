@@ -1,8 +1,14 @@
 .category__item_icon{
   position: relative;
 
-  .fa,
-  .icon-group,
+  &:hover {
+    .icon-pencil, .icon-filter {
+      display: inline-block;
+    }
+    .number_sidebar {
+      display: none;
+    }
+  }
   .icon {
     text-align: center;
     font-size: 24px;

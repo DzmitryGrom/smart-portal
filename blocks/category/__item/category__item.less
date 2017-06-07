@@ -21,6 +21,28 @@
     .tooltip_top {
       margin-bottom: 15px;
     }
+    .category-form {
+      left: 0px;
+      right: 0px;
+      width: 100%;
+      &_right {
+        left: 328px;
+        .category-form__arrow {
+          top: 100px;
+          left: -6px;
+        }
+      }
+      .icon {
+        margin-top: -22px;
+      }
+      &_bottom {
+        margin-top: 10px;
+      }
+      &_top {
+        bottom: 100%;
+        margin-top: 10px;
+      }
+    }
   }
   .number_sidebar {
     font-size: 14px;
@@ -34,14 +56,7 @@
   .icon-pencil, .icon-filter {
     display: none;
   }
-  &:hover {
-    .icon-pencil, .icon-filter {
-      display: inline-block;
-    }
-    .number_sidebar {
-      display: none;
-    }
-  }
+
   &_full-width {
     flex: 0 0 100%;
     .i-icon {
