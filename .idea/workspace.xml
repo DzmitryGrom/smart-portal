@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fe663626-3594-4b54-8183-0cfb4b3d215f" name="Default" comment="Све">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/category-form/category-form.less" afterPath="$PROJECT_DIR$/blocks/category-form/category-form.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/category/__item/category__item.less" afterPath="$PROJECT_DIR$/blocks/category/__item/category__item.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/main.css" afterPath="$PROJECT_DIR$/pages/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/app.js" afterPath="$PROJECT_DIR$/tmp/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="smart-portal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -139,8 +136,8 @@
           <file leaf-file-name="category__item.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/blocks/category/__item/category__item.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="201">
-                  <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+                <state relative-caret-position="65">
+                  <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
                   <folding>
                     <element signature="e#1047#1153#0" expanded="false" />
                     <element signature="e#1169#1193#0" expanded="false" />
@@ -579,16 +576,16 @@
       <workItem from="1496414702480" duration="4430000" />
       <workItem from="1496653005314" duration="18204000" />
       <workItem from="1496759687798" duration="545000" />
-      <workItem from="1496761088067" duration="17159000" />
+      <workItem from="1496761088067" duration="18357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="158845000" />
+    <option name="totallyTimeSpent" value="160043000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35325265" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1202,8 +1199,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blocks/category/__item/category__item.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
+        <state relative-caret-position="65">
+          <caret line="31" column="21" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           <folding>
             <element signature="e#1047#1153#0" expanded="false" />
             <element signature="e#1169#1193#0" expanded="false" />

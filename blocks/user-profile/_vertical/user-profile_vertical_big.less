@@ -4,15 +4,15 @@
   border-radius: 5px;
   box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
   display: flex;
-  padding: 30px;
+  padding: 24px;
   flex-direction: column;
   align-items: center;
   .avatar {
-    margin-bottom: 25px;
+    margin-bottom: 16px;
   }
   .bio {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
   .action {
     position: absolute;
@@ -26,16 +26,10 @@
     .tooltip {
       display: none;
     }
-    .fa,
-    .icon {
-      font-size: 17px;
-      color: #bbc5cc;
-    }
   }
   .social {
-    border-top: 1px solid rgba(0, 0, 0, 0.06);
-    width: ~'calc(100% + 60px)';
-    margin: 0 -30px -30px -30px;
+    width: 100%;
+    margin: 16px -30px 0px -30px;
     display: flex;
     justify-content: space-between;
     .link {
@@ -43,7 +37,10 @@
       text-align: center;
       font-size: 21px;
       flex: 1 1 auto;
-      padding: 19px 0;
+      max-width: 56px;
+      padding: 15px 0;
+      border: 1px solid #ecf2f5;
+      border-radius: 3px;
       &_disable {
         .icon {
           position: relative;
@@ -59,19 +56,23 @@
           }
         }
       }
-      border-left: 1px solid rgba(0, 0, 0, 0.06);
-      &:first-child {
-        border-left: none;
-      }
     }
   }
   .datagrid {
-    margin: 25px 0;
+    margin: 0;
     &__body {
       .row {
+        height: auto;
         border: none;
         &__cell {
-          padding: 10px;
+          padding: 10px 10px;
+          height: auto;
+          .icon, .text {
+            vertical-align: middle;
+          }
+          .icon {
+            margin-right: 6px;
+          }
           &:first-child {
             color: #afbcc2;
             font-family: ProximaNovaLight;
@@ -82,8 +83,15 @@
             font-size: 13px;
           }
         }
-        &:nth-child(3n + 3) {
+        &:first-child {
+          border-top: 1px solid #ecf2f5;
+        }
+        &:nth-child(3n + 3),
+        &:last-child {
           border-bottom: 1px solid #ecf2f5;
+        }
+        &:last-child {
+           height: 50px;
         }
       }
     }
