@@ -1,32 +1,17 @@
 .notes-list__item {
   display: flex;
   align-items: flex-start;
-  padding: 20px 30px;
+  padding: 20px 24px;
   position: relative;
   border-top: 1px solid #ecf2f5;
   &:first-child {
     border-top: none;
   }
-  .content {
-    margin: 0 35px 0 20px;
-    .title {
-      color: #2f3f4c;
-      font-family: ProximaNovaReg;
-      font-size: 15px;
-      margin-bottom: 1em;
-    }
-    .text {
-      font-family: ProximaNovaLight;
-      font-size: 13px;
-      color: #77828c;
-      padding: 0;
-      margin: 0;
-    }
-  }
   .date {
-    font-family: ProximaNovaLight;
-    font-size: 13px;
-    margin-top: 16px;
+    font-family: ProximaNovaReg;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
     color: #b0bfc9
   }
   .footer {
@@ -46,26 +31,26 @@
       }
     }
   }
-  &_removed {
-    .content {
-      .text {
-        font-size: 14px;
-        padding-left: 50px;
-        color: #aaaaaa;
-      }
-    }
-  }
   &_delete {
     .content {
       textarea {
-        width: calc((100% - 10px));
+        width: 94%;
       }
     }
   }
+  .smile {
+    font-size: 24px;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    z-index: 2;
+    color: #c4c7cc;
+  }
   .textarea {
     font-family: ProximaNovaLight;
-    font-size: 13px;
-    color: #77828c;
+    font-size: 16px;
+    font-weight: 300;
+    color: #000000;;
     padding: 15px;
     min-height: 50px;
     border-radius: 3px;
@@ -123,6 +108,43 @@
     right: 30px;
     top: 20px;
     z-index: 1;
+    display: none;
+    &:hover {
+      display: block;
+    }
+  }
+  .content {
+    margin: 0 0px 0 16px;
+    .title {
+      color: #2f3f4c;
+      font-family: ProximaNovaReg;
+      font-size: 15px;
+      margin-bottom: 1em;
+    }
+    .text {
+      font-family: ProximaNovaLight;
+      font-size: 16px;
+      font-weight: 300;
+      color: #000000;
+      padding: 0;
+      margin: 0 10px 0 0;
+    }
+    &:hover ~.settings {
+      display: block;
+    }
+  }
+  &_removed {
+    .content {
+      .text {
+        font-size: 14px;
+        font-family: ProximaNovaReg;
+        padding: 3px 0 3px 50px;
+        color: #aaaaaa;
+        a {
+          margin-left: 16px;
+        }
+      }
+    }
   }
 }
 

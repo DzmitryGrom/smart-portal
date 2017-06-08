@@ -7620,6 +7620,18 @@ body.ngdialog-open {
   position: relative;
   margin-left: 0px;
 }
+.taber > .content .notes-add {
+  padding: 20px 24px;
+}
+.taber > .content .notes-add textarea {
+  border: none;
+  margin: 0 0 0 16px;
+  padding-left: 0;
+  font-size: 16px;
+  font-family: ProximaNovaReg;
+  color: #9aa5ab;
+  font-weight: 400;
+}
 .taber > .content:before {
   content: '';
   display: block;
@@ -7758,33 +7770,18 @@ body.ngdialog-open {
 .notes-list__item {
   display: flex;
   align-items: flex-start;
-  padding: 20px 30px;
+  padding: 20px 24px;
   position: relative;
   border-top: 1px solid #ecf2f5;
 }
 .notes-list__item:first-child {
   border-top: none;
 }
-.notes-list__item .content {
-  margin: 0 35px 0 20px;
-}
-.notes-list__item .content .title {
-  color: #2f3f4c;
-  font-family: ProximaNovaReg;
-  font-size: 15px;
-  margin-bottom: 1em;
-}
-.notes-list__item .content .text {
-  font-family: ProximaNovaLight;
-  font-size: 13px;
-  color: #77828c;
-  padding: 0;
-  margin: 0;
-}
 .notes-list__item .date {
-  font-family: ProximaNovaLight;
-  font-size: 13px;
-  margin-top: 16px;
+  font-family: ProximaNovaReg;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
   color: #b0bfc9;
 }
 .notes-list__item .footer {
@@ -7802,18 +7799,22 @@ body.ngdialog-open {
 .notes-list__item:first-child .decor:after {
   top: 5px;
 }
-.notes-list__item_removed .content .text {
-  font-size: 14px;
-  padding-left: 50px;
-  color: #aaaaaa;
-}
 .notes-list__item_delete .content textarea {
-  width: calc(90%);
+  width: 94%;
+}
+.notes-list__item .smile {
+  font-size: 24px;
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  z-index: 2;
+  color: #c4c7cc;
 }
 .notes-list__item .textarea {
   font-family: ProximaNovaLight;
-  font-size: 13px;
-  color: #77828c;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
   padding: 15px;
   min-height: 50px;
   border-radius: 3px;
@@ -7871,25 +7872,60 @@ body.ngdialog-open {
   right: 30px;
   top: 20px;
   z-index: 1;
+  display: none;
+}
+.notes-list__item .settings:hover {
+  display: block;
+}
+.notes-list__item .content {
+  margin: 0 0px 0 16px;
+}
+.notes-list__item .content .title {
+  color: #2f3f4c;
+  font-family: ProximaNovaReg;
+  font-size: 15px;
+  margin-bottom: 1em;
+}
+.notes-list__item .content .text {
+  font-family: ProximaNovaLight;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000000;
+  padding: 0;
+  margin: 0 10px 0 0;
+}
+.notes-list__item .content:hover ~ .settings {
+  display: block;
+}
+.notes-list__item_removed .content .text {
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  padding: 3px 0 3px 50px;
+  color: #aaaaaa;
+}
+.notes-list__item_removed .content .text a {
+  margin-left: 16px;
 }
 .notes-list_noborder .notes-list__item + .notes-list__item {
   border-top: none;
 }
 .settings__item {
-  border: 1px solid rgba(0, 0, 0, 0.06);
   color: #b0bfc9;
   border-radius: 3px;
   width: 25px;
   height: 25px;
   text-align: center;
-  display: block;
+  display: inline-block;
 }
 .settings__item:first-child {
-  margin-bottom: 10px;
+  margin-right: 8px;
 }
-.settings__item .fa,
 .settings__item .icon {
-  line-height: 25px;
+  font-size: 24px;
+  color: #c4c7cc;
+}
+.settings__item .icon:hover {
+  color: #556066;
 }
 .radio-button {
   display: flex;
