@@ -12,8 +12,9 @@
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    margin: -7px 0;
+    margin: -13px 0 -14px -8px;
     cursor: pointer;
+    padding: 8px;
     .tooltip {
       display: none;
       &:hover {
@@ -26,9 +27,10 @@
     .icon {
       left: -30px;
       font-size: 24px;
-      &:hover ~ .tooltip {
-        display: block;
-      }
+      
+    }
+    &:hover .tooltip {
+      display: block;
     }
 
   }

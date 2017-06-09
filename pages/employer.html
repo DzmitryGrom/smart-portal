@@ -793,7 +793,67 @@
         <label class="taber__tab taber__tab_active">Настройки</label>
         <div class="content">
           <div class="category category_columns_two-with-labels">
-            <div class="category__item-label">Права пользователя</div>
+            <div class="category__item-label">
+                Права пользователя
+                <div class="info">
+                  <span class="icon icon-info"></span>
+                  <div class="tooltip tooltip_info tooltip_bottom" style="left: 100%;margin: 0 0 0 -50px;width:360px"> <i class="tooltip__arrow tooltip__arrow_white" style="left: 19px"></i>
+                    <div class="content tooltip__content tooltip__content_info">
+                      <ul class="list">
+                          <li class="list__item">
+                            <div class="description">
+                                Уволенный
+                                <span class="icon icon-fired icon_red"></span>
+                            </div>
+                            <div class="text">
+                                Доступ ко всем разделам портала закрыт
+                            </div>
+                          </li>
+                          <li class="list__item">
+                            <div class="description">
+                                Пользователь
+                                <span class="icon icon-user"></span>
+                            </div>
+                            <div class="text">
+                                Просмотр и комментирование доступных
+                                материалов
+                            </div>
+                          </li>
+                          <li class="list__item">
+                            <div class="description">
+                                Автор
+                                <span class="icon icon-user icon_blue"></span>
+                            </div>
+                            <div class="text">
+                                Создание, редактирование и удаление
+                                собственных публикаций
+                            </div>
+                          </li>
+                          <li class="list__item">
+                            <div class="description">
+                                модератор
+                                <span class="icon icon-moderator"></span>
+                            </div>
+                            <div class="text">
+                                Этот сотрудник стал руководителем отдела. Возможно, он проводит мастер-классы и/или пишет книгу.
+                            </div>
+                        </li>
+                        <li class="list__item">
+                          <div class="description">
+                              Администратор
+                              <span class="icon icon-user-admin"></span>
+                          </div>
+                          <div class="text">
+                              Полный доступ ко всем материалам, управление
+                              правами доступа, а также возможность добавлять
+                              и увольнять сотрудников
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
             <div class="category__item category__item_drop category__item_input category__item_icon"> <span class="icon icon_blue icon-user-admin"></span>
               <input class="input" type="text" placeholder="Type here" value="Администратор" readonly="">
               <div class="i-arrow i-arrow_to_down"></div>
@@ -810,67 +870,67 @@
               </div>
             </div>
             <div class="category__item-label">
-                        Статус сотрудника 
-                        <div class="info">
-                            <span class="icon icon-info"></span>
-                            <div class="tooltip tooltip_info tooltip_bottom" style="left: 100%;margin-left:-40px;"> <i class="tooltip__arrow tooltip__arrow_white" style="left: 19px"></i>
-                                <div class="content tooltip__content tooltip__content_info">
-                                    <ul class="list">
-                                        <li class="list__item">
-                                            <div class="description">
-                                                Новичок
-                                                <span class="icon icon-leaf"></span>
-                                            </div>
-                                            <div class="text">
-                                                Новый сотрудник, у которого еще нет результатов или их не много.
-                                            </div>
-                                        </li>
-                                        <li class="list__item">
-                                            <div class="description">
-                                                Специалист
-                                                <span class="icon icon-sunglasses"></span>
-                                            </div>
-                                            <div class="text">
-                                                Делает свою работу хорошо, новичок может достигнуть этого статуса за 2-3 месяца при должном уровне старания.
-                                            </div>
-                                        </li>
-                                        <li class="list__item">
-                                            <div class="description">
-                                                Профи
-                                                <span class="icon icon-star"></span>
-                                            </div>
-                                            <div class="text">
-                                                Заслуженный сотрудник, который круто делает свою работу. Прошёл уйму тренингов и регулярно перевыполняет план. Такого сотрудника ставят в пример специалистам и специалисты стремятся научиться такому мастерству.
-                                            </div>
-                                        </li>
-                                        <li class="list__item">
-                                            <div class="description">
-                                                Эксперт
-                                                <span class="icon icon-lamp"></span>
-                                            </div>
-                                            <div class="text">
-                                                Этот сотрудник стал руководителем отдела. Возможно, он проводит мастер-классы и/или пишет книгу.
-                                            </div>
-                                        </li>
-                                        <li class="list__item">
-                                            <div class="description">
-                                                гуру
-                                                <span class="icon icon-crown"></span>
-                                            </div>
-                                            <div class="text">
-                                                Недостижимый максимум крутизны. Бог в своем деле. Эффективность стремится к бесконечности.
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+              Статус сотрудника 
+                <div class="info">
+                    <span class="icon icon-info"></span>
+                  <div class="tooltip tooltip_info tooltip_bottom" style="left: 100%;margin: 0 0 0 -50px;width: 360px"> <i class="tooltip__arrow tooltip__arrow_white" style="left: 19px"></i>
+                    <div class="content tooltip__content tooltip__content_info">
+                      <ul class="list">
+                        <li class="list__item">
+                          <div class="description">
+                              Новичок
+                              <span class="icon icon-leaf"></span>
+                          </div>
+                          <div class="text">
+                              Новый сотрудник, у которого еще нет результатов или их не много.
+                          </div>
+                        </li>
+                        <li class="list__item">
+                          <div class="description">
+                              Специалист
+                              <span class="icon icon-sunglasses"></span>
+                          </div>
+                          <div class="text">
+                              Делает свою работу хорошо, новичок может достигнуть этого статуса за 2-3 месяца при должном уровне старания.
+                          </div>
+                        </li>
+                        <li class="list__item">
+                          <div class="description">
+                              Профи
+                              <span class="icon icon-star"></span>
+                          </div>
+                          <div class="text">
+                              Заслуженный сотрудник, который круто делает свою работу. Прошёл уйму тренингов и регулярно перевыполняет план. Такого сотрудника ставят в пример специалистам и специалисты стремятся научиться такому мастерству.
+                          </div>
+                        </li>
+                        <li class="list__item">
+                          <div class="description">
+                              Эксперт
+                              <span class="icon icon-lamp"></span>
+                          </div>
+                          <div class="text">
+                              Этот сотрудник стал руководителем отдела. Возможно, он проводит мастер-классы и/или пишет книгу.
+                          </div>
+                        </li>
+                        <li class="list__item">
+                          <div class="description">
+                              гуру
+                              <span class="icon icon-crown"></span>
+                          </div>
+                          <div class="text">
+                              Недостижимый максимум крутизны. Бог в своем деле. Эффективность стремится к бесконечности.
+                          </div>
+                        </li>
+                      </ul>
                     </div>
+                  </div>
+                </div>
+            </div>
             <div class="category__item category__item_drop category__item_input category__item_icon"> 
               <span class="icon icon_blue icon-crown"></span>
               <input class="input" type="text" placeholder="Type here" value="Гуру" readonly="">
               <div class="i-arrow i-arrow_to_down"></div>
-              <div class="tooltip" style="width: 100%;">
+              <div class="tooltip" style="width: 100%;display:none;">
                 <div class="content tooltip__content tooltip__content_default">
                   <ul class="list">
                     <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-status"></span> <span class="text">Без статуса</span> </li>

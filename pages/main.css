@@ -2934,20 +2934,20 @@ a {
   position: static;
   overflow: visible;
 }
-.tooltip__content_info {
+.tooltip__content_info.content {
   position: static;
   padding: 30px 24px 24px;
   overflow: visible;
   width: 360px;
 }
-.tooltip__content_info .list__item {
+.tooltip__content_info.content .list__item {
   margin: 0 0 24px 24px;
   padding: 0;
 }
-.tooltip__content_info .list__item:last-child {
+.tooltip__content_info.content .list__item:last-child {
   margin-bottom: 0px;
 }
-.tooltip__content_info .description {
+.tooltip__content_info.content .description {
   font-size: 12px;
   font-family: GothaProLig;
   font-weight: 300;
@@ -2956,13 +2956,13 @@ a {
   position: relative;
   margin-bottom: 8px;
 }
-.tooltip__content_info .description .icon {
+.tooltip__content_info.content .description .icon {
   font-size: 24px;
   position: absolute;
   top: -5px;
   left: -30px;
 }
-.tooltip__content_info .text {
+.tooltip__content_info.content .text {
   text-transform: none;
 }
 .tooltip__content_padding-top {
@@ -4985,8 +4985,9 @@ a {
   position: relative;
   display: inline-block;
   vertical-align: middle;
-  margin: -7px 0;
+  margin: -13px 0 -14px -8px;
   cursor: pointer;
+  padding: 8px;
 }
 .category__item-label .info .tooltip {
   display: none;
@@ -5001,7 +5002,7 @@ a {
   left: -30px;
   font-size: 24px;
 }
-.category__item-label .info .icon:hover ~ .tooltip {
+.category__item-label .info:hover .tooltip {
   display: block;
 }
 .category__item {
