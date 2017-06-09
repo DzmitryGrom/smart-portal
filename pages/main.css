@@ -2433,7 +2433,7 @@ a {
 .header {
   background-color: #fff;
   box-sizing: border-box;
-  box-shadow: 0 0px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -5px 40px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -7038,8 +7038,15 @@ body.ngdialog-open {
   width: 389px;
   position: relative;
   text-align: center;
-  padding: 30px 0;
+  padding: 30px 0 32px;
   border-radius: 3px;
+}
+.ngdialog.ngdialog_normal .ngdialog-content .clarification {
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  font-weight: 400;
+  color: #9aa5ab;
+  margin: 16px 0 -8px;
 }
 .ngdialog.ngdialog_normal .ngdialog-content .img {
   width: 128px;
@@ -7054,7 +7061,7 @@ body.ngdialog-open {
 }
 .ngdialog.ngdialog_normal .ngdialog-content .title {
   font-size: 16px;
-  font-family: "ProximaNovaBold";
+  font-family: ProximaNovaBold;
   margin-bottom: 25px;
   color: #121212;
 }
