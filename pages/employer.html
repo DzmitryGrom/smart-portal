@@ -793,236 +793,106 @@
         <label class="taber__tab taber__tab_active">Настройки</label>
         <div class="content">
           <div class="category category_columns_two-with-labels">
-            <div class="category__item-label">Статус сотрудника1</div>
-            <div class="category__item category__item_drop category__item_input category__item_icon"> <span class="icon_taber icon_pink icon-crown"></span>
+            <div class="category__item-label">Права пользователя</div>
+            <div class="category__item category__item_drop category__item_input category__item_icon"> <span class="icon icon_blue icon-user-admin"></span>
+              <input class="input" type="text" placeholder="Type here" value="Администратор" readonly="">
+              <div class="i-arrow i-arrow_to_down"></div>
+              <div class="tooltip" style="width: 100%;">
+                <div class="content tooltip__content tooltip__content_default">
+                  <ul class="list">
+                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-fired icon_red"></span> <span class="text">Уволенный</span> </li>
+                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-user"></span> <span class="text">Пользователь</span> </li>
+                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-user icon_blue"></span> <span class="text">Автор</span> </li>
+                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-moderator"></span> <span class="text">Модератор</span> </li>
+                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-user-admin"></span> <span class="text">Администратор</span> </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="category__item-label">
+                        Статус сотрудника 
+                        <div class="info">
+                            <span class="icon icon-info"></span>
+                            <div class="tooltip tooltip_info tooltip_bottom" style="left: 100%;margin-left:-40px;"> <i class="tooltip__arrow tooltip__arrow_white" style="left: 19px"></i>
+                                <div class="content tooltip__content tooltip__content_info">
+                                    <ul class="list">
+                                        <li class="list__item">
+                                            <div class="description">
+                                                Новичок
+                                                <span class="icon icon-leaf"></span>
+                                            </div>
+                                            <div class="text">
+                                                Новый сотрудник, у которого еще нет результатов или их не много.
+                                            </div>
+                                        </li>
+                                        <li class="list__item">
+                                            <div class="description">
+                                                Специалист
+                                                <span class="icon icon-sunglasses"></span>
+                                            </div>
+                                            <div class="text">
+                                                Делает свою работу хорошо, новичок может достигнуть этого статуса за 2-3 месяца при должном уровне старания.
+                                            </div>
+                                        </li>
+                                        <li class="list__item">
+                                            <div class="description">
+                                                Профи
+                                                <span class="icon icon-star"></span>
+                                            </div>
+                                            <div class="text">
+                                                Заслуженный сотрудник, который круто делает свою работу. Прошёл уйму тренингов и регулярно перевыполняет план. Такого сотрудника ставят в пример специалистам и специалисты стремятся научиться такому мастерству.
+                                            </div>
+                                        </li>
+                                        <li class="list__item">
+                                            <div class="description">
+                                                Эксперт
+                                                <span class="icon icon-lamp"></span>
+                                            </div>
+                                            <div class="text">
+                                                Этот сотрудник стал руководителем отдела. Возможно, он проводит мастер-классы и/или пишет книгу.
+                                            </div>
+                                        </li>
+                                        <li class="list__item">
+                                            <div class="description">
+                                                гуру
+                                                <span class="icon icon-crown"></span>
+                                            </div>
+                                            <div class="text">
+                                                Недостижимый максимум крутизны. Бог в своем деле. Эффективность стремится к бесконечности.
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            <div class="category__item category__item_drop category__item_input category__item_icon"> 
+              <span class="icon icon_blue icon-crown"></span>
               <input class="input" type="text" placeholder="Type here" value="Гуру" readonly="">
               <div class="i-arrow i-arrow_to_down"></div>
               <div class="tooltip" style="width: 100%;">
-                <div class="content tooltip__content tooltip__content_not-padding">
+                <div class="content tooltip__content tooltip__content_default">
                   <ul class="list">
                     <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-status"></span> <span class="text">Без статуса</span> </li>
-                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-leaf icon_green"></span> <span class="text">Новичок</span> </li>
-                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-glasses icon_blue"></span> <span class="text">Специалист</span> </li>
-                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-star-rating icon_orange"></span> <span class="text">Профи</span> </li>
-                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-lamp icon_red"></span> <span class="text">Эксперт</span> </li>
-                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-crown icon_pink"></span> <span class="text">Гуру</span> </li>
+                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-leaf"></span> <span class="text">Новичок</span> </li>
+                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-sunglasses"></span> <span class="text">Специалист</span> </li>
+                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-star"></span> <span class="text">Профи</span> </li>
+                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-lamp"></span> <span class="text">Эксперт</span> </li>
+                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-crown"></span> <span class="text">Гуру</span> </li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="category__item-label"></div>
-            <div class="category__item">
-              <div class="tooltip tooltip_relative"> <span class="text">Статус “Гуру” может означать только одно -  Вы лучший в своем деле!</span> <i class="tooltip__arrow tooltip__arrow_left" style="left: -8px"></i> </div>
-            </div>
-            <div class="category__item-label">Имя</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="text" placeholder="Имя" value="Ирина"> </div>
-            <div class="category__item-label">Фамилия</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="text" placeholder="Фамилия" value="Петренко"> </div>
-            <div class="category__item-label">Отчество</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="text" placeholder="Отчество" value="Сергеевна"> </div>
-            <div class="category__item-label">Пол</div>
-            <div class="category__item category__item_drop category__item_input">
-              <input class="input" type="text" placeholder="Type here" value="Женский" readonly>
-              <div class="i-arrow i-arrow_to_down"></div>
-            </div>
-            <div class="category__item-label">Отдел</div>
-            <div class="category__item category__item_drop category__item_input">
-              <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly>
-              <div class="i-arrow i-arrow_to_down"></div>
-              <div class="tooltip" style="width: 100%">
-                <div class="content tooltip__content tooltip__content_not-padding">
-                  <ul class="list">
-                    <li class="list__item list__item_hovered">
-                      <div class="text">Дизайнеры</div>
-                    </li>
-                    <li class="list__item list__item_hovered">
-                      <div class="text">Какие то еще чуваки</div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div class="category__item-label">Отдел  </div>
+            <div class="category__item category__item_input  category__item_drop">
+              <input class="input" type="text" placeholder="Имя" value="Design"> 
+              <div class="i-arrow i-arrow_to_down"></div>  
             </div>
             <div class="category__item-label">Должность</div>
-            <div class="category__item category__item_drop category__item_input">
-              <input class="input" type="text" placeholder="Type here" value="Хорошая" readonly>
-              <div class="i-arrow i-arrow_to_down"></div>
-              <div class="tooltip" style="width: 100%">
-                <div class="content tooltip__content tooltip__content_not-padding">
-                  <div class="search  search_icon">
-                    <input type="search" placeholder="Найти участника"> <span class="icon-search icon_gray i-icon"></span> </div>
-                  <ul class="list">
-                    <li class="list__item list__item_dividered_top list__item_iconed-right list__item_hovered">
-                      <div class="text">
-                        <input сlass="search search_not-border" type="text" placeholder="Менеджер" readonly> <span class="icon type icon-pencil"></span> </div>
-                    </li>
-                    <li class="list__item  list__item_iconed-right list__item_hovered">
-                      <div class="text">
-                        <input сlass="search search_not-border" type="text" placeholder="UI Designer" readonly> <span class="icon type icon-pencil"></span> </div>
-                    </li>
-                    <li class="list__item list__item_iconed-right list__item_hovered">
-                      <div class="text">
-                        <input сlass="search search_not-border" type="text" placeholder="Designer" readonly> <span class="icon type icon-pencil"></span> </div>
-                    </li>
-                    <li class="list__item list__item_iconed-right list__item_hovered">
-                      <div class="text">
-                        <input сlass="search search_not-border" type="text" placeholder="interior Designer and Cool Ddddddd" readonly> <span class="icon type icon-pencil"></span> </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="category__item-label">Email</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="email" placeholder="Email" value="my@mail.ru"> </div>
-            <div class="category__item-label">Телефон</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="text" placeholder="+__ ( ___ ) __ __ ___"> </div>
-            <div class="category__item-label">Дата рождения</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="text" placeholder="mm/dd/yyyy"> </div>
-            <div class="category__item-label">VKONTAKTE</div>
-            <div class="category__item category__item_input category__item_icon"> <span class="icon icon icon-social icon-vk"></span>
-              <input class="input" type="text" placeholder="https://"> </div>
-            <div class="category__item-label">instagram</div>
-            <div class="category__item category__item_input category__item_icon"> <span class="icon icon-social icon-instagram"></span>
-              <input class="input" type="text" placeholder="https://"> </div>
-            <div class="category__item-label">facebook</div>
-            <div class="category__item category__item_input category__item_icon"> <span class="icon icon-social icon-facebook"></span>
-              <input class="input" type="text" placeholder="https://"> </div>
-            <div class="category__item-label"></div>
-            <div class="category__item">
-              <button class="button button_success" type="button">Сохранить</button>
-            </div>
-            <div class="category__item-label"></div>
-            <div class="category__item"></div>
-            <div class="category__item-label">Новый пароль</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="password" placeholder="Новый пароль"> </div>
-            <div class="category__item-label"></div>
-            <div class="category__item category__item_input">
-              <input class="input" type="password" placeholder="Повторить пароль"> </div>
-            <div class="category__item-label"></div>
-            <div class="category__item">
-              <button class="button button_success" type="button">Обновить пароль</button>
-            </div>
-            <div class="category__item-label"></div>
-            <div class="category__item"></div>
-          </div>
-        </div>
-        <div class="content">
-          <div class="category category_columns_two-with-labels">
-            <div class="category__item-label">Статус сотрудника1</div>
-            <div class="category__item category__item_drop category__item_input category__item_icon"> <span class="icon_taber icon_pink icon-crown"></span>
-              <input class="input" type="text" placeholder="Type here" value="Гуру" readonly="">
-              <div class="i-arrow i-arrow_to_down"></div>
-              <div class="tooltip" style="width: 100%;">
-                <div class="content tooltip__content tooltip__content_not-padding">
-                  <ul class="list">
-                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-status"></span> <span class="text">Без статуса</span> </li>
-                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-leaf icon_green"></span> <span class="text">Новичок</span> </li>
-                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-glasses icon_blue"></span> <span class="text">Специалист</span> </li>
-                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-star-rating icon_orange"></span> <span class="text">Профи</span> </li>
-                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-lamp icon_red"></span> <span class="text">Эксперт</span> </li>
-                    <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-crown icon_pink"></span> <span class="text">Гуру</span> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="category__item-label"></div>
-            <div class="category__item">
-              <div class="tooltip tooltip_relative"> <span class="text">Статус “Гуру” может означать только одно -  Вы лучший в своем деле!</span> <i class="tooltip__arrow tooltip__arrow_left" style="left: -8px"></i> </div>
-            </div>
-            <div class="category__item-label">Имя</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="text" placeholder="Имя" value="Ирина"> </div>
-            <div class="category__item-label">Фамилия</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="text" placeholder="Фамилия" value="Петренко"> </div>
-            <div class="category__item-label">Отчество</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="text" placeholder="Отчество" value="Сергеевна"> </div>
-            <div class="category__item-label">Пол</div>
-            <div class="category__item category__item_drop category__item_input">
-              <input class="input" type="text" placeholder="Type here" value="Женский" readonly>
+            <div class="category__item category__item_input  category__item_drop">
+              <input class="input" type="text" placeholder="Фамилия" value="UI Designer">
               <div class="i-arrow i-arrow_to_down"></div>
             </div>
-            <div class="category__item-label">Отдел</div>
-            <div class="category__item category__item_drop category__item_input">
-              <input class="input" type="text" placeholder="Type here" value="Дизайнеры" readonly>
-              <div class="i-arrow i-arrow_to_down"></div>
-              <div class="tooltip" style="width: 100%">
-                <div class="content tooltip__content tooltip__content_not-padding">
-                  <ul class="list">
-                    <li class="list__item list__item_hovered">
-                      <div class="text">Дизайнеры</div>
-                    </li>
-                    <li class="list__item list__item_hovered">
-                      <div class="text">Какие то еще чуваки</div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="category__item-label">Должность</div>
-            <div class="category__item category__item_drop category__item_input">
-              <input class="input" type="text" placeholder="Type here" value="Хорошая" readonly>
-              <div class="i-arrow i-arrow_to_down"></div>
-              <div class="tooltip" style="width: 100%">
-                <div class="content tooltip__content tooltip__content_not-padding">
-                  <div class="search  search_icon">
-                    <input type="search" placeholder="Найти участника" value="Агент"> <span class="icon-search icon_gray i-icon"></span> </div>
-                  <ul class="list">
-                    <li class="list__item list__item_dividered_top list__item_hovered">
-                      <div class="text">
-                        <button class="button button_not-border">Добавить должность</button>
-                      </div>
-                    </li>
-                    <li class="list__item  list__item_hovered">
-                      <div class="text">Агент</div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="category__item-label">Email</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="email" placeholder="Email" value="my@mail.ru"> </div>
-            <div class="category__item-label">Телефон</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="text" placeholder="+__ ( ___ ) __ __ ___"> </div>
-            <div class="category__item-label">Дата рождения</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="text" placeholder="mm/dd/yyyy"> </div>
-            <div class="category__item-label">VKONTAKTE</div>
-            <div class="category__item category__item_input category__item_icon"> <span class="icon icon icon-social icon-vk"></span>
-              <input class="input" type="text" placeholder="https://"> </div>
-            <div class="category__item-label">instagram</div>
-            <div class="category__item category__item_input category__item_icon"> <span class="icon icon-social icon-instagram"></span>
-              <input class="input" type="text" placeholder="https://"> </div>
-            <div class="category__item-label">facebook</div>
-            <div class="category__item category__item_input category__item_icon"> <span class="icon icon-social icon-facebook"></span>
-              <input class="input" type="text" placeholder="https://"> </div>
-            <div class="category__item-label"></div>
-            <div class="category__item">
-              <button class="button button_success" type="button">Сохранить</button>
-            </div>
-            <div class="category__item-label"></div>
-            <div class="category__item"></div>
-            <div class="category__item-label">Новый пароль</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="password" placeholder="Новый пароль"> </div>
-            <div class="category__item-label"></div>
-            <div class="category__item category__item_input">
-              <input class="input" type="password" placeholder="Повторить пароль"> </div>
-            <div class="category__item-label"></div>
-            <div class="category__item">
-              <button class="button button_success" type="button">Обновить пароль</button>
-            </div>
-            <div class="category__item-label"></div>
-            <div class="category__item"></div>
           </div>
         </div>
       </div>
