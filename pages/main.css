@@ -7081,7 +7081,10 @@ body.ngdialog-open {
   width: 272px;
   margin: 0 auto;
 }
-.ngdialog.ngdialog_normal .ngdialog-content .icon {
+.ngdialog.ngdialog_normal .ngdialog-content .category__item_drop {
+  text-align: left;
+}
+.ngdialog.ngdialog_normal .ngdialog-content .pic {
   width: 168px;
   height: 168px;
   background-size: 168px 168px;
