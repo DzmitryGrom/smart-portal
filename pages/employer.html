@@ -857,7 +857,7 @@
             <div class="category__item category__item_drop category__item_input category__item_icon"> <span class="icon icon_blue icon-user-admin"></span>
               <input class="input" type="text" placeholder="Type here" value="Администратор" readonly="">
               <div class="i-arrow i-arrow_to_down"></div>
-              <div class="tooltip" style="width: 100%;">
+              <div class="tooltip" style="width: 100%;display:none;">
                 <div class="content tooltip__content tooltip__content_default">
                   <ul class="list">
                     <li class="list__item list__item_hovered list__item_iconed"> <span class="icon icon-fired icon_red"></span> <span class="text">Уволенный</span> </li>
@@ -946,12 +946,118 @@
             <div class="category__item-label">Отдел  </div>
             <div class="category__item category__item_input  category__item_drop">
               <input class="input" type="text" placeholder="Имя" value="Design"> 
-              <div class="i-arrow i-arrow_to_down"></div>  
+              <div class="i-arrow i-arrow_to_down"></div> 
+              <div class="category-form category-form_not-padding  category-form_bottom" style="display:none;">
+                 <div class="category-form__item category-form__item_icon">
+                   <div class="search">
+                       <input type="search" placeholder="Поиск по тегам">
+                       <span class="icon-search icon_sidebar i-icon"></span>
+                   </div>
+                 </div>
+                 <ul class="list list_bordered">
+                   <li class="list__item list__item_hovered">
+                       <div class="text">Интиресное</div>
+                   </li>
+                   <li class="list__item list__item_hovered">
+                       <div class="text">Интернет</div>
+                   </li>
+                 </ul>
+                 <ul class="list">
+                   <li class="list__item list__item_action_add list__item_hovered text_uppercase">
+                       <div class="text">Добавить раздел</div>
+                   </li>
+                   <li class="list__item list__item_hovered ">
+                       <div class="text">Интер</div>
+                   </li>
+                 </ul>
+            </div> 
             </div>
             <div class="category__item-label">Должность</div>
             <div class="category__item category__item_input  category__item_drop">
               <input class="input" type="text" placeholder="Фамилия" value="UI Designer">
               <div class="i-arrow i-arrow_to_down"></div>
+              <div class="category-form category-form_not-padding  category-form_bottom">
+                <div class="category-form__item category-form__item_icon">
+                  <div class="search">
+                    <input type="search" placeholder="Найти или добавить">
+                    <span class="icon-search icon_sidebar i-icon"></span>
+                  </div>
+                </div>
+                <ul class="list list_border-top scroll" style="max-height: 180px">
+                  <li class="list__item list__item_hovered list__item_iconed-right">
+                    <div class="text">
+                      Распространители
+                      <span class="icon icon-pencil"></span>
+                    </div>
+                  </li>
+                  <li class="list__item list__item_hovered list__item_iconed-right">
+                    <div class="text">
+                      Менеджеры
+                      <span class="icon icon-pencil"></span>
+                    </div>
+                  </li>
+                  <li class="list__item list__item_hovered list__item_iconed-right">
+                    <div class="text">
+                      Designer
+                      <span class="icon icon-pencil"></span>
+                    </div>
+                  </li>
+                  <li class="list__item list__item_hovered list__item_iconed-right">
+                    <div class="text">
+                      UI Designer
+                      <span class="icon icon-pencil"></span>
+                    </div>
+                  </li>
+                  <li class="list__item list__item_hovered list__item_iconed-right">
+                    <div class="text">
+                      UX Designer
+                      <span class="icon icon-pencil"></span>
+                    </div>
+                  </li>
+                  <li class="list__item list__item_hovered list__item_iconed-right">
+                    <div class="text">
+                      Front-end разработчик
+                      <span class="icon icon-pencil"></span>
+                    </div>
+                  </li>
+                  <li class="list__item list__item_hovered list__item_iconed-right">
+                    <div class="text">
+                      Прокачка
+                      <span class="icon icon-pencil"></span>
+                    </div>
+                  </li>
+                  <li class="list__item list__item_hovered list__item_iconed-right">
+                    <div class="text">
+                      Отчеты с мероприятий
+                      <span class="icon icon-pencil"></span>
+                    </div>
+                  </li> 
+                  <li class="list__item list__item_hovered list__item_iconed-right">
+                    <div class="text">
+                      Прокачка
+                      <span class="icon icon-pencil"></span>
+                    </div>
+                  </li>
+                  <li class="list__item list__item_hovered list__item_iconed-right">
+                    <div class="text">
+                      Отчеты с мероприятий
+                      <span class="icon icon-pencil"></span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div style="top: 82px; width:300px;left: 100%;
+               margin-left: 20px;/* display:none */" class="category-form category-form_right"> <i class="category-form__arrow"></i> <span class="i-icon icon_category-form icon-close"></span>
+                <div class="category-form__item category-form__item_title category-form__item_icon"> <span class="text">Редактировать должность</span> </div>
+                <div class="category-form__label">Название должности</div>
+                <div class="category-form__item category-form__item_input">
+                  <div class="tooltip tooltip_error tooltip_top"> <i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Недопустимые символы <i class="tooltip__arrow tooltip__arrow_red tooltip__arrow_bottom" style="left: 5px"></i> </div>
+                  <input type="text" placeholder="Менеджеры"> </div>
+                <div class="category-form__footer">
+                  <button class="button button_dissolution" type="button">Удалить</button>
+                  <button class="button button_success" type="button">Сохранить</button>
+                </div>
+            </div>
             </div>
           </div>
         </div>

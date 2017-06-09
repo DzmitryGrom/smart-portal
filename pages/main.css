@@ -4663,7 +4663,8 @@ a {
   padding: 16px 0;
 }
 .category-form_not-padding .list__item_hovered {
-  padding: 2px 16px;
+  padding: 0 16px;
+  line-height: 32px;
   margin: 0px 8px;
 }
 .category-form_not-padding .search {
