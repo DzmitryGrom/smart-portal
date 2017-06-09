@@ -37,6 +37,18 @@ app.controller('TestController', ['$scope', 'ngDialog', '$q', function ($scope, 
       scope: $scope
     });
   };
+  $scope.openConfirmDeleteEmployer = function () {
+    ngDialog.openConfirm({
+      className: 'ngdialog_normal  ngdialog-theme-default',
+      template: '<div class="ng-dialog__wrapper">\n    <img src="http://a1.35photo.ru/photos_col/r2/325/1628793_320r.jpg" class="img" alt="">\n    <div class="description">Увольнение сотрудника:\n        <p>Андрей Хипстов</p>\n    </div>\n    \n    <div class="category__footer  category__footer_justify-center"><button class="button button_dissolution" type="button">Уволить</button></div>\n</div>',
+      plain: true,
+      scope: $scope
+    }).then(function (value) {
+      console.log('Modal promise resolved. Value: ', value);
+    }, function (reason) {
+      console.log('Modal promise rejected. Reason: ', reason);
+    });
+  };
   $scope.openConfirmDelete = function () {
     ngDialog.openConfirm({
       className: 'ngdialog_normal  ngdialog-theme-default',

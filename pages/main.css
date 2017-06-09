@@ -7041,6 +7041,12 @@ body.ngdialog-open {
   padding: 30px 0;
   border-radius: 3px;
 }
+.ngdialog.ngdialog_normal .ngdialog-content .img {
+  width: 128px;
+  height: 128px;
+  border-radius: 100%;
+  margin-top: 14px;
+}
 .ngdialog.ngdialog_normal .ngdialog-content .radio-button_block {
   width: 272px;
   margin: 0 auto;
@@ -7060,6 +7066,9 @@ body.ngdialog-open {
   font-family: ProximaNovaSem;
   color: #7e7e7e;
   margin: 16px 0;
+}
+.ngdialog.ngdialog_normal .ngdialog-content .description > p {
+  margin: 0;
 }
 .ngdialog.ngdialog_normal .ngdialog-content .category__item_input {
   width: 272px;
