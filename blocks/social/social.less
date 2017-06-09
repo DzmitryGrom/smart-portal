@@ -1,0 +1,51 @@
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .link {
+    color: #d8e2e9;
+    text-align: center;
+    font-size: 24px;
+    flex: 1 1 auto;
+    max-width: 54px;
+    padding: 27px 0;
+    border: 1px solid #ecf2f5;
+    border-radius: 3px;
+    position: relative;
+    .icon {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: -12px 0 0 -12px;
+    }
+    &:hover {
+      border-color: #198dec;
+      .text, .icon {
+        color: #198dec;
+      }
+    }
+  }
+  &_list {
+    .link {
+      flex: 1 1 33%;
+      margin-bottom: 27px;
+      &:nth-child(7),
+      &:nth-child(8),
+      &:nth-child(9) {
+        margin-bottom: 16px;
+      }
+    }
+    .text {
+      font-size: 12px;
+      font-family: ProximaNovaReg;
+      color: #88949b;
+      font-weight: 400;
+      position: absolute;
+      bottom: -20px;
+      left: 0px;
+      right: 0px;
+      text-align: center;
+    }
+  }
+}

@@ -2929,6 +2929,11 @@ a {
 .tooltip__content_not-padding .search {
   padding: 0 30px 5px 5px;
 }
+.tooltip__content_social {
+  padding: 16px;
+  position: static;
+  overflow: visible;
+}
 .tooltip__content_info {
   position: static;
   padding: 30px 24px 24px;
@@ -4114,27 +4119,7 @@ a {
   display: none;
 }
 .user-profile_vertical_big .social {
-  width: 100%;
   margin: 16px -30px 0px -30px;
-  display: flex;
-  justify-content: space-between;
-}
-.user-profile_vertical_big .social .link {
-  color: #d8e2e9;
-  text-align: center;
-  font-size: 24px;
-  flex: 1 1 auto;
-  max-width: 56px;
-  padding: 28px 0;
-  border: 1px solid #ecf2f5;
-  border-radius: 3px;
-  position: relative;
-}
-.user-profile_vertical_big .social .link .icon {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -12px 0 0 -12px;
 }
 .user-profile_vertical_big .datagrid {
   margin: 0;
@@ -5306,13 +5291,8 @@ textarea {
   top: 50%;
   margin-top: -12px;
 }
-.category__item_icon .icon-social:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 2px;
-  border-right: 1px solid #f0f0f0;
+.category__item_icon .icon-social_active {
+  color: #198dec;
 }
 .category__item_icon .icon-group {
   vertical-align: middle;
@@ -7651,7 +7631,7 @@ body.ngdialog-open {
   left: 1px;
   right: 20px;
   background-color: #fff;
-  z-index: 1000;
+  z-index: 2;
 }
 .taber > .content_row {
   background-color: #fff;
@@ -9172,4 +9152,54 @@ body .redactor-box-fullscreen {
 .zoom-pic_small {
   width: 65px;
   height: 65px;
+}
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.social .link {
+  color: #d8e2e9;
+  text-align: center;
+  font-size: 24px;
+  flex: 1 1 auto;
+  max-width: 54px;
+  padding: 27px 0;
+  border: 1px solid #ecf2f5;
+  border-radius: 3px;
+  position: relative;
+}
+.social .link .icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -12px 0 0 -12px;
+}
+.social .link:hover {
+  border-color: #198dec;
+}
+.social .link:hover .text,
+.social .link:hover .icon {
+  color: #198dec;
+}
+.social_list .link {
+  flex: 1 1 33%;
+  margin-bottom: 27px;
+}
+.social_list .link:nth-child(7),
+.social_list .link:nth-child(8),
+.social_list .link:nth-child(9) {
+  margin-bottom: 16px;
+}
+.social_list .text {
+  font-size: 12px;
+  font-family: ProximaNovaReg;
+  color: #88949b;
+  font-weight: 400;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
 }
