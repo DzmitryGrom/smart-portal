@@ -5533,6 +5533,9 @@ textarea {
   content: "";
   display: none;
 }
+.category__item_active .number_sidebar {
+  display: none;
+}
 .category__item_action_close {
   position: relative;
 }
