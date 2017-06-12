@@ -2936,9 +2936,11 @@ a {
 }
 .tooltip__content_info.content {
   position: static;
-  padding: 30px 24px 24px;
+  padding: 30px 0px 0px 24px;
   overflow: visible;
-  width: 360px;
+}
+.tooltip__content_info.content .scroll {
+  max-height: 230px;
 }
 .tooltip__content_info.content .list__item {
   margin: 0 0 24px 24px;
@@ -2964,6 +2966,9 @@ a {
 }
 .tooltip__content_info.content .text {
   text-transform: none;
+  font-size: 12px;
+  padding-right: 20px;
+  font-weight: 400;
 }
 .tooltip__content_padding-top {
   position: static;
@@ -3099,6 +3104,19 @@ a {
 .tooltip_top .tooltip__arrow {
   top: inherit;
   bottom: -7px;
+}
+.tooltip_right {
+  left: 100%;
+  margin-left: 5px;
+}
+.tooltip_right .tooltip__arrow {
+  left: -10px;
+}
+.tooltip_right:after {
+  bottom: 0;
+  right: inherit;
+  height: 100%;
+  width: 10px;
 }
 .tooltip_relative {
   position: relative;
@@ -4991,6 +5009,7 @@ a {
   padding: 8px;
 }
 .category__item-label .info .tooltip {
+  margin-top: -130px;
   display: none;
 }
 .category__item-label .info .tooltip:hover {
