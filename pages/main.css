@@ -4133,6 +4133,8 @@ a {
   position: absolute;
   right: 28px;
   top: 28px;
+  padding: 0 0 10px 7px;
+  cursor: pointer;
 }
 .user-profile_vertical_big .action:hover .tooltip {
   display: block;
@@ -6316,13 +6318,14 @@ tags-input .autocomplete .suggestion-item em {
   padding: 0px;
   position: relative;
   margin-left: 50px;
+  padding: 0 0 10px 10px;
 }
 .article .content__caption-action:hover .icon-menu {
   color: #556066;
 }
 .article .content__caption-action .tooltip {
   display: none;
-  margin-top: -10px;
+  margin-top: -15px;
 }
 .article .content__caption-action:hover .tooltip,
 .article .content__caption-action.hover .tooltip {
@@ -6828,6 +6831,7 @@ tags-input .autocomplete .suggestion-item em {
   box-sizing: border-box;
   margin-right: 2.333%;
   margin-bottom: 24px;
+  text-align: center;
 }
 .cards__item:hover {
   position: relative;
@@ -6844,6 +6848,9 @@ tags-input .autocomplete .suggestion-item em {
 }
 .cards__item > .action {
   margin: 8px auto 0;
+  display: inline-block;
+  width: 35px;
+  padding-bottom: 10px;
   text-align: center;
   position: relative;
   z-index: 2;
@@ -9088,12 +9095,13 @@ body .redactor-box-fullscreen {
   display: inline-block;
   position: relative;
   margin-bottom: -10px;
-  padding-bottom: 10px;
+  padding: 0 10px 10px 10px;
+  margin-left: -10px;
 }
 .tools__item .action .tooltip {
   display: none;
   top: 30px;
-  right: -30px;
+  right: -20px;
   width: 183px;
 }
 .tools__item .action:hover .tooltip {
