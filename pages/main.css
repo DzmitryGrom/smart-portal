@@ -2444,6 +2444,7 @@ a {
   min-height: 72px;
   width: 100%;
   position: relative;
+  z-index: 2;
 }
 .header .nav {
   margin-right: auto;
@@ -2517,10 +2518,14 @@ a {
   width: 176px;
   font-family: ProximaNovaReg;
   font-weight: normal;
+  outline: none;
 }
 .header__logo a {
   text-decoration: none;
   color: #4c4c4c;
+}
+.header__logo a:focus {
+  outline: none;
 }
 .header__logo b {
   color: #4c4c4c;
@@ -3041,7 +3046,7 @@ a {
   width: 90%;
   max-width: 345px;
   font-size: 16px;
-  font-family: ProximaNovaReg;
+  font-family: ProximaNovaLight;
   color: #000000;
 }
 .tooltip .list .list__item_bordered .info p {
@@ -3082,9 +3087,13 @@ a {
   position: absolute;
   right: 25px;
   top: 22px;
-  z-index: 2;
+  z-index: 3;
   font-size: 24px;
   color: #c4c7cc;
+  cursor: pointer;
+}
+.tooltip .icon-close:hover {
+  color: #556066;
 }
 .tooltip_bottom {
   top: 100%;
@@ -3628,8 +3637,18 @@ a {
   padding: 0;
   margin: 0;
 }
+.list_full .list__item {
+  padding: 4px 2em 4px 2em;
+  margin-bottom: 5px;
+  line-height: 1;
+}
+.list_full .list__item:last-child {
+  margin-bottom: 0px;
+}
 .list_full .list__item .icon {
   left: 0;
+  top: 1px;
+  color: #1f8ceb;
 }
 .list_bordered {
   border-top: 1px solid #f5f5f7;
@@ -6988,8 +7007,16 @@ tags-input .autocomplete .suggestion-item em {
   animation: ngdialog-fadeout 0.5s;
 }
 .ngdialog-close:before {
-  font-family: 'Helvetica', Arial, sans-serif;
-  content: '\00D7';
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\e91b';
   cursor: pointer;
 }
 html.ngdialog-open,
@@ -7183,6 +7210,18 @@ body.ngdialog-open {
 .ngdialog_full-width .ng-dialog__wrapper {
   background: #fff;
 }
+.ngdialog_full-width .notes-list__item {
+  padding: 20px 0px;
+}
+.ngdialog_full-width .notes-list__item_total {
+  padding: 0 0 16px 0;
+}
+.ngdialog_full-width .article__footer {
+  padding: 30px 0px 17px 0px;
+}
+.ngdialog_full-width .article__footer .tag {
+  padding-left: 0px;
+}
 .ngdialog_full-width .textarea {
   border: none;
   padding: 0;
@@ -7206,7 +7245,10 @@ body.ngdialog-open {
   font-family: ProximaNovaLight;
 }
 .ngdialog_full-width .redactor > .text {
-  margin: 0 0 24px 0;
+  margin: 0 0 16px 0;
+}
+.ngdialog_full-width .redactor > .text p {
+  margin: 0;
 }
 .ngdialog_full-width .article__content_center {
   border-top: 1px solid #f0f0f0;
@@ -7285,6 +7327,12 @@ body.ngdialog-open {
   right: 28px;
   top: 22px;
   z-index: 2;
+  color: #c4c7cc;
+}
+.ngdialog_full-width .category .icon-close:hover,
+.ngdialog_half-width .category .icon-close:hover {
+  cursor: pointer;
+  color: #556066;
 }
 .ngdialog_full-width .datagrid_user,
 .ngdialog_half-width .datagrid_user {
@@ -7373,6 +7421,12 @@ body.ngdialog-open {
 .ngdialog_full-width .datagrid_user .row__cell .icon-close,
 .ngdialog_half-width .datagrid_user .row__cell .icon-close {
   text-align: center;
+  color: #c4c7cc;
+}
+.ngdialog_full-width .datagrid_user .row__cell .icon-close:hover,
+.ngdialog_half-width .datagrid_user .row__cell .icon-close:hover {
+  cursor: pointer;
+  color: #556066;
 }
 .ngdialog_full-width .text_caption,
 .ngdialog_half-width .text_caption {
@@ -7413,6 +7467,10 @@ body.ngdialog-open {
   right: 0;
   padding-top: 48px;
   overflow: auto;
+}
+.ngdialog_full-width .scroll-content_not-padding,
+.ngdialog_half-width .scroll-content_not-padding {
+  padding-top: 0px;
 }
 .ngdialog_full-width .tooltip_edit,
 .ngdialog_half-width .tooltip_edit,
@@ -7539,25 +7597,9 @@ body.ngdialog-open {
   cursor: pointer;
   position: absolute;
   z-index: 20;
-  right: 400px;
-  top: 20px;
-}
-.ngdialog_full-width .ngdialog-close:before,
-.ngdialog_half-width .ngdialog-close:before {
-  background: transparent;
-  border-radius: 3px;
-  color: #82dbc9;
-  content: '\00D7';
-  font-size: 26px;
-  font-weight: 400;
-  height: 30px;
-  line-height: 26px;
-  position: absolute;
-  right: 3px;
-  text-align: center;
-  top: 3px;
-  width: 30px;
-  z-index: 1;
+  right: 80px;
+  top: 25px;
+  font-size: 24px;
 }
 .ngdialog_full-width,
 .ngdialog.ngdialog_full-width .ngdialog-content {
@@ -7678,15 +7720,6 @@ body.ngdialog-open {
 .taber > .content .notes-add {
   padding: 20px 24px;
 }
-.taber > .content .notes-add textarea {
-  border: none;
-  margin: 0 0 0 16px;
-  padding-left: 0;
-  font-size: 16px;
-  font-family: ProximaNovaReg;
-  color: #9aa5ab;
-  font-weight: 400;
-}
 .taber > .content:before {
   content: '';
   display: block;
@@ -7766,6 +7799,10 @@ body.ngdialog-open {
   border: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
 }
+.notes-list_not-border {
+  border: none;
+  box-shadow: none;
+}
 .notes-add {
   border-radius: 0 0 5px 5px;
   background-color: #fff;
@@ -7785,20 +7822,21 @@ body.ngdialog-open {
   position: absolute;
   bottom: 100%;
   left: 0;
-  width: 100%;
   height: 1px;
   background-color: #fff;
 }
+.notes-add .content {
+  width: 100%;
+}
 .notes-add input,
 .notes-add textarea {
-  flex: 1 0 30px;
-  line-height: 1;
-  border: 1px solid lightgray;
-  border-radius: 3px;
-  padding: 0 10px;
-  margin: 2px 10px 2px 35px;
-  font-size: 13px;
-  font-family: GothaProLig;
+  border: none;
+  margin: 0 0 0 16px;
+  padding-left: 0;
+  font-size: 16px;
+  font-family: ProximaNovaReg;
+  color: #9aa5ab;
+  font-weight: 400;
 }
 .notes-add textarea {
   padding: 10px;
@@ -7822,6 +7860,29 @@ body.ngdialog-open {
 .notes-add_two-input input:nth-child(3) {
   margin-left: 10px;
 }
+.notes-add_not-border {
+  border: none;
+  box-shadow: none;
+  padding: 16px 0px 24px 0px;
+}
+.notes-add_not-border:before {
+  left: -24px;
+  right: -24px;
+}
+.notes-inner {
+  position: relative;
+  margin: 24px 0 57px 0;
+}
+.notes-inner:before {
+  content: "";
+  border: 1px solid #ecf2f5;
+  position: absolute;
+  border-radius: 3px;
+  top: -14px;
+  bottom: 3px;
+  left: -24px;
+  right: -24px;
+}
 .notes-list__item {
   display: flex;
   align-items: flex-start;
@@ -7829,8 +7890,21 @@ body.ngdialog-open {
   position: relative;
   border-top: 1px solid #ecf2f5;
 }
+.notes-list__item .content {
+  width: 100%;
+}
 .notes-list__item:first-child {
   border-top: none;
+}
+.notes-list__item_total {
+  text-align: center;
+}
+.notes-list__item_total .text {
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  color: #556066;
+  font-weight: 400;
+  flex: 1 1 100%;
 }
 .notes-list__item .date {
   font-family: ProximaNovaReg;
@@ -9199,7 +9273,7 @@ body .redactor-box-fullscreen {
 }
 .zoom-pic {
   display: inline-block;
-  margin-right: 16px;
+  margin: 0 16px 16px 0;
   border-radius: 5px;
   overflow: hidden;
 }
