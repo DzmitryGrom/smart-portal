@@ -21,11 +21,25 @@
       flex: 1 1 100%;
     }
   }
+  .info {
+    margin-bottom: 8px;
+
+  }
+  .name {
+    font-size: 14px;
+    font-family: ProximaNovaReg;
+    color: #556066;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 16px 0px 0;
+  }
   .date {
     font-family: ProximaNovaReg;
+    display: inline-block;
+    vertical-align: middle;
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 8px;
     color: #b0bfc9
   }
   .footer {
@@ -45,20 +59,53 @@
       }
     }
   }
-  &_delete {
+  &_editing {
     .content {
       textarea {
-        width: 94%;
+        border: 1px solid #dedede;
+
       }
     }
   }
   .smile {
     font-size: 24px;
     position: absolute;
-    top: 60px;
-    right: 30px;
     z-index: 2;
     color: #c4c7cc;
+  }
+  .zoom-pic {
+    margin-top: 16px;
+  }
+  .answer {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    font-size: ProximaNovaReg;
+    cursor: pointer;
+    .text {
+      color: #9aa5ab;
+      &:hover {
+        color: #556066;
+      }
+    }
+    .icon-close {
+      font-size: 15px;
+      vertical-align: middle;
+      color: #c4c7cc;
+      &:hover {
+        cursor: pointer;
+        color: #556066;
+      }
+    }
+
+  }
+  .links {
+    display: inline-block;
+    width: auto;
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    left: 55px;
   }
   .textarea {
     font-family: ProximaNovaLight;
@@ -135,7 +182,7 @@
       font-size: 15px;
       margin-bottom: 1em;
     }
-    .text {
+    >.text {
       font-family: ProximaNovaLight;
       font-size: 16px;
       font-weight: 300;

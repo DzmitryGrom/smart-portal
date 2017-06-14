@@ -7213,8 +7213,19 @@ body.ngdialog-open {
 .ngdialog_full-width .notes-list__item {
   padding: 20px 0px;
 }
+.ngdialog_full-width .notes-list__item .smile {
+  top: 70px;
+  right: 16px;
+}
 .ngdialog_full-width .notes-list__item_total {
   padding: 0 0 16px 0;
+}
+.ngdialog_full-width .notes-list .user-profile {
+  margin-top: -5px;
+}
+.ngdialog_full-width .notes-list textarea {
+  width: 100%;
+  padding-right: 65px;
 }
 .ngdialog_full-width .article__footer {
   padding: 30px 0px 17px 0px;
@@ -7749,6 +7760,13 @@ body.ngdialog-open {
   margin-bottom: 0;
   padding: 0;
 }
+.taber > .content .notes-list__item_editing .content textarea {
+  width: 94%;
+}
+.taber > .content .notes-list__item .smile {
+  top: 60px;
+  right: 30px;
+}
 .taber__tab {
   cursor: pointer;
   font-family: ProximaNovaReg;
@@ -7906,11 +7924,24 @@ body.ngdialog-open {
   font-weight: 400;
   flex: 1 1 100%;
 }
+.notes-list__item .info {
+  margin-bottom: 8px;
+}
+.notes-list__item .name {
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  color: #556066;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 16px 0px 0;
+}
 .notes-list__item .date {
   font-family: ProximaNovaReg;
+  display: inline-block;
+  vertical-align: middle;
   font-size: 14px;
   font-weight: 400;
-  margin-bottom: 8px;
   color: #b0bfc9;
 }
 .notes-list__item .footer {
@@ -7928,16 +7959,47 @@ body.ngdialog-open {
 .notes-list__item:first-child .decor:after {
   top: 5px;
 }
-.notes-list__item_delete .content textarea {
-  width: 94%;
+.notes-list__item_editing .content textarea {
+  border: 1px solid #dedede;
 }
 .notes-list__item .smile {
   font-size: 24px;
   position: absolute;
-  top: 60px;
-  right: 30px;
   z-index: 2;
   color: #c4c7cc;
+}
+.notes-list__item .zoom-pic {
+  margin-top: 16px;
+}
+.notes-list__item .answer {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  font-size: ProximaNovaReg;
+  cursor: pointer;
+}
+.notes-list__item .answer .text {
+  color: #9aa5ab;
+}
+.notes-list__item .answer .text:hover {
+  color: #556066;
+}
+.notes-list__item .answer .icon-close {
+  font-size: 15px;
+  vertical-align: middle;
+  color: #c4c7cc;
+}
+.notes-list__item .answer .icon-close:hover {
+  cursor: pointer;
+  color: #556066;
+}
+.notes-list__item .links {
+  display: inline-block;
+  width: auto;
+  position: absolute;
+  z-index: 2;
+  bottom: 10px;
+  left: 55px;
 }
 .notes-list__item .textarea {
   font-family: ProximaNovaLight;
@@ -8015,7 +8077,7 @@ body.ngdialog-open {
   font-size: 15px;
   margin-bottom: 1em;
 }
-.notes-list__item .content .text {
+.notes-list__item .content > .text {
   font-family: ProximaNovaLight;
   font-size: 16px;
   font-weight: 300;
