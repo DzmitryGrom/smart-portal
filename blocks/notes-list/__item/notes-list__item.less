@@ -1,7 +1,7 @@
 .notes-list__item {
   display: flex;
   align-items: flex-start;
-  padding: 20px 24px;
+  padding: 14px 24px;
   position: relative;
   border-top: 1px solid #ecf2f5;
   .content {
@@ -76,11 +76,36 @@
   .zoom-pic {
     margin-top: 16px;
   }
+  .text_pin {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    &_right {
+      right: 0px;
+    }
+    .icon {
+      font-size: 24px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 4px 0 20px;
+    }
+    .text__text {
+      vertical-align: middle;
+      display: inline-block;
+      font-family: ProximaNovaReg;
+      font-size: 14px;
+      color: #9aa5ab;
+    }
+  }
+  .list {
+    margin-bottom: 5px;
+  }
   .answer {
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
-    font-size: ProximaNovaReg;
+    font-family: ProximaNovaReg;
     cursor: pointer;
     .text {
       color: #9aa5ab;
@@ -188,19 +213,21 @@
       font-weight: 300;
       color: #000000;
       padding: 0;
-      margin: 0 10px 0 0;
+      margin: 0 10px 5px 0;
     }
     &:hover ~.settings {
       display: block;
     }
   }
   &_removed {
+    padding: 20px 0px;
     .content {
       .text {
         font-size: 14px;
         font-family: ProximaNovaReg;
         padding: 3px 0 3px 50px;
         color: #aaaaaa;
+        margin: 0;
         a {
           margin-left: 16px;
         }

@@ -3650,6 +3650,9 @@ a {
   top: 1px;
   color: #1f8ceb;
 }
+.list_full .list__item:hover .icon {
+  color: #1f8ceb;
+}
 .list_bordered {
   border-top: 1px solid #f5f5f7;
   border-bottom: 1px solid #f5f5f7;
@@ -7213,6 +7216,9 @@ body.ngdialog-open {
 .ngdialog_full-width .notes-list__item {
   padding: 20px 0px;
 }
+.ngdialog_full-width .notes-list__item_removed {
+  padding: 16px 0;
+}
 .ngdialog_full-width .notes-list__item .smile {
   top: 70px;
   right: 16px;
@@ -7236,6 +7242,12 @@ body.ngdialog-open {
 .ngdialog_full-width .textarea {
   border: none;
   padding: 0;
+}
+.ngdialog_full-width .notes-add textarea {
+  padding: 15px 40px 15px 0px;
+}
+.ngdialog_full-width .notes-add__editing textarea {
+  padding-left: 15px;
 }
 .ngdialog_full-width .redactor-box {
   display: none;
@@ -7729,7 +7741,7 @@ body.ngdialog-open {
   margin-left: 0px;
 }
 .taber > .content .notes-add {
-  padding: 20px 24px;
+  padding: 17px 24px;
 }
 .taber > .content:before {
   content: '';
@@ -7816,6 +7828,7 @@ body.ngdialog-open {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.06);
   box-shadow: 0 3px 16px rgba(158, 157, 163, 0.08);
+  padding-top: 5px;
 }
 .notes-list_not-border {
   border: none;
@@ -7831,7 +7844,7 @@ body.ngdialog-open {
   padding: 10px 30px 10px 40px;
   top: -5px;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .notes-add:before {
   content: '';
@@ -7844,12 +7857,14 @@ body.ngdialog-open {
   background-color: #fff;
 }
 .notes-add .content {
+  line-height: 1;
   width: 100%;
+  position: relative;
+  padding-left: 15px;
 }
 .notes-add input,
 .notes-add textarea {
   border: none;
-  margin: 0 0 0 16px;
   padding-left: 0;
   font-size: 16px;
   font-family: ProximaNovaReg;
@@ -7857,35 +7872,74 @@ body.ngdialog-open {
   font-weight: 400;
 }
 .notes-add textarea {
-  padding: 10px;
   line-height: 1.3;
-  box-sizing: content-box !important;
+  padding: 15px 15px 15px 0;
+  color: #556066;
 }
-.notes-add .button {
-  flex: 0 0 26px;
-  margin: 0 0 5px 0;
-  padding: 0;
-  font-size: 18px;
-  text-align: center;
-  min-width: 26px;
-}
-.notes-add_two-input {
-  padding: 10px 30px 10px 18px;
-}
-.notes-add_two-input input:nth-child(2) {
-  flex: 0 0 30px;
-}
-.notes-add_two-input input:nth-child(3) {
-  margin-left: 10px;
+.notes-add .smile {
+  display: none;
+  font-size: 24px;
+  position: absolute;
+  z-index: 2;
+  color: #c4c7cc;
+  top: 15px;
+  right: 16px;
 }
 .notes-add_not-border {
   border: none;
   box-shadow: none;
-  padding: 16px 0px 24px 0px;
+  padding: 17px 0px 17px 0px;
 }
 .notes-add_not-border:before {
   left: -24px;
   right: -24px;
+}
+.notes-add_editing textarea,
+.notes-add_editing textarea.textarea {
+  border: 1px solid #dedede;
+  border-radius: 3px;
+  padding-left: 15px;
+}
+.notes-add_editing .smile {
+  display: inline-block;
+}
+.notes-add .links {
+  position: absolute;
+  left: 10px;
+  margin: 0;
+  bottom: 3px;
+  display: inline-block;
+  width: auto;
+  z-index: 2;
+}
+.notes-add .footer {
+  padding-top: 10px;
+}
+.notes-add .footer_right {
+  text-align: right;
+}
+.notes-add .answer {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.notes-add .answer .text {
+  color: #9aa5ab;
+}
+.notes-add .answer .text:hover {
+  color: #556066;
+}
+.notes-add .answer .icon-close {
+  font-size: 15px;
+  vertical-align: middle;
+  color: #c4c7cc;
+}
+.notes-add .answer .icon-close:hover {
+  cursor: pointer;
+  color: #556066;
 }
 .notes-inner {
   position: relative;
@@ -7904,7 +7958,7 @@ body.ngdialog-open {
 .notes-list__item {
   display: flex;
   align-items: flex-start;
-  padding: 20px 24px;
+  padding: 14px 24px;
   position: relative;
   border-top: 1px solid #ecf2f5;
 }
@@ -7971,11 +8025,36 @@ body.ngdialog-open {
 .notes-list__item .zoom-pic {
   margin-top: 16px;
 }
+.notes-list__item .text_pin {
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  bottom: 20px;
+}
+.notes-list__item .text_pin_right {
+  right: 0px;
+}
+.notes-list__item .text_pin .icon {
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4px 0 20px;
+}
+.notes-list__item .text_pin .text__text {
+  vertical-align: middle;
+  display: inline-block;
+  font-family: ProximaNovaReg;
+  font-size: 14px;
+  color: #9aa5ab;
+}
+.notes-list__item .list {
+  margin-bottom: 5px;
+}
 .notes-list__item .answer {
   display: inline-block;
   vertical-align: middle;
   font-size: 14px;
-  font-size: ProximaNovaReg;
+  font-family: ProximaNovaReg;
   cursor: pointer;
 }
 .notes-list__item .answer .text {
@@ -8083,16 +8162,20 @@ body.ngdialog-open {
   font-weight: 300;
   color: #000000;
   padding: 0;
-  margin: 0 10px 0 0;
+  margin: 0 10px 5px 0;
 }
 .notes-list__item .content:hover ~ .settings {
   display: block;
+}
+.notes-list__item_removed {
+  padding: 20px 0px;
 }
 .notes-list__item_removed .content .text {
   font-size: 14px;
   font-family: ProximaNovaReg;
   padding: 3px 0 3px 50px;
   color: #aaaaaa;
+  margin: 0;
 }
 .notes-list__item_removed .content .text a {
   margin-left: 16px;
@@ -9354,6 +9437,52 @@ body .redactor-box-fullscreen {
 .zoom-pic_small {
   width: 65px;
   height: 65px;
+}
+.editing-pic {
+  display: inline-block;
+  margin: 0 16px 16px 0;
+  border-radius: 5px;
+  position: relative;
+}
+.editing-pic .close {
+  display: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 100%;
+  border: 1px solid #d8dadd;
+  position: absolute;
+  z-index: 2;
+  top: -10px;
+  right: -10px;
+  box-shadow: 0 3px 36px rgba(158, 157, 163, 0.54);
+  background-color: #fff;
+}
+.editing-pic .close .icon-close {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -7px 0 0 -7px;
+  font-size: 14px;
+  color: #d8dadd;
+  cursor: pointer;
+}
+.editing-pic .close .icon-close:hover {
+  display: inline-block;
+  color: #556066;
+}
+.editing-pic img {
+  border-radius: 5px;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  cursor: pointer;
+}
+.editing-pic_small {
+  width: 65px;
+  height: 65px;
+}
+.editing-pic:hover .close {
+  display: inline-block;
 }
 .social {
   width: 100%;

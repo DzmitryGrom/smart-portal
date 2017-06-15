@@ -328,6 +328,9 @@ body.ngdialog-open {
   .notes-list {
     &__item {
       padding: 20px 0px;
+      &_removed {
+        padding: 16px 0;
+      }
       .smile {
         top: 70px;
         right: 16px;
@@ -354,6 +357,18 @@ body.ngdialog-open {
   .textarea {
     border: none;
     padding: 0;
+
+  }
+  .notes-add {
+    textarea {
+    padding: 15px 40px 15px 0px;
+    }
+    &__editing {
+      textarea {
+        padding-left: 15px;
+      }
+    }
+
   }
   .redactor-box {
     display: none;
