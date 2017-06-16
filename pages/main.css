@@ -7299,6 +7299,8 @@ body.ngdialog-open {
   transition: visibility 0s linear 0s,opacity .1s,width 0s linear 0s;
   visibility: visible;
   opacity: 1;
+  transform: rotate(0deg);
+  width: 40px;
 }
 .ngdialog_full-width .add__list {
   display: inline-block;
@@ -7316,6 +7318,11 @@ body.ngdialog-open {
 }
 .ngdialog_full-width .add__item:hover .icon {
   color: #71b8f4;
+}
+.ngdialog_full-width .add_open {
+  transform: rotate(0deg);
+  width: 150px;
+  background: #fff;
 }
 .ngdialog_full-width .add_open .add__item {
   transform: scale(1);
