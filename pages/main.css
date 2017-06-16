@@ -3213,6 +3213,10 @@ a {
   background: url(interface/icons/password.svg) no-repeat;
   background-position: center center;
 }
+.icon-add-member {
+  background: url(interface/icons/add-member.svg) no-repeat;
+  background-position: center center;
+}
 .icon-page {
   background: url(interface/icons/not-content.svg) no-repeat;
   background-position: center center;
@@ -7111,7 +7115,9 @@ body.ngdialog-open {
   font-family: ProximaNovaReg;
   font-weight: 400;
   color: #9aa5ab;
-  margin: 16px 0 -8px;
+  margin: 16px auto -8px;
+  width: 75%;
+  max-width: 285px;
 }
 .ngdialog.ngdialog_normal .ngdialog-content .img {
   width: 128px;
@@ -7466,6 +7472,7 @@ body.ngdialog-open {
 .ngdialog_full-width .ng-dialog__content,
 .ngdialog_half-width .ng-dialog__content {
   position: relative;
+  z-index: 2;
 }
 .ngdialog_full-width .ng-dialog__content .article__header,
 .ngdialog_half-width .ng-dialog__content .article__header {
@@ -9539,21 +9546,5 @@ body .redactor-box-fullscreen {
 }
 .slide-img {
   display: block;
-  background-color: #fff;
   cursor: zoom-in;
-}
-.slide-img_active {
-  position: fixed;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  z-index: 21;
-  padding: 105px 80px;
-  cursor: default;
-}
-.slide-img_active img {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s linear 0.5s, opacity 0.1s 0.4s;
 }
