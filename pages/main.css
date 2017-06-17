@@ -3272,7 +3272,6 @@ a {
 }
 .icon-star-full:before {
   content: "\e903";
-  color: #556066;
 }
 .icon-star-rating:before {
   content: "\e904";
@@ -6517,6 +6516,7 @@ tags-input .autocomplete .suggestion-item em {
 }
 .article__side_bg-star {
   background: url("interface/icons/bg.png") no-repeat;
+  background-size: contain;
   padding: 24px 40px 65px;
 }
 .article__side_bg-star .link {
