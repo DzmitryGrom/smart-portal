@@ -261,7 +261,8 @@
     display: table-cell;
     text-align: center;
     background-color: #fff;
-    width: 50%;
+    vertical-align: top;
+ 
     .title {
       font-size: 24px;
       font-family: ProximaNovaSem;
@@ -276,27 +277,14 @@
       color: #000000;
       margin: 0 0 32px;
     }
-    &_bg-star {
-      background: url("interface/icons/bg.png") no-repeat;
-      background-size: contain;
-      padding: 24px 40px 65px;
+    &_bg {
+      background-repeat:  no-repeat;
+      background-size: 100% 100%;
+      padding: 24px 25px 65px;
+      width: 385px;
       .link {
         display: inline-block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin: -86px 0 0 -84px;
-        
-      }
-      .circles {
-        display: inline-block;
-        background: url("interface/icons/bg-circles.svg") no-repeat;
-        width: 300px;
-        height: 300px;
-        background-size: 300px 300px;
-        position: relative;
-        margin-bottom: 48px;
-        
+        margin: 56px 0 120px;
       }
       .text {
         font-size: 16px;
@@ -306,6 +294,21 @@
         display: inline-block;
         width: 95%;
       }
+    }
+    &_info {
+      width: 430px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+    .social {
+      margin-bottom: 40px;
+    }
+    .category__collapser {
+      margin-top: -15px;
+    }
+    .button_white-shadow {
+      margin-top: 40px;
+      line-height: 38px;
     }
   }
 }
