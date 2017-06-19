@@ -5,6 +5,39 @@
   font-size: 16px;
   text-decoration: none;
   line-height: 34px;
+  &.category__item_enter {
+    position: relative;
+    input {
+      cursor: pointer;
+      margin-right: -27px;
+      padding-right: 28px;
+    }
+    .i-arrow_to_down {
+      position: absolute;
+      top: 50%;
+      margin-top: -6px;
+      right: 20px;
+    }
+    .icon-press {
+      background-color: #f4b696;
+      position: absolute;
+      right: -1px;
+      top: -1px;
+      bottom: -1px;
+      width: 42px;
+      border-bottom-right-radius: 2px; 
+      border-top-right-radius: 2px; 
+      cursor: pointer;
+      .i-arrow {
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        margin: 0 0 -3px -7px;
+      }
+    }
+  }
   &.category__item_drop {
     position: relative;
     input {
