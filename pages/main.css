@@ -3236,7 +3236,6 @@ a {
 }
 .icon-password {
   background: url(interface/icons/password.svg) no-repeat;
-  background-position: center center;
 }
 .icon-add-member {
   background: url(interface/icons/add-member.svg) no-repeat;
@@ -3256,6 +3255,9 @@ a {
 }
 .icon-enter {
   background: url(interface/icons/enter.svg) no-repeat;
+}
+.icon-enter,
+.icon-password {
   background-position: center center;
   width: 168px;
   height: 168px;
@@ -5573,6 +5575,11 @@ textarea {
   color: #556066;
   box-shadow: 0 10px 36px rgba(158, 157, 163, 0.1);
 }
+.button_send {
+  background-color: #e96d2e;
+  color: #fff;
+  line-height: 38px;
+}
 .checkbox-label {
   font-size: 14px;
   cursor: default;
@@ -6624,10 +6631,23 @@ tags-input .autocomplete .suggestion-item em {
   display: inline-block;
   width: 95%;
 }
+.article__side_bg-two {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 24px 26px 65px;
+  width: 385px;
+}
+.article__side_bg-two .link {
+  display: inline-block;
+  margin: 125px 0 0px;
+}
 .article__side_info {
   width: 430px;
   padding-left: 32px;
   padding-right: 32px;
+}
+.article__side_info .category__item-label {
+  text-align: left;
 }
 .article__side .social {
   margin-bottom: 40px;
@@ -6638,6 +6658,9 @@ tags-input .autocomplete .suggestion-item em {
 }
 .article__side .button_white-shadow {
   line-height: 38px;
+}
+.article__side .button_send {
+  margin: 125px 0 56px;
 }
 .article__side .category__item_enter {
   max-width: 272px;
