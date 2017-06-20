@@ -2831,12 +2831,12 @@ a {
 .tooltip_error {
   background-color: #f35e5e;
   color: #fff;
-  font-size: 12px;
-  font-family: "ProximaNovaLight";
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  font-weight: 400;
   padding: 11px;
-  width: 100%;
   top: inherit;
-  margin-bottom: 8px;
+  margin-bottom: 17px;
   left: -1px;
   display: none;
 }
@@ -3256,7 +3256,11 @@ a {
 .icon-enter {
   background: url(interface/icons/enter.svg) no-repeat;
 }
+.icon-email {
+  background: url(interface/icons/mail.svg) no-repeat;
+}
 .icon-enter,
+.icon-email,
 .icon-password {
   background-position: center center;
   width: 168px;
@@ -5579,6 +5583,7 @@ textarea {
   background-color: #e96d2e;
   color: #fff;
   line-height: 38px;
+  padding: 0 48px;
 }
 .checkbox-label {
   font-size: 14px;
@@ -5698,7 +5703,6 @@ textarea {
   position: relative;
 }
 .category__item_with-error {
-  border: 1px solid #f9aeae;
   position: relative;
 }
 .category__item_with-error .tooltip_error {
@@ -6618,6 +6622,7 @@ tags-input .autocomplete .suggestion-item em {
   background-size: 100% 100%;
   padding: 24px 26px 65px;
   width: 385px;
+  background-image: url('interface/icons/bg.png');
 }
 .article__side_bg .link {
   display: inline-block;
@@ -6636,18 +6641,11 @@ tags-input .autocomplete .suggestion-item em {
   background-size: 100% 100%;
   padding: 24px 26px 65px;
   width: 385px;
+  background-image: url('interface/icons/bg_two.png');
 }
 .article__side_bg-two .link {
   display: inline-block;
   margin: 125px 0 0px;
-}
-.article__side_info {
-  width: 430px;
-  padding-left: 32px;
-  padding-right: 32px;
-}
-.article__side_info .category__item-label {
-  text-align: left;
 }
 .article__side .social {
   margin-bottom: 40px;
@@ -6665,6 +6663,17 @@ tags-input .autocomplete .suggestion-item em {
 .article__side .category__item_enter {
   max-width: 272px;
   margin: 0 auto;
+}
+.article__side_info {
+  width: 430px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.article__side_info .category__item-label {
+  text-align: left;
+}
+.article__side_info-mail .button_send {
+  margin: 48px 0 56px;
 }
 .article.article_transparent {
   background-color: transparent;
