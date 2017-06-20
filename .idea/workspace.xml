@@ -4,10 +4,9 @@
     <list default="true" id="fe663626-3594-4b54-8183-0cfb4b3d215f" name="Default" comment="Све">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/article/article.less" afterPath="$PROJECT_DIR$/blocks/article/article.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/icons/icons.less" afterPath="$PROJECT_DIR$/blocks/icons/icons.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/interface/icons/password.svg" afterPath="$PROJECT_DIR$/pages/interface/icons/password.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/enterEmail.html" afterPath="$PROJECT_DIR$/pages/enterEmail.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/main.css" afterPath="$PROJECT_DIR$/pages/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/main.less" afterPath="$PROJECT_DIR$/pages/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/regestration.html" afterPath="$PROJECT_DIR$/pages/regestration.html" />
     </list>
     <ignored path="smart-portal.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -134,19 +133,19 @@
                     <element signature="e#463#498#0" expanded="false" />
                     <element signature="e#509#697#0" expanded="false" />
                     <element signature="e#706#729#0" expanded="false" />
-                    <element signature="e#740#1098#0" expanded="false" />
-                    <element signature="e#1111#1636#0" expanded="false" />
-                    <element signature="e#1646#2280#0" expanded="false" />
-                    <element signature="e#2600#2687#0" expanded="false" />
-                    <element signature="e#3037#3136#0" expanded="false" />
-                    <element signature="e#3281#4048#0" expanded="false" />
-                    <element signature="e#4228#4309#0" expanded="false" />
-                    <element signature="e#4390#5936#0" expanded="false" />
-                    <element signature="e#5947#6109#0" expanded="false" />
-                    <element signature="e#6124#6305#0" expanded="false" />
-                    <element signature="e#6317#6382#0" expanded="false" />
-                    <element signature="e#6391#6576#0" expanded="false" />
-                    <element signature="e#6587#6775#0" expanded="false" />
+                    <element signature="e#740#1100#0" expanded="false" />
+                    <element signature="e#1113#1638#0" expanded="false" />
+                    <element signature="e#1648#2282#0" expanded="false" />
+                    <element signature="e#2602#2689#0" expanded="false" />
+                    <element signature="e#3039#3138#0" expanded="false" />
+                    <element signature="e#3283#4050#0" expanded="false" />
+                    <element signature="e#4230#4311#0" expanded="false" />
+                    <element signature="e#4392#5938#0" expanded="false" />
+                    <element signature="e#5949#6111#0" expanded="false" />
+                    <element signature="e#6126#6307#0" expanded="false" />
+                    <element signature="e#6319#6384#0" expanded="false" />
+                    <element signature="e#6393#6578#0" expanded="false" />
+                    <element signature="e#6589#6777#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -271,7 +270,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -342,7 +341,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -453,18 +452,20 @@
       <workItem from="1497881312913" duration="15000" />
       <workItem from="1497881889733" duration="8000" />
       <workItem from="1497882137056" duration="5000" />
+      <workItem from="1497961368390" duration="95000" />
+      <workItem from="1497962639723" duration="604000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220405000" />
+    <option name="totallyTimeSpent" value="221104000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18532526" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1913767" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -870,19 +871,19 @@
             <element signature="e#463#498#0" expanded="false" />
             <element signature="e#509#697#0" expanded="false" />
             <element signature="e#706#729#0" expanded="false" />
-            <element signature="e#740#1098#0" expanded="false" />
-            <element signature="e#1111#1636#0" expanded="false" />
-            <element signature="e#1646#2280#0" expanded="false" />
-            <element signature="e#2600#2687#0" expanded="false" />
-            <element signature="e#3037#3136#0" expanded="false" />
-            <element signature="e#3281#4048#0" expanded="false" />
-            <element signature="e#4228#4309#0" expanded="false" />
-            <element signature="e#4390#5936#0" expanded="false" />
-            <element signature="e#5947#6109#0" expanded="false" />
-            <element signature="e#6124#6305#0" expanded="false" />
-            <element signature="e#6317#6382#0" expanded="false" />
-            <element signature="e#6391#6576#0" expanded="false" />
-            <element signature="e#6587#6775#0" expanded="false" />
+            <element signature="e#740#1100#0" expanded="false" />
+            <element signature="e#1113#1638#0" expanded="false" />
+            <element signature="e#1648#2282#0" expanded="false" />
+            <element signature="e#2602#2689#0" expanded="false" />
+            <element signature="e#3039#3138#0" expanded="false" />
+            <element signature="e#3283#4050#0" expanded="false" />
+            <element signature="e#4230#4311#0" expanded="false" />
+            <element signature="e#4392#5938#0" expanded="false" />
+            <element signature="e#5949#6111#0" expanded="false" />
+            <element signature="e#6126#6307#0" expanded="false" />
+            <element signature="e#6319#6384#0" expanded="false" />
+            <element signature="e#6393#6578#0" expanded="false" />
+            <element signature="e#6589#6777#0" expanded="false" />
           </folding>
         </state>
       </provider>

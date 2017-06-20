@@ -3936,6 +3936,16 @@ a {
   max-width: 810px;
   margin: 0 auto;
 }
+.main_small-xs-col {
+  padding-top: 100px;
+}
+.main_small-xs-col > .content {
+  max-width: 624px;
+  margin: 0 auto;
+}
+.main_small-xs-col .category_columns_two-with-labels .category__item {
+  flex: 0 0 47%;
+}
 .main {
   display: flex;
   flex-wrap: wrap;
@@ -6597,6 +6607,34 @@ tags-input .autocomplete .suggestion-item em {
   display: table-row;
   width: 100%;
 }
+.article__row_center {
+  text-align: center;
+}
+.article__row-footer {
+  text-align: center;
+  padding: 32px 0;
+}
+.article__row-bg {
+  color: #fff;
+  background: #668afe;
+  background: -webkit-linear-gradient(left, #668afe 0%, #00d0ff 100%);
+  background: -o-linear-gradient(left, #668afe 0%, #00d0ff 100%);
+  background: linear-gradient(to right, #668afe 0%, #00d0ff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#668afe', endColorstr='#00d0ff', GradientType=1);
+  padding: 35px 48px;
+}
+.article__row-bg .title {
+  font-size: 24px;
+  font-family: ProximaNovaSem;
+  margin: 0 0 16px;
+}
+.article__row-bg .text {
+  font-size: 16px;
+  font-family: ProximaNovaLight;
+  font-weight: 300;
+  display: inline-block;
+  width: 75%;
+}
 .article__side {
   display: table-cell;
   text-align: center;
@@ -6674,6 +6712,14 @@ tags-input .autocomplete .suggestion-item em {
 }
 .article__side_info-mail .button_send {
   margin: 48px 0 56px;
+}
+.article__side_info .category__item_input {
+  position: relative;
+}
+.article__side_info .category__item_input .link {
+  position: absolute;
+  top: -34px;
+  right: 0;
 }
 .article.article_transparent {
   background-color: transparent;
