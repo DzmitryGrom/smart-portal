@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+
+<head>
+  <title>regestrationInfo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href='main.css' rel='stylesheet' type='text/css'> </head>
+
+<body>
+  <div class="header">
+    <h1 class="header__logo"><a href="home.html">Smart<b>Portal</b></a></h1>
+    <div class="header-side">
+      <a class="link" href="#">Еще нет аккаунта?</a>
+     <button class="button button_success" type="button">Войти</button>
+    </div>
+  </div>
+  <div class="main main_small-xs-col">
+      <div class="content">
+        <div class="article">
+          <div class="article__table">
+            <div class="article__row article__row_left">
+              <div class="article__row-bg">
+                <div class="article__row-img">
+                  <span class="icon icon-camera"></span>
+                </div>
+                <div class="article__row-text">
+                  <h2 class="title">Приветствуем!</h2>
+                  <span class="text">Что-бы начать пользоваться порталом заполните данные о себе</span>
+                </div>
+               
+              </div>
+            </div>
+            <div class="article__row">
+              <div class="category category_columns_two-with-labels category_not-bg category_not-padding-top">
+                <div class="category__item-label">Имя</div>
+                <div class="category__item category__item_input">
+                  <input class="input" type="text" placeholder="" value="Андрей"> </div>
+                <div class="category__item-label">Фамилия</div>
+                <div class="category__item category__item_input">
+                  <input class="input" type="text" placeholder="" value="Хипстов"></div>
+                 <div class="category__item-label">Отчиство</div>
+                <div class="category__item category__item_input">
+                  <input class="input" type="text" placeholder="" value="Дизайнович"></div>
+                <div class="category__item-label">Дата рождения</div>
+                <div class="category__item category__item_input">
+                  <input class="input" type="text" placeholder="" value="01 января 1988"></div>
+                <div class="category__item-label">Пол</div> 
+                <div class="category__item category__item_drop category__item_input">
+                  <input class="input" type="text" placeholder="Type here" value="Мужской" readonly="">
+                  <div class="i-arrow i-arrow_to_down"></div>
+                  <div class="tooltip" style="width: 100%;display:none;">
+                    <div class="content tooltip__content tooltip__content_default">
+                      <ul class="list">
+                        <li class="list__item list__item_hovered">
+                          <div class="text">Мужской</div>
+                        </li>
+                        <li class="list__item list__item_hovered">
+                          <div class="text">Женский</div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="category__item-label">Пароль</div>
+                <div class="category__item category__item_input">
+                  <input class="input" type="text" placeholder="Пароль для входа" value=""></div>
+              </div>
+              <div class="article__row-footer">
+                <a href="#" class="button button_send link">Продолжить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
