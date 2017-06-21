@@ -212,6 +212,7 @@ body.ngdialog-open {
     font-size: 14px;
     font-family: ProximaNovaReg;
     font-weight: 400;
+    line-height: 20px;
     color: #9aa5ab;
     margin: 16px auto -8px;
     width: 75%;
@@ -232,7 +233,8 @@ body.ngdialog-open {
     font-size: 16px;
     font-family: ProximaNovaBold;
     margin-bottom: 25px;
-    color: #121212;
+    color: #556066;
+    font-weight: 600;
   }
   .category__footer {
     margin-top: 72px;
@@ -385,6 +387,10 @@ body.ngdialog-open {
       text-align: center;
       font-size: 14px;
       font-family: ProximanovaReg;
+      &:focus::-webkit-input-placeholder { color:transparent; }
+      &:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+      &:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+      &:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     }
   }
   .redactor,

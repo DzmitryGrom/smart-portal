@@ -110,7 +110,7 @@ app.controller('TestController', ['$scope', 'ngDialog', '$q', function ($scope, 
   $scope.openChangePass = function () {
     ngDialog.openConfirm({
       className: 'ngdialog_normal  ngdialog-theme-default',
-      template: '<div class="ng-dialog__wrapper">\n    <span class="pic icon-password"></span>\n    <p class="title">Смена пароля:</p>\n    <div class="category__item category__item_drop category__item_input">\n        <input class="input" type="text" placeholder="Новый пороль" value="" readonly="true">\n    </div>\n    <div class="category__item category__item_drop category__item_input">\n        <input class="input" type="text" placeholder="Повторите пороль" value="" readonly="true">\n    </div>\n    <div class="category__footer  category__footer_justify-center">\n        <button class="button button_success" type="button">Применить</button>\n    </div>\n</div>',
+      template: '<div class="ng-dialog__wrapper">\n    <span class="pic icon-password-bl"></span>\n    <p class="title">Смена пароля:</p>\n    <div class="category__item category__item_drop category__item_input">\n        <input class="input" type="text" placeholder="Новый пороль" value="" readonly="true">\n    </div>\n    <div class="category__item category__item_drop category__item_input">\n        <input class="input" type="text" placeholder="Повторите пороль" value="" readonly="true">\n    </div>\n    <div class="category__footer  category__footer_justify-center">\n        <button class="button button_success" type="button">Применить</button>\n    </div>\n</div>',
       plain: true,
       scope: $scope
     }).then(function (value) {

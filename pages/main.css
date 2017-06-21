@@ -3237,6 +3237,9 @@ a {
 .icon-password {
   background: url(interface/icons/password.svg) no-repeat;
 }
+.icon-password-bl {
+  background: url(interface/icons/password-bl.svg) no-repeat;
+}
 .icon-add-member {
   background: url(interface/icons/add-member.svg) no-repeat;
   background-position: center center;
@@ -3261,7 +3264,8 @@ a {
 }
 .icon-enter,
 .icon-email,
-.icon-password {
+.icon-password,
+.icon-password-bl {
   background-position: center center;
   width: 168px;
   height: 168px;
@@ -6894,9 +6898,14 @@ tags-input .autocomplete .suggestion-item em {
   border-radius: 100%;
   box-shadow: 0 0px 40px rgba(0, 0, 0, 0.1);
   margin-bottom: 24px;
+  position: relative;
 }
 .button_add-more-plus .icon {
-  font-size: 11px;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -6px 0 0 -6px;
 }
 .article__footer {
   position: relative;
@@ -7383,6 +7392,7 @@ body.ngdialog-open {
   font-size: 14px;
   font-family: ProximaNovaReg;
   font-weight: 400;
+  line-height: 20px;
   color: #9aa5ab;
   margin: 16px auto -8px;
   width: 75%;
@@ -7403,7 +7413,8 @@ body.ngdialog-open {
   font-size: 16px;
   font-family: ProximaNovaBold;
   margin-bottom: 25px;
-  color: #121212;
+  color: #556066;
+  font-weight: 600;
 }
 .ngdialog.ngdialog_normal .ngdialog-content .category__footer {
   margin-top: 72px;
@@ -7538,6 +7549,21 @@ body.ngdialog-open {
   text-align: center;
   font-size: 14px;
   font-family: ProximanovaReg;
+  /* FF 4-18 */
+  /* FF 19+ */
+  /* IE 10+ */
+}
+.ngdialog_full-width .redactor .input_description:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.ngdialog_full-width .redactor .input_description:focus:-moz-placeholder {
+  color: transparent;
+}
+.ngdialog_full-width .redactor .input_description:focus::-moz-placeholder {
+  color: transparent;
+}
+.ngdialog_full-width .redactor .input_description:focus:-ms-input-placeholder {
+  color: transparent;
 }
 .ngdialog_full-width .redactor,
 .ngdialog_full-width .redactor > .text {
