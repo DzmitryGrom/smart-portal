@@ -1,0 +1,21 @@
+.slide-dots {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-size: 0px;
+  &__item {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #e4e5e9;
+    margin-right: 8px;
+    cursor: pointer;
+    &:last-child {
+      margin-right: 0px;
+    }
+    &_active {
+      background-color: #1f8ceb;
+    }
+  }
+}
