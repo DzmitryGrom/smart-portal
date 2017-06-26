@@ -2963,6 +2963,11 @@ a {
 .tooltip__content_list .scroll.list .list__item {
   margin-right: 10px;
 }
+.tooltip__content_list .scroll.list .list__item .icon {
+  left: inherit;
+  right: 0px;
+  margin-top: -20px;
+}
 .tooltip__content_info.content {
   position: static;
   padding: 30px 0px 0px 24px;
@@ -3006,16 +3011,29 @@ a {
 }
 .tooltip__content_padding-top .search {
   padding: 0 30px 5px 5px;
+  border-bottom: 1px solid #f0f0f0;
 }
 .tooltip__content .checkbox-label {
-  padding: 8px 0px;
+  padding: 0px 0px 8px;
 }
 .tooltip__content .checkbox-label .icon {
   margin-right: 10px;
 }
+.tooltip__content .checkbox-group__title {
+  padding-bottom: 6px;
+}
+.tooltip__content .checkbox-group {
+  padding-bottom: 6px;
+}
+.tooltip__content .checkbox-group_closed {
+  padding-bottom: 0px;
+}
 .tooltip__content .search {
   margin: 11px 0;
   position: relative;
+}
+.tooltip__content .search_border-bottom {
+  border-bottom: 1px solid #f0f0f0;
 }
 .tooltip .list .icon,
 .tooltip .list .text {
@@ -3064,6 +3082,10 @@ a {
   font-size: 16px;
   font-family: ProximaNovaLight;
   color: #000000;
+}
+.tooltip .list .list__item_bordered .info .link {
+  margin-right: 0;
+  color: #4fb2f9;
 }
 .tooltip .list .list__item_bordered .info p {
   margin: 0;
@@ -3719,6 +3741,9 @@ a {
   border-top: 1px solid #f5f5f7;
   padding: 15px 0;
   margin: 5px 0;
+}
+.list_padding-right {
+  padding-right: 16px;
 }
 .list-col {
   font-size: 0;
@@ -7765,9 +7790,9 @@ body.ngdialog-open {
 .ngdialog_half-width .text_caption {
   width: 100%;
   font-size: 24px;
+  line-height: 30px;
   font-family: ProximaNovaSem;
   color: #121212;
-  line-height: 21px;
   margin: 0 0 24px 0;
   padding: 0;
 }
@@ -8052,7 +8077,10 @@ body.ngdialog-open {
   margin-left: 0px;
 }
 .taber > .content .notes-add {
-  padding: 17px 24px;
+  padding: 14px 24px 7px;
+}
+.taber > .content .notes-add_editing {
+  padding-bottom: 20px;
 }
 .taber > .content:before {
   content: '';
@@ -8200,7 +8228,7 @@ body.ngdialog-open {
 .notes-add_not-border {
   border: none;
   box-shadow: none;
-  padding: 17px 0px 17px 0px;
+  padding: 15px 0px 8px 0px;
 }
 .notes-add_not-border:before {
   left: -24px;
@@ -9850,6 +9878,9 @@ body .redactor-box-fullscreen {
   max-width: 102px;
   font-size: 44px;
   padding: 51px 0;
+}
+.social_big .link:hover {
+  border: 1px solid #9aa5ab;
 }
 .social_big .link .icon {
   margin: -22px 0 0 -22px;
