@@ -2579,9 +2579,10 @@ a {
   margin-right: 10px;
 }
 .nav__link_active {
-  color: #61a3da;
+  color: #1f8ceb;
   border-bottom: 2px solid;
-  font-family: ProximaNovaReg;
+  font-family: GothaProMed;
+  font-size: 11px;
 }
 .header-side {
   display: flex;
