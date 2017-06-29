@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe663626-3594-4b54-8183-0cfb4b3d215f" name="Default" comment="Све">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blocks/nav/__link/_active/nav__link_active.less" afterPath="$PROJECT_DIR$/blocks/nav/__link/_active/nav__link_active.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/main.css" afterPath="$PROJECT_DIR$/pages/main.css" />
-    </list>
+    <list default="true" id="fe663626-3594-4b54-8183-0cfb4b3d215f" name="Default" comment="Све" />
     <ignored path="smart-portal.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -574,12 +571,12 @@
       <workItem from="1498044459104" duration="1629000" />
       <workItem from="1498052934327" duration="655000" />
       <workItem from="1498468537780" duration="2316000" />
-      <workItem from="1498475864703" duration="3001000" />
+      <workItem from="1498475864703" duration="3374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229170000" />
+    <option name="totallyTimeSpent" value="229543000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />

@@ -2547,7 +2547,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: -4px;
+  margin-bottom: -5px;
   width: 520px;
 }
 .nav__link {
@@ -2562,7 +2562,6 @@ a {
   white-space: nowrap;
   border-bottom: 2px solid transparent;
   position: relative;
-  border-bottom: 4px solid transparent;
 }
 .nav__link_dropdown {
   text-transform: capitalize;
