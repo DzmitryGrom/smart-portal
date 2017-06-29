@@ -4449,6 +4449,17 @@ a {
 .datagrid__body .row_not-border {
   border: none;
 }
+.datagrid__body .row__panel {
+  background-color: #f6f9fb;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 2;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+}
 .datagrid__body .row__cell {
   height: 72px;
   padding: 11px 15px;
@@ -4495,6 +4506,9 @@ a {
 .datagrid__body .row__cell .button {
   padding: 0;
   display: inline-block;
+}
+.datagrid__body .row__cell_relative {
+  position: relative;
 }
 .datagrid__body .row__cell_solid {
   padding: 0 1px;

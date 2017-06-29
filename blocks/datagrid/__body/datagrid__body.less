@@ -12,6 +12,17 @@
     &_not-border {
       border: none;
     }
+    &__panel {
+      background-color: #f6f9fb;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+      z-index: 2;
+      padding: 0 50px;
+      display: flex;
+      align-items: center;
+    }
     &__cell {
       height: 72px;
 //      display: flex;
@@ -62,6 +73,10 @@
       .button {
         padding: 0;
         display: inline-block;
+      }
+      &_relative {
+        position: relative;
+       
       }
     }
     &__cell_solid {
