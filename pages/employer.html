@@ -330,8 +330,10 @@
           <div class="category category_not-bg"><div class="category__item category__item_title">Личная информация</div></div>
           <div class="category category_columns_two-with-labels category_not-bg category_not-padding-top">
             <div class="category__item-label">Имя</div>
-            <div class="category__item category__item_input">
-              <input class="input" type="text" placeholder="Имя" value="Ирина"> </div>
+            <div class="category__item category__item_input category__item_with-error">
+              <input class="input" type="text" placeholder="Имя" value="Ирина"> 
+              <div class="tooltip tooltip_error tooltip_top">Пользователя с этим именем нет<i class="tooltip__arrow tooltip__arrow_red tooltip__arrow_bottom" style="left: 5px"></i> </div>  
+            </div>
             <div class="category__item-label">Фамилия</div>
             <div class="category__item category__item_input">
               <input class="input" type="text" placeholder="Фамилия" value="Петренко"> </div>
@@ -1050,7 +1052,7 @@
               </div>
             </div>
             <div class="category__item-label">Отдел  </div>
-            <div class="category__item category__item_input  category__item_drop">
+            <div class="category__item category__item_input category__item_drop category__item_with-error">
               <input class="input" type="text" placeholder="Имя" value="Design"> 
               <div class="i-arrow i-arrow_to_down"></div> 
               <div class="tooltip" style="display:block;width: 100%;">
@@ -1077,6 +1079,7 @@
                       </ul>
                   </div>
               </div>
+              <div class="tooltip tooltip_error tooltip_top">Такого отдела нет<i class="tooltip__arrow tooltip__arrow_red tooltip__arrow_bottom" style="left: 5px"></i> </div>
             </div>
             <div class="category__item-label">Должность</div>
             <div class="category__item category__item_input  category__item_drop">
