@@ -5366,6 +5366,17 @@ a {
 .category__item_input .icon-search {
   color: #9aa5ab;
 }
+.category__item_input-text {
+  position: relative;
+}
+.category__item_input-text .text {
+  font-size: 14px;
+  font-family: ProximaNovaReg;
+  color: #556066;
+  position: absolute;
+  right: 8px;
+  top: 0px;
+}
 .category__item_input:hover {
   border: 1px solid #c4c7cc;
 }
@@ -5766,6 +5777,7 @@ textarea {
 }
 .category__item_with-error {
   position: relative;
+  border: 1px solid #f35e5e;
 }
 .category__item_with-error .tooltip_error {
   display: block;
@@ -6700,7 +6712,7 @@ tags-input .autocomplete .suggestion-item em {
   background: -o-linear-gradient(left, #00d0ff 0%, #668afe 100%);
   background: linear-gradient(to right, #00d0ff 0%, #668afe 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00d0ff', endColorstr='#668afe', GradientType=1);
-  padding: 35px 48px;
+  padding: 45px 48px;
 }
 .article__row-bg .title {
   font-size: 24px;

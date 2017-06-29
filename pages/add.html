@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+
+<head>
+  <title>add</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href='main.css' rel='stylesheet' type='text/css'> </head>
+
+<body>
+  <div class="header">
+    <h1 class="header__logo"><a href="home.html">Smart<b>Portal</b></a></h1>
+    <div class="header-side">
+      <a class="link" href="#">Уже есть аккаунт?</a>
+     <button class="button button_success" type="button">Войти</button>
+    </div>
+  </div>
+  <div class="main main_small-xs-col">
+      <div class="content">
+        <div class="article">
+          <div class="article__table">
+            <div class="article__row article__row_center">
+              <div class="article__row-bg">
+                <h2 class="title">Добавьте название и домен вашей компании</h2>
+                <span class="text">Домен компании, нужен для того что-бы авторизовываться на портале и приглашать других</span>
+              </div>
+            </div>
+            <div class="article__row">
+              <div class="category category_columns_two-with-labels category_not-bg category_not-padding-top">
+                <div class="category__item-label">Название компании</div>
+                <div class="category__item category__item_input">
+                  <input class="input" type="text" placeholder="Введите название"> </div>
+                <div class="category__item-label">Домен компании</div>
+                <div class="category__item category__item_input category__item_input-text category__item_with-error">
+                  <input class="input" type="text"  value="wqeqeq">
+                  <span class="text">.smartportal.pro</span> 
+                  <div class="tooltip tooltip_error tooltip_top">Этот домен занят<i class="tooltip__arrow tooltip__arrow_red tooltip__arrow_bottom" style="left: 5px"></i> </div> 
+                </div>
+              </div>
+              <div class="article__row-footer">
+                <a href="#" class="button button_send link">Продолжить</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide-dots">
+          <span class="slide-dots__item"></span>
+          <span class="slide-dots__item"></span>
+          <span class="slide-dots__item slide-dots__item_active"></span>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
