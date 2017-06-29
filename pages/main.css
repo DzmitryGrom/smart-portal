@@ -6812,6 +6812,9 @@ tags-input .autocomplete .suggestion-item em {
   top: -34px;
   right: 0;
 }
+.article__side_info-not-forms {
+  padding: 110px 32px 153px;
+}
 .article.article_transparent {
   background-color: transparent;
   border: none;
