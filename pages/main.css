@@ -6626,8 +6626,9 @@ tags-input .autocomplete .suggestion-item em {
 .article__content_icon .article__link {
   margin-left: 80px;
 }
-.article__content_icon .content__text {
+.article__content_icon .content__text p:first-child {
   text-indent: 80px;
+  margin-top: 0px;
 }
 .article__content_icon .avatar,
 .article__content_icon > .pic {
