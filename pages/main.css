@@ -6801,6 +6801,18 @@ tags-input .autocomplete .suggestion-item em {
 .article__side_info .category__item-label {
   text-align: left;
 }
+.article__side_info-acces {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.article__side_info-acces .category__item-label,
+.article__side_info-acces .category__item_input {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.article__side_info-acces .button_send {
+  margin-top: 113px;
+}
 .article__side_info-mail .button_send {
   margin: 48px 0 56px;
 }
